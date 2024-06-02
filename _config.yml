@@ -9,5 +9,5 @@ description:
 remote_theme: jekyll/minima
 
 header_pages:
-- ticket-pricing.md
+- nba_ticket_pricing.md
 #- judging.md
