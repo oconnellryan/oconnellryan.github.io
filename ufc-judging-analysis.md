@@ -23,17 +23,7 @@ The following output shows the log odds ratio for each of the predictors:
 
 You can see that the model has identified the head as the most important target to the judges. The model also backs up the fact that knockdowns are very impactful to winning rounds. Takedowns and reversals are valued essentially the same, and will improve the log odds of winning a round by about as much as 50 seconds of control time. A submission attempt is valued more than twice as highly as a reversal or takedown.
 
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-
+<br style="clear:both" />
 
 ### Individual Judge Biases
 I then used the binomial GLM model created to identify individual judge biases. The following graph shows the results of this analysis, where the coeficcient ratios for each judge show the relative importance of each variable used.
