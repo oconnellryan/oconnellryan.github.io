@@ -38,9 +38,9 @@ I then used the binomial GLM model created to identify individual judge biases. 
 ![Image](/assets/images/judges.png)
 We can see the differences in how inmdividual judges score fights here. Judges with higher coeficcient ratios for the blue poinmts are more grappler friendly (ex: Eric Colon). Derek Cleary seems to prefer grapplers who are very active on the ground with reversals and submissions, whereas grapplers with the ability to take down their opponent and control them should do well on Sal D'Amato's scorecards Chris Lee seem to favor strikes landed to the head, whereas Junichiro Kamijo heavily favors strikes to the leg. Michael Bell values events with fight ending potential (knockdowns & submission attempts) very highly.
 
-#
-#
-#
-#
+###
+###
+###
+###
 
 I then used the binomial GLM model created to identify individual judge biases. In order to do this, two models were created for each judge. The first model (judge model) used only this judges scorecards, while the other model (nonjudge model) used only scorecards from other judges. The judge model coeficcients were then divided by the non-judge model coeficcients, and these coeficcient ratios show the relative importance of the variables for each judge. The following graoh shows these coeficcient ratios for 6 of the top judges:
