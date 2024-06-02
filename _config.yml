@@ -10,4 +10,4 @@ remote_theme: jekyll/minima
 
 header_pages:
 - nba-ticket-pricing.md
-#- judging.md
+- ufc-judging-analysis.md
