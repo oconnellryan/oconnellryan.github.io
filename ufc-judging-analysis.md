@@ -6,8 +6,8 @@ The goal of this project was to idenity the factors most relevant in UFC judging
 
 ### Binomial GLM Model
 This model utilizes differences in fighter statistics to model the winner of a round. Differences between the two fighters for the following statistics were used:
-- head: significant strikes landed to the head
-- body: significant strikes landed to the body
+- **head**: significant strikes landed to the head
+- **body:** significant strikes landed to the body
 - leg: significant strikes landed to the leg
 - nonsig: non-significant strikes landed to any part of the body
 - kd: knockdowns landed
