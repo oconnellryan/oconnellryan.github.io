@@ -17,6 +17,6 @@ This model utilizes differences in fighter statistics to model the winner of a r
 - sub: submission attempts
 
 The following output shows the log odds ratio for each of the predictors:
-![Display Name](/images/log_dds.png)
+![Display Name](/assets/images/log_dds.png)
 
 You can see that the model has identified the head as the most important target to the judges. 
