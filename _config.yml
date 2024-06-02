@@ -8,6 +8,6 @@ description:
 # Build settings
 remote_theme: jekyll/minima
 
-#header_pages:
-#- ticket-pricing.md
+header_pages:
+- ticket-pricing.md
 #- judging.md
