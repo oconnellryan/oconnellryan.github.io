@@ -28,10 +28,14 @@ You can see that the model has identified the head as the most important target 
 ### Individual Judge Biases
 I then used the binomial GLM model created to identify individual judge biases. The following graph shows the results of this analysis, where the coeficcient ratios for each judge show the relative importance of each variable used.
 ![Image](/assets/images/judges.png)
-We can see the differences in how inmdividual judges score fights here. Judges with higher coeficcient ratios for the blue poinmts are more grappler friendly (ex: Eric Colon). Derek Cleary seems to prefer grapplers who are very active on the ground with reversals and submissions, whereas grapplers with the ability to take down their opponent and control them should do well on Sal D'Amato's scorecards Chris Lee seem to favor strikes landed to the head, whereas Junichiro Kamijo heavily favors strikes to the leg. Michael Bell values events with fight ending potential (knockdowns & submission attempts) very highly.
+We can see the differences in how individual judges score fights here. Judges with higher coeficcient ratios for the blue points are more grappler friendly (ex: Eric Colon). Derek Cleary seems to prefer grapplers who are very active on the ground with reversals and submissions, whereas grapplers with the ability to take down their opponent and control them should do well on Sal D'Amato's scorecards Chris Lee seem to favor strikes landed to the head, whereas Junichiro Kamijo heavily favors strikes to the leg. Michael Bell values events with fight ending potential (knockdowns & submission attempts) very highly.
 
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
+### Decision Tree & Random Forest Model:
+In addition to the binomial GLM model created, a decision tree and random forest were created to judge rounds. Most of the variables are the same here, but instead of the significant strikes being broken down by target (head, body legs), they are broken down by where the striking occured (distance, ground or clinch). This data will allow the decision trees to identify different types of fights, such as a round where one fighter dominated on the ground but lost on the feet. The main decision tree is shown below:
+![Display Name](/images/tree.png)
+You can see that this tree has multiple splits based on who won the distance striking as well as the grappling (through ground striking and control time). While this overfits the data, you can see how this approach makes sense for scoring. A random forest model using the same predictors was also created, and the following output shows the results of this:
+![Display Name](/images/varimp_plot.png)
+Just like in the decision tree significant distance strikes, control time, and significant ground strikes are the most important predictors. Significant clinch strikes do not have much of an impact, and the mean decrease gini is actually higher for non-significant strikes. Takedowns are not overly important due to most grappling splits occuring on control time and ground striking. Submission attempts, knockdowns, and reversals all occur infrequently so the random forest was unable to capture the importance of these.
 
-I then used the binomial GLM model created to identify individual judge biases. In order to do this, two models were created for each judge. The first model (judge model) used only this judges scorecards, while the other model (nonjudge model) used only scorecards from other judges. The judge model coeficcients were then divided by the non-judge model coeficcients, and these coeficcient ratios show the relative importance of the variables for each judge. The following graoh shows these coeficcient ratios for 6 of the top judges:
+
+
