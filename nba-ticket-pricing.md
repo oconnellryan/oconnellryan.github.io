@@ -49,7 +49,7 @@ The average ticket price decreases as you go back in rows:
 ![Image](/assets/images/ub_rows.jpg)
 
 There are WCA (wheelchair access) areas in the arena. These seats are located in the back of sections in the lower bowl:
-![Image](/assets/images/wca_ub_graph.jpg){: width="400" ; style="float" }
+![Image](/assets/images/wca_ub_graph.jpg){: width="400" ; style="float" } aaaa
 
 
 
