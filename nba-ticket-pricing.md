@@ -40,7 +40,7 @@ The bowl of the arena was broken down into the following sections based on locat
 &nbsp;<br>
 
 The floor was split up by side:
-![Image](/assets/images/floor.jpeg)
+![Image](/assets/images/floor.jpg)
 ![Image](/assets/images/floor_avgs.jpg){: width="200" }
 
 
