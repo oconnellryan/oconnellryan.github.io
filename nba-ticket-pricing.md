@@ -55,6 +55,10 @@ The WCA sections in the upper bowl are located in front of or in the middle of s
 ![Image](/assets/images/wca_ub_graph.jpg){: width="=500" ; style="float: left" } View from seat: ![Image](/assets/images/wca_ub_view.jpg){: width="200" }
 
 &nbsp;<br>
-Many non-row 1 seats overhang tunnels or entrances and have no seats in front of them. These seats were labeled as front row views (Example below of seats overhanging the player tunnel in sections 123 and 124):
+Many non-row 1 seats overhang tunnels or entrances and have no seats in front of them. These seats were labeled as front row views (Example below of seats overhanging the player tunnel):
+![Image](/assets/images/frv.jpg)
+
+&nbsp;<br>
+
 
 
