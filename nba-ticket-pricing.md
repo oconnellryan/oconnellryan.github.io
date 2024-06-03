@@ -13,5 +13,7 @@ Steph Curry missed 2 games in 2022, and we can see the average ticket prices dro
 ![Image](/assets/images/curry_graph.jpeg)
 ![Image](/assets/images/curry_22.jpeg){: width="50" }
 
+![steam-fish-1](/assets/images/curry_22.jpeg){: width="250" }
+
 
 ### Result Highlights
