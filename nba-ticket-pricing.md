@@ -10,7 +10,7 @@ The following graphic showcases the predicted ticket prices for each seat in an 
 ![Image](/assets/images/arena_map.png)
 
 ### Exploratory Analysis
-**External Game Factors:**
+**External Game Factors:** &nbsp;<br>
 Opponents Matter. Playing big market teams and a higher opponent winning percentage both lead to higher average ticket prices:
 ![Image](/assets/images/opps.jpeg)
 
