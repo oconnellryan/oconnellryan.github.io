@@ -51,7 +51,7 @@ The average ticket price decreases as you go back in rows:
 There are WCA (wheelchair access) areas in the arena. These seats are located in the back of sections in the lower bowl: &nbsp;<br>
 ![Image](/assets/images/wca_lb_graph.jpg){: width="=200" ; style="float" } View from seat: ![Image](/assets/images/wca_lb_view.jpg){: width="200" }
 The WCA sections in the upper bowl are located in front of or in the middle of sections:
-![Image](/assets/images/wca_ub_graph.jpg){: width="=500" ; style="float" } View from seat: ![Image](/assets/images/wca_ub_view.jpg){: width="200" }
+![Image](/assets/images/wca_ub_graph.jpg){: width="=200" ; style="float" } View from seat: ![Image](/assets/images/wca_ub_view.jpg){: width="200" }
 
 &nbsp;<br>
 Many non-row 1 seats overhang tunnels or entrances and have no seats in front of them. These seats were labeled as front row views (Example below of seats overhanging the player tunnel in sections 123 and 124):
