@@ -15,11 +15,19 @@ Opponents Matter. Playing big market teams and a higher opponent winning percent
 
 &nbsp;<br>
 
-Steph Curry missed 15 games in 2022, and we can see the average ticket prices dropped quickly when Curry misses games.
+Steph Curry missed 15 games in 2022, and we can see the average ticket prices dropped quickly in the periods he missed games due to injury:
 ![Image](/assets/images/curry_graph.jpeg)
 ![Image](/assets/images/curry_22.jpeg){: width="200" }
 
 &nbsp;<br>
+
+Almost all of the games before 7:00 were at 5:30. These earlier games had higher average ticket prices:
+![Image](/assets/images/times.jpeg)
+
+&nbsp;<br>
+
+Tickets are more expensive when purchased further out from games. There is a sharp drop off in the price of gameday tickets:
+![Image](/assets/images/days_out.jpeg)
 
 
 
