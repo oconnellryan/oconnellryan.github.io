@@ -22,12 +22,12 @@ Steph Curry missed 15 games in 2022, and we can see the average ticket prices dr
 &nbsp;<br>
 
 Almost all of the games before 7:00 were at 5:30. These earlier games had higher average ticket prices:
-![Image](/assets/images/times.jpeg)
+![Image](/assets/images/times.jpeg){: width="200" }
 
 &nbsp;<br>
 
 Tickets are more expensive when purchased further out from games. There is a sharp drop off in the price of gameday tickets:
-![Image](/assets/images/days_out.jpeg)
+![Image](/assets/images/days_out.jpg)
 
 
 
