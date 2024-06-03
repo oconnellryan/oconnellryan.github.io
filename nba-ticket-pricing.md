@@ -8,10 +8,12 @@ In this project I created a predictive model of NBA ticket prices. 2 seasosns of
 ### Exploratory Analysis
 Opponents Matter. Playing big market teams and a higher opponent winning percentage both lead to higher average ticket prices:
 ![Image](/assets/images/opps.jpeg)
+
 #
+
 Steph Curry missed 2 games in 2022, and we can see the average ticket prices dropped quickly when Curry misses games.
 ![Image](/assets/images/curry_graph.jpeg)
-![Image](/assets/images/curry_22.jpeg){: width="150" }
+![Image](/assets/images/curry_22.jpeg){: width="200" }
 
 ![steam-fish-1](/assets/images/curry_22.jpeg){: width="250" }
 
