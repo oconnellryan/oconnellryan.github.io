@@ -30,7 +30,17 @@ Almost all of the games before 7:00 were at 5:30. These earlier games had higher
 Tickets are more expensive when purchased further out from games. There is a sharp drop off in the price of gameday tickets:
 ![Image](/assets/images/days_out.jpg)
 
+&nbsp;<br>
 
+**Stadium Areas:** &nbsp;<br>
+The bowl of the arena was broken down into the following sections based on location and club access:
+![Image](/assets/images/sections.jpeg)
+![Image](/assets/images/sec_prices.jpg){: width="200" }
 
+&nbsp;<br>
+
+The floor was split up by side:
+![Image](/assets/images/floor.jpeg)
+![Image](/assets/images/floor_avgs.jpg){: width="200" }
 
 
