@@ -41,3 +41,6 @@ Just like in the decision tree significant distance strikes, control time, and s
 [Read Full Paper](https://oconnellryan.github.io/projects/)
 
 [get the PDF]({{ https://oconnellryan.github.io }}/assets/assets/Analysis-of-UFC-Judging-Criteria.pdf)
+
+
+[download pdf](https://oconnellryan.github.io/assets/Analysis-of-UFC-Judging-Criteria.pdf)
