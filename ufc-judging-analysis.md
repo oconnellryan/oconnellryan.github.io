@@ -38,4 +38,6 @@ You can see that this tree has multiple splits based on who won the distance str
 Just like in the decision tree significant distance strikes, control time, and significant ground strikes are the most important predictors. Significant clinch strikes do not have much of an impact, and the mean decrease gini is actually higher for non-significant strikes. Takedowns are not overly important due to most grappling splits occuring on control time and ground striking. Submission attempts, knockdowns, and reversals all occur infrequently so the random forest was unable to capture the importance of these.
 
 
-[Read Full Paper](https://oconnellryan.github.io/projects/assets/Analysis-of-UFC-Judging-Criteria.pdf)
+[Read Full Paper](https://oconnellryan.github.io/projects/)
+
+[get the PDF]({{ https://oconnellryan.github.io }}/assets/assets/Analysis-of-UFC-Judging-Criteria.pdf)
