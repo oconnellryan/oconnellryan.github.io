@@ -66,17 +66,17 @@ This is especially true in the lower bowl:
 
 
 Many non-row 1 seats overhang tunnels or entrances and have no seats in front of them. These seats were labeled as front row views (Example below of seats overhanging the player tunnel):
-![Image](/assets/images/frv.jpg)
+![Image](/assets/nba/frv.jpg)
 
 &nbsp;<br>
 
 There are WCA (wheelchair access) areas in the arena. These seats are located in the back of sections in the lower bowl: &nbsp;<br>
 ![Image](/assets/nba/lb_wca_map.png){: width="525" ; style="float: left" }
-View from seat: ![Image](/assets/images/wca_lb_view.jpg){: width="200" } 
+View from seat: ![Image](/assets/nba/wca_lb_view.jpg){: width="200" } 
 <br style="clear:both" />
 The WCA sections in the upper bowl are located in front of or in the middle of sections: &nbsp;<br>
 ![Image](/assets/nba/ub_wca_map){: width="500" ; style="float: left" } 
-View from seat: ![Image](/assets/images/wca_ub_view.jpg){: width="200" }
+View from seat: ![Image](/assets/nba/wca_ub_view.jpg){: width="200" }
 
 
 &nbsp;<br>
@@ -86,5 +86,27 @@ The front row view seats appear to have a premium while the WCA seats are not ve
 The front row view seats have an average price around the same as row 1 seats in the upper bowl. The upper bowl WCA seats have the highest average prices in the upper bowl:
 ![Image](/assets/nba/ub_rows_graph2.png)
 
+&nbsp;<br>
+
 ### Modeling
+The following model predicts ticket prices for seats in the lower bowl:
+![Image](/assets/nba/lb_model.png)
+The model backs up the key findings from the exploratory analysis:
+- Better & large market opponents lead to higher prices
+- Prices are higher in games where Curry plays
+- Friday & Saturday games are the most expensive
+- Tickets get cheaper as an event approaches
+Specific to lower bowl:
+- Sideline club tickets are much more expensive, while general 100 tickets are slightly more expensive than the Pepsi club
+- Tickets closer to the center of the court are much more expensive
+- Tickets prices drop around $6 when you go back in rows
+- Row 1 tickets are predicted $100 more espensive than  the seat behind them
+- Front row view seats are predicted $50 more than the seat behind them
+
+A seperate model was created for the upper bowl:
+![Image](/assets/nba/ub_model.png)
+
+
+
+
 
