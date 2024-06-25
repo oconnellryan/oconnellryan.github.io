@@ -91,20 +91,28 @@ The front row view seats have an average price around the same as row 1 seats in
 ### Modeling
 The following model predicts ticket prices for seats in the lower bowl:
 ![Image](/assets/nba/lb_model.png)
-The model backs up the key findings from the exploratory analysis:
+The model backs up the earlier findings regarding external game factors:
 - Better & large market opponents lead to higher prices
 - Prices are higher in games where Curry plays
 - Friday & Saturday games are the most expensive
 - Tickets get cheaper as an event approaches
+
+&nbsp;<br>
+
 Specific to lower bowl:
 - Sideline club tickets are much more expensive, while general 100 tickets are slightly more expensive than the Pepsi club
 - Tickets closer to the center of the court are much more expensive
 - Tickets prices drop around $6 when you go back in rows
 - Row 1 tickets are predicted $100 more espensive than  the seat behind them
 - Front row view seats are predicted $50 more than the seat behind them
+- Wheelchair areas are the cheapest seats in the lower bowl
+
+&nbsp;<br>
 
 A seperate model was created for the upper bowl:
 ![Image](/assets/nba/ub_model.png)
+Findings specific to upper bowl:
+
 
 
 
