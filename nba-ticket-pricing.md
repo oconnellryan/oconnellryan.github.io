@@ -26,7 +26,7 @@ Saturday games have the highest prices on average:
 **Star Players:** &nbsp;<br>
 Steph Curry missed 15 games in 2022, and we can see the average ticket prices dropped quickly in the periods he missed games due to injury:
 ![Image](/assets/nba/curry_22_graph.png)
-![Image](/assets/images/curry_22.png){: width="200" }
+![Image](/assets/nba/curry_22.png){: width="200" }
 He did not miss as many games in 2023, but again these games had lower prices:
 ![Image](/assets/nba/curry_23_graph.png)
 ![Image](/assets/nba/curry_23.png){: width="200" }
@@ -43,7 +43,7 @@ Most games were played at 7:00 local time. 25 games were played earlier, with 21
 Tickets are more expensive when purchased further out from games. There is a sharp drop off in the price of gameday tickets:
 ![Image](/assets/nba/days_before_graph.png)
 Days purchased before game were split into the following categories for modeling:
-![Image](/assets/nba/new_days.png)
+![Image](/assets/nba/new_days.png){: width="200" }
 
 &nbsp;<br>
 
