@@ -122,8 +122,7 @@ Specific to lower bowl:
 - Front row view seats are predicted $50 more than the seat behind them
 - Wheelchair areas are the cheapest seats in the lower bowl
 
-&nbsp;<br>
-
+### Upper Bowl
 A seperate model was created for the upper bowl:
 ![Image](/assets/nba/ub_model.png)
 The following graph shows predicted lower bowl prices while holding external factors constant:
@@ -137,7 +136,7 @@ Findings specific to upper bowl:
 - Front row view seats are predicted $15 more than the seat behind them
 - Wheelchair access sections are the most expensive upper bowl seats
 
-&nbsp;<br>
+### Courtside
 
 Finally, a courtside model was created:
 ![Image](/assets/nba/cs_model.png)
