@@ -27,6 +27,9 @@ Saturday games have the highest prices on average:
 Steph Curry missed 15 games in 2022, and we can see the average ticket prices dropped quickly in the periods he missed games due to injury:
 ![Image](/assets/nba/curry_22_graph.png)
 ![Image](/assets/nba/curry_22.png){: width="200" }
+
+&nbsp;<br>
+
 He did not miss as many games in 2023, but again these games had lower prices:
 ![Image](/assets/nba/curry_23_graph.png)
 ![Image](/assets/nba/curry_23.png){: width="200" }
@@ -62,19 +65,21 @@ The floor was split up by side:
 ![Image](/assets/nba/cs_areas_map.png)
 ![Image](/assets/nba/cs_avgs.png){: width="150" }
 
-### Seat features
+### Seat Features
+**Row:** &nbsp;<br>
 The average ticket price decreases as you go back in rows:
 ![Image](/assets/nba/row_avgs_graph.png)
 This is especially true in the lower bowl:
 ![Image](/assets/nba/lb_rows_graph.png)
 ![Image](/assets/nba/ub_rows.png)
 
-
+**Front Row Views (FRV):** &nbsp;<br>
 Many non-row 1 seats overhang tunnels or entrances and have no seats in front of them. These seats were labeled as front row views (Example below of seats overhanging the player tunnel):
 ![Image](/assets/nba/frv.jpg)
 
 &nbsp;<br>
 
+**Wheelchair Access (WCA) Areas:** &nbsp;<br>
 There are WCA (wheelchair access) areas in the arena. These seats are located in the back of sections in the lower bowl: &nbsp;<br>
 ![Image](/assets/nba/lb_wca_map.png){: width="525" ; style="float: left" }
 View from seat: ![Image](/assets/nba/wca_lb_view.jpg){: width="200" } 
@@ -86,10 +91,11 @@ View from seat: ![Image](/assets/nba/wca_ub_view.jpg){: width="200" }
 
 &nbsp;<br>
 
+**New Rows:** &nbsp;<br>
 The front row view seats appear to have a premium while the WCA seats are not very expensive in the lower bowl:
 ![Image](/assets/nba/lb_rows_graph2.png)
 The front row view seats have an average price around the same as row 1 seats in the upper bowl. The upper bowl WCA seats have the highest average prices in the upper bowl:
-![Image](/assets/nba/ub_rows_graph2.png)
+![Image](/assets/nba/ub_rows2.png)
 
 &nbsp;<br>
 
