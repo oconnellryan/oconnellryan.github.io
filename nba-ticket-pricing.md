@@ -91,7 +91,7 @@ View from seat: ![Image](/assets/nba/wca_ub_view.jpg){: width="200" }
 
 &nbsp;<br>
 
-**New Rows:** &nbsp;<br>
+**Graphs of New Rows Created:** &nbsp;<br>
 The front row view seats appear to have a premium while the WCA seats are not very expensive in the lower bowl:
 ![Image](/assets/nba/lb_rows_graph2.png)
 The front row view seats have an average price around the same as row 1 seats in the upper bowl. The upper bowl WCA seats have the highest average prices in the upper bowl:
@@ -100,7 +100,7 @@ The front row view seats have an average price around the same as row 1 seats in
 &nbsp;<br>
 
 ## Modeling
-### Lower Bowl
+### Lower Bowl:
 The following model predicts ticket prices for seats in the lower bowl:
 ![Image](/assets/nba/lb_model.png)
 The model backs up the earlier findings regarding external game factors:
@@ -122,7 +122,7 @@ Specific to lower bowl:
 - Front row view seats are predicted $50 more than the seat behind them
 - Wheelchair areas are the cheapest seats in the lower bowl
 
-### Upper Bowl
+### Upper Bowl:
 A seperate model was created for the upper bowl:
 ![Image](/assets/nba/ub_model.png)
 The following graph shows predicted lower bowl prices while holding external factors constant:
@@ -136,12 +136,12 @@ Findings specific to upper bowl:
 - Front row view seats are predicted $15 more than the seat behind them
 - Wheelchair access sections are the most expensive upper bowl seats
 
-### Courtside
+### Courtside:
 
 Finally, a courtside model was created:
 ![Image](/assets/nba/cs_model.png)
 Key takeaways:
-- True fromt row seats are predicted to be worth roughly $1800 more than the seat behind them
+- True front row seats are predicted to be worth roughly $1800 more than the seat behind them
 - Predicted prices drop around $600 when going from row BB (true row 2) to A1 (the section behind)
 - Tickets in the middle are more expensive when not sitting behind the basket
 
