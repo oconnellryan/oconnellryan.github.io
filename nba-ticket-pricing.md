@@ -125,7 +125,7 @@ Specific to lower bowl:
 ### Upper Bowl:
 A seperate model was created for the upper bowl:
 ![Image](/assets/nba/ub_model.png)
-The following graph shows predicted lower bowl prices while holding external factors constant:
+The following graph shows predicted upper bowl prices while holding external factors constant:
 ![Image](/assets/nba/ub_heatmap.png)
 
 Findings specific to upper bowl:
@@ -140,10 +140,17 @@ Findings specific to upper bowl:
 
 Finally, a courtside model was created:
 ![Image](/assets/nba/cs_model.png)
+Courtside graph (size of seat is predicted price):
+![Image](/assets/nba/cs_size_graph.png)
 Key takeaways:
 - True front row seats are predicted to be worth roughly $1800 more than the seat behind them
 - Predicted prices drop around $600 when going from row BB (true row 2) to A1 (the section behind)
 - Tickets in the middle are more expensive when not sitting behind the basket
+
+
+## Materials:
+
+
 
 
 
