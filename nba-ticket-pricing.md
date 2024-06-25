@@ -149,7 +149,8 @@ Key takeaways:
 
 
 ## Materials:
-
+[Full Write Up](https://oconnellryan.github.io/assets/nba/ryan_oconnell-fas_capstone.pdf)
+[Full Code](https://oconnellryan.github.io/assets/nba/nba_ticket_pricing.Rmd)
 
 
 
