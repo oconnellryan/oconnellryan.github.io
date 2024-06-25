@@ -62,7 +62,7 @@ The average ticket price decreases as you go back in rows:
 ![Image](/assets/nba/row_avgs_graph.png)
 This is especially true in the lower bowl:
 ![Image](/assets/nba/lb_rows_graph.png)
-![Image](/assets/nba/ub_rows_graph.png)
+![Image](/assets/nba/ub_rows.png)
 
 
 Many non-row 1 seats overhang tunnels or entrances and have no seats in front of them. These seats were labeled as front row views (Example below of seats overhanging the player tunnel):
@@ -75,7 +75,7 @@ There are WCA (wheelchair access) areas in the arena. These seats are located in
 View from seat: ![Image](/assets/nba/wca_lb_view.jpg){: width="200" } 
 <br style="clear:both" />
 The WCA sections in the upper bowl are located in front of or in the middle of sections: &nbsp;<br>
-![Image](/assets/nba/ub_wca_map){: width="500" ; style="float: left" } 
+![Image](/assets/nba/ub_wca_map.png){: width="500" ; style="float: left" } 
 View from seat: ![Image](/assets/nba/wca_ub_view.jpg){: width="200" }
 
 
@@ -99,10 +99,13 @@ The model backs up the earlier findings regarding external game factors:
 
 &nbsp;<br>
 
+The following graph shows predicted lower bowl prices while holding external factors constant:
+![Image](/assets/nba/lb_heatmap.png)
+
 Specific to lower bowl:
 - Sideline club tickets are much more expensive, while general 100 tickets are slightly more expensive than the Pepsi club
 - Tickets closer to the center of the court are much more expensive
-- Tickets prices drop around $6 when you go back in rows
+- Tickets prices drop around $6 when you go back a row
 - Row 1 tickets are predicted $100 more espensive than  the seat behind them
 - Front row view seats are predicted $50 more than the seat behind them
 - Wheelchair areas are the cheapest seats in the lower bowl
@@ -111,8 +114,25 @@ Specific to lower bowl:
 
 A seperate model was created for the upper bowl:
 ![Image](/assets/nba/ub_model.png)
-Findings specific to upper bowl:
+The following graph shows predicted lower bowl prices while holding external factors constant:
+![Image](/assets/nba/ub_heatmap.png)
 
+Findings specific to upper bowl:
+- Upper behind seats are cheaper than upper bowl and upper premium
+- Predicted prices decrease as you go closer to the corners
+- Ticket prices drop around $2 when you go back a row
+- Row 1 seats are predicted to be roughly $11 more than the seat behind them
+- Front row view seats are predicted $15 more than the seat behind them
+- Wheelchair access sections are the most expensive upper bowl seats
+
+&nbsp;<br>
+
+Finally, a courtside model was created:
+![Image](/assets/nba/cs_model.png)
+Key takeaways:
+- True fromt row seats are predicted to be worth roughly $1800 more than the seat behind them
+- Predicted prices drop around $600 when going from row BB (true row 2) to A1 (the section behind)
+- Tickets in the middle are more expensive when not sitting behind the basket
 
 
 
