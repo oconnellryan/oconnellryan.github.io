@@ -51,16 +51,16 @@ Days purchased before game were split into the following categories for modeling
 &nbsp;<br>
 
 ### Stadium Areas
-The following categories were created with the data provided:
+The following sections were deduced with the data provided:
 ![Image](/assets/nba/new_group.png)
 ![Image](/assets/nba/new_group_avgs.png){: width="200" }
 
+**Bowl:** &nbsp;<br>
 The bowl of the arena was broken down into further sections based on location and club access:
 ![Image](/assets/nba/new_sections.png)
 ![Image](/assets/nba/new_sec_avgs.png){: width="200" }
 
-
-
+**Courtside & Floor:** &nbsp;<br>
 The floor was split up by side:
 ![Image](/assets/nba/cs_areas_map.png)
 ![Image](/assets/nba/cs_avgs.png){: width="150" }
