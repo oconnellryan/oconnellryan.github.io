@@ -11,16 +11,19 @@ The following graphic showcases the predicted ticket prices for each seat in an 
 
 ## Exploratory Analysis
 ### External Game Factors
+**Opponent:** &nbsp;<br>
 Opponents Matter. Playing big market teams and a higher opponent winning percentage both lead to higher average ticket prices:
 ![Image](/assets/nba/opps.png)
 
 &nbsp;<br>
 
+**Weekday:** &nbsp;<br>
 Saturday games have the highest prices on average:
 ![Image](/assets/nba/weekdays.png)
 
 &nbsp;<br>
 
+**Star Players:** &nbsp;<br>
 Steph Curry missed 15 games in 2022, and we can see the average ticket prices dropped quickly in the periods he missed games due to injury:
 ![Image](/assets/nba/curry_22_graph.png)
 ![Image](/assets/images/curry_22.png){: width="200" }
@@ -30,11 +33,13 @@ He did not miss as many games in 2023, but again these games had lower prices:
 
 &nbsp;<br>
 
+**Gametime:** &nbsp;<br>
 Most games were played at 7:00 local time. 25 games were played earlier, with 21 of these being played at 5:30. The earlier games had lower prices on average:
 ![Image](/assets/nba/times.jpeg){: width="200" }
 
 &nbsp;<br>
 
+**Time of Purchase:** &nbsp;<br>
 Tickets are more expensive when purchased further out from games. There is a sharp drop off in the price of gameday tickets:
 ![Image](/assets/nba/days_before_graph.png)
 Days purchased before game were split into the following categories for modeling:
@@ -42,7 +47,7 @@ Days purchased before game were split into the following categories for modeling
 
 &nbsp;<br>
 
-**Stadium Areas:** &nbsp;<br>
+### Stadium Areas
 The following categories were created with the data provided:
 ![Image](/assets/nba/new_group.png)
 ![Image](/assets/nba/new_group_avgs.png){: width="200" }
@@ -57,7 +62,7 @@ The floor was split up by side:
 ![Image](/assets/nba/cs_areas_map.png)
 ![Image](/assets/nba/cs_avgs.png){: width="150" }
 
-**Seat Features:** &nbsp;<br>
+### Seat features
 The average ticket price decreases as you go back in rows:
 ![Image](/assets/nba/row_avgs_graph.png)
 This is especially true in the lower bowl:
@@ -88,7 +93,8 @@ The front row view seats have an average price around the same as row 1 seats in
 
 &nbsp;<br>
 
-### Modeling
+## Modeling
+### Lower Bowl
 The following model predicts ticket prices for seats in the lower bowl:
 ![Image](/assets/nba/lb_model.png)
 The model backs up the earlier findings regarding external game factors:
