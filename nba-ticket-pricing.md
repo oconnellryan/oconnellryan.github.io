@@ -9,6 +9,8 @@ In this project I created a predictive model of NBA ticket prices. 2 seasosns of
 The following graphic showcases the predicted ticket prices for each seat in an individual game:
 ![Image](/assets/nba/arena_heatmap.png)
 
+&nbsp;<br>
+
 ## Exploratory Analysis
 ### External Game Factors
 **Opponent:** &nbsp;<br>
