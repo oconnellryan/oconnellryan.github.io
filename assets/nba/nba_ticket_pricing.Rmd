@@ -1,0 +1,786 @@
+---
+title: "NBA Ticket Pricing"
+author: "Ryan O'Connell"
+date: '2024-05-09'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+rm(list = ls())
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(ggplot2)
+library(gt)
+library(hoopR)
+library(stargazer)
+library(jtools)
+library(scales)
+```
+
+
+Data Setup:
+```{r}
+gtstyle <- function(x) {
+  x %>% 
+  tab_style(
+    style = cell_borders(sides = c("top", "bottom"),color = "black",weight = px(3)),
+    locations = list(cells_column_labels(), cells_stubhead())
+  ) %>%
+  tab_style(
+    style = cell_borders(sides = c("top"),color = "grey",weight = px(2)),
+    locations = cells_body()) %>%
+  opt_table_outline(style = "solid", color= "black") %>% 
+  tab_style(
+    style = list(cell_text(weight = "bold")),
+    locations = list(cells_column_labels(), cells_stubhead(), cells_title())
+    ) %>% fmt_currency(columns = "Avg Price", decimals = 0)
+}
+
+#Data setup
+listing_data <- read.csv("2024-03-06 Listing Data.csv")
+coord_data <- read.csv("2024-03-06 Seat Coordinates.csv")
+
+listing_data <- listing_data %>% rename("game_id" = GAME_ID, "date" = GAME_DATE, "time" = GAME_TIME, 
+                        "season" = SEASON_ID, 
+                        "away" = VISITOR_TEAM_TRI_CODE, "home" = HOME_TEAM_TRI_CODE, 
+                        "category" = SECTION_CATEGORY, "group" = SECTION_GROUP, "level" = SECTION_LEVEL, 
+                        "section" = SECTION_NAME, "row" = ROW_NAME, "seat" = SEAT_NAME,
+                        "section_row_seat" = SECTION_ROW_SEAT_NAME, "price" = TICKET_LISTING_PRICE,
+                        "days_before" = DAYS_INVENTORY_LEAD_TIME, "days_cat" = INVENTORY_LEAD_TIME_CATEGORY)
+
+coord_data <- coord_data %>% rename("home" = HOME_TEAM_TRI_CODE, "section_row_seat" = SECTION_ROW_SEAT_NAME,
+                      "seat_x" = SEAT_CENTER_X, "seat_y" = SEAT_CENTER_Y)
+
+merged <- inner_join(listing_data, coord_data)
+merged <- merged %>% mutate_at(vars(category, group, level, section), .funs = tolower)
+
+
+merged$new_group <- ifelse(merged$group == "courtside" & merged$level != "courtside", "floor", 
+                           ifelse(merged$group == "upper bowl" & merged$category == "premium", "upper premium" , merged$group))
+
+merged$row <- merged$row %>% str_remove_all("ROW ")
+merged$date <- merged$date %>% ymd()
+
+merged$month <- month.abb[merged$date %>% month()] #Adding month abbreviations
+merged$month <- merged$month %>% 
+  factor(levels = c("Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr"))
+
+merged$new_days <- merged$days_cat %>% str_replace_all(">10 DAYS", ">7 DAYS") %>% 
+  str_replace_all(">15 DAYS", ">7 DAYS") %>% str_replace_all(">30 DAYS", ">7 DAYS") %>% 
+  str_replace_all(">60 DAYS", ">45 DAYS") %>% str_replace_all(">90 DAYS", ">45 DAYS")
+merged$new_days <- merged$new_days %>% factor(levels = c("EVENT DAY", "EVENT WEEK", ">7 DAYS", ">45 DAYS"))
+
+merged$days_cat <- merged$days_cat %>% 
+  factor(levels = c("EVENT DAY", "EVENT WEEK", ">7 DAYS", ">10 DAYS", 
+                    ">15 DAYS", ">30 DAYS", ">45 DAYS", ">60 DAYS", ">90 DAYS"))
+
+#creating new sections
+merged$new_sec <- ifelse(merged$section == "section 126" |merged$section == "section 127" | 
+                             merged$section == "section 128" | merged$section == "section 129", 
+                           "pepsi club", merged$new_group) #pepsi club
+
+merged$new_sec <- ifelse(merged$section == "section 101" | merged$section == "section 102" | 
+                           merged$section == "section 103" | merged$section == "section 104" | 
+                           merged$section == "section 105" | merged$section == "section 106" | 
+                           merged$section == "section 113" | merged$section == "section 114" | 
+                           merged$section == "section 115" | merged$section == "section 116" | 
+                           merged$section == "section 117" | merged$section == "section 118",
+                         "sideline club", merged$new_sec) #splitting lower sideline club
+
+merged$new_sec <- ifelse(merged$section == "section 215" | merged$section == "section 214" |
+                            merged$section == "section 213" | merged$section == "section 212" |
+                            merged$section == "section 211" | merged$section == "bridge 1" |
+                           merged$section == "bridge 2" | merged$section == "bridge 3", 
+                         "upper behind", merged$new_sec) 
+
+merged$new_sec[merged$new_sec == "lower bowl"] <- "general 100 level" #changing to general 100
+
+merged$new_sec <- ifelse(merged$section == "balcony 1" | merged$section == "balcony 2" | merged$new_group == "upper premium", 
+                         "modelo club", merged$new_sec) 
+
+merged$new_sec <- merged$new_sec %>% 
+  factor(levels = c("courtside", "floor", "sideline club", "general 100 level",
+                    "pepsi club", "modelo club", "upper bowl", "upper behind"))
+
+merged$new_time <- ifelse(merged$time == "19:00:00", "7:00", "Early")
+
+merged$season <- merged$season %>% as.character()
+
+merged$wca <- merged$row == "WCA"
+
+#non row 1 front row views
+frv_list <- c(paste0("SECTION 202", " - ", "ROW 14", " - ", "SEAT ", 1:5), paste0("SECTION 203", " - ", "ROW 14", " - ", "SEAT ", 21:24), paste0("SECTION 203", " - ", "ROW 14", " - ", "SEAT ", 3:6), paste0("SECTION 204", " - ", "ROW 06", " - ", "SEAT ", 1:16), paste0("SECTION 204", " - ", "ROW 14", " - ", "SEAT ", c(1:8, 20:21)), paste0("SECTION 205", " - ", "ROW 06", " - ", "SEAT ", c(1:14)), paste0("SECTION 205", " - ", "ROW 10", " - ", "SEAT ", c(12:20)), paste0("SECTION 206", " - ", "ROW 12", " - ", "SEAT ", c(1:2, 7:8)), paste0("SECTION 206", " - ", "ROW 13", " - ", "SEAT ", c(3:6)), paste0("SECTION 207", " - ", "ROW 06", " - ", "SEAT ", c(1:14)), paste0("SECTION 207", " - ", "ROW 14", " - ", "SEAT ", c(21:24)), paste0("SECTION 208", " - ", "ROW 06", " - ", "SEAT ", c(1:16)), paste0("SECTION 208", " - ", "ROW 14", " - ", "SEAT ", c(1:2, 15:21)), paste0("SECTION 209", " - ", "ROW 06", " - ", "SEAT ", c(1:9)), paste0("SECTION 209", " - ", "ROW 14", " - ", "SEAT ", c(1:6)), paste0("SECTION 209", " - ", "ROW 14", " - ", "SEAT ", c(19:21)), paste0("SECTION 211", " - ", "ROW 14", " - ", "SEAT ", c(1:14, 20:24)), paste0("SECTION 212", " - ", "ROW 14", " - ", "SEAT ", c(1:4)), paste0("SECTION 213", " - ", "ROW 13", " - ", "SEAT ", c(1:20)), paste0("SECTION 214", " - ", "ROW 14", " - ", "SEAT ", c(1:5)), paste0("SECTION 215", " - ", "ROW 14", " - ", "SEAT ", c(20:24)), paste0("SECTION 215", " - ", "ROW 14", " - ", "SEAT ", c(1:5)), paste0("SECTION 216", " - ", "ROW 14", " - ", "SEAT ", c(21:24)), paste0("SECTION 216", " - ", "ROW 14", " - ", "SEAT ", c(1:6)), paste0("SECTION 218", " - ", "ROW 14", " - ", "SEAT ", c(16:21)), paste0("SECTION 219", " - ", "ROW 14", " - ", "SEAT ", c(22:23)), paste0("SECTION 220", " - ", "ROW 12", " - ", "SEAT ", c(1:12, 7:8)), paste0("SECTION 220", " - ", "ROW 14", " - ", "SEAT ", c(4:6)), paste0("SECTION 221", " - ", "ROW 10", " - ", "SEAT ", c(12:20)), paste0("SECTION 221", " - ", "ROW 14", " - ", "SEAT ", c(1:4)), paste0("SECTION 222", " - ", "ROW 14", " - ", "SEAT ", c(1:7, 20:21)), paste0("SECTION 223", " - ", "ROW 14", " - ", "SEAT ", c(1:5)), paste0("SECTION 223", " - ", "ROW 14", " - ", "SEAT ", c(21:24)), paste0("SECTION 224", " - ", "ROW 14", " - ", "SEAT ", c(1:5)),paste0("SECTION 119", " - ", "ROW 07", " - ", "SEAT ", c(1:3)), paste0("SECTION 119", " - ", "ROW 07", " - ", "SEAT ", c(1:3)),paste0("SECTION 120", " - ", "ROW 07", " - ", "SEAT ", c(1:7)),paste0("SECTION 123", " - ", "ROW 07", " - ", "SEAT ", c(1:4)),paste0("SECTION 124", " - ", "ROW 07", " - ", "SEAT ", c(1:3)),paste0("SECTION 107", " - ", "ROW 07", " - ", "SEAT ", c(1:3)),paste0("SECTION 107", " - ", "ROW 07", " - ", "SEAT ", c(1:3)), paste0("SECTION 108", " - ", "ROW 07", " - ", "SEAT ", c(1:4)),paste0("SECTION 111", " - ", "ROW 07", " - ", "SEAT ", c(1:7)),paste0("SECTION 112", " - ", "ROW 09", " - ", "SEAT ", c(1:4)))
+
+merged$frv <- merged$section_row_seat %in% frv_list
+
+
+####################
+#Game Logs
+season_23 <- read.csv("season_23-24.csv")
+  season_23$date <- paste0(season_23$Day, " ", season_23$Month, " ", season_23$Year) %>% dmy()
+  season_23$Weekday <- season_23$Weekday %>% factor(levels = c("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"))
+season_22 <- read.csv("season_22-23.csv")
+  season_22$date <- paste0(season_22$Day, " ", season_22$Month, " ", season_22$Year) %>% dmy()
+  season_23$Weekday <- season_22$Weekday %>% factor(levels = c("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"))
+
+market_sizes <- read.csv("market_sizes.csv")
+
+#2023 lookup
+  #setting up df
+opps_23 <- merged %>% filter(season == "2023") %>% group_by(date) %>% slice(1) %>% as.data.frame() %>% select(date, away)
+  opps_23$date <- opps_23$date %>% ymd()
+opps_23 <- opps_23 %>% add_column(win_pct = NA)
+
+  #grab team win percentages
+for(i in 1:41){
+lookup_date <- opps_23[i, 1]
+lookup_tm <- opps_23[i, 2]
+opp_games <- season_23 %>% filter(away == lookup_tm | home == lookup_tm) %>% filter(date <= lookup_date)
+opps_23$win_pct[i] <- (sum(opp_games$Winner == lookup_tm))/(sum(opp_games$Winner == lookup_tm) + sum(opp_games$Loser == lookup_tm))
+}
+opps_23[1,3] <- 0.549 #suns
+opps_23[2,3] <- 0.585 #kings
+opps_23[3,3] <- 0.626 #cavs
+opps_23[4,3] <- 0.512 #wolves
+opps_23[5,3] <- 0.512 #wolves
+
+#####
+merged_23 <- merged %>% filter(season == "2023")
+merged_22 <- merged %>% filter(season == "2022")
+
+games_23_avg <- merged %>% filter(season == 2023) %>% group_by(date) %>% summarise_at(vars(price), list(avg = mean))
+games_22_avg <- merged %>% filter(season == 2022) %>% group_by(date) %>% summarise_at(vars(price), list(avg = mean))
+####
+
+merged_opps_23 <- left_join(left_join(merged_23, games_23_avg), opps_23) %>% rename(opp_win_pct = win_pct)
+
+#2022 lookup
+  #setting up df
+opps_22 <- merged %>% filter(season == "2022") %>% group_by(date) %>% slice(1) %>% as.data.frame() %>% select(date, away)
+  opps_22$date <- opps_22$date %>% ymd()
+opps_22 <- opps_22 %>% add_column(win_pct = NA)
+
+  #grab team win percentages
+for(i in 1:41){
+lookup_date <- opps_22[i, 1]
+lookup_tm <- opps_22[i, 2]
+opp_games <- season_22 %>% filter(away == lookup_tm | home == lookup_tm) %>% filter(date <= lookup_date)
+opps_22$win_pct[i] <- (sum(opp_games$Winner == lookup_tm))/(sum(opp_games$Winner == lookup_tm) + sum(opp_games$Loser == lookup_tm))
+}
+#replacing first 5 with 21/22
+opps_22[1,3] <- 0.402 #lakers
+opps_22[2,3] <- 0.585 #nuggets
+opps_22[3,3] <- 0.366 #kings
+opps_22[4,3] <- 0.646 #heat
+opps_22[5,3] <- 0.366 #kings
+
+merged_opps_22 <- left_join(left_join(merged_22, games_22_avg), opps_22) %>% rename(opp_win_pct = win_pct)
+
+opps_23$season <- "2023"
+opps_22$season <- "2022"
+opps <- rbind(opps_23, opps_22)
+
+
+##########################
+
+merged <- left_join(merged, opps)
+merged <- left_join(merged, market_sizes %>% select(team, Market.Size) %>% rename(away = team, "market_size" = Market.Size))
+
+merged$LAL <- ifelse(merged$away == "LAL", "LAL", "Other")
+
+merged_23 <- merged %>% filter(season == "2023")
+merged_22 <- merged %>% filter(season == "2022")
+
+merged <- rbind(#adding weekday to merged
+  left_join(merged_23, season_23 %>% filter(home == "GSW") %>% select(date, Weekday)),
+  left_join(merged_22, season_22 %>% filter(home == "GSW") %>% select(date, Weekday))
+)
+
+#curry variable
+curry_dates <- rbind(
+load_nba_player_box(2023) %>% filter(athlete_id == 3975),
+load_nba_player_box(2024) %>% filter(athlete_id == 3975)
+) %>% rename(date = game_date)
+curry_date_list <- curry_dates$date
+
+curry_df <- cbind.data.frame(
+unique(merged$date),
+unique(merged$date) %in% curry_date_list) %>% rename(date = "unique(merged$date)",
+                                                     curry = "unique(merged$date) %in% curry_date_list")
+merged <- left_join(merged, curry_df)
+
+merged$big_market <- merged$market_size =="Large"
+
+merged$weekend <- merged$Weekday == "Fri" | merged$Weekday == "Sat"
+
+#after merged modifications
+ind_seats <- merged %>% filter(!duplicated(paste0(pmax(seat_x, seat_y), pmin(seat_x, seat_y))))
+
+merged_23 <- merged %>% filter(season == "2023")
+merged_22 <- merged %>% filter(season == "2022")
+
+games <- merged %>% group_by(date) %>% slice(1)
+
+sec_lookup <- merged %>% group_by(section) %>% slice(1)
+
+standings_23 <- read.csv("standings_23-24.csv")
+standings_22 <- read.csv("standings_22-23.csv")
+standings_21 <- read.csv("standings_21-22.csv")
+
+floor <- merged %>% filter(group == "courtside")
+bowl <- merged %>% filter(group != "courtside")
+upper_bowl <- bowl %>% filter(group == "upper bowl")
+lower_bowl <- bowl %>% filter(group == "lower bowl")
+
+bridge_secs <- c("modelo club 3", "modelo club 1", "bridge 3", "bridge 1", "bridge 2", 
+               "modelo club 2", "balcony 1", "balcony 2")
+bridge <- merged %>% filter(section %in% bridge_secs)
+
+#section locations
+sections_x <- ind_seats %>% group_by(section) %>%
+    summarize(Mean = mean(seat_x)) %>% rename("sec_x" = Mean)
+sections_y <- ind_seats %>% group_by(section) %>%
+    summarize(Mean = mean(seat_y)) %>% rename("sec_y" = Mean)
+sec_avg <- left_join(sections_x, sections_y)
+sec_avg$sec_x_off <- abs(sec_avg$sec_x - 2494)
+sec_avg$sec_y_off <- abs(sec_avg$sec_y - 2500)
+ #data for graphs
+sec_avg_vis <- sec_avg
+sec_avg_vis <- left_join(sec_avg_vis, merged %>% group_by(section) %>% slice(1) %>% select(section, new_group, category, new_sec))
+sec_avg_vis$section <- sec_avg$section %>% str_remove_all("section ")
+sec_visdata <- sec_avg_vis
+sec_visdata$section <- ifelse(sec_visdata$section %in% bridge_secs, " ", sec_visdata$section)
+
+#bowl x y offcenter
+ymax <- bowl %>% filter(new_sec == "upper behind") %>% select(seat_y) %>% unlist() %>% unname() %>% max()
+ymin <- bowl %>% filter(new_sec == "upper behind") %>% select(seat_y) %>% unlist() %>% unname() %>% min()
+ycenter <- (ymax + ymin)/2
+xmax <- bowl %>% filter(new_sec == "upper bowl") %>% select(seat_x) %>% unlist() %>% unname() %>% max()
+xmin <- bowl %>% filter(new_sec == "upper bowl") %>% select(seat_x) %>% unlist() %>% unname() %>% min()
+xcenter <- (xmax + xmin)/2
+ymax - 2500
+seat_y_offcenter <- abs(bowl$seat_y - 2500)/(ymax - 2500)
+seat_x_offcenter <- abs(bowl$seat_x - 2500)/(xmax - 2500)
+bowl$area <- ifelse(bowl$new_sec == "sideline club" | bowl$new_sec == "upper bowl", 
+                         "side", "behind")
+bowl$seat_offcenter <- ifelse(bowl$area == "side", seat_x_offcenter, seat_y_offcenter)
+
+#floor x y offcenter
+floor$area <- ifelse(floor$seat_y < 2145, "side", ifelse(floor$seat_y > 2855, "bench", "behind"))
+#turning x y into off-center
+floor$x_offcenter <- abs(floor$seat_x - 2494)
+floor$y_offcenter <- abs(floor$seat_y - 2500)
+floor_area <- floor
+floor_area$x_offcenter <- ifelse(floor_area$area == "side" | floor_area$area == "bench", floor_area$x_offcenter, NA)
+floor_area$y_offcenter <- ifelse(floor_area$area == "behind", floor_area$y_offcenter, NA)
+
+#off center as %
+floor$off_pct <- ifelse(floor$area == "side" | floor$area == "bench", floor$x_offcenter/max(floor$x_offcenter),  floor$y_offcenter/max(floor$y_offcenter))
+
+#for curry tables & date graph
+curryvis <- merged
+curryvis$curry <- ifelse(merged$curry == TRUE, "Played", "Out") %>% factor(levels = c("Played", "Out"))
+```
+ggplot format:
+ +
+  labs(title = "Upper Bowl Average Ticket Price by Row", x = "Row", y = "Average Ticket Price") +
+  theme(plot.title = element_text(hjust = 0.5, size = 30), 
+        axis.title.x = element_text(size = 24), axis.text.x = element_text(size = 20),
+        axis.title.y = element_text(size = 24), axis.text.y = element_text(size = 20)) + 
+  theme(legend.text = element_text(size = 20), legend.title = element_text(size = 20), 
+        legend.position = c(0.1, 0.1))
+
+Opponent graphs
+```{r}
+#Visualizations
+visdata_23 <- merged_opps_23 %>% group_by(date) %>% slice(1) %>% left_join(market_sizes %>% rename(away = team))
+visdata_22 <- merged_opps_22 %>% group_by(date) %>% slice(1) %>% left_join(market_sizes %>% rename(away = team))
+
+
+ggplot(data = rbind(visdata_23, visdata_22), aes(opp_win_pct, avg)) +
+  geom_point(aes(color = Market.Size), size = 4) + xlim(0 , 1) + 
+  geom_text(aes(label = away), vjust = -0.59, size = 5) + 
+  geom_smooth(method = "lm")  +
+  labs(title = "Average Ticket Price by Opponent", x = "Opponent Win Percentage", y = "Average Game Ticket Price") +
+  theme(plot.title = element_text(hjust = 0.5, size = 30), 
+        axis.title.x = element_text(size = 24), axis.text.x = element_text(size = 20),
+        axis.title.y = element_text(size = 24), axis.text.y = element_text(size = 20)) + 
+  theme(legend.text = element_text(size = 20), legend.title = element_text(size = 20), 
+        legend.position = c(0.1, 0.9)) + 
+  guides(color = guide_legend(override.aes = list(size = 6))) + xlim(0.08, 0.92)  + labs(color = "Market Size")
+
+```
+Star Player Analysis (steph curry)
+```{r}
+curryvis_23 <- curryvis %>% filter(season == 2023)
+curryvis_22 <- curryvis %>% filter(season == 2022)
+
+#2023 table
+cbind(
+curryvis_23 %>% group_by(curry) %>% summarize_at(vars(price), list(avg = mean)),
+c(
+curryvis_23 %>% group_by(date) %>% slice(1) %>% filter(curry == "Played") %>% nrow(),
+ 41 - curryvis_23 %>% group_by(date) %>% slice(1) %>% filter(curry == "Played") %>% nrow())
+) %>% rename("Games" = "c(curryvis_23 %>% group_by(date) %>% slice(1) %>% filter(curry == ",
+             "Curry" = curry, "Avg Price" = avg) %>% mutate(across(where(is.numeric), round, 2)) %>% 
+  select("Curry", "Games", "Avg Price") %>% gt() %>% tab_header("2023") %>% gtstyle() %>% gtsave("tables/curry_23.html")
+
+#2022 table
+cbind(
+curryvis_22 %>% group_by(curry) %>% summarize_at(vars(price), list(avg = mean)),
+c(
+curryvis_22 %>% group_by(date) %>% slice(1) %>% filter(curry == "Played") %>% nrow(),
+ 41 - curryvis_22 %>% group_by(date) %>% slice(1) %>% filter(curry == "Played") %>% nrow())
+) %>% rename("Games" = "c(curryvis_22 %>% group_by(date) %>% slice(1) %>% filter(curry == ",
+             "Curry" = curry, "Avg Price" = avg) %>% mutate(across(where(is.numeric), round, 2)) %>% 
+  select("Curry", "Games", "Avg Price") %>% gt() %>% tab_header("2022")  %>% gtstyle() %>% gtsave("tables/curry_22.html")
+```
+
+Month and Year
+```{r}
+months_22_avg <- merged %>% filter(season == "2022") %>% group_by(month) %>% summarise_at(vars(price), list(avg = mean))
+months_23_avg <- merged %>% filter(season == "2023") %>% group_by(month) %>% summarise_at(vars(price), list(avg = mean))
+months_22_avg$season <- "2022"
+months_23_avg$season <- "2023"
+a <- rbind(months_22_avg, months_23_avg)
+
+left_join(months_22_avg, months_23_avg)
+
+#bar chart of month by month data
+ggplot(a, aes(month, avg, fill = season)) +
+  geom_col(position = "dodge") +
+  geom_line()  +
+  labs(title = "Average Ticket Price by Month", x = "Month", y = "Average Ticket Price") +
+  theme(plot.title = element_text(hjust = 0.5, size = 30), 
+        axis.title.x = element_text(size = 24), axis.text.x = element_text(size = 20),
+        axis.title.y = element_text(size = 24), axis.text.y = element_text(size = 20)) + 
+  theme(legend.text = element_text(size = 20), legend.title = element_text(size = 20), 
+        legend.position = c(0.95, 0.92)) + scale_fill_discrete(name="Season")
+
+
+
+#March & April data for each year
+mar_apr_23 <- merged %>% filter(season == "2023") %>% filter(month == "Mar" | month == "Apr") %>% group_by(date) %>% slice(1) %>% 
+  as.data.frame() %>% select(away) %>% rename(team = away)
+mar_apr_22 <- merged %>% filter(season == "2022") %>% filter(month == "Mar" | month == "Apr") %>% group_by(date) %>% slice(1) %>% 
+  as.data.frame() %>% select(away) %>% rename(team = away)
+
+   #average win percentage in march and april
+left_join(mar_apr_23, standings_23) %>% select(Pct) %>% unlist() %>% unname() %>% str_remove_all("%") %>% as.numeric() %>% mean()
+left_join(mar_apr_22, standings_22) %>% select(Pct) %>% unlist() %>% unname() %>% str_remove_all("%") %>% as.numeric() %>% mean()
+
+
+#weekday
+weekdays <- merged %>% group_by(Weekday) %>% summarise_at(vars(price), list(avg = mean))
+
+ggplot(weekdays, (aes(Weekday, avg))) +
+  geom_col() +
+  labs(title = "Average Ticket Price by Weekday", x = "Weekday", y = "Average Ticket Price") +
+  theme(plot.title = element_text(hjust = 0.5, size = 30), 
+        axis.title.x = element_text(size = 24), axis.text.x = element_text(size = 20),
+        axis.title.y = element_text(size = 24), axis.text.y = element_text(size = 20)) + 
+  theme(legend.text = element_text(size = 20), legend.title = element_text(size = 20), 
+        legend.position = c(0.94, 0.92))
+
+merged %>% group_by(season) %>% summarize_at(vars(price), list(avg = mean)) %>%
+  rename("Season" = season, "Avg Price" = avg) %>% gt() %>% gtstyle() %>% gtsave("tables/season_avgs.html")
+```
+Curry and Month
+```{r}
+visdata_23 <- left_join(curryvis %>% filter(season == "2023") %>% group_by(date) %>% 
+  summarize_at(vars(price), list(avg = mean)),
+  curryvis %>% group_by(date) %>% slice(1) %>% select(curry)) %>% as.data.frame()
+
+ggplot(visdata_23, aes(date, avg, color = curry))  +
+  geom_point(size = 6)  +
+  labs(title = "Average Ticket Price by Game in 2023 Season", x = "Date", y = "Average Ticket Price") +
+  theme(plot.title = element_text(hjust = 0.5, size = 30), 
+        axis.title.x = element_text(size = 24), axis.text.x = element_text(size = 20),
+        axis.title.y = element_text(size = 24), axis.text.y = element_text(size = 20)) + 
+ theme(legend.text = element_text(size = 20), legend.title = element_text(size = 20), 
+        legend.position = c(0.95, 0.92)) + labs(color = "Curry")
+
+visdata_22 <- left_join(curryvis %>% filter(season == "2022") %>% group_by(date) %>% 
+  summarize_at(vars(price), list(avg = mean)),
+  curryvis %>% group_by(date) %>% slice(1) %>% select(curry)) %>% as.data.frame()
+
+ggplot(visdata_22, aes(date, avg, color = curry)) +
+  geom_point(size = 6)  +
+  labs(title = "Average Ticket Price by Game in 2022 Season", x = "Date", y = "Average Ticket Price") +
+  theme(plot.title = element_text(hjust = 0.5, size = 30), 
+        axis.title.x = element_text(size = 24), axis.text.x = element_text(size = 20),
+        axis.title.y = element_text(size = 24), axis.text.y = element_text(size = 20)) + 
+  theme(legend.text = element_text(size = 20), legend.title = element_text(size = 20), 
+        legend.position = c(0.95, 0.92)) + labs(color = "Curry")
+```
+
+
+Gametime
+```{r}
+left_join(games$time %>% table() %>% as.data.frame() %>% rename(Time = "."),
+          merged %>% group_by(time) %>% summarize_at(vars(price), list("Avg Price" = mean)) %>% rename(Time = time)) %>% 
+  mutate(across(where(is.numeric), round, 2)) %>% gt() %>% gtstyle() %>% gtsave("tables/times.html")
+
+left_join(games$new_time %>% table() %>% as.data.frame() %>% rename(Time = "."),
+          merged %>% group_by(new_time) %>% summarize_at(vars(price), list("Avg Price" = mean)) %>% rename(Time = new_time)) %>% 
+  mutate(across(where(is.numeric), round, 2)) %>% gt() %>% gtstyle() %>% gtsave("tables/new_times.html")
+
+games %>% filter(time == "16:30:00")
+```
+
+
+Days Before
+```{r}
+#ggplot(merged, aes(days_before, price)) +
+  #geom_point() +
+  #geom_smooth(method = "lm")
+
+#floor day by day
+floor %>% group_by(days_cat) %>% summarize_at(vars(price), list (avg = mean)) %>%
+  as.data.frame() %>% gt()
+visdata <- floor %>% group_by(days_before) %>% summarise_at(vars(price), list(avg = mean)) %>% filter(avg < 7000)
+ggplot(floor, aes(days_before, price)) +
+  geom_point(size = 1.5, aes(color = level)) +
+  geom_smooth(method = "lm", formula = y ~ poly(x, 2)) +
+  labs(title = "Average Ticket Price by Days Purchased Before Game (Courtside & Floor)", x = "Days Before Game", 
+       y = "Average Ticket Price") +
+  theme(plot.title = element_text(hjust = 0.5, size = 30), 
+        axis.title.x = element_text(size = 24), axis.text.x = element_text(size = 20),
+        axis.title.y = element_text(size = 24), axis.text.y = element_text(size = 20)) + ylim(0, 7500) + 
+  theme(legend.text = element_text(size = 20), legend.title = element_text(size = 20), 
+        legend.position = c(0.95, 0.92)) + labs(color = "Level")
+
+#lower bowl average day price
+lower_bowl %>% group_by(days_cat) %>% summarize_at(vars(price), list (avg = mean)) %>%
+  as.data.frame() %>% gt()
+visdata <- lower_bowl %>% group_by(days_before) %>% summarise_at(vars(price), list(avg = mean))
+ggplot(visdata, aes(days_before, avg)) +
+  geom_point() +
+  geom_smooth(method = "lm", formula = y ~ poly(x, 3)) +
+  labs(title = "Average Ticket Price by Days Purchased Before Game (Lower Bowl)", x = "Days Before Game", y = "Average Ticket Price") +
+  theme(plot.title = element_text(hjust = 0.5, size = 30), 
+        axis.title.x = element_text(size = 24), axis.text.x = element_text(size = 20),
+        axis.title.y = element_text(size = 24), axis.text.y = element_text(size = 20))
+
+upper_bowl %>% group_by(days_cat) %>% summarize_at(vars(price), list (avg = mean)) %>%
+  as.data.frame()
+visdata <- upper_bowl %>% group_by(days_before) %>% summarise_at(vars(price), list(avg = mean))
+ggplot(visdata, aes(days_before, avg)) +
+  geom_point() +
+  geom_smooth(method = "lm", formula = y ~ poly(x, 3)) +
+  labs(title = "Average Ticket Price by Days Purchased Before Game (Upper Bowl)", x = "Days Before Game", y = "Average Ticket Price") +
+  theme(plot.title = element_text(hjust = 0.5, size = 30), 
+        axis.title.x = element_text(size = 24), axis.text.x = element_text(size = 20),
+        axis.title.y = element_text(size = 24), axis.text.y = element_text(size = 20))
+
+visdata <- merged %>% group_by(days_before) %>% summarise_at(vars(price), list(avg = mean))
+ggplot(visdata, aes(days_before, avg)) +
+  geom_point() +
+  geom_smooth(method = "lm", formula = y ~ poly(x, 3)) +
+  labs(title = "Average Ticket Price by Days Purchased Before Game", x = "Days Before Game", y = "Average Ticket Price") +
+  theme(plot.title = element_text(hjust = 0.5, size = 30), 
+        axis.title.x = element_text(size = 24), axis.text.x = element_text(size = 20),
+        axis.title.y = element_text(size = 24), axis.text.y = element_text(size = 20))
+
+merged_days <- merged %>% group_by(days_cat) %>% summarize_at(vars(price), list (avg = mean)) %>%
+  as.data.frame()
+ggplot(merged_days, (aes(days_cat, avg))) +
+  geom_col() +
+  labs(title = "Average Ticket Price by Days Purchased Before Category", x = "Days Before Category", y = "Average Ticket Price") +
+  theme(plot.title = element_text(hjust = 0.5, size = 30), 
+        axis.title.x = element_text(size = 24), axis.text.x = element_text(size = 20),
+        axis.title.y = element_text(size = 24), axis.text.y = element_text(size = 20))
+
+merged %>% group_by(new_days) %>% summarize_at(vars(price), list (avg = mean)) %>%
+  as.data.frame() %>% rename("New Days" = new_days, "Avg Price" = avg) %>% 
+  mutate(across(where(is.numeric), round, 2)) %>% gt() %>% gtstyle() %>% gtsave("tables/purchase_times.html")
+```
+
+
+
+Section Analysis
+```{r}
+#individual seat graphs
+ggplot(ind_seats, aes(seat_x, seat_y, color = level)) +
+  geom_point(size = 2) + 
+  theme(legend.text = element_text(size = 20), legend.title = element_text(size = 20), 
+        legend.position = c(0.06, 0.91)) + labs(color = "Level") + 
+  guides(colour = guide_legend(override.aes = list(size=5)))
+ggplot(ind_seats, aes(seat_x, seat_y, color = group)) +
+  geom_point(size = 2) + 
+  theme(legend.text = element_text(size = 20), legend.title = element_text(size = 20), 
+        legend.position = c(0.06, 0.91)) + labs(color = "Group") + 
+  guides(colour = guide_legend(override.aes = list(size=5)))
+ggplot(ind_seats, aes(seat_x, seat_y, color = category)) +
+  geom_point(size = 2) + 
+  theme(legend.text = element_text(size = 20), legend.title = element_text(size = 20), 
+        legend.position = c(0.06, 0.91)) +
+  scale_color_manual(values = c("#619CFF", "#00BA38")) + labs(color = "Category") + 
+  guides(colour = guide_legend(override.aes = list(size=5)))
+
+#new groupings
+ggplot(ind_seats, aes(seat_x, seat_y, color = new_group))  +
+  geom_point(size = 2) +
+  theme(legend.text = element_text(size = 20), legend.title = element_text(size = 20), 
+        legend.position = c(0.08, 0.91)) + 
+  guides(colour = guide_legend(override.aes = list(size=5))) + labs(color = "New Group")
+```
+
+New Groups with base data
+```{r}
+#new group summary
+merged %>% group_by(new_group) %>% summarize_at(vars(price), list("Avg Price" = mean)) %>% 
+  rename("New Group" = new_group) %>% 
+  mutate(across(where(is.numeric), round, 2)) %>% gt() %>% gtstyle() %>% gtsave("tables/area_prices.html")
+
+#stadium seat map with new categories & section numbers
+ggplot(ind_seats, aes(seat_x, seat_y))  +
+  geom_point(size = 2, aes(color = new_group)) +
+  geom_text(data = sec_visdata, aes(sec_x, sec_y, label = section), size = 12) +
+  theme(legend.text = element_text(size = 20), legend.title = element_text(size = 20), 
+        legend.position = c(0.08, 0.91)) + labs(color = "New Group") + 
+  guides(colour = guide_legend(override.aes = list(size=5)))
+
+#bridge seat map
+ggplot(ind_seats, aes(seat_x, seat_y))  +
+  geom_point(size = 2, aes(color = category)) +
+  geom_text(data = sec_avg_vis, aes(sec_x, sec_y, label = section), size = 7) +
+  theme(legend.text = element_text(size = 20), legend.title = element_text(size = 20), 
+        legend.position = c(0.08, 0.91)) + xlim(100, 300) + ylim(1500, 3500) + 
+  guides(colour = guide_legend(override.aes = list(size=5))) + labs(color = "Category")
+
+
+bridge$bridge_sec <- ifelse(bridge$section %in% c("modelo club 1", "modelo club 2", "modelo club 3"), "modelo club",
+       ifelse(bridge$section %in% c("bridge 1", "bridge 2", "bridge 3"), "bridge", "balcony"))
+
+left_join(bridge$bridge_sec %>% table() %>% as.data.frame() %>% rename(bridge_sec = "."), bridge %>% group_by(bridge_sec) %>% summarize_at(vars(price), list("Avg Price" = mean))) %>% rename("Section" = bridge_sec) %>% 
+  mutate(across(where(is.numeric), round, 2)) %>% arrange(-Freq) %>% gt() %>% gtstyle() %>% gtsave("tables/bridge_prices.html")
+
+```
+
+New Sections with clubs
+```{r}
+merged %>% group_by(new_sec) %>% summarize_at(vars(price), list(avg = mean)) %>% 
+  as.data.frame() %>% rename("Avg Price" = avg) %>% gt() %>% gtstyle() %>% gtsave("tables/new_secs.html")
+
+
+sec_avg_vis <- sec_avg
+sec_avg_vis <- left_join(sec_avg_vis, merged %>% group_by(section) %>% slice(1) %>% select(section, new_group, category, new_sec))
+sec_avg_vis$section <- sec_avg$section %>% str_remove_all("section ")
+
+ggplot(ind_seats, aes(seat_x, seat_y))  +
+  geom_point(size = 2, aes(color = new_sec)) +
+  geom_text(data = sec_visdata, aes(sec_x, sec_y, label = section), size = 12) +
+  theme(legend.text = element_text(size = 20), legend.title = element_text(size = 20), 
+        legend.position = c(0.08, 0.88)) + labs(color = "New Section") + guides(colour = guide_legend(override.aes = list(size=5)))
+```
+```{r}
+ggplot(filter(ind_seats, new_group == "floor"), aes(seat_x, seat_y)) +
+  geom_point()
+
+#floor seats plot
+ggplot(floor, aes(seat_x, seat_y, color = area)) +
+  geom_point(size = 7) + 
+  theme(legend.text = element_text(size = 20), legend.title = element_text(size = 20), 
+        legend.position = c(0.06, 0.91)) + guides(colour = guide_legend(override.aes = list(size=5)))
+
+floor %>% group_by(area) %>% summarise_at(vars(price), list(avg = mean)) %>% rename("Area" = area, "Avg Price" = avg) %>% 
+  gt() %>% gtstyle() %>% gtsave("tables/new_sections.html")
+```
+
+
+WCA graphs
+```{r}
+#lower bowl WCA graph
+ggplot(ind_seats %>% filter(group == "lower bowl"), aes(seat_x, seat_y))  +
+  geom_point(size = 3.7, aes(color = wca)) +
+  theme(legend.text = element_text(size = 20), legend.title = element_text(size = 20), 
+        legend.position = c(0.06, 0.91)) +
+  ggtitle("WCA sections in Lower Bowl") +
+  theme(plot.title = element_text(hjust = 0.5, size = 30)) + 
+  labs(color = "WCA") + guides(colour = guide_legend(override.aes = list(size=5)))
+
+#upper bowl WCA graph
+ggplot(ind_seats %>% filter(group == "upper bowl"), aes(seat_x, seat_y))  +
+  geom_point(size = 3.7, aes(color = wca)) +
+  theme(legend.text = element_text(size = 20), legend.title = element_text(size = 20), 
+        legend.position = c(0.06, 0.91)) +xlim(2200, 4700) + ylim(2000, 5000) +
+  ggtitle("WCA sections in Upper Bowl") +
+  theme(plot.title = element_text(hjust = 0.5, size = 30)) + 
+  labs(color = "WCA") + guides(colour = guide_legend(override.aes = list(size=5)))
+
+ggplot(ind_seats, aes(seat_x, seat_y))  +
+  geom_point(size = 5, aes(color = wca)) +
+  theme(legend.text = element_text(size = 20), legend.title = element_text(size = 20), 
+        legend.position = c(0.06, 0.91)) + xlim(120, 300) + ylim(1800, 3200) +
+  ggtitle("WCA sections in Bridge Area") +
+  theme(plot.title = element_text(hjust = 0.5, size = 30)) + 
+  labs(color = "WCA") + guides(colour = guide_legend(override.aes = list(size=5)))
+```
+
+
+Row analysis
+```{r}
+#Overall
+row_avgs <- bowl %>% group_by(row) %>% summarize_at(vars(price), list(avg = mean))
+ggplot(row_avgs, aes(row, avg)) +
+  geom_point(size = 5)  +
+  labs(title = "Average Ticket Price by Row", x = "Row", y = "Average Ticket Price") +
+  theme(plot.title = element_text(hjust = 0.5, size = 30), 
+        axis.title.x = element_text(size = 24), axis.text.x = element_text(size = 20),
+        axis.title.y = element_text(size = 24), axis.text.y = element_text(size = 20))
+  
+#Lower Bowl
+lower_bowl2 <- lower_bowl
+row_avgs <- lower_bowl %>% group_by(row) %>% summarize_at(vars(price), list(avg = mean))
+ggplot(row_avgs %>% filter(row != "WCA") %>% mutate_all(as.numeric), aes(row, avg)) +
+  geom_point(size = 5) +
+  geom_smooth(method = "lm") +
+  labs(title = "Lower Bowl Average Ticket Price by Row", x = "Row", y = "Average Ticket Price") +
+  theme(plot.title = element_text(hjust = 0.5, size = 30), 
+        axis.title.x = element_text(size = 24), axis.text.x = element_text(size = 20),
+        axis.title.y = element_text(size = 24), axis.text.y = element_text(size = 20)) + scale_x_continuous(breaks=c(1:27))
+lower_bowl2$row <- ifelse(lower_bowl2$frv == TRUE, "FRV", lower_bowl2$row)
+lower_bowl2$row <- ifelse(lower_bowl2$wca == TRUE, "WCA", lower_bowl2$row)
+row_avgs <- lower_bowl2 %>% group_by(row) %>% summarize_at(vars(price), list(avg = mean))
+row_avgs$row <- row_avgs$row %>% factor(levels = c("WCA", "FRV", "1",  "2",  "3",  "4",  "5",  "6",  "7",  "8",  "9",  "10",  "11",  
+                                   "12",  "13",  "14",  "15",  "16",  "17",  "18", "19",  "20", "21", "22", "23", "24", "25", "26", "27"))
+
+ggplot(row_avgs, aes(row, avg)) +
+  geom_point(size = 5) +
+  labs(title = "Lower Bowl Average Ticket Price by Row", x = "Row", y = "Average Ticket Price") +
+  theme(plot.title = element_text(hjust = 0.5, size = 30), 
+        axis.title.x = element_text(size = 24), axis.text.x = element_text(size = 20),
+        axis.title.y = element_text(size = 24), axis.text.y = element_text(size = 20))
+
+#Upper bowl
+upper_bowl2 <- upper_bowl
+row_avgs <- upper_bowl %>% group_by(row) %>% summarize_at(vars(price), list(avg = mean))
+ggplot(row_avgs %>% filter(row != "WCA") %>% mutate_all(as.numeric), aes(row, avg)) +
+  geom_point(size = 5) +
+  geom_smooth(method = "lm") +
+  labs(title = "Upper Bowl Average Ticket Price by Row", x = "Row", y = "Average Ticket Price") +
+  theme(plot.title = element_text(hjust = 0.5, size = 30), 
+        axis.title.x = element_text(size = 24), axis.text.x = element_text(size = 20),
+        axis.title.y = element_text(size = 24), axis.text.y = element_text(size = 20)) + 
+  scale_x_continuous(breaks=c(1:21))  + scale_y_continuous(breaks=c(110, 130, 150, 170, 190), limits = c(100,190)) 
+upper_bowl2$row <- ifelse(upper_bowl2$frv == TRUE, "FRV", upper_bowl2$row)
+upper_bowl2$row <- ifelse(upper_bowl2$wca == TRUE, "WCA", upper_bowl2$row)
+row_avgs <- upper_bowl2 %>% group_by(row) %>% summarize_at(vars(price), list(avg = mean))
+
+row_avgs$row <- row_avgs$row %>% factor(levels = c("WCA", "FRV", "1",  "2",  "3",  "4",  "5",  "6",  "7",  "8",  "9",  "10",  "11",  
+                                   "12",  "13",  "14",  "15",  "16",  "17",  "18", "19",  "20", "21"))
+ggplot(row_avgs, aes(row, avg)) +
+  geom_point(size = 5) +
+  labs(title = "Upper Bowl Average Ticket Price by Row", x = "Row", y = "Average Ticket Price") +
+  theme(plot.title = element_text(hjust = 0.5, size = 30), 
+        axis.title.x = element_text(size = 24), axis.text.x = element_text(size = 20),
+        axis.title.y = element_text(size = 24), axis.text.y = element_text(size = 20)) + 
+  scale_y_continuous(breaks=c(110, 130, 150, 170, 190), limits = c(100,190)) 
+```
+
+Bowl Models
+```{r}
+lower_bowl <- bowl %>% filter(group == "lower bowl")
+lower_bowl$row1 <- lower_bowl$row == "01"
+lower_bowl$row <- lower_bowl$row %>% as.numeric()
+lower_bowl$row <- ifelse(lower_bowl$wca == TRUE,19, lower_bowl$row)
+lb_model <- lm(price ~ win_pct + big_market + LAL + curry + weekend + new_time + new_days + new_sec + seat_offcenter*new_sec + row + row1 + frv + wca, data = lower_bowl)
+lb_model %>% summary()
+
+stargazer(lb_model, type = "text", no.space = TRUE, report = "vc", omit.stat = c("adj.rsq", "ser", "f"), digits = 2, out = "lb_model.html")
+
+
+
+
+upper_bowl <- bowl %>% filter(group == "upper bowl")
+upper_bowl$row1 <- upper_bowl$row == "01"
+upper_bowl$row <- upper_bowl$row %>% as.numeric()
+upper_bowl$row <- ifelse(upper_bowl$wca == TRUE,1, upper_bowl$row)
+ub_model <- lm(price ~ win_pct + big_market + LAL + curry + weekend + new_time + new_days + new_sec + seat_offcenter + row + row1 + frv + wca, 
+   data = upper_bowl)
+
+stargazer(ub_model, type = "text", no.space = TRUE, report = "vc", omit.stat = c("adj.rsq", "ser", "f"), digits = 2, out = "ub_model.html")
+
+
+
+#courtside model
+cs_model <- lm(price ~ win_pct + big_market + LAL + curry + weekend + new_time + new_days + row + off_pct*area, data = floor %>% filter())
+stargazer(cs_model, type = "text", no.space = TRUE, report = "vc", omit.stat = c("adj.rsq", "ser", "f"), digits = 2, out = "cs_model.html")
+```
+
+Graphs & Heatmaps
+```{r}
+#floor graph
+pred_df <- floor %>% group_by(section_row_seat) %>% slice(1)
+pred_df$win_pct <- 0.5
+pred_df$big_market <- TRUE
+pred_df$LAL <- "Other"
+pred_df$curry <- TRUE
+pred_df$weekend <- TRUE
+pred_df$new_time <- "7:00"
+pred_df$new_days <- "EVENT WEEK"
+pred_df$pred <- predict(cs_model, pred_df)
+
+ggplot(pred_df, aes(seat_x, seat_y, color = area, size = pred)) +
+  geom_point() + scale_size_continuous(range = c(0.5, 6)) + 
+  theme(legend.text = element_text(size = 20), legend.title = element_text(size = 20), 
+        legend.position = c(0.06, 0.88)) + labs(color = "Area") + labs(size= "Price ($)") + 
+  guides(colour = guide_legend(override.aes = list(size=5)))
+
+
+
+#lower bowl graph
+lb_pred_df <- lower_bowl %>% group_by(section_row_seat) %>% slice(1)
+lb_pred_df$win_pct <- 0.5
+lb_pred_df$big_market <- TRUE
+lb_pred_df$LAL <- "Other"
+lb_pred_df$curry <- TRUE
+lb_pred_df$weekend <- TRUE
+lb_pred_df$new_time <- "7:00"
+lb_pred_df$new_days <- "EVENT WEEK"
+lb_pred_df$pred <- predict(lb_model, lb_pred_df)
+
+ggplot(lb_pred_df, aes(seat_x, seat_y, color = pred)) +
+  geom_point(size = 3) + scale_color_gradient2(low = "green", mid = "yellow", high = "red", midpoint = 300) +  
+  theme(legend.text = element_text(size = 20), legend.title = element_text(size = 20), 
+        legend.position = c(0.06, 0.91)) + labs(color = "Price ($)")
+
+#upper bowl graph
+ub_pred_df <- upper_bowl %>% group_by(section_row_seat) %>% slice(1)
+ub_pred_df$win_pct <- 0.5
+ub_pred_df$big_market <- TRUE
+ub_pred_df$LAL <- "Other"
+ub_pred_df$curry <- TRUE
+ub_pred_df$weekend <- TRUE
+ub_pred_df$new_time <- "7:00"
+ub_pred_df$new_days <- "EVENT WEEK"
+ub_pred_df$pred <- predict(ub_model, ub_pred_df)
+
+ggplot(ub_pred_df, aes(seat_x, seat_y, color = pred)) +
+  geom_point(size = 3) + scale_color_gradient2(low = "green", mid = "yellow", high = "red", midpoint = 150) +
+  xlim(2100, 4500) +
+  ylim(2100, 4500) +
+  theme(legend.text = element_text(size = 20), legend.title = element_text(size = 20), 
+        legend.position = c(0.94, 0.91)) + labs(color = "Price ($)")
+
+
+#entire bowl
+ggplot(rbind(lb_pred_df, ub_pred_df), aes(seat_x, seat_y, color = pred)) +
+  geom_point() + scale_color_gradient2(low = "green", mid = "yellow", high = "red", midpoint = 200) + 
+  theme(legend.text = element_text(size = 20), legend.title = element_text(size = 20), 
+        legend.position = c(0.06, 0.91)) + labs(color = "Price ($)")
+```
+
+
+Identifying front row views:
+```{r}
+visdata <- ind_seats
+visdata$seat <- visdata$seat %>% str_remove_all("SEAT")
+visdata$row_seat <- paste0(visdata$row, "-", trimws(visdata$seat))
+
+ggplot(filter(visdata, section == "section 123" | section == "section 124"), aes(seat_x, seat_y)) +
+  geom_point(aes(color = row)) +
+  geom_text(aes(label = row_seat), vjust = 1.2, size = 4) + labs(title = "Sections 123 and 124") +
+  theme(plot.title = element_text(hjust = 0.5, size = 30))
+```
