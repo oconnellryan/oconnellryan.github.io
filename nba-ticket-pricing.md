@@ -67,10 +67,11 @@ The floor was split up by side:
 
 ### Seat Features
 **Row:** &nbsp;<br>
-The average ticket price decreases as you go back in rows:
+As expected, the average ticket price decreases as you go back in rows:
 ![Image](/assets/nba/row_avgs_graph.png)
 This is especially true in the lower bowl:
 ![Image](/assets/nba/lb_rows_graph.png)
+The trend is not as strong in the upper bowl:
 ![Image](/assets/nba/ub_rows.png)
 
 **Front Row Views (FRV):** &nbsp;<br>
