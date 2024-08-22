@@ -37,7 +37,7 @@ He did not miss as many games in 2023, but again these games had lower prices:
 &nbsp;<br>
 
 **Gametime:** &nbsp;<br>
-Most games were played at 7:00 local time. 25 games were played earlier, with 21 of these being played at 5:30. The earlier games had lower prices on average: &nbsp;<br>
+Most games were played at 7:00 local time. 25 games were played earlier (21 of the 25 earlier games were played at 5:30). The earlier games had lower prices on average: &nbsp;<br>
 ![Image](/assets/nba/new_times.png){: width="200" }
 
 &nbsp;<br>
