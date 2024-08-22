@@ -20,7 +20,7 @@ Opponents Matter. Playing big market teams and a higher opponent winning percent
 &nbsp;<br>
 
 **Weekday:** &nbsp;<br>
-Saturday games have the highest prices on average:
+Saturday games have the highest prices on average. However, there is not an overly clear trend regarding weekends:
 ![Image](/assets/nba/weekdays.png)
 
 &nbsp;<br>
