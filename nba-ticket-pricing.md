@@ -112,7 +112,7 @@ The model backs up the earlier findings regarding external game factors:
 &nbsp;<br>
 
 The following graph shows predicted lower bowl prices while holding external factors constant:
-![Image](/assets/nba/lb_heatmap.png)
+![Image](/assets/images/lb_heatmap.png)
 
 Specific to lower bowl:
 - Sideline club tickets are much more expensive, while general 100 tickets are slightly more expensive than the Pepsi club
