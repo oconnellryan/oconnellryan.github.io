@@ -1,7 +1,3 @@
----
-layout: page
-title: Ryan O'Connell's Portfolio
----
 
 Hi, I’m Ryan O'Connell — a data scientist specializing in sports analytics and economics. My work bridges the worlds of data and decision-making, turning raw numbers into actionable insights for sports and business. Explore my projects below!
 
