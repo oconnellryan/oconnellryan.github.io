@@ -2,7 +2,6 @@
 layout: page
 title: UFC Pay Per View Sales Analysis
 ---
-
 This project identified some of the factors most relevant to UFC pay per view sales. 
 
 ### Result highlights:
