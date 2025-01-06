@@ -1,4 +1,8 @@
-# Result highlights
+# UFC Pay Per View Sales Analysis
+
+This project identified some of the factors most relevant to UFC pay per view sales. 
+
+### Result highlights:
 People decide whether to buy a UFC card based almost entirely on the quality of the main event. Champions with high fighting output sell more cards. Specifically, this means they do the folowing in their fights:
  - Land a high amount of strikes per minute
  - Knock down their opponents
@@ -15,5 +19,7 @@ Fans are more likely to buy cards with main events in these weight classes:
  - Women's Bantamweight
 
 A light heavyweight main event has lead to the worst pay per view sales
+
+[Read Full Paper](https://oconnellryan.github.io/assets/nba/ryan_oconnell-ufc_ppv_analysis.pdf) &nbsp;<br>
 
 
