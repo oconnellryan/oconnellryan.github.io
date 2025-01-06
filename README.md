@@ -4,7 +4,7 @@ Hi, I’m Ryan O'Connell — a data scientist specializing in sports analytics a
 
 **Sports Game Data Analytics:**
 
-Delve into my analyses of in-game performance, player evaluation, and scoring trends. From MMA fighter profiling to Quarterback evaluation, these projects leverage cutting-edge techniques to uncover insights about the sports we love.
+The following focus work focuses on in-game performance, player evaluation, and scoring trends.
 &nbsp;<br>
 [![Image](assets/images/ufc_button.png)](https://oconnellryan.github.io/ufc-judging-analysis.html)
 
@@ -12,8 +12,9 @@ Delve into my analyses of in-game performance, player evaluation, and scoring tr
 
 **Economic and Business Analytics in Sports:**
 
-Explore the economic side of sports, including fan behavior modeling and revenue optimization. These projects highlight the business mechanics driving the games behind the scenes.
+These explore the economic side of sports, including fan behavior and revenue optimization.
 &nbsp;<br>
+[![Image](assets/images/nba_button.png)](https://oconnellryan.github.io/nba-ticket-pricing.html)
 [![Image](assets/images/nba_button.png)](https://oconnellryan.github.io/nba-ticket-pricing.html)
 
 
