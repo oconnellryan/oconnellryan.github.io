@@ -18,4 +18,7 @@ These projects explore the economic side of sports, including fan behavior and r
 [NBA Ticket Pricing](https://oconnellryan.github.io/nba-ticket-pricing.html) &nbsp;<br>
 [UFC Pay Per View Sales](https://oconnellryan.github.io/ufc_ppv.html)
 
+&nbsp;<br>
 
+**Connect With Me:**
+[LinkedIn](https://www.linkedin.com/in/ryan-m-oconnell/)
