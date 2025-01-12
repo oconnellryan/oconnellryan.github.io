@@ -20,5 +20,5 @@ These projects explore the economic side of sports, including fan behavior and r
 
 &nbsp;<br>
 
-**Connect With Me:**
+**Connect With Me:** &nbsp;<br>
 [LinkedIn](https://www.linkedin.com/in/ryan-m-oconnell/)
