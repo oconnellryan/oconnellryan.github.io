@@ -6,7 +6,7 @@ A collection of my Sports Analytics and Sports Business Analytics projects.
 
 The following projects focus on in-game performance, player evaluation, and scoring trends.
 &nbsp;<br>
-![Image](/assets/images/ufc_7.png)(https://oconnellryan.github.io/ufc_ppv.html)
+[![Image](/assets/images/ufc_7.png)](https://oconnellryan.github.io/ufc_ppv.html)
 &nbsp;<br>
 [UFC Judging Criteria](https://oconnellryan.github.io/ufc-judging-analysis.html)
 
