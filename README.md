@@ -7,12 +7,13 @@ Hi, I’m Ryan O'Connell — a data scientist specializing in sports analytics a
 
 The following projects focus on in-game performance, player evaluation, and scoring trends.
 &nbsp;<br>
+![Image](/assets/images/ufc_judging_button.png)
 [UFC Judging Criteria](https://oconnellryan.github.io/ufc-judging-analysis.html)
 
 &nbsp;<br>
 
 **Economic and Business Analytics in Sports:**
-
+![Image](/assets/images/nba_button.png)
 These projects explore the economic side of sports, including fan behavior and revenue optimization.
 &nbsp;<br>
 [NBA Ticket Pricing](https://oconnellryan.github.io/nba-ticket-pricing.html) &nbsp;<br>
