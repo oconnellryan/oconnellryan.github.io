@@ -7,7 +7,7 @@ Hi, I’m Ryan O'Connell — a data scientist specializing in sports analytics a
 
 The following projects focus on in-game performance, player evaluation, and scoring trends.
 &nbsp;<br>
-![Image](/assets/images/ufc_judging_button.png)
+![Image](/assets/images/ufc_2.png)
 [UFC Judging Criteria](https://oconnellryan.github.io/ufc-judging-analysis.html)
 
 &nbsp;<br>
