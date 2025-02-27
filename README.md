@@ -1,5 +1,4 @@
-
-Hi, I’m Ryan O'Connell — a data scientist specializing in sports analytics and economics. My work bridges the worlds of data and decision-making, turning raw numbers into actionable insights for sports and business. Explore my projects below!
+A collection of my Sports Analytics and Sports Business Analytics projects.
 
 &nbsp;<br>
 
@@ -7,7 +6,7 @@ Hi, I’m Ryan O'Connell — a data scientist specializing in sports analytics a
 
 The following projects focus on in-game performance, player evaluation, and scoring trends.
 &nbsp;<br>
-![Image](/assets/images/ufc_3.png)
+![Image](/assets/images/ufc_4.png)
 [UFC Judging Criteria](https://oconnellryan.github.io/ufc-judging-analysis.html)
 
 &nbsp;<br>
