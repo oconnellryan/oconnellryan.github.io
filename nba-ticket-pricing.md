@@ -32,7 +32,7 @@ Steph Curry missed 15 games in 2022, and we can see the average ticket prices dr
 
 He did not miss as many games in 2023, but again these games had lower prices:
 ![Image](/assets/nba/curry_23_graph.png)
-![Image](/assets/nba/curry_23.png){: width="200" }
+[![Image](/assets/nba/curry_23.png)]{: width="200" }
 
 &nbsp;<br>
 
