@@ -2,9 +2,8 @@ A collection of my Sports Analytics and Sports Business Analytics projects.
 
 &nbsp;<br>
 
-**Sports Game Data Analytics:**
-
-The following projects focus on in-game performance, player evaluation, and scoring trends.
+**UFC Fight Analytics:**
+These projects analyze the results and statistics of UFC fights to form insights on judging tendecies, fighter performance and more.
 &nbsp;<br>
 [![Image](/assets/images/ufc_judging_analysis.png)](https://oconnellryan.github.io/ufc_ppv.html)
 &nbsp;<br>
