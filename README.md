@@ -17,6 +17,12 @@ These projects explore the economic side of sports, including fan behavior and r
 [![Image](/assets/images/ufc_ppv_analysis.png)](https://oconnellryan.github.io/ufc_ppv.html)  &nbsp;<br>
 
 &nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+&nbsp;<br>
 
 **Connect With Me:** &nbsp;<br>
 [LinkedIn](https://www.linkedin.com/in/ryan-m-oconnell/)
