@@ -15,7 +15,7 @@ These projects explore the economic side of sports, including fan behavior and r
 &nbsp;<br>
 [![Image](/assets/images/nba_ticket_pricing.png)](https://oconnellryan.github.io/nba-ticket-pricing.html)  &nbsp;<br>
 &nbsp;<br>
-[![Image](/assets/images/ufc_ppv_analysis.png)](https://oconnellryan.github.io/ufc_ppv.html)  &nbsp;<br>
+[![Image](/assets/images/ufc_ppv_analysis.png)](https://oconnellryan.github.io/ufc_ppv_modeling.html)  &nbsp;<br>
 
 &nbsp;<br>
 &nbsp;<br>
