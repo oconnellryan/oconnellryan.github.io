@@ -15,7 +15,6 @@ The following projects focus on in-game performance, player evaluation, and scor
 These projects explore the economic side of sports, including fan behavior and revenue optimization.
 &nbsp;<br>
 [![Image](/assets/images/nba_ticket_pricing.png)](https://oconnellryan.github.io/nba-ticket-pricing.html)  &nbsp;<br>
-[NBA Ticket Pricing](https://oconnellryan.github.io/nba-ticket-pricing.html) &nbsp;<br>
 [![Image](/assets/images/ufc_ppv_analysis.png)](https://oconnellryan.github.io/ufc_ppv.html)  &nbsp;<br>
 
 &nbsp;<br>
