@@ -28,7 +28,7 @@ Saturday games have the highest prices on average. However, there is not an over
 **Star Players:** &nbsp;<br>
 Steph Curry missed 15 games in 2022, and we can see the average ticket prices dropped quickly in the periods he missed games due to injury:
 ![Image](/assets/nba/curry_22_graph.png)
-![Image](/assets/nba/curry_22.png){: width="200" }
+[![Image](/assets/nba/curry_22.png)]{: width="200" }
 
 He did not miss as many games in 2023, but again these games had lower prices:
 ![Image](/assets/nba/curry_23_graph.png)
