@@ -2,7 +2,7 @@
 layout: page
 title: NBA Ticket Pricing
 ---
-In this project I created a predictive model of NBA ticket prices. 2 seasons of Golden State Warriors ticket sales data (provided by the NBA) as well as external game data including opponents and injuries were used for this analysis.
+As my capstone project for the NBA Future Analytics Stars Program, I developed a predictive model for NBA ticket prices.  Using two seasons of Golden State Warriors ticket sales data (provided by the NBA) along with additional external game data, I identified key factors influencing ticket demand and pricing. My project was selected as a finalist in the program’s capstone competition.
 
 
 ## Result Highlights
