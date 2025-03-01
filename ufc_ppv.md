@@ -22,6 +22,6 @@ Fans are more likely to buy cards with main events in these weight classes:
 
 A light heavyweight main event has lead to the worst pay per view sales
 
-[Read Full Paper](https://oconnellryan.github.io/assets/ufc_ppv_analysis.pdf) &nbsp;<br>
+[Read Full Paper](https://oconnellryan.github.io/assets/ufc_ppv_modeling.pdf) &nbsp;<br>
 
 
