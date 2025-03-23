@@ -9,3 +9,9 @@ The predictors used in this model are significant strikes landed (broken up by t
 &nbsp;<br>
 So for the round pictured above, the difference in significant head strikes is 2 in favor of Jan Blachowicz, and the difference in significant leg strikes is also 2 for Blachowicz. All of the other differences are zero as the body strikes are the same, and there are no other stats recorded. With these stats, the model predicted Jan had a 63% chance of winning round 1.
 
+&nbsp;<br>
+
+### Live Win Probability Graphs
+
+Utilizing a script that scrapes the ESPN fightcenter data every time it updates (about every 10 seconds during rounds), I can create a graph of the incremental win probability at any point duuring the round. Here is an example of one of these:
+<img src="/assets/ufc/graph.png" alt="Image" width="650"/>
