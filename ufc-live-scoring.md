@@ -17,5 +17,5 @@ Utilizing a script that scrapes the ESPN fightcenter data every time it updates 
 <img src="/assets/ufc/win_prob_graph.png" alt="Image" width="800"/>
 
 &nbsp;<br>
-**Want to see this in action?**
+**Want to see this in action?**&nbsp;<br>
 I post live scores and visuals during UFC events on Twitter [@KOTrends](https://twitter.com/KOTrends)
