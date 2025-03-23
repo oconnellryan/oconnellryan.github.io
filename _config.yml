@@ -1,12 +1,9 @@
-
-
 # Site settings
 title: "Ryan O'Connell's Projects"
 author:
   name: "Ryan O'Connell"
   email: ryan.m.oconnell@outlook.com
-description:
+description: "Personal project portfolio"
 
 # Build settings
-#remote_theme: jekyll/minima
 theme: minima
