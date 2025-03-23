@@ -18,4 +18,4 @@ Utilizing a script that scrapes the ESPN fightcenter data every time it updates 
 
 &nbsp;<br>
 **Want to see this in action?**&nbsp;<br>
-I post live scores and visuals during UFC events on Twitter [@KOTrends](https://twitter.com/KOTrends)
+I post live scores and visuals during UFC events on X (Twitter) [@KOTrends](https://twitter.com/KOTrends)
