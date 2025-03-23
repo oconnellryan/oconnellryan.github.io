@@ -8,4 +8,16 @@ description:
 # Build settings
 remote_theme: jekyll/minima
 
-header_pages:
+# Example for a header with Home, About, and Blog
+title: My GitHub Site
+theme: minima
+
+# These control the navigation links
+minima:
+  navigation:
+    - title: "Home"
+      url: "/"
+    - title: "About"
+      url: "/about/"
+    - title: "Blog"
+      url: "/blog/"
