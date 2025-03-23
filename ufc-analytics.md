@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Live UFC Scoring Model
+title: UFC Fight Analytics
 ---
 
 &nbsp;<br>
-[![Image](/assets/images/ufc_judging_analysis.png)](https://oconnellryan.github.io/ufc-judging-analysis.html)
+
+[![Image](/assets/images/live_scoring_model.png)](https://oconnellryan.github.io/ufc-judging-analysis.html)
