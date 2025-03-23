@@ -1,3 +1,7 @@
+[Home](nba-ticket-pricing.html) | [About](about.html) | [Resume](resume.html)
+
+---
+
 # Site settings
 title: "Ryan O'Connell's Projects"
 author:
@@ -7,17 +11,3 @@ description:
 
 # Build settings
 remote_theme: jekyll/minima
-
-# Example for a header with Home, About, and Blog
-title: My GitHub Site
-theme: minima
-
-# These control the navigation links
-minima:
-  navigation:
-    - title: "Home"
-      url: "/"
-    - title: "About"
-      url: "/ufc-judging-analysis"
-    - title: "Blog"
-      url: "/nba-ticket-pricing"
