@@ -13,5 +13,5 @@ So for the round pictured above, the difference in significant head strikes is 2
 
 ### Live Win Probability Graphs
 
-Utilizing a script that scrapes the ESPN fightcenter data every time it updates (about every 10 seconds during rounds), I can create a graph of the incremental win probability at any point duuring the round. Here is an example of one of these: &nbsp;<br>
+Utilizing a script that scrapes the ESPN fightcenter data every time it updates (about every 10 seconds during rounds), I can create a graph of the real-time win probability at any point duuring the round. Here is an example of one of these: &nbsp;<br>
 <img src="/assets/ufc/win_prob_graph.png" alt="Image" width="800"/>
