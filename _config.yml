@@ -6,5 +6,5 @@ author:
 description: "Personal project portfolio"
 
 # Build settings
-theme: minima
+theme: jekyll-theme-minimal
 #remote_theme: jekyll/minima
