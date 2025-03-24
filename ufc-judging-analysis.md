@@ -2,12 +2,19 @@
 layout: page
 title: UFC Judging Analysis
 ---
-The goal of this project was to idenity the factors most relevant in UFC judging. Additionally, I wanted to identify individual bias and identify the specific criteria that is important to individual judges. A binomial GLM model as well as a decision tree & random forest model were created in order to do this.
+The goal of this project was to identify the importance of relevant factors of UFC Judging and identify how individual judges value these factors differently. This began as my Senior Thesis project that was completed in May 2024 at Syracuse University, and I have since improved upon the methods as well as added to it.
 
-## Project Highlights:
+## Project Walkthrough:
 
-### Binomial GLM Model
-This model utilizes differences in fighter statistics to model the winner of a round. Differences between the two fighters for the following statistics were used:
+### Data & Methodology
+Round by round scorecard data was scraped from mmadecisions.com. The fight data used for this project was scraped from ufcstats.com. 
+
+The fight data included significant strikes landed with two different breakdowns. The first breakdown, which I will refer to as the target data, is broken down by whether the strike was landed to the head, body or legs. The second significant strike breakdown is by whether they were landed at distance, in the clinch or on the ground, so I will call this the positional breakdown. Aside from significant strikes landed, the fight data also included knockdowns, non-significant strikes landed, control time, takedowns landed, reversals and submission attempts.
+
+In order to remove the red vs. blue corner effect, I randomly assigned each fighter's data to one of two sets of columns. After fighters were randomly assigned for each round, I calculated the difference between each of the statistics mentioned above between the two fighters. The differences of these statistics will then be used to predict the win probability of fighter 1 in the models. 
+
+### Binomial GLM Models
+The main GLM model utilized the target data as this seemed to be the more valuable breakdown as well as the stronger model. 
 - **head**: significant strikes landed to the head
 - **body**: significant strikes landed to the body
 - **leg**: significant strikes landed to the leg
