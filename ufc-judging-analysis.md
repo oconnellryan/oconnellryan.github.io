@@ -14,7 +14,7 @@ The fight data included significant strikes landed with two different breakdowns
 In order to remove the red vs. blue corner effect, I randomly assigned each fighter's data to one of two sets of columns. After fighters were randomly assigned for each round, I calculated the difference between each of the statistics mentioned above between the two fighters. The differences of these statistics will then be used to predict the win probability of fighter 1 in the models. 
 
 ### Binomial GLM Models
-The main GLM model utilized the target data as this seemed to be the more valuable breakdown as well as the stronger model. Here are the results after running this model: &nbsp;<br>
+Here are the results of the binomial GLM models ran using each of the avaiable significant strike breakdowns: &nbsp;<br>
 <img src="/assets/ufc/target_model.png" alt="Image" width="500"/> <img src="/assets/ufc/position_model.png" alt="Image" width="500"/> &nbsp;<br> 
 
 You can see that the target model has identified the head as the most important target to the judges. Both models also backs up the fact that knockdowns are extremely impactful to winning rounds. Takedowns and reversals are valued essentially the same, and will improve the log odds of winning a round by about as much as 50 seconds of control time. A submission attempt is valued more than twice as highly as a reversal or takedown.
