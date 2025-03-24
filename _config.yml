@@ -7,7 +7,7 @@ description: "Personal project portfolio"
 
 # Build settings
 #theme: jekyll-theme-minima
-remote_theme: jekyll/minima
+remote_theme: pages-themes/cayman
 plugins:
   - jekyll-remote-theme
 
