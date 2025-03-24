@@ -13,7 +13,7 @@ The official UFC rankings are often influenced more by promotion than performanc
 This formula was originally designed based off of ELO ratings used in chess. In chess, the Elo system assigns each player a rating that reflects their skill level. After each game, a player’s rating goes up or down depending on the opponent’s rating and the match outcome—beating a higher-rated player gives a bigger boost, while losing to a lower-rated player causes a bigger drop.
 
 The fighter rankings I have created work very similary. The formula goes through all UFC Fights since UFC 17 in chronological order, and adjusts both fighter ratings after each fight. If a fighter has not fought in the UFC, they are given a default rating (). For each fight in the data, the model calculates the expected win probability using the following formula (for the winner): &nbsp;<br>
-&nbsp;&nbsp;&nbsp;expected_win_prob = 1 / (1 + 10 ** ((loser_rating - winner_rating) / s)) &nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*expected_win_prob = 1 / (1 + 10 ** ((loser_rating - winner_rating) / s)) &nbsp;<br>*
 &nbsp;<br>
 
 The expected win probability of the winner is then used in this formula to calculate the new rating of the winner: &nbsp;<br>
