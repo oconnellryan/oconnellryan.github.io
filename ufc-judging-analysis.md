@@ -27,11 +27,16 @@ Because all distance strikes are defined as significant strikes, it makes sense 
 After the glm models were created, I was able to use these to indetify individual judges' scoring biases. In order to do this, a subset of the data was created for each judge to be examined. I then repeated this process for each of the judges:
  1. Two new winner variables were created. Judge winner indicated who the selected judge had winning the round, and Non-judge winner was the winner selected by the other two judges. Rounds where the other two judges disagreed were dropped.
  2. These new variables were used to create two models for each judge: The Judge model fitted on the Judge winner variable and the Non-judge model fitted on the Non-judge winner variable.
- 3. A wald test was run to test if the differences of the coeficcients between the two models were significant, and a graph was created to compare the coeficcients.
-**This Process was also repeated using both the target & position model to examine all variables**
+ 3. A wald test was run to test if the differences of the coeficcients between the two models were significant, and a graph was created to compare the coeficcients. &nbsp;<br>
+*This Process was also repeated using both the target & position model to examine all variables*
 
 Here is an example of the target output graphs for one of the judges (Derek Cleary):
-<img src="/assets/ufc/cleary_target_graph.png" alt="Image" width="700"/>
+<img src="/assets/ufc/cleary_target_graph.png" alt="Image" width="700"/> &nbsp;<br>
+Looking at the error bars, you can see that there is a statistically significant difference in how Derek Cleary values significant strikes to the head & body compared to other judges (Cleary scores them both lower). While not statistically significant, we can also see that he seems to have scored submission attempts slightly higher. &nbsp;<br>
+
+We can also examine the alternative graph for the position models: 
+<img src="/assets/ufc/cleary_position_graph.png" alt="Image" width="700"/> &nbsp;<br>
+In this graph, the only statistically significant difference that can be seen is in significant distance strikes.
 
 ![Image](/assets/images/judges.png)
 We can see the differences in how individual judges score fights here. Judges with higher coeficcient ratios for the blue points are more grappler friendly (ex: Eric Colon). Derek Cleary seems to prefer grapplers who are very active on the ground with reversals and submissions, whereas grapplers with the ability to take down their opponent and control them should do well on Sal D'Amato's scorecards Chris Lee seem to favor strikes landed to the head, whereas Junichiro Kamijo heavily favors strikes to the leg. Michael Bell values events with fight ending potential (knockdowns & submission attempts) very highly.
