@@ -39,3 +39,11 @@ While the formula above does a good job of capturing fighter merit, they do not 
 Rating decay does not begin until 270 days since a fighter has fought (about 9 months). When it has been exactly 270 days since a their last fight, a fighter's rating is decreased 3%. Additionally, they are now placed on the decay clock which will decrease their rating another 3% after each 90 days of subsequent inactivity. The only way this decay clock resets is when a fighter participates in a fight (win or lose).
 
 
+### Future Implementations
+
+While this model does a good job of ranking fighters, there are still some ways I would like to improve it. There are many ways it could be tweaked, and the next addition I am working on is controlling for weight classes. The difficulty here is that changing weight classes is not always a disadvantage, so I am thinking about only including this for champion vs champion fights (although very rare).
+
+On a larger scale, it would be nice to have better ratings for a fighters first UFC fight. This limitation is currently due to data, but I am working on scraping fighter's previous fights before they entered the UFC to try to expand this formula outside of the UFC as well as assigning better ratings in UFC debuts.
+
+
+
