@@ -14,16 +14,9 @@ The fight data included significant strikes landed with two different breakdowns
 In order to remove the red vs. blue corner effect, I randomly assigned each fighter's data to one of two sets of columns. After fighters were randomly assigned for each round, I calculated the difference between each of the statistics mentioned above between the two fighters. The differences of these statistics will then be used to predict the win probability of fighter 1 in the models. 
 
 ### Binomial GLM Models
-The main GLM model utilized the target data as this seemed to be the more valuable breakdown as well as the stronger model. 
-- **head**: significant strikes landed to the head
-- **body**: significant strikes landed to the body
-- **leg**: significant strikes landed to the leg
-- **nonsig**: non-significant strikes landed to any part of the body
-- **kd**: knockdowns landed
-- **td**: takedowns landed
-- **rev**: reversals
-- **ctrl**: control time (minutes)
-- **sub**: submission attempts
+The main GLM model utilized the target data as this seemed to be the more valuable breakdown as well as the stronger model. Here are the results after running this model
+![Image](/assets/ufc/target_model.png)
+
 
 The following output shows the log odds ratio for each of the predictors:
 ![Image](/assets/images/log_odds.png)
