@@ -49,6 +49,11 @@ Using the same Judge & Non-judge models from earlier, I then repeated this proce
 With this formula, positive sgps numbers represent a striker preference whereas negative numbers indicate a grappler preference. The following graph showcases the striker vs. grappler preference of the 30 UFC Judges with the most rounds judged:
 <img src="/assets/ufc/sgps_graph.png" alt="Image" width="700"/> &nbsp;<br>
 
+### Judge Report Cards
+
+Utilizing the sgps scores created along with the coeficcient difference graophs above, I have creaated judge report cards for many of the judges with a high amount of rounds judges. Here is an example of the report card for Derek Cleary, whose coeficcients we examined earlier:
+<img src="/assets/ufc/cleary_report_card.png" alt="Image" width="400"/> &nbsp;<br>
+
 
 ### Decision Tree & Random Forest Model:
 In addition to the binomial GLM model created, a decision tree and random forest were created to judge rounds. Most of the variables are the same here, but instead of the significant strikes being broken down by target (head, body legs), they are broken down by where the striking occured (distance, ground or clinch). This data will allow the decision trees to identify different types of fights, such as a round where one fighter dominated on the ground but lost on the feet. The main decision tree is shown below:
