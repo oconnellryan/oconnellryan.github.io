@@ -22,7 +22,6 @@ The fighter rankings I have created work very similary. The formula goes through
 The expected win probability of the winner is then used in this formula to calculate the new rating of the winner: &nbsp;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;*winner_new_rating = winner_rating + k * m * t * (1 - expected_win_prob)*(1 + loser_rating/40000)* &nbsp;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;*loser_new_rating = loser_rating + k * m * (0 - expected_loser*(1 - winner_rating/40000))* &nbsp;<br>
-  &nbsp;<br>
 
 The final part of the formula - (1 + loser_rating/40000) - gives the winner a larger boost for taking out a highly rated opponent. So  this part of the formula would give higher ratings boost to am 800 rated fighter who just defeated another 800 rated fighter than a 300 rated fighter who defeated another 300 rated fighter. 
 
