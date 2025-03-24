@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Home
 ---
 A collection of my Sports Analytics and Sports Business Analytics projects.
