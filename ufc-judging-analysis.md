@@ -38,8 +38,17 @@ We can also examine the alternative graph for the position models:
 <img src="/assets/ufc/cleary_position_graph.png" alt="Image" width="700"/> &nbsp;<br>
 In this graph, the only statistically significant difference that can be seen is in significant distance strikes.
 
-![Image](/assets/images/judges.png)
-We can see the differences in how individual judges score fights here. Judges with higher coeficcient ratios for the blue points are more grappler friendly (ex: Eric Colon). Derek Cleary seems to prefer grapplers who are very active on the ground with reversals and submissions, whereas grapplers with the ability to take down their opponent and control them should do well on Sal D'Amato's scorecards Chris Lee seem to favor strikes landed to the head, whereas Junichiro Kamijo heavily favors strikes to the leg. Michael Bell values events with fight ending potential (knockdowns & submission attempts) very highly.
+### Striker-Grappler Preference Scores
+While the graphs above do a good job of showcasing specific judge tendencies, I also wanted to create a single metric that identifies their preference of strikers versus grapplers. In order to do this, the position model was used and the predictors were first broken into striking and grappling predictors. Striking predictors included significant distance strikes, significant clinch strikes and knockdowns. Grappling predictors included significant ground strikes, takedowns, control time, submission attempts and reversals. 
+
+Using the same Judge & Non-judge models from earlier, I then repeated this process for each judge:
+ 1. 4 values were calculated: str_j (sum of the judge model striking coeficcients), gra_j (sum of the judge model grappling coeficcients), str_nj (sum of the non-judge model striking coeficcients) and gra_nj (sum of the non-judge model grappling coeficcients)
+ 2. str_ratio was calculated as str_j/str_nj and gra_ratio was calculated as gra_j/gra_nj
+ 3. The final sgps score was calculated as log(str_ratio/gra_ratio)
+
+With this formula, positive sgps numbers represent a striker preference whereas negative numbers indicate a grappler preference. The following graph showcases the striker vs. grappler preference of the 30 UFC Judges with the most rounds judged:
+<img src="/assets/ufc/sgps_graph.png" alt="Image" width="700"/> &nbsp;<br>
+
 
 ### Decision Tree & Random Forest Model:
 In addition to the binomial GLM model created, a decision tree and random forest were created to judge rounds. Most of the variables are the same here, but instead of the significant strikes being broken down by target (head, body legs), they are broken down by where the striking occured (distance, ground or clinch). This data will allow the decision trees to identify different types of fights, such as a round where one fighter dominated on the ground but lost on the feet. The main decision tree is shown below:
