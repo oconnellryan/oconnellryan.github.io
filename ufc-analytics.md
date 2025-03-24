@@ -8,7 +8,7 @@ Scoring Bot I created that tweets out predicted scores of UFC rounds live: &nbsp
 [![Image](/assets/buttons/live_scoring_model.png)](https://oconnellryan.github.io/ufc-live-scoring.html)
 
 Project focused on using models to identify individual UFC Judge tendencies: &nbsp;<br>
-[![Image](/assets/buttons/ufc_judging_analysis.png)](https://oconnellryan.github.io/ufc-live-scoring.html)
+[![Image](/assets/buttons/ufc_judging_analysis.png)](https://oconnellryan.github.io/ufc-judging.html)
 
 &nbsp;<br>
 Fighter Rankings Formula I created: &nbsp;<br>
