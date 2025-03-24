@@ -8,6 +8,13 @@ title: UFC Rankings Formula
 The official UFC rankings are often influenced more by promotion than performance. Voted on by an unkown media panel they can reflect hype, star power, and marketing priorities over merit. Fighters with UFC favor often receive fast-track opportunities, while others are stalled despite consistent wins. This is why an I have created an unbiased ranking formula that ranks fighters based on merit.
 
 
+<iframe 
+  src="https://yourname.shinyapps.io/your-app-name/](https://ryanoconnell.shinyapps.io/rankings/" 
+  width="50%" 
+  height="800" 
+  style="border:none;">
+</iframe>
+
 ### My Rankings Formula Explained
 
 This formula was originally designed based off of ELO skill ratings used in chess. After each game, a player’s rating goes up or down depending on the opponent’s rating. Beating a higher-rated player than you gives a bigger ELO boost, while losing to a player rated lower than you causes a bigger drop. 
