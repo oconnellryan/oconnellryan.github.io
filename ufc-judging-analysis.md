@@ -15,7 +15,8 @@ In order to remove the red vs. blue corner effect, I randomly assigned each figh
 
 ### Binomial GLM Models
 The main GLM model utilized the target data as this seemed to be the more valuable breakdown as well as the stronger model. Here are the results after running this model
-![Image](/assets/ufc/target_model.png)
+
+<img src="/assets/ufc/target_model.png" alt="Image" width="500"/> &nbsp;<br>
 
 
 The following output shows the log odds ratio for each of the predictors:
