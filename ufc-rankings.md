@@ -12,12 +12,14 @@ The official UFC rankings are often influenced more by promotion than performanc
 
 This formula was originally designed based off of ELO ratings used in chess. In chess, the Elo system assigns each player a rating that reflects their skill level. After each game, a player’s rating goes up or down depending on the opponent’s rating and the match outcome—beating a higher-rated player gives a bigger boost, while losing to a lower-rated player causes a bigger drop.
 
-The fighter rankings I have created work very similary. The formula goes through all UFC Fights since UFC 17 in chronological order, and adjusts both fighter ratings after each fight. If a fighter has not fought in the UFC, they are given a default rating (). For each fight in the data, the model calculates the expected win probability using the following formula (for the winner):
-  expected_win_prob = 1 / (1 + 10 ** ((loser_rating - winner_rating) / s))
+The fighter rankings I have created work very similary. The formula goes through all UFC Fights since UFC 17 in chronological order, and adjusts both fighter ratings after each fight. If a fighter has not fought in the UFC, they are given a default rating (). For each fight in the data, the model calculates the expected win probability using the following formula (for the winner): &nbsp;<br>
+  expected_win_prob = 1 / (1 + 10 ** ((loser_rating - winner_rating) / s)) &nbsp;<br>
+&nbsp;<br>
 
-The expected win probability of the winner is then used in this formula to calculate the new rating of the winner:
-  winner_rating + k * m * t * (1 - expected_win_prob)*(1 + loser_rating/40000)
-  loser_new_rating = loser_rating + k * m * (0 - expected_loser*(1 - winner_rating/40000))
+The expected win probability of the winner is then used in this formula to calculate the new rating of the winner: &nbsp;<br>
+  winner_rating + k * m * t * (1 - expected_win_prob)*(1 + loser_rating/40000) &nbsp;<br>
+  loser_new_rating = loser_rating + k * m * (0 - expected_loser*(1 - winner_rating/40000)) &nbsp;<br>
+  &nbsp;<br>
 
 The final part of the formula - (1 + loser_rating/40000) - gives the winner a larger boost for taking out a highly rated opponent. So  this part of the formula would give higher ratings boost to am 800 rated fighter who just defeated another 800 rated fighter than a 300 rated fighter who defeated another 300 rated fighter. k is a constant the same for every fight.
 
