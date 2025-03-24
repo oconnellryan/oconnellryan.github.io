@@ -8,7 +8,7 @@ title: UFC Rankings Formula
 The official UFC rankings are often influenced more by promotion than performance. Voted on by an unkown media panel they can reflect hype, star power, and marketing priorities over merit. Fighters with UFC favor often receive fast-track opportunities, while others are stalled despite consistent wins. This is why an I have created an unbiased ranking formula that ranks fighters based on merit.
 
 
-### The Rankings Formula Explained
+### My Rankings Formula Explained
 
 This formula was originally designed based off of ELO skill ratings used in chess. After each game, a player’s rating goes up or down depending on the opponent’s rating. Beating a higher-rated player than you gives a bigger ELO boost, while losing to a player rated lower than you causes a bigger drop. 
 
@@ -41,9 +41,9 @@ Rating decay does not begin until 270 days since a fighter has fought (about 9 m
 
 ### Future Implementations
 
-While this model does a good job of ranking fighters, there are still some ways I would like to improve it. There are many ways it could be tweaked, and the next addition I am working on is controlling for weight classes. The difficulty here is that changing weight classes is not always a disadvantage, so I am thinking about only including this for champion vs champion fights (although very rare).
+While this model does a good job of ranking fighters, there are still some ways I would like to improve it. The next addition I am working on is controlling for weight classes. The difficulty here is that changing weight classes is not always a disadvantage, so I am thinking about only including this for champion vs champion fights (although these are very rare).
 
-On a larger scale, it would be nice to have better ratings for a fighters first UFC fight. This limitation is currently due to data, but I am working on scraping fighter's previous fights before they entered the UFC to try to expand this formula outside of the UFC as well as assigning better ratings in UFC debuts.
+On a larger scale, it would be nice to have better ratings for a fighters first UFC fight. This limitation is currently due to data, but I am working on scraping fighter's previous fights before they entered the UFC. With more data, I could potentially expand this model well outside of the UFC which would also give more accurate ratings for fighter's UFC debuts.
 
 
 
