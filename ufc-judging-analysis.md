@@ -7,14 +7,14 @@ title: ""
 The goal of this project was to identify the importance of relevant factors in UFC Judging and identify how individual judges value these factors differently. This began as my Senior Thesis project that was completed in May 2024 at Syracuse University, and I have since improved upon the methods as well as added to it.
 
 ### Project Walkthrough:
-#### Data & Methodology
+#### Data & Methodology:
 Round by round scorecard data was scraped from mmadecisions.com. The fight data used for this project was scraped from ufcstats.com. 
 
 The fight data included significant strikes landed with two different breakdowns. The first breakdown, which I will refer to as the target data, is broken down by whether the strike was landed to the head, body or legs. The second significant strike breakdown is by whether they were landed at distance, in the clinch or on the ground, so I will call this the positional breakdown. Aside from significant strikes landed, the fight data also included knockdowns, non-significant strikes landed, control time, takedowns landed, reversals and submission attempts.
 
 In order to remove the red vs. blue corner effect, I randomly assigned each fighter's data to one of two sets of columns. After fighters were randomly assigned for each round, I calculated the difference between each of the statistics mentioned above between the two fighters. The differences of these statistics will then be used to predict the win probability of fighter 1 in the models. 
 
-### Binomial GLM Models
+#### Binomial GLM Models:
 Here are the results of the binomial GLM models ran using each of the avaiable significant strike breakdowns: &nbsp;<br>
 <img src="/assets/ufc/target_model.png" alt="Image" width="500"/> <img src="/assets/ufc/position_model.png" alt="Image" width="500"/> &nbsp;<br> 
 
@@ -24,7 +24,7 @@ Because all distance strikes are defined as significant strikes, it makes sense 
 
 <br style="clear:both" />
 
-### Individual Judge Biases
+#### Individual Judge Biases:
 After the glm models were created, I was able to use these to indetify individual judges' scoring biases. In order to do this, a subset of the data was created for each judge to be examined. I then repeated this process for each of the judges:
  1. Two new winner variables were created. Judge winner indicated who the selected judge had winning the round, and Non-judge winner was the winner selected by the other two judges. Rounds where the other two judges disagreed were dropped.
  2. These new variables were used to create two models for each judge: The Judge model fitted on the Judge winner variable and the Non-judge model fitted on the Non-judge winner variable.
@@ -39,7 +39,7 @@ We can also examine the alternative graph for the position models:
 <img src="/assets/ufc/cleary_position_graph.png" alt="Image" width="700"/> &nbsp;<br>
 In this graph, the only statistically significant difference that can be seen is in significant distance strikes.
 
-### Striker-Grappler Preference Scores
+#### Striker-Grappler Preference Scores:
 While the graphs above do a good job of showcasing specific judge tendencies, I also wanted to create a single metric that identifies their preference of strikers versus grapplers. In order to do this, the position model was used and the predictors were first broken into striking and grappling predictors. Striking predictors included significant distance strikes, significant clinch strikes and knockdowns. Grappling predictors included significant ground strikes, takedowns, control time, submission attempts and reversals. 
 
 Using the same Judge & Non-judge models from earlier, I then repeated this process for each judge:
@@ -50,8 +50,7 @@ Using the same Judge & Non-judge models from earlier, I then repeated this proce
 With this formula, positive sgps numbers represent a striker preference whereas negative numbers indicate a grappler preference. The following graph showcases the striker vs. grappler preference of the 30 UFC Judges with the most rounds judged:
 <img src="/assets/ufc/sgps_graph.png" alt="Image" width="700"/> &nbsp;<br>
 
-### Judge Report Cards
-
+#### Judge Report Cards:
 Utilizing the sgps scores created along with the coeficcient difference graophs above, I have creaated judge report cards for many of the judges with a high amount of rounds judges. Here is an example of the report card for Derek Cleary, whose coeficcients we examined earlier: &nbsp;<br>
 <img src="/assets/ufc/cleary_report_card.png" alt="Image" width="400"/> &nbsp;<br>
 
