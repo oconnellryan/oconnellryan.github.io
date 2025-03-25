@@ -49,24 +49,24 @@ Most games were played at 7:00 local time. 25 games were played earlier (21 of t
 Tickets are more expensive when purchased further out from games. There is a sharp drop off in the price of gameday tickets:
 ![Image](/assets/nba/days_before_graph.png)
 Days purchased before game were split into the following categories for modeling:
-![Image](/assets/nba/new_days.png){: width="200" }
+<img src="/assets/nba/new_days.png" alt="Image" width="200"/> &nbsp;<br>
 
 &nbsp;<br>
 
 ### Stadium Areas
 The following sections were deduced with the data provided:
 ![Image](/assets/nba/new_group.png)
-![Image](/assets/nba/new_group_avgs.png){: width="200" }
+<img src="/assets/nba/new_group_avgs.png" alt="Image" width="200"/> &nbsp;<br>
 
 **Bowl:** &nbsp;<br>
 The bowl of the arena was broken down into further sections based on location and club access:
 ![Image](/assets/nba/new_sections.png)
-![Image](/assets/nba/new_sec_avgs.png){: width="200" }
+<img src="/assets/nba/new_sec_avgs.png" alt="Image" width="200"/> &nbsp;<br>
 
 **Courtside & Floor:** &nbsp;<br>
 The floor was split up by side:
-![Image](/assets/nba/cs_areas_map.png)
-![Image](/assets/nba/cs_avgs.png){: width="150" }
+![Image](/assets/nba/cs_areas_map.png){: width="150" }
+<img src="/assets/nba/curry_23.png" alt="Image" width="200"/> &nbsp;<br>
 
 ### Seat Features
 **Row:** &nbsp;<br>
@@ -85,12 +85,14 @@ Many non-row 1 seats overhang tunnels or entrances and have no seats in front of
 
 **Wheelchair Access (WCA) Areas:** &nbsp;<br>
 There are WCA (wheelchair access) areas in the arena. These seats are located in the back of sections in the lower bowl: &nbsp;<br>
-![Image](/assets/nba/lb_wca_graph.png){: width="500" ; style="float: left" }
-View from seat: ![Image](/assets/nba/wca_lb_view.jpg){: width="200" } 
+<img src="/assets/nba/lb_wca_graph.png" alt="Image" width="200"/> &nbsp;<br>
+View from seat: 
+<img src="/assets/nba/wca_lb_view.jpg" alt="Image" width="200"/> &nbsp;<br>
 <br style="clear:both" />
 The WCA sections in the upper bowl are located in front of or in the middle of sections: &nbsp;<br>
-![Image](/assets/nba/ub_wca_map.png){: width="500" ; style="float: left" } 
-View from seat: ![Image](/assets/nba/wca_ub_view.jpg){: width="200" }
+<img src="/assets/nba/ub_wca_map.png" alt="Image" width="500"/> &nbsp;<br>
+View from seat: 
+<img src="/assets/nba/wca_ub_view.jpg" alt="Image" width="200"/> &nbsp;<br>
 
 
 &nbsp;<br>
