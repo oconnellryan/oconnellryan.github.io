@@ -3,7 +3,7 @@ layout: page
 title: ""
 ---
 
-## UFC Judging Analysis:
+# UFC Judging Analysis:
 The goal of this project was to identify the importance of relevant factors in UFC Judging and identify how individual judges value these factors differently. This began as my Senior Thesis project that was completed in May 2024 at Syracuse University, and I have since improved upon the methods as well as added to it.
 
 ### Project Highlights:
