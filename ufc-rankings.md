@@ -9,11 +9,12 @@ The official UFC rankings are often influenced more by promotion than performanc
 
 
 <iframe 
-  src="https://yourname.shinyapps.io/your-app-name/](https://ryanoconnell.shinyapps.io/rankings/" 
+  src="https://ryanoconnell.shinyapps.io/rankings/" 
   width="50%" 
   height="800" 
   style="border:none;">
 </iframe>
+
 
 ### My Rankings Formula Explained
 
