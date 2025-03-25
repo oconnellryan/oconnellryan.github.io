@@ -5,11 +5,11 @@ author:
   email: ryan.m.oconnell@outlook.com
 description: "Personal project portfolio"
 
-# Build settings
-#theme: jekyll-theme-minima
+
 remote_theme: jekyll/minima
+
 plugins:
-  - jekyll-remote-theme
-#theme: minima
+  - jekyll-feed
+  - jekyll-seo-tag
 
 
