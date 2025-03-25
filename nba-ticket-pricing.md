@@ -46,31 +46,31 @@ Most games were played at 7:00 local time. 25 games were played earlier (21 of t
 &nbsp;<br>
 
 **Time of Purchase:** &nbsp;<br>
-Tickets are more expensive when purchased further out from games. There is a sharp drop off in the price of gameday tickets:
+Tickets are more expensive when purchased further out from games. There is a sharp drop off in the price of gameday tickets: &nbsp;<br>
 ![Image](/assets/nba/days_before_graph.png)
-Days purchased before game were split into the following categories for modeling:
+Days purchased before game were split into the following categories for modeling: &nbsp;<br>
 <img src="/assets/nba/new_days.png" alt="Image" width="200"/> &nbsp;<br>
 
 &nbsp;<br>
 
 ### Stadium Areas
-The following sections were deduced with the data provided:
+The following sections were deduced with the data provided: &nbsp;<br>
 ![Image](/assets/nba/new_group.png)
 <img src="/assets/nba/new_group_avgs.png" alt="Image" width="200"/> &nbsp;<br>
 
 **Bowl:** &nbsp;<br>
-The bowl of the arena was broken down into further sections based on location and club access:
+The bowl of the arena was broken down into further sections based on location and club access: &nbsp;<br>
 ![Image](/assets/nba/new_sections.png)
 <img src="/assets/nba/new_sec_avgs.png" alt="Image" width="200"/> &nbsp;<br>
 
 **Courtside & Floor:** &nbsp;<br>
-The floor was split up by side:
-![Image](/assets/nba/cs_areas_map.png){: width="150" }
+The floor was split up by side: &nbsp;<br>
+![Image](/assets/nba/cs_areas_map.png)
 <img src="/assets/nba/curry_23.png" alt="Image" width="200"/> &nbsp;<br>
 
 ### Seat Features
 **Row:** &nbsp;<br>
-As expected, the average ticket price decreases as you go back in rows:
+As expected, the average ticket price decreases as you go back in rows: &nbsp;<br>
 ![Image](/assets/nba/row_avgs_graph.png)
 This is especially true in the lower bowl:
 ![Image](/assets/nba/lb_rows_graph.png)
@@ -78,15 +78,15 @@ The trend is not as strong in the upper bowl:
 ![Image](/assets/nba/ub_rows.png)
 
 **Front Row Views (FRV):** &nbsp;<br>
-Many non-row 1 seats overhang tunnels or entrances and have no seats in front of them. These seats were labeled as front row views (Example below of seats overhanging the player tunnel):
+Many non-row 1 seats overhang tunnels or entrances and have no seats in front of them. These seats were labeled as front row views (Example below of seats overhanging the player tunnel): &nbsp;<br>
 ![Image](/assets/nba/frv.jpg)
 
 &nbsp;<br>
 
 **Wheelchair Access (WCA) Areas:** &nbsp;<br>
 There are WCA (wheelchair access) areas in the arena. These seats are located in the back of sections in the lower bowl: &nbsp;<br>
-<img src="/assets/nba/lb_wca_graph.png" alt="Image" width="200"/> &nbsp;<br>
-View from seat: 
+<img src="/assets/nba/lb_wca_graph.png" alt="Image" width="800"/> &nbsp;<br>
+View from seat: &nbsp;<br>
 <img src="/assets/nba/wca_lb_view.jpg" alt="Image" width="200"/> &nbsp;<br>
 <br style="clear:both" />
 The WCA sections in the upper bowl are located in front of or in the middle of sections: &nbsp;<br>
