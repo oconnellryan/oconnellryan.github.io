@@ -8,9 +8,9 @@ The goal of this project was to identify the importance of relevant factors in U
 
 ### Project Highlights:
 Utilizing binomial glm models that predict round winners for each judge, I was able to identify individual judge tendencies and created a metric that measures their preference of strikers versus grapplers. These findings are visualized in concise judge report cards:&nbsp;<br> 
-<img src="/assets/ufc/cleary_report_card.png" alt="Image" width="250"/> 
-<img src="/assets/ufc/colon_report_card.png" alt="Image" width="250"/> 
-<img src="/assets/ufc/lethaby_report_card.png" alt="Image" width="250"/> 
+<img src="/assets/ufc/cleary_report_card.png" alt="Image" width="240"/> 
+<img src="/assets/ufc/colon_report_card.png" alt="Image" width="240"/> 
+<img src="/assets/ufc/lethaby_report_card.png" alt="Image" width="240"/> 
 &nbsp;<br>
 
 
