@@ -6,6 +6,11 @@ title: ""
 ## UFC Judging Analysis:
 The goal of this project was to identify the importance of relevant factors in UFC Judging and identify how individual judges value these factors differently. This began as my Senior Thesis project that was completed in May 2024 at Syracuse University, and I have since improved upon the methods as well as added to it.
 
+### Project Highlights:
+Utilizing binomial glm models that predict round winners for each judge, I was able to identify individual judge tendencies and created a metric that measures their preference of strikers versus grapplers. These findings are visualized in concise, easy-to-interpret judge report cards:
+<img src="/assets/ufc/cleary_report_card.png" alt="Image" width="400"/> &nbsp;<br>
+
+
 ### Project Walkthrough:
 #### Data & Methodology:
 Round by round scorecard data was scraped from mmadecisions.com. The fight data used for this project was scraped from ufcstats.com. 
