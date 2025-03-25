@@ -1,6 +1,5 @@
 ---
 layout: page
-title: UFC Judging Analysis
 ---
 The goal of this project was to idenity the factors most relevant in UFC judging. Additionally, I wanted to identify individual bias and identify the specific criteria that is important to individual judges. A binomial GLM model as well as a decision tree & random forest model were created in order to do this.
 
