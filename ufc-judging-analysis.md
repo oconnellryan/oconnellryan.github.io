@@ -1,11 +1,14 @@
 ---
 layout: page
+title: ""
 ---
+
+### UFC Judging Analysis:
 The goal of this project was to identify the importance of relevant factors in UFC Judging and identify how individual judges value these factors differently. This began as my Senior Thesis project that was completed in May 2024 at Syracuse University, and I have since improved upon the methods as well as added to it.
 
-## Project Walkthrough:
+### Project Walkthrough:
 
-### Data & Methodology
+#### Data & Methodology
 Round by round scorecard data was scraped from mmadecisions.com. The fight data used for this project was scraped from ufcstats.com. 
 
 The fight data included significant strikes landed with two different breakdowns. The first breakdown, which I will refer to as the target data, is broken down by whether the strike was landed to the head, body or legs. The second significant strike breakdown is by whether they were landed at distance, in the clinch or on the ground, so I will call this the positional breakdown. Aside from significant strikes landed, the fight data also included knockdowns, non-significant strikes landed, control time, takedowns landed, reversals and submission attempts.
