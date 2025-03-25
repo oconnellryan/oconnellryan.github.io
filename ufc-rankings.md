@@ -1,6 +1,5 @@
 ---
 layout: page
-title: UFC Rankings Formula
 ---
 
 ### Why These Rankings?
