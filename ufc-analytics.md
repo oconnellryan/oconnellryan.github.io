@@ -1,6 +1,5 @@
 ---
 layout: page
-title: UFC Fight Analytics
 ---
 
 &nbsp;<br>
