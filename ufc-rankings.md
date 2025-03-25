@@ -8,6 +8,9 @@ title: UFC Rankings Formula
 The official UFC rankings are often influenced more by promotion than performance. Voted on by an unkown media panel they can reflect hype, star power, and marketing priorities over merit. Fighters with UFC favor often receive fast-track opportunities, while others are stalled despite consistent wins. This is why an I have created an unbiased ranking formula that ranks fighters based on merit.
 
 
+### Explore the Rankings
+Use the interactive tool below to browse my updated rankings. These are updated automatically after each event and reflect results, opponent strength, and recent activity — not media perception.
+
 <iframe 
   src="https://ryanoconnell.shinyapps.io/rankings/"
   width="50%" 
