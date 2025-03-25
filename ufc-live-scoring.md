@@ -1,6 +1,5 @@
 ---
 layout: page
-title: Live UFC Scoring Model
 ---
 A real-time scoring model that uses live fight stats to predict round-by-round win probability. &nbsp;<br>
 &nbsp;<br>
