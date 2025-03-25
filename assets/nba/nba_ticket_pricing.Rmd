@@ -1,9 +1,4 @@
----
-title: "NBA Ticket Pricing"
-author: "Ryan O'Connell"
-date: '2024-05-09'
-output: html_document
----
+
 
 ```{r setup, include=FALSE}
 rm(list = ls())
