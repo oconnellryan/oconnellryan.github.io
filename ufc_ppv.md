@@ -1,9 +1,18 @@
 ---
 layout: page
 ---
-This project identified some of the factors most relevant to UFC pay per view sales. 
+This project identified some of the factors most relevant to UFC pay per view sales, as well as identified random effects for how much each fighter contributed to Pay-Per-View Sales based on card placement. 
 
 ### Result highlights:
+The tool below uses my final model to estimate the predicted PPV buys for a custom UFC card: &nbsp;<br>
+<iframe 
+  src="https://ryanoconnell.shinyapps.io/ppv_predictor/"
+  width="50%" 
+  height="670" 
+  style="border:none;">
+</iframe>
+
+
 People decide whether to buy a UFC card based almost entirely on the quality of the main event. Champions with high fighting output sell more cards. Specifically, this means they do the folowing in their fights:
  - Land a high amount of strikes per minute
  - Knock down their opponents
