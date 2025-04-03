@@ -13,6 +13,8 @@ The tool below uses my final model to estimate the predicted PPV buys for a cust
 </iframe>
 
 
+
+
 People decide whether to buy a UFC card based almost entirely on the quality of the main event. Champions with high fighting output sell more cards. Specifically, this means they do the folowing in their fights:
  - Land a high amount of strikes per minute
  - Knock down their opponents
