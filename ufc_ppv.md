@@ -3,7 +3,7 @@ layout: page
 ---
 This project identified some of the factors most relevant to UFC pay per view sales, as well as identified random effects for how much each fighter contributed to Pay-Per-View Sales based on card placement. 
 
-### Result highlights:
+## Result highlights:
 The tool below uses my final model to estimate the predicted PPV buys for a custom UFC card: &nbsp;<br>
 
 <div style="display: flex; justify-content: center;">
@@ -25,9 +25,9 @@ The tool below uses my final model to estimate the predicted PPV buys for a cust
    - Title fight losses were highly impactful, especially for main event fighters. A loss in a title fight reduces a main fighter's predicted draw power by about 25,000 buys.
   
 
-### Full Variable Analysis
+## Full Variable Analysis
 
-###### Fighter Strength
+##### Fighter Strength
 Obviously, one would suspect that having better fighters on a card leads to higher Pay-Pey-View sales. To capture fighter strength, I will utilize the Fighter Performance Ratings (FPR) formula I have created which I explain in detail here. The following graph shows the relationship between the combined FPR of the main event fighters and the PPV Buyrate:
 ![Image](/assets/ufc/main_fpr_buyrate.png)
 As expected, there’s a clear positive relationship: higher-rated main event fighters tend to drive more PPV buys.
