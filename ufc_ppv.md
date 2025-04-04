@@ -5,15 +5,8 @@ This project identified some of the factors most relevant to UFC pay per view sa
 
 ### Result highlights:
 The tool below uses my final model to estimate the predicted PPV buys for a custom UFC card: &nbsp;<br>
-<iframe 
-  src="https://ryanoconnell.shinyapps.io/ppv_28/"
-  width="50%" 
-  height="670" 
-  style="border:none;">
-</iframe>
 
-
-<div style="transform: scale(0.8); transform-origin: top left; width: 100%; overflow: hidden;">
+<div style="transform: scale(1); transform-origin: top left; width: 100%; overflow: hidden;">
   <iframe 
     src="https://ryanoconnell.shinyapps.io/ppv_28/"
     width="1000" 
