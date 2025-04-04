@@ -3,7 +3,7 @@ layout: page
 ---
 This project identified some of the factors most relevant to UFC pay per view sales, as well as identified random effects for how much each fighter contributed to Pay-Per-View Sales based on card placement. 
 
-## Result highlights:
+### Result highlights:
 The tool below allows you to build a custom UFC card and predict the Pay-Per-Views it would sell: &nbsp;<br>
 
 <div style="display: flex; justify-content: center;">
@@ -25,7 +25,7 @@ The tool below allows you to build a custom UFC card and predict the Pay-Per-Vie
    - Title fight losses were highly impactful, especially for main event fighters. A loss in a title fight reduces a main fighter's predicted draw power by about 25,000 buys.
   
 
-## Full Variable Analysis
+### Full Variable Analysis
 
 #### Fighter Strength:
 Obviously, one would suspect that having better fighters on a card leads to higher Pay-Pey-View sales. To capture fighter strength, I will utilize the Fighter Performance Ratings (FPR) formula I have created which I explain in detail here. The following graph shows the relationship between the combined FPR of the main event fighters and the PPV Buyrate: &nbsp;<br>
@@ -41,7 +41,7 @@ This raises a follow up question of how much the strength of the rest of the car
 Interestingly, this relationship appears even stronger. This suggests that fans may evaluate the full card, not just the main event, when deciding whether to purchase a PPV.
 
 #### Previous Title Fight Results:
-##### Title Fight Wins:
+**Title Fight Wins:**
 Fighters who defend the belt multiple times in a row get the pportunity to build lasting name recognition and fan loyalty. The next graph shows the average PPV Buyrate by the total number of title wins among main event fighters: &nbsp;<br>
 <p style="text-align: center;">
   <img src="/assets/ufc/main_title_buyrate.png" alt="Image" width="600"/>
@@ -54,7 +54,7 @@ What about the rest of the card? The following graph examines the same relations
 </p>
 This relationship is very strong as well, again suggesting that higher level fighters (particularly those who have won titles before) generate more Pay-Per-View buys, even when not placed in the main event. 
 
-##### Title Fight Losses:
+*Title Fight Losses:*
 If a fighter's value rises after winning a title fight, this raises the question of what happens to fighters ability to generate PPV sales after taking title fight losses. This graph examines the relationship between title fight losses by main event fighters and PPV Buyrate: &nbsp;<br>
 <p style="text-align: center;">
   <img src="/assets/ufc/main_title-l_buyrate.png" alt="Image" width="600"/>
