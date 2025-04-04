@@ -17,7 +17,7 @@ The tool below allows you to build a custom UFC card and uses my model to predic
 
 
 
-##### Some of the key factors that lead to increased Pay-Per-View Sales were:
+#### Some of the key factors that lead to increased Pay-Per-View Sales were:
  - Higher quality fighters (calculated by performance ratings) across the entire card was correlated with an increased Buyrate.
  - Finishing opponents: each finish was found to increase a main event fighter's draw power by about 7,000 buys.
  - Title fight wins & losses were also found to be impactful for both main event & non-main event fighters.
@@ -27,16 +27,19 @@ The tool below allows you to build a custom UFC card and uses my model to predic
 
 ## Full Variable Analysis
 
-##### Fighter Strength
+#### Fighter Strength
 Obviously, one would suspect that having better fighters on a card leads to higher Pay-Pey-View sales. To capture fighter strength, I will utilize the Fighter Performance Ratings (FPR) formula I have created which I explain in detail here. The following graph shows the relationship between the combined FPR of the main event fighters and the PPV Buyrate:
 ![Image](/assets/ufc/main_fpr_buyrate.png)
 As expected, there’s a clear positive relationship: higher-rated main event fighters tend to drive more PPV buys.
 
 This raises a follow up question of how much the strength of the rest of the card matters? The following graph examines this by showcasing the total FPR of all non-main event fighters and the PPV Buyrate: &nbsp;<br>
-<img src="/assets/ufc/rest_fpr_buyrate.png" alt="Image" width="600"/> &nbsp;<br>
 <p style="text-align: center;">
   <img src="/assets/ufc/rest_fpr_buyrate.png" alt="Image" width="600"/>
 </p>
+Interestingly, this relationship appears even stronger. This suggests that fans may evaluate the full card, not just the main event, when deciding whether to purchase a PPV.
+
+#### Previous Title Fight Results
+Fighters who defend the belt multiple times in a row get the pportunity to build lasting name recognition and fan loyalty. The next graph shows the average PPV Buyrate by the total number of title wins among main event fighters:
 
 
 [Read Full Paper](https://oconnellryan.github.io/assets/ufc_ppv_modeling.pdf) &nbsp;<br>
