@@ -54,7 +54,7 @@ What about the rest of the card? The following graph examines the same relations
 </p>
 This relationship is very strong as well, again suggesting that higher level fighters (particularly those who have won titles before) generate more Pay-Per-View buys, even when not placed in the main event. 
 
-*Title Fight Losses:* &nbsp;<br>
+**Title Fight Losses:** &nbsp;<br>
 If a fighter's value rises after winning a title fight, this raises the question of what happens to fighters ability to generate PPV sales after taking title fight losses. This graph examines the relationship between title fight losses by main event fighters and PPV Buyrate: &nbsp;<br>
 <p style="text-align: center;">
   <img src="/assets/ufc/main_title-l_buyrate.png" alt="Image" width="600"/>
