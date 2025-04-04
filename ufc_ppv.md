@@ -41,7 +41,7 @@ This raises a follow up question of how much the strength of the rest of the car
 Interestingly, this relationship appears even stronger. This suggests that fans may evaluate the full card, not just the main event, when deciding whether to purchase a PPV.
 
 #### Previous Title Fight Results:
-**Title Fight Wins:**
+**Title Fight Wins:** &nbsp;<br>
 Fighters who defend the belt multiple times in a row get the pportunity to build lasting name recognition and fan loyalty. The next graph shows the average PPV Buyrate by the total number of title wins among main event fighters: &nbsp;<br>
 <p style="text-align: center;">
   <img src="/assets/ufc/main_title_buyrate.png" alt="Image" width="600"/>
@@ -54,7 +54,7 @@ What about the rest of the card? The following graph examines the same relations
 </p>
 This relationship is very strong as well, again suggesting that higher level fighters (particularly those who have won titles before) generate more Pay-Per-View buys, even when not placed in the main event. 
 
-*Title Fight Losses:*
+*Title Fight Losses:* &nbsp;<br>
 If a fighter's value rises after winning a title fight, this raises the question of what happens to fighters ability to generate PPV sales after taking title fight losses. This graph examines the relationship between title fight losses by main event fighters and PPV Buyrate: &nbsp;<br>
 <p style="text-align: center;">
   <img src="/assets/ufc/main_title-l_buyrate.png" alt="Image" width="600"/>
