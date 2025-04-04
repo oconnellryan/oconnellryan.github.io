@@ -29,8 +29,13 @@ The tool below uses my final model to estimate the predicted PPV buys for a cust
 
 ###### Fighter Strength
 Obviously, one would suspect that having better fighters on a card leads to higher Pay-Pey-View sales. To capture fighter strength, I will utilize the Fighter Performance Ratings (FPR) formula I have created which I explain in detail here. The following graph shows the relationship between the combined FPR of the main event fighters and the PPV Buyrate:
-![Image](/assets/ufc/main_fpr_buyrate.png) &nbsp;<br>
+![Image](/assets/ufc/main_fpr_buyrate.png)
 As expected, there’s a clear positive relationship: higher-rated main event fighters tend to drive more PPV buys.
+
+This raises a follow up question of how much the strength of the rest of the card matters? The following graph examines this by showcasing the total FPR of all non-main event fighters and the PPV Buyrate:
+<p style="text-align: center;">
+  <img src="/assets/ufc/rest_fpr_buyrate.png" alt="Image" width="600"/>
+</p>
 
 
 [Read Full Paper](https://oconnellryan.github.io/assets/ufc_ppv_modeling.pdf) &nbsp;<br>
