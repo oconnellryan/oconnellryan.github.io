@@ -13,6 +13,17 @@ The tool below uses my final model to estimate the predicted PPV buys for a cust
 </iframe>
 
 
+<div style="transform: scale(0.8); transform-origin: top left; width: 100%; overflow: hidden;">
+  <iframe 
+    src="https://ryanoconnell.shinyapps.io/ppv_28/"
+    width="1000" 
+    height="800" 
+    style="border:none;">
+  </iframe>
+</div>
+
+
+
 
 
 People decide whether to buy a UFC card based almost entirely on the quality of the main event. Champions with high fighting output sell more cards. Specifically, this means they do the folowing in their fights:
