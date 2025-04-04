@@ -67,13 +67,13 @@ So losses in title fights do not appear to have a negative impact on non-main ev
 
 It is also to be expected that fighters who finish their opponents are likely to sell more pay pey views. The following graph examines this relationship for Main Event fighters by examining the combined number of finishes between the two fighters related to PPV Buyrate: &nbsp;<br>
 <p style="text-align: center;">
-  <img src="/assets/ufc/main_finishes_buyrate.png" alt="Image" width="600"/>
+  <img src="/assets/ufc/main_finish_buyrate.png" alt="Image" width="600"/>
 </p>
 The graph certainly suggest that fighters who finish their opponents tend to generate higher Pay-Per-View sales.
 
 Let’s check whether this also holds for the rest of the card: &nbsp;<br>
 <p style="text-align: center;">
-  <img src="/assets/ufc/rest_finishes_buyrate.png" alt="Image" width="600"/>
+  <img src="/assets/ufc/rest_finish_buyrate.png" alt="Image" width="600"/>
 </p>
 While not quite as strong as a relationship as the main event fighters, we can again see that the other fighters on the card having more finishes is positively correlated with Buyrate.
 
