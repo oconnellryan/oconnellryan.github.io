@@ -10,7 +10,7 @@ The tool below uses my final model to estimate the predicted PPV buys for a cust
   <iframe 
     src="https://ryanoconnell.shinyapps.io/ppv_28/"
     width="800" 
-    height="800" 
+    height="700" 
     style="border:none;">
   </iframe>
 </div>
