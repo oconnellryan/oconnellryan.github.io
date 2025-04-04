@@ -18,10 +18,11 @@ The tool below uses my final model to estimate the predicted PPV buys for a cust
 </div> &nbsp;<br>
 
 Some of the key factors that lead to increased Pay-Per-View Sales were:
- - Higher quality fighters (calculated by performance ratings) across the entire card was correlated with an increased Buyrate
- - Finishing opponents: each finish was found to increase a main event fighter's draw power by about 7,000 buys
- - Title fight wins & losses were also found to be impactful for both main event & non-main event fighters
-   - Title fight wins for any fighter on the card lead to a higher buyrate on average (ranging from about 3,000 increased buys for main event fighters to 400 for lower on the card)
+ - Higher quality fighters (calculated by performance ratings) across the entire card was correlated with an increased Buyrate.
+ - Finishing opponents: each finish was found to increase a main event fighter's draw power by about 7,000 buys.
+ - Title fight wins & losses were also found to be impactful for both main event & non-main event fighters.
+   - Title fight wins for any fighter on the card lead to a higher buyrate on average (ranging from about 3,000 increased buys for main event fighters to 400 increased buys for lower on the card).
+   - Title fight losses were highly impactful, especially for main event fighters. A loss in a title fight reduces a main fighter's predicted draw power by about 25,000 buys.
 
 
 
