@@ -4,7 +4,7 @@ layout: page
 This project identified some of the factors most relevant to UFC pay per view sales, as well as identified random effects for how much each fighter contributed to Pay-Per-View Sales based on card placement. 
 
 ## Result highlights:
-The tool below uses my final model to estimate the predicted PPV buys for a custom UFC card: &nbsp;<br>
+The tool below allows you to build a custom UFC card and uses my model to predict the Pay-Per-View Sales: &nbsp;<br>
 
 <div style="display: flex; justify-content: center;">
   <div style="width: 614px; height: 536px; overflow: hidden;">
