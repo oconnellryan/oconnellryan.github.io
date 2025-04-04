@@ -33,6 +33,7 @@ Obviously, one would suspect that having better fighters on a card leads to high
 As expected, there’s a clear positive relationship: higher-rated main event fighters tend to drive more PPV buys.
 
 This raises a follow up question of how much the strength of the rest of the card matters? The following graph examines this by showcasing the total FPR of all non-main event fighters and the PPV Buyrate:
+<img src="/assets/ufc/rest_fpr_buyrate.png" alt="Image" width="600"/> &nbsp;<br>
 <p style="text-align: center;">
   <img src="/assets/ufc/rest_fpr_buyrate.png" alt="Image" width="600"/>
 </p>
