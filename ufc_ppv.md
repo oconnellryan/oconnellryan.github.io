@@ -23,6 +23,14 @@ The tool below uses my final model to estimate the predicted PPV buys for a cust
  - Title fight wins & losses were also found to be impactful for both main event & non-main event fighters.
    - Title fight wins for any fighter on the card lead to a higher buyrate on average (ranging from about 3,000 increased buys for main event fighters to 400 increased buys for lower on the card).
    - Title fight losses were highly impactful, especially for main event fighters. A loss in a title fight reduces a main fighter's predicted draw power by about 25,000 buys.
+  
+
+### Full Variable Analysis
+
+#### Fighter Strength
+Obviously, one would suspect that having better fighters on a card leads to higher Pay-Pey-View sales. To capture fighter strength, I will utilize the Fighter Performance Ratings (FPR) formula I have created which I explain in detail here. The following graph shows the relationship between the combined FPR of the main event fighters and the PPV Buyrate:
+![Image](/assets/nba/opps.png) &nbsp;<br>
+As expected, there’s a clear positive relationship: higher-rated main event fighters tend to drive more PPV buys.
 
 
 [Read Full Paper](https://oconnellryan.github.io/assets/ufc_ppv_modeling.pdf) &nbsp;<br>
