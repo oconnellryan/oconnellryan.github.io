@@ -30,7 +30,7 @@ The tool below allows you to build a custom UFC card and predict the Pay-Per-Vie
 #### Fighter Strength:
 Obviously, one would suspect that having better fighters on a card leads to higher Pay-Pey-View sales. To capture fighter strength, I will utilize the Fighter Performance Ratings (FPR) formula I have created which I explain in detail here. The following graph shows the relationship between the combined FPR of the main event fighters and the PPV Buyrate: &nbsp;<br>
 <p style="text-align: center;">
-  <img src="/assets/ufc/main_fpr_buyrate.png" alt="Image" width="600"/>
+  <img src="/assets/ufc/main_fpr_buyrate.png" alt="Image" width="600" style="display: block; margin: auto;"/>
 </p>
 As expected, there’s a clear positive relationship: higher-rated main event fighters tend to drive more PPV buys.
 
