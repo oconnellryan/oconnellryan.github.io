@@ -16,6 +16,7 @@ The tool below uses my final model to estimate the predicted PPV buys for a cust
     </iframe>
   </div>
 </div>
+
 ##### Some of the key factors that lead to increased Pay-Per-View Sales were:
  - Higher quality fighters (calculated by performance ratings) across the entire card was correlated with an increased Buyrate.
  - Finishing opponents: each finish was found to increase a main event fighter's draw power by about 7,000 buys.
