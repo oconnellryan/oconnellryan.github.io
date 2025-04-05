@@ -10,6 +10,11 @@ As my capstone project for the NBA Future Analytics Stars Program, I developed a
 ## Result Highlights
 The following graphic showcases the predicted ticket prices for each seat in an individual game scaling from highest (red) to the lowest priced tickets (green): &nbsp;<br>
 ![Image](/assets/nba/arena_heatmap.png)
+Aside from seat variables, the factors that lead to higher ticket prices were:
+- Better & bigger market opponents
+- Star Player Availability (Steph Curry)
+- Weekend games & games earlier in the day
+- Purchasing tickets further out from the game
 
 &nbsp;<br>
 
@@ -189,20 +194,16 @@ The following graph shows predicted upper bowl prices while holding external fac
 
 &nbsp;<br>
 
-![Image](/assets/nba/cs_model.png)
 Courtside graph (size of seat is predicted price):
 ![Image](/assets/nba/cs_size_graph.png)
-Key takeaways:
-- True front row seats are predicted to be worth roughly $1800 more than the seat directly behind them
-- Predicted prices drop around $600 when going from row BB (true row 2) to A1 (the section behind)
-- Tickets in the middle are more expensive (unless sitting behind the baskets)
 
-
+### Other Model Takeaways:
 All three models back up the earlier findings regarding external game factors:
-- Better & big market opponents lead to higher prices
+- Better & bigger market opponents lead to higher prices
 - Prices are higher in games where Steph Curry plays
 - Friday & Saturday games are the most expensive
-- Tickets get cheaper as an event approaches
+- Games before 7:30 are more expensive
+- Tickets get cheaper as the event approaches
 
 ## Materials:
 [Full Write Up](https://oconnellryan.github.io/assets/fas-capstone.pdf) &nbsp;<br>
