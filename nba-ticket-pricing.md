@@ -93,7 +93,7 @@ View from seat: &nbsp;<br>
 <img src="/assets/nba/wca_lb_view.jpg" alt="Image" width="200"/> &nbsp;<br>
 <br style="clear:both" />
 The WCA sections in the upper bowl are located in front of or in the middle of sections: &nbsp;<br>
-<img src="/assets/nba/ub_wca_map.png" alt="Image" width="500"/> &nbsp;<br>
+<img src="/assets/nba/ub_wca_map.png" alt="Image" width="530"/> 
 View from seat: 
 <img src="/assets/nba/wca_ub_view.jpg" alt="Image" width="200"/> &nbsp;<br>
 
