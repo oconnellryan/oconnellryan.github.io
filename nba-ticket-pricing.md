@@ -168,6 +168,7 @@ The following graph shows predicted lower bowl prices for a specific game:
   </div>
 </div>
 
+&nbsp;<br>
 
 <img src="/assets/nba/ub_model.png" alt="Image" width="600"/> 
 The following graph shows predicted upper bowl prices while holding external factors constant:
