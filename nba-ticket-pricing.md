@@ -83,9 +83,9 @@ The floor was split up by side of the court: &nbsp;<br>
 **Row:** &nbsp;<br>
 As expected, the average ticket price decreases as you go back in rows: &nbsp;<br>
 <img src="/assets/nba/row_avgs_graph.png" alt="Image" width="600"/> &nbsp;<br>
-This is especially true in the lower bowl:
+This is especially true in the lower bowl: &nbsp;<br>
 <img src="/assets/nba/lb_rows_graph.png" alt="Image" width="600"/> &nbsp;<br>
-The row trend is not as strong in the upper bowl:
+The row trend is not as strong in the upper bowl: &nbsp;<br>
 <img src="/assets/nba/ub_rows.png" alt="Image" width="600"/> &nbsp;<br>
 
 **Front Row Views (FRV):** &nbsp;<br>
@@ -120,9 +120,9 @@ There are WCA (wheelchair access) areas in the arena. These seats are located in
 &nbsp;<br>
 
 **Graphs of New Rows Created:** &nbsp;<br>
-The front row view seats appear to have a premium while the WCA seats are not very expensive in the lower bowl:
+The front row view seats appear to have a premium while the WCA seats are not very expensive in the lower bowl: &nbsp;<br>
 <img src="/assets/nba/lb_rows_graph2.png" alt="Image" width="600"/> 
-The front row view seats have an average price around the same as row 1 seats in the upper bowl. The upper bowl WCA seats have the highest average prices in the upper bowl:
+The front row view seats have an average price around the same as row 1 seats in the upper bowl. The upper bowl WCA seats have the highest average prices in the upper bowl: &nbsp;<br>
 <img src="/assets/nba/ub_rows2.png" alt="Image" width="600"/> 
 
 &nbsp;<br>
