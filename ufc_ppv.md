@@ -17,8 +17,6 @@ The tool below allows you to build a custom UFC card and predict the Pay-Per-Vie
   </div>
 </div>
 
-&nbsp;<br>
-
 **Some of the key factors that lead to increased Pay-Per-View Sales were:**
  - Higher quality fighters across the entire card was correlated with an increased Buyrate.
  - Each finish on a main event fighter's record was found to increase their draw power by about 7,000 buys
