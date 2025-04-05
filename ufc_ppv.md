@@ -89,6 +89,16 @@ Let’s check whether this also holds for the rest of the card: &nbsp;<br>
 While not quite as strong as a relationship as the main event fighters, we can again see that the other fighters on the card having more finishes is positively correlated with Buyrate.
 
 
+### Final Model Results:
+#### Fighter Attributes (Main & Interraction Effects):
+The graph below displays the coefficient values for main effects (blue) and interaction effects (red). The blue bars represent the general impact of each fighter attribute on PPV buys, regardless of card placement. The red bars indicate how the importance of these attributes changes specifically for fighters higher on the card (interaction effects).
+<p style="text-align: center;">
+  <img src="/assets/ufc/coef_graph.png" alt="Image" width="600"/>
+</p>
+The results align closely with the initial analysis. Fighter quality and having finished past opponents influences PPV buy rates across all card placements. However, past title fight outcomes (both wins and losses) have a much stronger impact on PPV buys for fighters in main-event positions.
+
+
+
 [Read Full Paper](https://oconnellryan.github.io/assets/ufc_ppv_modeling.pdf) &nbsp;<br>
 
 
