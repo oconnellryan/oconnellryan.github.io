@@ -14,9 +14,15 @@ These projects explore the economic side of sports, including fan behavior and r
 
 
 ### UFC Fight Analytics:
-These projects analyze the results and statistics of UFC fights to form insights on judging tendecies, fighter performance and more. &nbsp;<br>
+Scoring Bot I created that tweets out predicted scores of UFC rounds live: &nbsp;<br>
+[![Image](/assets/buttons/live_scoring_model.png)](https://oconnellryan.github.io/ufc-live-scoring.html)
+
+Senior Thesis Project focused on identifying individual UFC Judge tendencies: &nbsp;<br>
+[![Image](/assets/buttons/ufc_judging_analysis.png)](https://oconnellryan.github.io/ufc-judging-analysis.html)
+
 &nbsp;<br>
-[![Image](/assets/buttons/ufc_fight_analytics.png)](https://oconnellryan.github.io/ufc-analytics.html)
+Fighter Rankings Formula I created: &nbsp;<br>
+[![Image](/assets/buttons/ufc_rankings_formula.png)](https://oconnellryan.github.io/ufc-rankings.html)
 &nbsp;<br>
 
 &nbsp;<br>
