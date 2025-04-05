@@ -26,7 +26,7 @@ The tool below allows you to build a custom UFC card and predict the Pay-Per-Vie
    - Title fight losses were highly impactful, especially for main event fighters. A loss in a title fight reduces a main fighter's predicted draw power by about 25,000 buys.
 
 ### Data & Methodology Overview
-Pay-Per-View buy rate data was sourced from Tapology, covering 185 UFC events through UFC 274. The dataset was filtered to include events from UFC 57 (2006) onward, ensuring relevance to the modern UFC era. Within this timeframe, 32 events lacked available PPV data. The model developed in this project is specifically designed to predict PPV buy rates for events within this modern-era range.
+Pay-Per-View buy rate data was sourced from Tapology, covering 210 UFC events through UFC 274. The dataset was filtered to include events from UFC 57 (2006) onward, ensuring relevance to the modern UFC era. Within this timeframe, 32 events lacked available PPV data. The model developed in this project is specifically designed to predict PPV buy rates for events within this modern-era range.
 
 Fighter data from UFC Stats provided detailed fight outcomes, title fight indicators, and fight-level statistics. Various fighter metrics were tested, with the most relevant ones included in the model.
 
