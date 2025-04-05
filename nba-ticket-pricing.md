@@ -158,12 +158,12 @@ The following graph shows predicted lower bowl prices for a specific game:
 
   <div>
     <ul style="margin: 0; padding-left: 20px;">
-      <li>Sideline club tickets are much more expensive, while general 100 tickets are slightly more expensive than the Pepsi club</li>
-      <li>Tickets closer to the center of the court are much more expensive</li>
-      <li>Tickets prices drop around $6 every row you go back</li>
-      <li>Row 1 tickets are predicted $100 more espensive than  the seat directly behind them</li>
-      <li>Front row view seats (not row 1) are predicted $50 more than the seat directly behind them</li>
-      <li>Wheelchair areas are the cheapest seats in the lower bowl</li>
+      <li>Upper behind seats are cheaper than upper bowl and upper premium</li>
+      <li>Predicted prices decrease as you go closer to the corners of the arena</li>
+      <li>Ticket prices drop around $2 every row you go back</li>
+      <li>Row 1 seats are predicted to be roughly $11 more than the seat directly behind them</li>
+      <li>Front row view seats (not row 1) are predicted $15 more than the seat directly behind them</li>
+      <li>Unlike the lower bowl, wheelchair access sections contain the most expensive upper bowl seats</li>
     </ul>
   </div>
 </div>
