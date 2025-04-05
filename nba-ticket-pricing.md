@@ -62,7 +62,7 @@ The following sections were deduced with the data provided: &nbsp;<br>
 
 **Bowl:** &nbsp;<br>
 The bowl of the arena was broken down into further sections based on location and club access: &nbsp;<br>
-<img src="/assets/nba/new_sections.png" alt="Image" width="560"/> 
+<img src="/assets/nba/new_sections.png" alt="Image" width="570"/> 
 <img src="/assets/nba/new_sec_avgs.png" alt="Image" width="160"/> &nbsp;<br>
 
 **Courtside & Floor:** &nbsp;<br>
