@@ -17,13 +17,13 @@ The following graphic showcases the predicted ticket prices for each seat in an 
 ### External Game Factors
 **Opponent:** &nbsp;<br>
 Playing big market teams and opponents that win more both lead to higher average ticket prices: &nbsp;<br>
-![Image](/assets/nba/opps.png)
+<img src="/assets/nba/opps.png" alt="Image" width="600"/>
 
 &nbsp;<br>
 
 **Weekday:** &nbsp;<br>
 Saturday games have the highest prices on average, but there are no other clear trends here: &nbsp;<br>
-![Image](/assets/nba/weekdays.png)
+<img src="/assets/nba/weekdays.png" alt="Image" width="600"/>
 
 &nbsp;<br>
 
@@ -42,7 +42,7 @@ He did not miss as many games in 2023, but again these games had lower prices: &
 
 **Gametime:** &nbsp;<br>
 Most games were played at 7:00 local time. 25 games were played earlier (almost all at 5:30), and the earlier games had lower average ticket prices: &nbsp;<br>
-<img src="/assets/nba/new_times.png" alt="Image" width="130"/> &nbsp;<br>
+<img src="/assets/nba/new_times.png" alt="Image" width="130" style="vertical-align: center;"/> &nbsp;<br>
 
 
 &nbsp;<br>
@@ -50,8 +50,11 @@ Most games were played at 7:00 local time. 25 games were played earlier (almost 
 **Time of Purchase:** &nbsp;<br>
 Tickets are more expensive when purchased further out from games. There is a sharp decrease in the price of gameday tickets: &nbsp;<br>
 <img src="/assets/nba/days_before_graph.png" alt="Image" width="600"/> 
-Categories:
-<img src="/assets/nba/new_days.png" alt="Image" width="130"/> &nbsp;<br>
+<div style="display: flex; align-items: center; height: 100px;">
+  Categories:
+  <img src="/assets/nba/new_days.png" alt="Image" width="130"/>
+</div>
+
 
 &nbsp;<br>
 
