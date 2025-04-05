@@ -71,4 +71,4 @@ Just like in the decision tree significant distance strikes, control time, and s
 
 
 
-[Read my thesis: *Analysis of UFC Judging Criteria* (Spring 2024)](https://oconnellryan.github.io/assets/Analysis-of-UFC-Judging-Criteria.pdf)
+Read my thesis: [*Analysis of UFC Judging Criteria*](https://oconnellryan.github.io/assets/Analysis-of-UFC-Judging-Criteria.pdf) (Spring 2024)
