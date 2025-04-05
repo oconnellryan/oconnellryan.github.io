@@ -16,19 +16,19 @@ The following graphic showcases the predicted ticket prices for each seat in an 
 ## Exploratory Analysis
 ### External Game Factors
 **Opponent:** &nbsp;<br>
-Opponents Matter. Playing big market teams and a higher opponent winning percentage both lead to higher average ticket prices:
+Playing big market teams and opponents that win more both lead to higher average ticket prices:
 ![Image](/assets/nba/opps.png)
 
 &nbsp;<br>
 
 **Weekday:** &nbsp;<br>
-Saturday games have the highest prices on average. However, there is not an overly clear trend regarding weekends:
+Saturday games have the highest prices on average, but there are no other clear trends here:
 ![Image](/assets/nba/weekdays.png)
 
 &nbsp;<br>
 
 **Star Players:** &nbsp;<br>
-Steph Curry missed 15 games in 2022, and we can see the average ticket prices dropped quickly in the periods he missed games due to injury:
+Steph Curry missed 15 games in 2022, and we can see the average ticket prices dropped quickly when he was out:
 ![Image](/assets/nba/curry_22_graph.png)
 <img src="/assets/nba/curry_22.png" alt="Image" width="200"/> &nbsp;<br>
 
@@ -39,14 +39,14 @@ He did not miss as many games in 2023, but again these games had lower prices:
 &nbsp;<br>
 
 **Gametime:** &nbsp;<br>
-Most games were played at 7:00 local time. 25 games were played earlier (21 of the 25 earlier games were played at 5:30). The earlier games had lower prices on average: &nbsp;<br>
+Most games were played at 7:00 local time. 25 games were played earlier (almost all at 5:30), and the earlier games had lower average ticket prices: &nbsp;<br>
 <img src="/assets/nba/new_times.png" alt="Image" width="200"/> &nbsp;<br>
 
 
 &nbsp;<br>
 
 **Time of Purchase:** &nbsp;<br>
-Tickets are more expensive when purchased further out from games. There is a sharp drop off in the price of gameday tickets: &nbsp;<br>
+Tickets are more expensive when purchased further out from games. There is a sharp decrease in the price of gameday tickets: &nbsp;<br>
 ![Image](/assets/nba/days_before_graph.png)
 Days purchased before game were split into the following categories for modeling: &nbsp;<br>
 <img src="/assets/nba/new_days.png" alt="Image" width="200"/> &nbsp;<br>
@@ -64,7 +64,7 @@ The bowl of the arena was broken down into further sections based on location an
 <img src="/assets/nba/new_sec_avgs.png" alt="Image" width="160"/> &nbsp;<br>
 
 **Courtside & Floor:** &nbsp;<br>
-The floor was split up by side: &nbsp;<br>
+The floor was split up by side of the court: &nbsp;<br>
 ![Image](/assets/nba/cs_areas_map.png)
 <img src="/assets/nba/curry_23.png" alt="Image" width="200"/> &nbsp;<br>
 
@@ -74,11 +74,11 @@ As expected, the average ticket price decreases as you go back in rows: &nbsp;<b
 ![Image](/assets/nba/row_avgs_graph.png)
 This is especially true in the lower bowl:
 ![Image](/assets/nba/lb_rows_graph.png)
-The trend is not as strong in the upper bowl:
+The row trend is not as strong in the upper bowl:
 ![Image](/assets/nba/ub_rows.png)
 
 **Front Row Views (FRV):** &nbsp;<br>
-Many non-row 1 seats overhang tunnels or entrances and have no seats in front of them. These seats were labeled as front row views (Example below of seats overhanging the player tunnel): &nbsp;<br>
+Many non-row 1 seats overhang tunnels or entrances and have no seats in front of them. I labeled these seats as front row views (Example below of seats overhanging the player tunnel): &nbsp;<br>
 ![Image](/assets/nba/frv.jpg)
 
 &nbsp;<br>
