@@ -21,10 +21,10 @@ The tool below allows you to build a custom UFC card and predict the Pay-Per-Vie
 
 **Some of the key factors that lead to increased Pay-Per-View Sales were:**
  - Higher quality fighters across the entire card was correlated with an increased Buyrate.
- - Each finish on a main event fighter's record was found to increase buys by about 7,000
- - Title fight wins & losses were also found to be impactful for both main event & non-main event fighters.
+ - Each finish on a main event fighter's record was found to increase their draw power by about 7,000 buys
+ - Title fight wins & losses were also found to be impactful for both main event & non-main event fighters:
    - Title fight wins for any fighter on the card lead to a higher buyrate on average
-   - Title fight losses were particularly impactful for main event fighters: Each loss in a title fight reduces a main fighter's predicted draw power by about 25,000 buys.
+   - Title fight losses were particularly impactful for main event fighters - Each loss in a title fight reduces a main fighter's predicted draw power by about 25,000 buys.
 
 ### Data & Methodology Overview
 Pay-Per-View buy rate data was sourced from Tapology, covering 210 UFC events through UFC 274. The dataset was filtered to include events from UFC 57 (2006) onward, ensuring relevance to the modern UFC era. Within this timeframe, 32 events lacked available PPV data. The model developed in this project is specifically designed to predict PPV buy rates for events within this modern-era range.
