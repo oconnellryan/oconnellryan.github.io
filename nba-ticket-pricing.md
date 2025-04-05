@@ -98,11 +98,11 @@ Many non-row 1 seats overhang tunnels or entrances and have no seats in front of
 There are WCA (wheelchair access) areas in the arena. These seats are located in the back of sections in the lower bowl: &nbsp;<br>
 &nbsp;<br>
 <div style="display: flex; align-items: center;">
-  <img src="/assets/nba/lb_wca_graph.png" alt="Graph" width="600"/>
+  <img src="/assets/nba/lb_wca_graph.png" alt="Graph" width="540"/>
   
   <div style="display: flex; flex-direction: column; align-items: center; margin-left: 10px;">
     <span>View from seat:</span>
-    <img src="/assets/nba/wca_lb_view.jpg" alt="Image" width="130"/>
+    <img src="/assets/nba/wca_lb_view.jpg" alt="Image" width="200"/>
   </div>
 </div>
 
