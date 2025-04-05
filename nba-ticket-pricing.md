@@ -82,15 +82,15 @@ The floor was split up by side of the court: &nbsp;<br>
 ### Seat Features
 **Row:** &nbsp;<br>
 As expected, the average ticket price decreases as you go back in rows: &nbsp;<br>
-<img src="/assets/nba/row_avgs_graph.png" alt="Image" width="600""/> &nbsp;<br>
+<img src="/assets/nba/row_avgs_graph.png" alt="Image" width="600"/> &nbsp;<br>
 This is especially true in the lower bowl:
-<img src="/assets/nba/lb_rows_graph.png" alt="Image" width="600""/> &nbsp;<br>
+<img src="/assets/nba/lb_rows_graph.png" alt="Image" width="600"/> &nbsp;<br>
 The row trend is not as strong in the upper bowl:
-<img src="/assets/nba/ub_rows.png" alt="Image" width="600""/> &nbsp;<br>
+<img src="/assets/nba/ub_rows.png" alt="Image" width="600"/> &nbsp;<br>
 
 **Front Row Views (FRV):** &nbsp;<br>
 Many non-row 1 seats overhang tunnels or entrances and have no seats in front of them. I labeled these seats as front row views (Example below of seats overhanging the player tunnel): &nbsp;<br>
-<img src="/assets/nba/frv.jpg" alt="Image" width="600""/> &nbsp;<br>
+<img src="/assets/nba/frv.jpg" alt="Image" width="600"/> &nbsp;<br>
 
 &nbsp;<br>
 
@@ -111,16 +111,16 @@ View from seat:
 
 **Graphs of New Rows Created:** &nbsp;<br>
 The front row view seats appear to have a premium while the WCA seats are not very expensive in the lower bowl:
-![Image](/assets/nba/lb_rows_graph2.png)
+<img src="/assets/nba/lb_rows_graph2.png" alt="Image" width="600"/> 
 The front row view seats have an average price around the same as row 1 seats in the upper bowl. The upper bowl WCA seats have the highest average prices in the upper bowl:
-![Image](/assets/nba/ub_rows2.png)
+<img src="/assets/nba/ub_rows2.png" alt="Image" width="600"/> 
 
 &nbsp;<br>
 
 ## Modeling
 ### Lower Bowl:
 The following model predicts ticket prices for seats in the lower bowl:
-![Image](/assets/nba/lb_model.png)
+<img src="/assets/nba/lb_model.png" alt="Image" width="400"/> 
 The model backs up the earlier findings regarding external game factors:
 - Better & big market opponents lead to higher prices
 - Prices are higher in games where Steph Curry plays
