@@ -18,10 +18,10 @@ The tool below allows you to build a custom UFC card and predict the Pay-Per-Vie
 </div>
 
 **Some of the key factors that were found to impact Pay-Per-View Sales:**
- - Higher quality fighters across the entire card was correlated with an increased Buyrate.
- - Each finish on a main event fighter's record was found to increase Buy Rate by about 7,000
+ - Higher quality fighters across the entire card was correlated with an increased sales.
+ - Each finish on a main event fighter's record was found to increase PPV Buy Rate by about 7,000
  - Title fight wins & losses were also found to be impactful:
-   - Title wins for any fighter on the card lead to a higher buyrate on average
+   - Title wins for any fighter on the card lead to a higher Buy Rate on average
    - Title losses were particularly hurtful to main event fighters: Each one reduces predicted draw power by about 25,000 buys.
 
 ### Data & Methodology Overview
