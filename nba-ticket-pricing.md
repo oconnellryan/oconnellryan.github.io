@@ -117,19 +117,10 @@ The front row view seats have an average price around the same as row 1 seats in
 
 &nbsp;<br>
 
-## Modeling
+## Modeling:
+Three models were created to model the ticket prices for entire stadium based on the areas broken down earlier. Many of the predictors were the same for each model, but each one was adjusted for the factors relevant in its area.
 ### Lower Bowl:
 The following model predicts ticket prices for seats in the lower bowl:
-<img src="/assets/nba/lb_model.png" alt="Image" width="400"/> 
-The model backs up the earlier findings regarding external game factors:
-- Better & big market opponents lead to higher prices
-- Prices are higher in games where Steph Curry plays
-- Friday & Saturday games are the most expensive
-- Tickets get cheaper as an event approaches
-
-<div style="display: flex; align-items: center;">
-  <img src="/assets/nba/lb_model.png" alt="Image" width="400" style="margin-right: 20px;"/>
-
   <div>
     <p style="margin: 0 0 8px 0;">The model backs up the earlier findings regarding external game factors:</p>
     <ul style="margin: 0; padding-left: 20px;">
