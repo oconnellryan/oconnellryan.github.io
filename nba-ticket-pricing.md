@@ -181,11 +181,8 @@ The following graph shows predicted upper bowl prices while holding external fac
   <div>
     <ul style="margin: 0; padding-left: 20px;">
       <li>True front row seats are predicted to be worth roughly $1800 more than the seat directly behind them</li>
-      <li>Predicted prices decrease as you go closer to the corners of the arena</li>
-      <li>Ticket prices drop around $2 every row you go back</li>
-      <li>Row 1 seats are predicted to be roughly $11 more than the seat directly behind them</li>
-      <li>Front row view seats (not row 1) are predicted $15 more than the seat directly behind them</li>
-      <li>Unlike the lower bowl, wheelchair access sections contain the most expensive upper bowl seats</li>
+      <li>Predicted prices drop around $600 when going from row BB (true row 2) to A1 (the section behind)</li>
+      <li>Tickets in the middle are more expensive (unless sitting behind the baskets)</li>
     </ul>
   </div>
 </div>
