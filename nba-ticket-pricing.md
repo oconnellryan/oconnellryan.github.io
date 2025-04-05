@@ -8,7 +8,7 @@ As my capstone project for the NBA Future Analytics Stars Program, I developed a
 
 
 ## Result Highlights
-The following graphic showcases the predicted ticket prices for each seat in an individual game scaling from lowest (red) to the highest prices tickets (green): &nbsp;<br>
+The following graphic showcases the predicted ticket prices for each seat in an individual game scaling from highest (red) to the lowest priced tickets (green): &nbsp;<br>
 ![Image](/assets/nba/arena_heatmap.png)
 
 &nbsp;<br>
@@ -96,24 +96,25 @@ Many non-row 1 seats overhang tunnels or entrances and have no seats in front of
 
 **Wheelchair Access (WCA) Areas:** &nbsp;<br>
 There are WCA (wheelchair access) areas in the arena. These seats are located in the back of sections in the lower bowl: &nbsp;<br>
-&nbsp;<br>
 <div style="display: flex; align-items: center;">
-  <img src="/assets/nba/lb_wca_graph.png" alt="Graph" width="540"/>
+  <img src="/assets/nba/lb_wca_graph.png" alt="Graph" width="560"/>
   
   <div style="display: flex; flex-direction: column; align-items: center; margin-left: 10px;">
     <span>View from seat:</span>
-    <img src="/assets/nba/wca_lb_view.jpg" alt="Image" width="200"/>
+    <img src="/assets/nba/wca_lb_view.jpg" alt="Image" width="180"/>
   </div>
 </div>
 
-<img src="/assets/nba/lb_wca_graph.png" alt="Image" width="800"/> &nbsp;<br>
-View from seat: &nbsp;<br>
-<img src="/assets/nba/wca_lb_view.jpg" alt="Image" width="200"/> &nbsp;<br>
-<br style="clear:both" />
 The WCA sections in the upper bowl are located in front of or in the middle of sections: &nbsp;<br>
-<img src="/assets/nba/ub_wca_map.png" alt="Image" width="530"/> 
-View from seat: 
-<img src="/assets/nba/wca_ub_view.jpg" alt="Image" width="200"/> &nbsp;<br>
+There are WCA (wheelchair access) areas in the arena. These seats are located in the back of sections in the lower bowl: &nbsp;<br>
+<div style="display: flex; align-items: center;">
+  <img src="/assets/nba/ub_wca_map.png" alt="Graph" width="560"/>
+  
+  <div style="display: flex; flex-direction: column; align-items: center; margin-left: 10px;">
+    <span>View from seat:</span>
+    <img src="/assets/nba/wca_ub_view.jpg" alt="Image" width="180"/>
+  </div>
+</div>
 
 
 &nbsp;<br>
