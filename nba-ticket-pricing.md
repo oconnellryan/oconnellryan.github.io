@@ -50,7 +50,7 @@ Most games were played at 7:00 local time. 25 games were played earlier (almost 
 **Time of Purchase:** &nbsp;<br>
 Tickets are more expensive when purchased further out from games. There is a sharp decrease in the price of gameday tickets: &nbsp;<br>
 <img src="/assets/nba/days_before_graph.png" alt="Image" width="600"/> 
-<div style="display: inline-block; vertical-align: middle;">
+<div style="display: inline-block; vertical-align: center;">
   <div style="display: flex; flex-direction: column; align-items: center;">
     <span>Categories:</span>
     <img src="/assets/nba/new_days.png" alt="Image" width="130"/>
