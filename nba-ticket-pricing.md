@@ -75,7 +75,7 @@ The bowl of the arena was broken down into further sections based on location an
 
 **Courtside & Floor:** &nbsp;<br>
 The floor was split up by side of the court: &nbsp;<br>
-![Image](/assets/nba/cs_areas_map.png)
+<img src="/assets/nba/cs_areas_map.png" alt="Image" width="600"/> 
 <img src="/assets/nba/curry_23.png" alt="Image" width="130" style="vertical-align: center;"/> &nbsp;<br>
 
 
@@ -130,7 +130,6 @@ The front row view seats have an average price around the same as row 1 seats in
 ## Modeling:
 Three models were created to model the ticket prices for entire stadium based on the areas broken down earlier. Many of the predictors were the same for each model, but each one was adjusted for the factors relevant in its area.
 ### Lower Bowl:
-The following model predicts ticket prices for seats in the lower bowl:
 <div style="display: flex; align-items: center;">
   <img src="/assets/nba/lb_model.png" alt="Image" width="400" style="margin-right: 20px;"/>
 
@@ -146,11 +145,8 @@ The following model predicts ticket prices for seats in the lower bowl:
 </div>
 
 
-
-&nbsp;<br>
-
 The following graph shows predicted lower bowl prices for a specific game:
-![Image](/assets/images/lb_heatmap.png)
+<img src="/assets/images/lb_heatmap.png" alt="Image" width="700"/> 
 
 Findings specific to lower bowl:
 - Sideline club tickets are much more expensive, while general 100 tickets are slightly more expensive than the Pepsi club
@@ -160,9 +156,8 @@ Findings specific to lower bowl:
 - Front row view seats (not row 1) are predicted $50 more than the seat directly behind them
 - Wheelchair areas are the cheapest seats in the lower bowl
 
-### Upper Bowl:
-A seperate model was created for the upper bowl:
-![Image](/assets/nba/ub_model.png)
+### Upper Bowl Model:
+<img src="/assets/nba/ub_model.png" alt="Image" width="600"/> 
 The following graph shows predicted upper bowl prices while holding external factors constant:
 ![Image](/assets/nba/ub_heatmap.png)
 
