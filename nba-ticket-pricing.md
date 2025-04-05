@@ -134,12 +134,14 @@ Three models were created to model the ticket prices for entire stadium based on
   <img src="/assets/nba/lb_model.png" alt="Image" width="400" style="margin-right: 20px;"/>
 
   <div>
-    <p style="margin: 0 0 8px 0;">The model backs up the earlier findings regarding external game factors:</p>
+    <p style="margin: 0 0 8px 0;">Findings specific to lower bowl:</p>
     <ul style="margin: 0; padding-left: 20px;">
-      <li>Better & big market opponents lead to higher prices</li>
-      <li>Prices are higher in games where Steph Curry plays</li>
-      <li>Friday & Saturday games are the most expensive</li>
-      <li>Tickets get cheaper as an event approaches</li>
+      <li>Sideline club tickets are much more expensive, while general 100 tickets are slightly more expensive than the Pepsi club</li>
+      <li>Tickets closer to the center of the court are much more expensive</li>
+      <li>Tickets prices drop around $6 every row you go back</li>
+      <li>Row 1 tickets are predicted $100 more espensive than  the seat directly behind them</li>
+      <li>Front row view seats (not row 1) are predicted $50 more than the seat directly behind them</li>
+      <li>Wheelchair areas are the cheapest seats in the lower bowl</li>
     </ul>
   </div>
 </div>
@@ -148,13 +150,6 @@ Three models were created to model the ticket prices for entire stadium based on
 The following graph shows predicted lower bowl prices for a specific game:
 <img src="/assets/images/lb_heatmap.png" alt="Image" width="700"/> 
 
-Findings specific to lower bowl:
-- Sideline club tickets are much more expensive, while general 100 tickets are slightly more expensive than the Pepsi club
-- Tickets closer to the center of the court are much more expensive
-- Tickets prices drop around $6 every row you go back
-- Row 1 tickets are predicted $100 more espensive than  the seat directly behind them
-- Front row view seats (not row 1) are predicted $50 more than the seat directly behind them
-- Wheelchair areas are the cheapest seats in the lower bowl
 
 ### Upper Bowl Model:
 <img src="/assets/nba/ub_model.png" alt="Image" width="600"/> 
@@ -180,6 +175,12 @@ Key takeaways:
 - Predicted prices drop around $600 when going from row BB (true row 2) to A1 (the section behind)
 - Tickets in the middle are more expensive (unless sitting behind the baskets)
 
+
+All three models back up the earlier findings regarding external game factors:
+- Better & big market opponents lead to higher prices
+- Prices are higher in games where Steph Curry plays
+- Friday & Saturday games are the most expensive
+- Tickets get cheaper as an event approaches
 
 ## Materials:
 [Full Write Up](https://oconnellryan.github.io/assets/fas-capstone.pdf) &nbsp;<br>
