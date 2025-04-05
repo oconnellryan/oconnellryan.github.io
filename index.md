@@ -12,10 +12,12 @@ These projects explore the business side of sports including fan behavior, reven
 [![Image](/assets/images/ufc_ppv_analysis.png)](https://oconnellryan.github.io/ufc_ppv.html)  &nbsp;<br>
 
 [![Image](/assets/images/nba_ticket_pricing.png)](https://oconnellryan.github.io/nba-ticket-pricing.html)  &nbsp;<br>
+&nbsp;<br>
 
 
 ### UFC Fight Analytics:
 These projects explore MMA through analytics, including live win probabilities, uncovering judging tendencies, and rating fighter career performance: &nbsp;<br>
+&nbsp;<br>
 [![Image](/assets/buttons/live_scoring_model.png)](https://oconnellryan.github.io/ufc-live-scoring.html)
 
 [![Image](/assets/buttons/ufc_judging_analysis.png)](https://oconnellryan.github.io/ufc-judging-analysis.html)
