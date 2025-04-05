@@ -1,7 +1,9 @@
 ---
 layout: page
 ---
-This project identified some of the factors most relevant to UFC pay per view sales, as well as identified random effects for how much each fighter contributed to Pay-Per-View Sales based on card placement. 
+
+### Project Overview:
+The goal of this project was to identify key fighter attributes that significantly influence UFC Pay-Per-View (PPV) sales and to quantify the incremental PPV value that each individual fighter contributes to an event.
 
 ### Result highlights:
 The tool below allows you to build a custom UFC card and predict the Pay-Per-Views using the model. This model uses a combination of fighter attributes found significant and the individual effects calculated for each fighter: &nbsp;<br>
@@ -16,19 +18,24 @@ The tool below allows you to build a custom UFC card and predict the Pay-Per-Vie
 </div>
 
 
-
 **Some of the key factors that lead to increased Pay-Per-View Sales were:**
  - Higher quality fighters (calculated by performance ratings) across the entire card was correlated with an increased Buyrate.
  - Finishing opponents: each finish was found to increase a main event fighter's draw power by about 7,000 buys.
  - Title fight wins & losses were also found to be impactful for both main event & non-main event fighters.
    - Title fight wins for any fighter on the card lead to a higher buyrate on average (ranging from about 3,000 increased buys for main event fighters to 400 increased buys for lower on the card).
    - Title fight losses were highly impactful, especially for main event fighters. A loss in a title fight reduces a main fighter's predicted draw power by about 25,000 buys.
-  
+
+### Data & Methodology Overview
+Pay-Per-View buy rate data was sourced from Tapology, covering 185 UFC events through UFC 274. The dataset was filtered to include events from UFC 57 (2006) onward, ensuring relevance to the modern UFC era. Within this timeframe, 32 events lacked available PPV data. The model developed in this project is specifically designed to predict PPV buy rates for events within this modern-era range.
+
+Fighter data from UFC Stats provided detailed fight outcomes, title fight indicators, and fight-level statistics. Various fighter metrics were tested, with the most relevant ones included in the model.
+
+A custom formula I created that adjust ratings after each fight based on quality of opponent was also used to capture fighter quality. You can read more about how this formula works here. For this PPV analysis, I utilized a modified version of this FPR formula that does not give fighters boosts for finishes or title fight wins.
 
 ### Full Variable Analysis
 
 #### Fighter Strength:
-Obviously, one would suspect that having better fighters on a card leads to higher Pay-Pey-View sales. To capture fighter strength, I will utilize the Fighter Performance Ratings (FPR) formula I have created which I explain in detail here. The following graph shows the relationship between the combined FPR of the main event fighters and the PPV Buyrate: &nbsp;<br>
+Obviously, one would suspect that having better fighters on a card leads to higher Pay-Pey-View sales. I will use my Fighter Performance Ratings (FPR) to examine this. The following graph shows the relationship between the combined FPR of the main event fighters and the Pay-Per-View Buyrate: &nbsp;<br>
 <p style="text-align: center;">
   <img src="/assets/ufc/main_fpr_buyrate.png" alt="Image" width="600" style="display: block; margin: auto;"/>
 </p>
@@ -38,7 +45,7 @@ This raises a follow up question of how much the strength of the rest of the car
 <p style="text-align: center;">
   <img src="/assets/ufc/rest_fpr_buyrate.png" alt="Image" width="600"/>
 </p>
-Interestingly, this relationship appears even stronger. This suggests that fans may evaluate the full card, not just the main event, when deciding whether to purchase a PPV.
+Interestingly, this relationship appears even stronger. This suggests that fans may evaluate the full card, not just the main event, when deciding whether to purchase a Pay-Per-View.
 
 #### Previous Title Fight Results:
 **Title Fight Wins:** &nbsp;<br>
