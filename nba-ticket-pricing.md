@@ -10,10 +10,10 @@ As my capstone project for the NBA Future Analytics Stars Program, I developed a
 ## Result Highlights
 The following graphic showcases the predicted ticket prices for each seat in an individual game scaling from highest (red) to the lowest priced tickets (green): &nbsp;<br>
 ![Image](/assets/nba/arena_heatmap.png)
-Aside from seat variables, the factors that lead to higher ticket prices were:
-- Better & bigger market opponents (playing the Lakers increased courside ticket prices by over $1,000)
+Beyond seat location, several external factors significantly increased ticket prices:
+- Better & big market opponents (playing the Lakers raised courside ticket prices by over $1,000)
 - Availability of Steph Curry (his absence decreased average lower bowl ticket prices by about $15)
-- Weekend games & games earlier in the day (both factors raised lower bowl ticket prices about $40)
+- Weekend games & earlier game times (both factors raised lower bowl ticket prices about $40)
 - Purchasing tickets further out from the game (gameday ticket prices dropped around $50 on average)
 
 &nbsp;<br>
