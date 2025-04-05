@@ -187,6 +187,8 @@ The following graph shows predicted upper bowl prices while holding external fac
   </div>
 </div>
 
+&nbsp;<br>
+
 <div style="display: flex; align-items: center;">
   <img src="/assets/nba/cs_model.png" alt="Image" width="400" style="margin-right: 20px;"/>
 
