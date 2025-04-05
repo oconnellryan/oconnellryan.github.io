@@ -23,6 +23,7 @@ The tool below allows you to build a custom UFC card and predict the Pay-Per-Vie
  - Title fight wins & losses were also found to be impactful:
    - Title wins for any fighter on the card lead to a higher Buy Rate on average
    - Title losses were particularly hurtful to main event fighters: Each one reduces predicted draw power by about 25,000 buys.
+&nbsp;<br>
 
 ### Data & Methodology Overview
 Pay-Per-View buy rate data was sourced from Tapology, covering 210 UFC events through UFC 274. The dataset was filtered to include events from UFC 57 (2006) onward, ensuring relevance to the modern UFC era. Within this timeframe, 32 events lacked available PPV data. The model developed in this project is specifically designed to predict PPV buy rates for events within this modern-era range.
@@ -85,7 +86,7 @@ Let’s check whether this also holds for the rest of the card: &nbsp;<br>
   <img src="/assets/ufc/rest_finish_buyrate.png" alt="Image" width="600"/>
 </p>
 While not quite as strong as a relationship as the main event fighters, we can again see that the other fighters on the card having more finishes is positively correlated with Buyrate.
-
+&nbsp;<br>
 
 ### Final Model Results:
 #### Fighter Attributes (Main & Interraction Effects):
@@ -95,7 +96,7 @@ The graph below displays the coefficient values for main effects (blue) and inte
 </p>
 The results align closely with the initial analysis. Fighter quality and having finished past opponents influences PPV buy rates across all card placements. However, past title fight outcomes (both wins and losses) have a much stronger impact on PPV buys for fighters in main-event positions.
 
-
+&nbsp;<br>
 
 [Read Full Paper](https://oconnellryan.github.io/assets/ufc_ppv_modeling.pdf) &nbsp;<br>
 
