@@ -58,6 +58,17 @@ Tickets are more expensive when purchased further out from games. There is a sha
 </div>
 
 
+<div style="display: inline-block; vertical-align: middle;">
+  <img src="/assets/nba/days_before_graph.png" alt="Graph" width="560"/>
+</div>
+<div style="display: inline-block; vertical-align: middle; text-align: center;">
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <span>Categories:</span>
+    <img src="/assets/nba/new_days.png" alt="Image" width="130"/>
+  </div>
+</div>
+
+
 
 &nbsp;<br>
 
