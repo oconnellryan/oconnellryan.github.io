@@ -37,7 +37,6 @@ Steph Curry missed 15 games in 2022, and we can see the average ticket prices dr
 <img src="/assets/nba/curry_22_graph.png" alt="Image" width="600"/>
 <img src="/assets/nba/curry_22.png" alt="Image" width="130" style="vertical-align: center;"/> &nbsp;<br>
 
-
 He did not miss as many games in 2023, but again these games had lower prices: &nbsp;<br>
 <img src="/assets/nba/curry_23_graph.png" alt="Image" width="600"/> 
 <img src="/assets/nba/curry_23.png" alt="Image" width="130" style="vertical-align: center;"/> &nbsp;<br>
@@ -64,8 +63,6 @@ Tickets are more expensive when purchased further out from games. There is a sha
 </div>
 
 
-
-
 &nbsp;<br>
 
 ### Stadium Areas
@@ -83,6 +80,7 @@ The floor was split up by side of the court: &nbsp;<br>
 <img src="/assets/nba/cs_areas_map.png" alt="Image" width="600"/> 
 <img src="/assets/nba/curry_23.png" alt="Image" width="130" style="vertical-align: center;"/> &nbsp;<br>
 
+&nbsp;<br>
 
 ### Seat Features
 **Row:** &nbsp;<br>
