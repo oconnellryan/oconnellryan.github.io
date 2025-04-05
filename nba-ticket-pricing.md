@@ -179,8 +179,19 @@ Findings specific to upper bowl:
 - Unlike the lower bowl, wheelchair access sections contain the most expensive upper bowl seats
 
 ### Courtside:
-
 Finally, a courtside model was created:
+<div style="display: flex; align-items: center;">
+  <img src="/assets/nba/cs_model.png" alt="Image" width="400" style="margin-right: 20px;"/>
+
+  <div>
+    <ul style="margin: 0; padding-left: 20px;">
+      <li>True front row seats are predicted to be worth roughly $1800 more than the seat directly behind them</li>
+      <li>Predicted prices drop around $600 when going from row BB (true row 2) to A1 (the section behind)</li>
+      <li>Tickets in the middle are more expensive (unless sitting behind the baskets)</li>
+    </ul>
+  </div>
+</div>
+
 ![Image](/assets/nba/cs_model.png)
 Courtside graph (size of seat is predicted price):
 ![Image](/assets/nba/cs_size_graph.png)
