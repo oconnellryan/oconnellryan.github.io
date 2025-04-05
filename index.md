@@ -15,6 +15,7 @@ A collection of my Sports Analytics and Sports Business Analytics projects.
 
 
 ### UFC Fight Analytics:
+**These projects explore MMA through analytics, including live win probabilities, uncovering judging tendencies, and rating fighter career performance:** &nbsp;<br>
 [![Image](/assets/buttons/live_scoring_model.png)](https://oconnellryan.github.io/ufc-live-scoring.html)
 
 [![Image](/assets/buttons/ufc_judging_analysis.png)](https://oconnellryan.github.io/ufc-judging-analysis.html)
