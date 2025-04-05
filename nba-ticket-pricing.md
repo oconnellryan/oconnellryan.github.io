@@ -97,6 +97,15 @@ Many non-row 1 seats overhang tunnels or entrances and have no seats in front of
 **Wheelchair Access (WCA) Areas:** &nbsp;<br>
 There are WCA (wheelchair access) areas in the arena. These seats are located in the back of sections in the lower bowl: &nbsp;<br>
 &nbsp;<br>
+<div style="display: flex; align-items: center;">
+  <img src="/assets/nba/lb_wca_graph.png" alt="Graph" width="600"/>
+  
+  <div style="display: flex; flex-direction: column; align-items: center; margin-left: 10px;">
+    <span>View from seat:</span>
+    <img src="/assets/nba/wca_lb_view.jpg" alt="Image" width="130"/>
+  </div>
+</div>
+
 <img src="/assets/nba/lb_wca_graph.png" alt="Image" width="800"/> &nbsp;<br>
 View from seat: &nbsp;<br>
 <img src="/assets/nba/wca_lb_view.jpg" alt="Image" width="200"/> &nbsp;<br>
@@ -121,6 +130,9 @@ The front row view seats have an average price around the same as row 1 seats in
 Three models were created to model the ticket prices for entire stadium based on the areas broken down earlier. Many of the predictors were the same for each model, but each one was adjusted for the factors relevant in its area.
 ### Lower Bowl:
 The following model predicts ticket prices for seats in the lower bowl:
+<div style="display: flex; align-items: center;">
+  <img src="/assets/nba/lb_model.png" alt="Image" width="400" style="margin-right: 20px;"/>
+
   <div>
     <p style="margin: 0 0 8px 0;">The model backs up the earlier findings regarding external game factors:</p>
     <ul style="margin: 0; padding-left: 20px;">
@@ -131,6 +143,7 @@ The following model predicts ticket prices for seats in the lower bowl:
     </ul>
   </div>
 </div>
+
 
 
 &nbsp;<br>
