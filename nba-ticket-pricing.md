@@ -8,7 +8,7 @@ As my capstone project for the NBA Future Analytics Stars Program, I developed a
 
 
 ## Result Highlights
-The following graphic showcases the predicted ticket prices for each seat in an individual game scaling from lowest (red) to the highest prices tickets (green):
+The following graphic showcases the predicted ticket prices for each seat in an individual game scaling from lowest (red) to the highest prices tickets (green): &nbsp;<br>
 ![Image](/assets/nba/arena_heatmap.png)
 
 &nbsp;<br>
@@ -16,19 +16,19 @@ The following graphic showcases the predicted ticket prices for each seat in an 
 ## Exploratory Analysis
 ### External Game Factors
 **Opponent:** &nbsp;<br>
-Playing big market teams and opponents that win more both lead to higher average ticket prices:
+Playing big market teams and opponents that win more both lead to higher average ticket prices: &nbsp;<br>
 ![Image](/assets/nba/opps.png)
 
 &nbsp;<br>
 
 **Weekday:** &nbsp;<br>
-Saturday games have the highest prices on average, but there are no other clear trends here:
+Saturday games have the highest prices on average, but there are no other clear trends here: &nbsp;<br>
 ![Image](/assets/nba/weekdays.png)
 
 &nbsp;<br>
 
 **Star Players:** &nbsp;<br>
-Steph Curry missed 15 games in 2022, and we can see the average ticket prices dropped quickly when he was out:
+Steph Curry missed 15 games in 2022, and we can see the average ticket prices dropped quickly when he was out: &nbsp;<br>
 <img src="/assets/nba/curry_22_graph.png" alt="Image" width="550"/> &nbsp;<br>
 <img src="/assets/nba/curry_22.png" alt="Image" width="170"/> &nbsp;<br>
 
