@@ -6,8 +6,8 @@ A collection of my Sports Analytics and Sports Business Analytics projects.
 
 &nbsp;<br>
 
-### Economic and Business Analytics in Sports:
-**These projects explore the economic side of sports, including fan behavior and revenue optimization.** &nbsp;<br>
+### Business Analytics in Sports:
+**These projects explore the economic side of sports, including fan behavior, revenue optimization, and pricing strategy:** &nbsp;<br>
 
 [![Image](/assets/images/ufc_ppv_analysis.png)](https://oconnellryan.github.io/ufc_ppv.html)  &nbsp;<br>
 
