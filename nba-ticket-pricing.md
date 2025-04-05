@@ -14,7 +14,7 @@ Beyond seat location, several external factors significantly increased ticket pr
 - Better & big market opponents (playing the Lakers raised courside ticket prices by over $1,000)
 - Availability of Steph Curry (his absence decreased average lower bowl ticket prices by about $15)
 - Weekend games & earlier game times (both factors raised lower bowl ticket prices about $40)
-- Purchasing tickets further out from the game (gameday ticket prices dropped around $50 on average)
+- Purchasing further out from the game (gameday ticket prices dropped around $50 on average)
 
 &nbsp;<br>
 
