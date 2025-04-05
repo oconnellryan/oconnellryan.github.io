@@ -22,7 +22,7 @@ Senior Thesis Project focused on identifying individual UFC Judge tendencies: &n
 
 &nbsp;<br>
 Fighter Rankings Formula I created: &nbsp;<br>
-[![Image](/assets/buttons/ufc_rankings_formula.png)](https://oconnellryan.github.io/ufc-rankings.html)
+[![Image](/assets/ufc/ufc_rankings_formula.png)](https://oconnellryan.github.io/ufc-rankings.html)
 &nbsp;<br>
 
 &nbsp;<br>
