@@ -132,7 +132,7 @@ The front row view seats have an average price around the same as row 1 seats in
 
 &nbsp;<br>
 
-## Modeling:
+## Final Models:
 Three models were created to model the ticket prices for entire stadium based on the areas broken down earlier. Many of the predictors were the same for each model, but each one was adjusted for the factors relevant in its area.
 ### Lower Bowl Model:
 <div style="display: flex; align-items: center;">
@@ -176,7 +176,7 @@ The following graph shows predicted lower bowl prices for a specific game:
 &nbsp;<br>
 
 The following graph shows predicted upper bowl prices while holding external factors constant:
-![Image](/assets/nba/ub_heatmap.png)
+<img src="/assets/nba/ub_heatmap.png" alt="Image" width="700"/> 
 
 
 ### Courtside Model:
@@ -195,7 +195,7 @@ The following graph shows predicted upper bowl prices while holding external fac
 &nbsp;<br>
 
 Courtside graph (size of seat is predicted price):
-![Image](/assets/nba/cs_size_graph.png)
+<img src="/assets/nba/cs_size_graph.png" alt="Image" width="700"/> 
 
 ### Other Model Takeaways:
 All three models back up the earlier findings regarding external game factors:
