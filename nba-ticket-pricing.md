@@ -49,17 +49,8 @@ Most games were played at 7:00 local time. 25 games were played earlier (almost 
 
 **Time of Purchase:** &nbsp;<br>
 Tickets are more expensive when purchased further out from games. There is a sharp decrease in the price of gameday tickets: &nbsp;<br>
-<img src="/assets/nba/days_before_graph.png" alt="Image" width="500"/> 
-<div style="display: inline-block; vertical-align: center;">
-  <div style="display: flex; flex-direction: column;">
-    <span>Categories:</span>
-    <img src="/assets/nba/new_days.png" alt="Image" width="130"/>
-  </div>
-</div>
-
-
 <div style="display: flex; align-items: center;">
-  <img src="/assets/nba/days_before_graph.png" alt="Graph" width="560"/>
+  <img src="/assets/nba/days_before_graph.png" alt="Graph" width="600"/>
   
   <div style="display: flex; flex-direction: column; align-items: center; margin-left: 10px;">
     <span>Categories:</span>
@@ -75,30 +66,31 @@ Tickets are more expensive when purchased further out from games. There is a sha
 ### Stadium Areas
 The following sections were deduced with the data provided: &nbsp;<br>
 <img src="/assets/nba/new_group.png" alt="Image" width="600"/> 
-<img src="/assets/nba/new_group_avgs.png" alt="Image" width="130"/> &nbsp;<br>
+<img src="/assets/nba/new_group_avgs.png" alt="Image" width="130" style="vertical-align: center;"/> &nbsp;<br>
 
 **Bowl:** &nbsp;<br>
 The bowl of the arena was broken down into further sections based on location and club access: &nbsp;<br>
-<img src="/assets/nba/new_sections.png" alt="Image" width="570"/> 
-<img src="/assets/nba/new_sec_avgs.png" alt="Image" width="160"/> &nbsp;<br>
+<img src="/assets/nba/new_sections.png" alt="Image" width="600"/> 
+<img src="/assets/nba/new_sec_avgs.png" alt="Image" width="130" style="vertical-align: center;"/> &nbsp;<br>
 
 **Courtside & Floor:** &nbsp;<br>
 The floor was split up by side of the court: &nbsp;<br>
 ![Image](/assets/nba/cs_areas_map.png)
-<img src="/assets/nba/curry_23.png" alt="Image" width="200"/> &nbsp;<br>
+<img src="/assets/nba/curry_23.png" alt="Image" width="130" style="vertical-align: center;"/> &nbsp;<br>
+
 
 ### Seat Features
 **Row:** &nbsp;<br>
 As expected, the average ticket price decreases as you go back in rows: &nbsp;<br>
-![Image](/assets/nba/row_avgs_graph.png)
+<img src="/assets/nba/row_avgs_graph.png" alt="Image" width="600""/> &nbsp;<br>
 This is especially true in the lower bowl:
-![Image](/assets/nba/lb_rows_graph.png)
+<img src="/assets/nba/lb_rows_graph.png" alt="Image" width="600""/> &nbsp;<br>
 The row trend is not as strong in the upper bowl:
-![Image](/assets/nba/ub_rows.png)
+<img src="/assets/nba/ub_rows.png" alt="Image" width="600""/> &nbsp;<br>
 
 **Front Row Views (FRV):** &nbsp;<br>
 Many non-row 1 seats overhang tunnels or entrances and have no seats in front of them. I labeled these seats as front row views (Example below of seats overhanging the player tunnel): &nbsp;<br>
-![Image](/assets/nba/frv.jpg)
+<img src="/assets/nba/frv.jpg" alt="Image" width="600""/> &nbsp;<br>
 
 &nbsp;<br>
 
