@@ -154,7 +154,7 @@ The following graph shows predicted lower bowl prices for a specific game:
 
 ### Upper Bowl Model:
 <div style="display: flex; align-items: center;">
-  <img src="/assets/nba/lb_model.png" alt="Image" width="400" style="margin-right: 20px;"/>
+  <img src="/assets/nba/ub_model.png" alt="Image" width="400" style="margin-right: 20px;"/>
 
   <div>
     <ul style="margin: 0; padding-left: 20px;">
