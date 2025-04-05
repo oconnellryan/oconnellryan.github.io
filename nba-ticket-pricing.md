@@ -130,12 +130,15 @@ The model backs up the earlier findings regarding external game factors:
 <div style="display: flex; align-items: center;">
   <img src="/assets/nba/lb_model.png" alt="Image" width="400" style="margin-right: 20px;"/>
 
-  <ul style="margin: 0; padding-left: 20px;">
-    <li>Better & big market opponents lead to higher prices</li>
-    <li>Prices are higher in games where Steph Curry plays</li>
-    <li>Friday & Saturday games are the most expensive</li>
-    <li>Tickets get cheaper as an event approaches</li>
-  </ul>
+  <div>
+    <p style="margin: 0 0 8px 0;">The model backs up the earlier findings regarding external game factors:</p>
+    <ul style="margin: 0; padding-left: 20px;">
+      <li>Better & big market opponents lead to higher prices</li>
+      <li>Prices are higher in games where Steph Curry plays</li>
+      <li>Friday & Saturday games are the most expensive</li>
+      <li>Tickets get cheaper as an event approaches</li>
+    </ul>
+  </div>
 </div>
 
 
