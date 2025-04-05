@@ -29,36 +29,36 @@ Saturday games have the highest prices on average, but there are no other clear 
 
 **Star Player Impact:** &nbsp;<br>
 Steph Curry missed 15 games in 2022, and we can see the average ticket prices dropped quickly when he was out: &nbsp;<br>
-<img src="/assets/nba/curry_22_graph.png" alt="Image" width="590"/>
-<img src="/assets/nba/curry_22.png" alt="Image" width="140" style="vertical-align: center;"/> &nbsp;<br>
+<img src="/assets/nba/curry_22_graph.png" alt="Image" width="600"/>
+<img src="/assets/nba/curry_22.png" alt="Image" width="130" style="vertical-align: center;"/> &nbsp;<br>
 
 
 He did not miss as many games in 2023, but again these games had lower prices: &nbsp;<br>
-<img src="/assets/nba/curry_23_graph.png" alt="Image" width="580"/> 
-<img src="/assets/nba/curry_23.png" alt="Image" width="150" style="vertical-align: top;"/> &nbsp;<br>
+<img src="/assets/nba/curry_23_graph.png" alt="Image" width="600"/> 
+<img src="/assets/nba/curry_23.png" alt="Image" width="130" style="vertical-align: center;"/> &nbsp;<br>
 
 
 &nbsp;<br>
 
 **Gametime:** &nbsp;<br>
 Most games were played at 7:00 local time. 25 games were played earlier (almost all at 5:30), and the earlier games had lower average ticket prices: &nbsp;<br>
-<img src="/assets/nba/new_times.png" alt="Image" width="200"/> &nbsp;<br>
+<img src="/assets/nba/new_times.png" alt="Image" width="130"/> &nbsp;<br>
 
 
 &nbsp;<br>
 
 **Time of Purchase:** &nbsp;<br>
 Tickets are more expensive when purchased further out from games. There is a sharp decrease in the price of gameday tickets: &nbsp;<br>
-![Image](/assets/nba/days_before_graph.png)
-Days purchased before game were split into the following categories for modeling: &nbsp;<br>
-<img src="/assets/nba/new_days.png" alt="Image" width="200"/> &nbsp;<br>
+<img src="/assets/nba/days_before_graph.png" alt="Image" width="600"/> 
+Categories:
+<img src="/assets/nba/new_days.png" alt="Image" width="130"/> &nbsp;<br>
 
 &nbsp;<br>
 
 ### Stadium Areas
 The following sections were deduced with the data provided: &nbsp;<br>
-![Image](/assets/nba/new_group.png)
-<img src="/assets/nba/new_group_avgs.png" alt="Image" width="200"/> &nbsp;<br>
+<img src="/assets/nba/new_group.png" alt="Image" width="600"/> 
+<img src="/assets/nba/new_group_avgs.png" alt="Image" width="130"/> &nbsp;<br>
 
 **Bowl:** &nbsp;<br>
 The bowl of the arena was broken down into further sections based on location and club access: &nbsp;<br>
