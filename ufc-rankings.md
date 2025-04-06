@@ -27,7 +27,8 @@ I started by applying the classic Elo rating system to UFC fights, which provide
 
 #### Post-Fight Adjustment Formula
 The formula I have created goes through all UFC Fights since UFC 17 in chronological order, and adjusts both fighters' ratings after each fight. For a fighter's first fight in the UFC, they are given a default rating of 300. For each fight in the data, the model calculates the expected win probability using the following formula (for the winner): &nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;*expected_win_prob = 1 / (1 + 10 ** ((loser_rating - winner_rating) / 370))* &nbsp;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*P<sub>L</sub> = 1 / (1 + 10 ** ((R<sub>L</sub> - winner_rating) / 370))* &nbsp;<br>
 &nbsp;<br>
 
 The expected win probability of the winner is then used in these formulas to calculate the new ratings: &nbsp;<br>
