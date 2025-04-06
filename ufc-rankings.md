@@ -28,12 +28,13 @@ I started by applying the classic Elo rating system to UFC fights, which provide
 #### Post-Fight Adjustment Formula
 The formula I have created goes through all UFC Fights since UFC 17 in chronological order, and adjusts both fighters' ratings after each fight. For a fighter's first fight in the UFC, they are given a default rating of 300. For each fight in the data, the model calculates the expected win probability using the following formula (for the winner): &nbsp;<br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;*WinProb<sub>L</sub> = 1 / (1 + 10 <sup>(Rating<sub>L</sub> - Rating<sub>W</sub>) / 370</sup>)* &nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*WinProb<sub>W</sub> = 1 / (1 + 10 <sup>(Rating<sub>L</sub> - Rating<sub>W</sub>) / 370</sup>)* &nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*WinProb<sub>L</sub> = 1 / (1 + 10 <sup>(Rating<sub>W</sub> - Rating<sub>L</sub>) / 370</sup>)* &nbsp;<br>
 &nbsp;<br>
 
 The expected win probability of the winner is then used in these formulas to calculate the new ratings: &nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;*winner_new_rating = winner_rating + k * t * m * (1 - expected_win_prob)*(1 + loser_rating/40000)* &nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;*loser_new_rating = loser_rating - k * m * (-1 + expected_win_prob)*(1 - winner_rating/40000)* &nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*NewRating<sub>W</sub> = Rating<sub>W</sub> + k * t * m * (1 - WinProb<sub>W</sub>)*(1 + Rating<sub>L</sub>/40000)* &nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*NewRating<sub>L</sub> = Rating<sub>L</sub> - k * m * (-1 + WinProb<sub>L</sub>)*(1 - Rating<sub>W</sub>/40000)* &nbsp;<br>
 
 k is a constant that is the same for every fight (170). To also give some additional merit to title fights, the variable t was included that gives the winner a 5% ratings boost in a title fight. t was not included for the loser formula.
 
