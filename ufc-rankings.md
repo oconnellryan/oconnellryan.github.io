@@ -34,7 +34,11 @@ The formula I have created goes through all UFC Fights since UFC 17 in chronolog
 
 The expected win probability of the winner is then used in these formulas to calculate the new ratings: &nbsp;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;*NewRating<sub>W</sub> = Rating<sub>W</sub> + 170 × Title × Method × (1 - WinProb<sub>W</sub>)*(1 + Rating<sub>L</sub>/40000)* &nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;*NewRating<sub>L</sub> = Rating<sub>L</sub> - 170 × Method × (-1 + WinProb<sub>L</sub>)*(1 - \frac{Rating<sub>W</sub>}{40000})* &nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*NewRating<sub>L</sub> = Rating<sub>L</sub> - 170 × Method × (-1 + WinProb<sub>L</sub>)*(1 - Rating<sub>W</sub>/40000)* &nbsp;<br>
+<span style="display:inline-block; text-align:center; line-height:1;">
+  <sup>1</sup><br><span style="border-top:1px solid #000;">1 + 10<sup>(R<sub>L</sub> - R<sub>W</sub>) / 370</sup></span>
+</span>
+
 
 k is a constant that is the same for every fight (170). To also give some additional merit to title fights, the variable t was included that gives the winner a 5% ratings boost in a title fight. t was not included for the loser formula.
 
