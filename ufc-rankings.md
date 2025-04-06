@@ -33,6 +33,7 @@ The formula I have created goes through all UFC Fights since UFC 17 in chronolog
 &nbsp;<br>
 
 The expected win probability of the winner is then used in these formulas to calculate the new ratings: &nbsp;<br>
+&nbsp;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;*NewRating<sub>W</sub> = Rating<sub>W</sub> + 170 × Title × Method × (- WinProb<sub>W</sub> + 1)*(1 + <sup>Rating<sub>L</sub></sup>&frasl;<sub>40000</sub>) &nbsp;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;*NewRating<sub>L</sub> = Rating<sub>L</sub> - 170 × Method × (WinProb<sub>L</sub> - 1)*(1 - <sup>Rating<sub>W</sub></sup>&frasl;<sub>40000</sub>) &nbsp;<br>
 
