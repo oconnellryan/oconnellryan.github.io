@@ -36,10 +36,11 @@ The expected win probability of the winner is then used in these formulas to cal
 &nbsp;&nbsp;&nbsp;&nbsp;*NewRating<sub>W</sub> = Rating<sub>W</sub> + 170 × Title × Method × (1 - WinProb<sub>W</sub>)*(1 + Rating<sub>L</sub>/40000)* &nbsp;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;*NewRating<sub>L</sub> = Rating<sub>L</sub> - 170 × Method × (-1 + WinProb<sub>L</sub>)*(1 - Rating<sub>W</sub>/40000)* &nbsp;<br>
 
-<span style="display: inline-block; vertical-align: middle; text-align: center; line-height: 1;">
-  <span style="font-size: 80%;">1 − Rating<sub>W</sub></span><br>
-  <span style="border-top: 1px solid black;">40000</span>
+<span style="display: inline-block; vertical-align: middle; text-align: center; line-height: 1; font-size: 90%;">
+  <span>1 − Rating<sub>W</sub></span><br>
+  <span style="border-top: 1px solid #000;">40000</span>
 </span>
+
 
 
 
