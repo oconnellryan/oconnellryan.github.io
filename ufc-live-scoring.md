@@ -2,13 +2,13 @@
 layout: page
 ---
 
-### Live Data
+### Live Data Collection:
 
 The data for this model is scraped from ESPN Fightcenter at the end of rounds using Python. This data includes knockdowns, total strikes landed, significant strikes (also broken down by the head, body & legs), control time, takedowns & submission attempts. Here is an example fo what this data looks like at the end of a round: &nbsp;<br>
 <img src="/assets/ufc/fightcenter_ex.png" alt="Image" width="500"/> &nbsp;<br>
 The difference between both fighters for each statistic is calculated, and these differences are utilized in the model to calculate the probability of each fighters winning the round. &nbsp;<br>
 
-### The Model
+### The Model:
 
 To eliminate bias, fighters were first randomly assigned to either column in the dataset. For each round, the difference in fight statistics between the two fighters was calculated.
 
@@ -22,7 +22,7 @@ This setup allows the model to capture both the direction and the margin of vict
 
 The model itself is an ordered logistic regression (ordered GLM). It takes the stat differences as input and returns the predicted probability of each of the four outcomes. The result is a set of four probabilities representing the likelihood of a 10-9 or 10-8 round for either fighter. The total win probability for each fighter is also calculated as their 10-9 win probability plus their 10-8 win probability.
 
-### Scoring Output
+### Scoring Output:
 
 Utilizing the predicted probabilities, the python script can tweet the predicted winner and score of each round. If the predicted 10-8 win probability is less than 25%, the predicted score is 10-9 with the followning tweet output:
 <div style="transform: scale(1); transform-origin: top left; width: fit-content;">
@@ -39,10 +39,12 @@ Finally, if the predicted 10-8 probability is greater than 50% the model will pr
 
 &nbsp;<br>
 
-### Live Win Probability Graphs
+### Live Win Probability Graphs:
 
-Utilizing a script that scrapes the ESPN fightcenter data every time it updates (about every 10 seconds during rounds), I can create a graph of the real-time win probability at any point duuring the round. Here is an example of one of these: &nbsp;<br>
-<img src="/assets/ufc/win_prob_graph.png" alt="Image" width="800"/>
+Using additional code to scrape ESPN Fightcenter during rounds, I can collect live data whenever it updates. This live data refreshes about every 10 seconds, and using the same model framework discussed above I can predict the win probability for each fighter at any point during the round.
+
+The following graph showcases the predicted round win probability throughout round 1 of Jan Blachowicz vs Carlos Ulberg:
+<img src="/assets/ufc/win_prob_graph.png" alt="Image" width="700"/>
 
 &nbsp;<br>
 **Want to see this in action?**&nbsp;<br>
