@@ -4,7 +4,7 @@ title: ""
 ---
 
 ### Project Overview:
-The goal of this project was to identify key fighter attributes that significantly influence UFC Pay-Per-View (PPV) sales and to quantify the incremental PPV value that each individual fighter contributes to an event.
+The goal of this project was to identify key fighter attributes that significantly influence UFC Pay-Per-View (PPV) sales and to quantify the incremental PPV value that each individual fighter contributes to an event. Originally developed as a class paper, the project has since been expanded and refined with improved methodologies including enhanced feature engineering, model selection, and the use of fixed and random effects to separate brand value from fighting style.
 
 ### Result highlights:
 The tool below allows you to build a custom UFC card and predict the Pay-Per-Views using the model. This model uses a combination of fighter attributes found significant and the individual effects calculated for each fighter: &nbsp;<br>
