@@ -6,7 +6,7 @@ A collection of my Sports Analytics and Sports Business Analytics projects.
 
 &nbsp;<br>
 
-### Business Analytics in Sports:
+## Business Analytics in Sports:
 These projects explore the business side of sports including fan behavior, revenue optimization, and pricing strategy: &nbsp;<br>
 
 [![Image](/assets/images/ufc_ppv_analysis.png)](https://oconnellryan.github.io/ufc_ppv.html)  &nbsp;<br>
@@ -15,7 +15,7 @@ These projects explore the business side of sports including fan behavior, reven
 &nbsp;<br>
 
 
-### UFC Fight Analytics:
+## UFC Fight Analytics:
 These projects explore MMA through analytics, including live win probabilities, uncovering judging tendencies, and rating fighter career performance: &nbsp;<br>
 &nbsp;<br>
 [![Image](/assets/buttons/live_scoring_model.png)](https://oconnellryan.github.io/ufc-live-scoring.html)
