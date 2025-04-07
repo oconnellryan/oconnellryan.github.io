@@ -5,8 +5,7 @@ title: ""
 
 ### Why these rankings?
 
-The official UFC rankings are often influenced more by promotion than performance. Voted on by an unkown media panel they can reflect hype, star power, and marketing priorities over merit. Fighters with UFC favor often receive fast-track opportunities, while others are stalled despite consistent wins. This is why an I have created an unbiased ranking formula that ranks fighters based on merit.
-
+The UFC rankings are a key part of the sport’s ecosystem, but as with any system influenced by human voting, they can be shaped by perception, narrative, and promotional dynamics. To offer an alternative lens, I created an objective rankings model that evaluates fighters purely on results. By removing subjectivity and focusing solely on fight outcomes, this system aims to highlight fighter momentum and merit in a consistent, data-driven way.
 
 ### Explore the Rankings
 Use the interactive tool below to browse my updated rankings. These are updated automatically after each event and reflect results, opponent strength, and recent activity — not media perception.
@@ -38,23 +37,26 @@ The expected win probability of the winner is then used in these formulas to cal
 &nbsp;&nbsp;&nbsp;&nbsp;*NewRating<sub>L</sub> = Rating<sub>L</sub> - 170 × Method × (-1 + WinProb<sub>L</sub>)*(1 - <sup>Rating<sub>W</sub></sup>&frasl;<sub>40000</sub>) &nbsp;<br>
 
 
-To also give some additional merit to title fights, the variable Title was included that gives the winner a 5% ratings increase boost in a title fight. The variable Method adjusts for the method of victory for both fighters. It scales from a round 1 finish being equal to 1.5 (so a 50% boost to the ratings increase) to being equal to 1 for a three round decision win. For split decicions, Method = 0.9 as to not give the winning fighter the full credit for winning the fight.
+To account for the added significance of title fights, the variable Title applies a 5% bonus to the winner’s rating change after title wins.
 
-The (1 - expected_win_prob) part of the formula is the ELO system explained above, so it will scale the changes in ratings based on differences in pre-fight ratings (larger changes for bigger rating gaps).
+The Method variable adjusts the rating impact based on how the fight was won or lost. A first-round finish sets Method = 1.5, giving a 50% boost to the rating change, while a standard three-round decision results in Method = 1.0. For split decisions, Method = 0.9 to reflect the uncertainty of the outcome.
 
-The final part of the formula - (1 + loser_rating/40000) - gives the winner a larger boost for taking out a highly rated opponent. Unlike the ELO part which is looking at rating differences, this part of the formula would give higher ratings boost to an 800 rated fighter who just defeated another 800 rated fighter than a 300 rated fighter who defeated another 300 rated fighter. The opposite is true for losers; losses to highly rated opponents will be weighted less than losses to low rated opponents.
+The *(1 - WinProb)* part of the formula is the ELO system explained earlier, so it will scale the changes in ratings based on differences in pre-fight ratings (larger changes for bigger rating gaps).
+
+The final part of the formula (1 - <sup>Rating<sub>W</sub></sup>&frasl;<sub>40000</sub>) gives bigger boosts for beating strong opponents and smaller penalties for losing to them. It doesn't look at the rating difference, but instead scales by the opponent's overall strength. So beating an elite fighter means more than beating someone average, and losing to a top fighter hurts less because of this part.
 
 #### Rating Decay
-While the formula above does a good job of capturing fighter merit, they do not account for long periods of inactivity. In order to punish inactivity and remove previous fighters from the rankings, I added a decay function to the rankings model. 
+While the formula above does a good job of capturing fighter merit, it does not account for long periods of inactivity. To address this, a decay function was added to penalize inactivity and gradually remove inactive fighters from the rankings.
 
-Rating decay does not begin until 270 days since a fighter has fought (about 9 months). When it has been exactly 270 days since a their last fight, a fighter's rating is decreased 3%. Additionally, they are now placed on the decay clock which will decrease their rating another 3% after each 90 days of subsequent inactivity. The only way this decay clock resets is when a fighter participates in a fight (win or lose).
-
+Rating decay begins 270 days (approximately 9 months) after a fighter’s most recent bout. At that point, their rating is reduced by 3%. Once on the decay clock, a fighter's rating continues to decrease by an additional 3% every 90 days of further inactivity. The decay clock is fully reset whenever the fighter competes again, regardless of outcome.
 
 ### Future Implementations
 
-While this model does a good job of ranking fighters, there are still some ways I would like to improve it. The next addition I am working on is controlling for weight classes. The difficulty here is that changing weight classes is not always a disadvantage, so I am thinking about only including this for champion vs champion fights (although these are very rare).
+While this model provides a strong foundation for ranking fighters, there are still several areas I plan to improve. The next addition I’m exploring is incorporating weight class adjustments.
 
-On a larger scale, it would be nice to have better ratings for a fighters first UFC fight. This limitation is currently due to data, but I am working on scraping fighter's previous fights before they entered the UFC. With more data, I could potentially expand this model well outside of the UFC which would also give more accurate ratings for fighter's UFC debuts.
+The main challenge is that changing weight classes isn’t always a disadvantage; fighters may move up or down and still perform at a high level. Because of this, I’m considering applying weight class adjustments only in rare cases, such as champion vs. champion matchups, where the implications of weight differences are most significant.
+
+On a larger scale, one of the model’s current limitations is the lack of ratings for a fighter’s UFC debut due to data limitations. However, I’m currently working on scraping fight records from before a fighter’s UFC career. With this expanded dataset, the model could not only provide more accurate debut ratings but also potentially scale beyond the UFC, allowing for a more comprehensive global ranking system.
 
 
 
