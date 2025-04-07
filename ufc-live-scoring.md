@@ -15,7 +15,7 @@ This model utilizes live fight statistics to predict UFC round scores. The model
 </div>
 &nbsp;<br>
 
-**Read below to see how live stats are transformed into real-time score predictions and win probability visuals.** &nbsp;<br>
+**Read below to see how live stats are transformed into real-time score predictions and win probability visuals through a straightforward modeling process.** &nbsp;<br>
 &nbsp;<br>
 
 ### Live Data Collection:
