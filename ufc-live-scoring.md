@@ -5,6 +5,7 @@ title: ""
 
 ### Result Highlights:
 This model utilizes live fight statistics to predict UFC round scores. The model is used to graph the live win probability & powers a scoring bot that tweets predicted scores at the end of rounds: &nbsp;<br>
+
 **Win Probability Graph:** &nbsp;<br>
 <img src="/assets/ufc/win_prob_graph.png" alt="Image" width="700"/> &nbsp;<br>
 **Live Score Tweet:** &nbsp;<br>
