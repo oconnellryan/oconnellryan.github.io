@@ -27,7 +27,7 @@ A Python script scrapes ESPN Fightcenter at the end of each round. The script co
 
 Below is an example of what the ESPN stat feed looks like at the end of a round:
 <img src="/assets/ufc/fightcenter_ex.png" alt="Image" width="570"/> &nbsp;<br>
-Stat differences are calculated from the red corner’s perspective and used to estimate round win probabilities. For the round above (Błachowicz in red), the differences are: &nbsp;<br>
+Stat differences are calculated from the red corner’s perspective and used to estimate round win probabilities. For the round above (Błachowicz was red), the differences are: &nbsp;<br>
 - 2 Significant Head Strikes (5 - 3)
 - 0 Significant Body Strikes (1 - 1)
 - 2 Significat Leg Strikes (11 - 9) &nbsp;<br>
