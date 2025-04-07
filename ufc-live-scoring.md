@@ -46,9 +46,10 @@ The response variable was structured as a four-level factor representing possibl
 
 This setup allows the model to capture both the direction and the margin of victory in each round.
 
-The model itself is an ordered logistic regression (ordered GLM). It takes the stat differences as input and returns the predicted probability of each of the four outcomes. The following graph shows the coeficcient (or value) for each statistic: 
+The model itself is an ordered logistic regression (ordered GLM). It takes the stat differences as input and returns the predicted probability of each of the four outcomes. &nbsp;<br>
+The following graph shows the coeficcient (or value) for each statistic: 
 <img src="/assets/ufc/ufc_coefs.png" alt="Image" width="700"/> &nbsp;<br>
-The model result is a set of four probabilities representing the likelihood of a 10-9 or 10-8 round for either fighter. The total win probability for each fighter is also calculated as their 10-9 win probability plus their 10-8 win probability.
+The model result is a set of four probabilities representing the likelihood of a 10-9 or 10-8 round for either fighter. The total win probability for each fighter is also calculated as the sum of 10-9 or 10-8.
 
 ### Scoring Output:
 
