@@ -7,7 +7,9 @@ A collection of visualizations from my various projects & Analysis
 
 ### Summaries
 Heatmap visualizing predicted seat prices of Chase Center using my ticket model: &nbsp;<br>
+Lower Bowl: &nbsp;<br>
 <img src="/assets/nba/lb_heatmap.png" alt="Image" width="600"/>
+**Courtside:** &nbsp;<br>
 <img src="/assets/nba/cs_size_graph.png" alt="Image" width="600"/> 
 
 Judge Report Cards highlighting UFC Scoring Tendencies: &nbsp;<br>
