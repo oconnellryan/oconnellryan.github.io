@@ -76,7 +76,7 @@ Utilizing the sgps scores created along with the coeficcient difference graophs 
 <img src="/assets/ufc/colon_report_card.png" alt="Image" width="360"/> 
 
 
-#### Decision Tree & Random Forest Model:
+#### Decision Tree & Random Forest Models:
 In addition to the binomial GLM model created, a decision tree and random forest were created to judge rounds. Most of the variables are the same here, but instead of the significant strikes being broken down by target (head, body legs), they are broken down by where the striking occured (distance, ground or clinch). This data will allow the decision trees to identify different types of fights, such as a round where one fighter dominated on the ground but lost on the feet. The main decision tree is shown below:
 ![Image](/assets/images/tree.png)
 You can see that this tree has multiple splits based on who won the distance striking as well as the grappling (through ground striking and control time). While this overfits the data, you can see how this approach makes sense for scoring. A random forest model using the same predictors was also created, and the following output shows the results of this:
