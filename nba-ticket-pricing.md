@@ -35,7 +35,7 @@ Saturday games have the highest prices on average, but there are no other clear 
 &nbsp;<br>
 
 **Star Player Impact:** &nbsp;<br>
-Steph Curry missed 15 games in 2022, and we can see the average ticket prices dropped quickly when he was out: &nbsp;<br>
+Steph Curry missed 15 games in 2022, and the average ticket prices dropped when he was out: &nbsp;<br>
 <img src="/assets/nba/curry_22_graph.png" alt="Image" width="600"/>
 <img src="/assets/nba/curry_22.png" alt="Image" width="130" style="vertical-align: center;"/> &nbsp;<br>
 
@@ -54,7 +54,7 @@ Most games were played at 7:00 local time. 25 games were played earlier (almost 
 &nbsp;<br>
 
 **Time of Purchase:** &nbsp;<br>
-Tickets are more expensive when purchased further out from games. There is a sharp decrease in the price of gameday tickets: &nbsp;<br>
+Tickets are more expensive when purchased further out from games. There was a sharp decrease in the price of gameday tickets: &nbsp;<br>
 <div style="display: flex; align-items: center;">
   <img src="/assets/nba/days_before_graph.png" alt="Graph" width="600"/>
   
@@ -108,10 +108,9 @@ There are WCA (wheelchair access) areas in the arena. These seats are located in
     <span>View from seat:</span>
     <img src="/assets/nba/wca_lb_view.jpg" alt="Image" width="180"/>
   </div>
-</div>
+</div> &nbsp;<br>
 
 The WCA sections in the upper bowl are located in front of or in the middle of sections: &nbsp;<br>
-There are WCA (wheelchair access) areas in the arena. These seats are located in the back of sections in the lower bowl: &nbsp;<br>
 <div style="display: flex; align-items: center;">
   <img src="/assets/nba/ub_wca_map.png" alt="Graph" width="560"/>
   
