@@ -76,7 +76,7 @@ Utilizing the predicted probabilities, the python script can tweet the predicted
 
 Using additional code to scrape ESPN Fightcenter during rounds, I can collect live data whenever it updates. This live data refreshes about every 10 seconds, and using the same model framework discussed above I can predict the win probability for each fighter at any point during the round.
 
-The following graph showcases the predicted round win probability throughout round 1 of Jan Blachowicz vs Carlos Ulberg:
+**Win probability graph Example:**
 <img src="/assets/ufc/win_prob_graph.png" alt="Image" width="700"/>
 
 &nbsp;<br>
