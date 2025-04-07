@@ -36,6 +36,7 @@ After the glm models were created, I was able to use these to indetify individua
  1. Two new winner variables were created. Judge winner indicated who the selected judge had winning the round, and Non-judge winner was the winner selected by the other two judges. Rounds where the other two judges disagreed were dropped.
  2. These new variables were used to create two models for each judge: The Judge model fitted on the Judge winner variable and the Non-judge model fitted on the Non-judge winner variable.
  3. A wald test was run to test if the differences of the coeficcients between the two models were significant, and a graph was created to compare the coeficcients. &nbsp;<br>
+ 
 *This Process was also repeated using both the target & position model to examine all variables*
 
 Here is an example of the target output graphs for one of the judges (Derek Cleary):
