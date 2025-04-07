@@ -38,7 +38,7 @@ No other stats were recorded, so the model only used the differences in head & l
 
 To eliminate bias, fighters were first randomly assigned to either column in the dataset. For each round, the difference in fight statistics between the two fighters was calculated.
 
-The response variable is structured as a four-level factor representing possible round outcomes:
+The response variable was structured as a four-level factor representing possible round outcomes:
 - 10-8 for Fighter 1
 - 10-9 for Fighter 1
 - 10-9 for Fighter 2
