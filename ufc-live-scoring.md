@@ -10,7 +10,13 @@ This model utilizes live fight statistics to predict UFC round scores. The model
 
 ### Live Data Collection:
 
-The data for this model is scraped from ESPN Fightcenter at the end of rounds using Python. This data includes knockdowns, total strikes landed, significant strikes (also broken down by the head, body & legs), control time, takedowns & submission attempts. Here is an example fo what this data looks like at the end of a round: &nbsp;<br>
+The data for this model is scraped from ESPN Fightcenter at the end of each round using Python. The script collects:
+- Total strikes landed
+- Significant strikes (broken up by target)
+- Control time
+- Takedowns
+- Submission attempts
+Below is an example of what the ESPN stat feed looks like at the end of a round:
 <img src="/assets/ufc/fightcenter_ex.png" alt="Image" width="500"/> &nbsp;<br>
 The difference between both fighters for each statistic is calculated, and these differences are utilized in the model to calculate the probability of each fighters winning the round. &nbsp;<br>
 
