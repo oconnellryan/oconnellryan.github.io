@@ -23,18 +23,8 @@ These projects explore MMA through analytics, including live win probabilities, 
 [![Image](/assets/buttons/ufc_judging_analysis.png)](https://oconnellryan.github.io/ufc-judging-analysis.html)
 
 [![Image](/assets/ufc/ufc_rankings_formula.png)](https://oconnellryan.github.io/ufc-rankings.html)
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
 
+&nbsp;<br>
 &nbsp;<br>
 
 **Connect With Me:** &nbsp;<br>
