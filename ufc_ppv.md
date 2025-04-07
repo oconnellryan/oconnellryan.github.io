@@ -31,7 +31,7 @@ Pay-Per-View buy rate data was sourced from Tapology, covering 210 UFC events th
 
 Fighter data from UFC Stats provided detailed fight outcomes, title fight indicators, and fight-level statistics. Various fighter metrics were tested, with the most relevant ones included in the model.
 
-A custom formula I created that adjust ratings after each fight based on quality of opponent was also used to capture fighter quality. You can read more about how this formula works here. For this PPV analysis, I utilized a modified version of this FPR formula that does not give fighters boosts for finishes or title fight wins.
+A custom formula I created that adjust ratings after each fight based on quality of opponent was also used to capture fighter quality. You can read more about how this formula works [here](https://oconnellryan.github.io/ufc-rankings.html). For this PPV analysis, I utilized a modified version of this FPR formula that does not give fighters boosts for finishes or title fight wins.
 
 ### Full Variable Analysis
 
