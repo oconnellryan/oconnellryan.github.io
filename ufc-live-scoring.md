@@ -4,7 +4,7 @@ title: ""
 ---
 
 ### Result Highlights:
-This model utilizes fight statistics to predict UFC rounds live. The model is used to graph the live win probability & used by a scoring bot tweets predicted scores at the end of rounds:
+This model utilizes fight statistics to predict UFC rounds live. The model is used to graph the live win probability & powers a scoring bot that tweets predicted scores at the end of rounds:
 <img src="/assets/ufc/win_prob_graph.png" alt="Image" width="700"/>
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Round 2 Scoring Model Prediction:<br><br>10-9 Carlos Ulberg <br>📊61% Win Probability<a href="https://twitter.com/hashtag/UFCLondon?src=hash&amp;ref_src=twsrc%5Etfw">#UFCLondon</a></p>&mdash; KO Trends (@KOTrends) <a href="https://twitter.com/KOTrends/status/1903576651151077422?ref_src=twsrc%5Etfw">March 22, 2025</a></blockquote>
 
