@@ -15,7 +15,7 @@ This model utilizes live fight statistics to predict UFC round scores. The model
 
 ### Live Data Collection:
 
-The data for this model is scraped from ESPN Fightcenter at the end of each round using Python. The script collects:
+A Python script scrapes ESPN Fightcenter at the end of each round. The script collects:
 - Total strikes landed
 - Significant strikes (broken up by target)
 - Control time
