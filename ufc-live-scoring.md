@@ -4,9 +4,9 @@ layout: page
 
 ### Live Data
 
-The data for this model is scraped from ESPN Fightcenter at the end of rounds using Python. This data includes knockdowns, total strikes landed, significant strikes (also broken down by the head, body & legs), control time, takedowns & submission attempts. Here is an example fo what this data looks like at the end of a round:
+The data for this model is scraped from ESPN Fightcenter at the end of rounds using Python. This data includes knockdowns, total strikes landed, significant strikes (also broken down by the head, body & legs), control time, takedowns & submission attempts. Here is an example fo what this data looks like at the end of a round: &nbsp;<br>
 <img src="/assets/ufc/fightcenter_ex.png" alt="Image" width="650"/> &nbsp;<br>
-The difference between both fighters for each statistic is calculated, and these differences are utilized in the model to calculate the probability of each fighters winning the round.
+The difference between both fighters for each statistic is calculated, and these differences are utilized in the model to calculate the probability of each fighters winning the round. &nbsp;<br>
 
 ### The Model
 
@@ -26,6 +26,21 @@ The model itself is an ordered logistic regression (ordered GLM). It takes the s
 
 Utilizing the predicted probabilities, the python script can tweet the predicted winner and score of each round. If the predicted 10-8 win probability is less than 25%, the predicted score is 10-9 with the followning tweet output:
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Round 1 Scoring Model Prediction:<br><br>10-9 Jan Blachowicz <br>📊63% Win Probability<a href="https://twitter.com/hashtag/UFC?src=hash&amp;ref_src=twsrc%5Etfw">#UFC</a> <a href="https://twitter.com/hashtag/UFCLondon?src=hash&amp;ref_src=twsrc%5Etfw">#UFCLondon</a></p>&mdash; KO Trends (@KOTrends) <a href="https://twitter.com/KOTrends/status/1903575061862175163?ref_src=twsrc%5Etfw">March 22, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<div style="transform: scale(0.85); transform-origin: top left; width: fit-content;">
+  <blockquote class="twitter-tweet">
+    <p lang="en" dir="ltr">
+      Round 1 Scoring Model Prediction:<br><br>
+      10-9 Jan Blachowicz <br>📊63% Win Probability
+      <a href="https://twitter.com/hashtag/UFC?src=hash&amp;ref_src=twsrc%5Etfw">#UFC</a>
+      <a href="https://twitter.com/hashtag/UFCLondon?src=hash&amp;ref_src=twsrc%5Etfw">#UFCLondon</a>
+    </p>
+    &mdash; KO Trends (@KOTrends)
+    <a href="https://twitter.com/KOTrends/status/1903575061862175163?ref_src=twsrc%5Etfw">March 22, 2025</a>
+  </blockquote>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
 
 If the predicted 10-8 probability is greater than 25% but lower than 50%, the predicted score is still 10-9 but the tweet will contain the 10-8 probaility instead of win probability:
 
