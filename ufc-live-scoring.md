@@ -19,7 +19,11 @@ The data for this model is scraped from ESPN Fightcenter at the end of each roun
 
 Below is an example of what the ESPN stat feed looks like at the end of a round:
 <img src="/assets/ufc/fightcenter_ex.png" alt="Image" width="570"/> &nbsp;<br>
-The difference between both fighters for each statistic is calculated, and these differences are utilized in the model to calculate the probability of each fighters winning the round. &nbsp;<br>
+The difference between both fighters for each statistic is calculated, and these differences for the red corner are utilized in the model to calculate the probability of each fighters winning the round. So for the round pictured above, the differences are (for Blachowicz): &nbsp;<br>
+- + 2 Significant Head Strikes (5 - 3)
+- 0 Significant Body Strikes (1 - 1)
+- + 2 Significat Leg Strikes (11 - 9) &nbsp;<br>
+No other stats were recorded, so the model only used the differences in head & leg strikes here.
 
 ### The Model:
 
