@@ -34,15 +34,11 @@ The formula I have created goes through all UFC Fights since UFC 17 in chronolog
 
 The expected win probability of the winner is then used in these formulas to calculate the new ratings: &nbsp;<br>
 &nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;*NewRating<sub>W</sub> = Rating<sub>W</sub> + 170 × Title × Method × (- WinProb<sub>W</sub> + 1)*(1 + <sup>Rating<sub>L</sub></sup>&frasl;<sub>40000</sub>) &nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;*NewRating<sub>L</sub> = Rating<sub>L</sub> - 170 × Method × (WinProb<sub>L</sub> - 1)*(1 - <sup>Rating<sub>W</sub></sup>&frasl;<sub>40000</sub>) &nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*NewRating<sub>W</sub> = Rating<sub>W</sub> + 170 × Title × Method × (1 - WinProb<sub>W</sub>)*(1 + <sup>Rating<sub>L</sub></sup>&frasl;<sub>40000</sub>) &nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*NewRating<sub>L</sub> = Rating<sub>L</sub> - 170 × Method × (-1 + WinProb<sub>L</sub>)*(1 - <sup>Rating<sub>W</sub></sup>&frasl;<sub>40000</sub>) &nbsp;<br>
 
 
-
-
-k is a constant that is the same for every fight (170). To also give some additional merit to title fights, the variable t was included that gives the winner a 5% ratings boost in a title fight. t was not included for the loser formula.
-
-The variable m adjusts for the method of victory. It scales from a round 1 finish being 1.5 (so a 50% boost to the ratings increase) to being equal to 1 for a three round decision win. For split decicions, m is set to 0.9, as to not give the winning fighter the same boost as when all three judges had them winning.
+To also give some additional merit to title fights, the variable Title was included that gives the winner a 5% ratings increase boost in a title fight. The variable Method adjusts for the method of victory for both fighters. It scales from a round 1 finish being equal to 1.5 (so a 50% boost to the ratings increase) to being equal to 1 for a three round decision win. For split decicions, Method = 0.9 as to not give the winning fighter the full credit for winning the fight.
 
 The (1 - expected_win_prob) part of the formula is the ELO system explained above, so it will scale the changes in ratings based on differences in pre-fight ratings (larger changes for bigger rating gaps).
 
