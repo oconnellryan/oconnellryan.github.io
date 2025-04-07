@@ -10,9 +10,10 @@ As my capstone project for the NBA Future Analytics Stars Program, I developed a
 ## Result Highlights
 The following graphics showcase the predicted ticket prices for each seat in an individual game: &nbsp;<br>
 
-**Upper Bowl & Lower Bowl** (Most expensive tickets are red): &nbsp;<br>
+**General Seating:** (Most expensive tickets are red) &nbsp;<br>
 <img src="/assets/nba/arena_heatmap.png" alt="Image" width="700"/>  &nbsp;<br>
-**Courtside** (size of seat is predicted price): &nbsp;<br>
+
+**Courtside:** (size of seat is predicted price) &nbsp;<br>
 <img src="/assets/nba/cs_size_graph.png" alt="Image" width="700"/>  &nbsp;<br>
 
 Beyond seat location, several external factors significantly increased ticket prices:
