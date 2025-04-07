@@ -72,8 +72,8 @@ With this formula, positive sgps numbers represent a striker preference whereas 
 
 #### Judge Report Cards:
 Utilizing the sgps scores created along with the coeficcient difference graophs above, I have creaated judge report cards for many of the judges with a high amount of rounds judges. Here is an example of the report card for Derek Cleary, whose coeficcients we examined earlier: &nbsp;<br>
-<img src="/assets/ufc/cleary_report_card.png" alt="Image" width="350"/> &nbsp;<br>
-<img src="/assets/ufc/colon_report_card.png" alt="Image" width="350"/> 
+<img src="/assets/ufc/cleary_report_card.png" alt="Image" width="360"/>
+<img src="/assets/ufc/colon_report_card.png" alt="Image" width="360"/> 
 
 
 #### Decision Tree & Random Forest Models:
