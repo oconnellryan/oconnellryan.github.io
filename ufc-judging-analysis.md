@@ -64,7 +64,7 @@ While the graphs above do a good job of showcasing specific judge tendencies, I 
 
 Using the same Judge & Non-judge models from earlier, I then repeated this process for each judge:
  1. 4 values were calculated: str<sub>j</sub> (sum of the judge model striking coeficcients), gra<sub>j</sub> (sum of the judge model grappling coeficcients), str<sub>nj</sub> (sum of the non-judge model striking coeficcients) and gra<sub>nj</sub> (sum of the non-judge model grappling coeficcients)
- 2. ratio<sub>str</sub> was calculated as str<sub>j</sub>/str_<sub>nj</sub> and ratio<sub>gra</sub> was calculated as gra<sub>j</sub>/gra<sub>nj</sub>
+ 2. ratio<sub>str</sub> was calculated as str<sub>j</sub>/str<sub>nj</sub> and ratio<sub>gra</sub> was calculated as gra<sub>j</sub>/gra<sub>nj</sub>
  3. The final sgps score was calculated as log(ratio<sub>str</sub>/ratio<sub>gra</sub>)
 
 With this formula, positive sgps numbers represent a striker preference whereas negative numbers indicate a grappler preference. The following graph showcases the striker vs. grappler preference of the 30 UFC Judges with the most rounds judged:
