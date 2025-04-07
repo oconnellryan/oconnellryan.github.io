@@ -124,15 +124,15 @@ The WCA sections in the upper bowl are located in front of or in the middle of s
 &nbsp;<br>
 
 **Graphs of New Rows Created:** &nbsp;<br>
-The front row view seats appear to have a premium while the WCA seats are not very expensive in the lower bowl: &nbsp;<br>
-<img src="/assets/nba/lb_rows_graph2.png" alt="Image" width="600"/> 
-The front row view seats have an average price around the same as row 1 seats in the upper bowl. The upper bowl WCA seats have the highest average prices in the upper bowl: &nbsp;<br>
+The lower bowl front row view seats have a premium while the WCA seats are not very expensive: &nbsp;<br>
+<img src="/assets/nba/lb_rows_graph2.png" alt="Image" width="600"/>  &nbsp;<br>
+The upper bowl front row view seats have similar prices to row 1 seats. The WCA seats have the highest average prices in the upper bowl: &nbsp;<br>
 <img src="/assets/nba/ub_rows2.png" alt="Image" width="600"/> 
 
 &nbsp;<br>
 
 ## Final Models:
-Three models were created to model the ticket prices for entire stadium based on the areas broken down earlier. Many of the predictors were the same for each model, but each one was adjusted for the factors relevant in its area.
+Three models were created to model the ticket prices for entire stadium based on the areas broken down earlier. Many of the predictors were the same for each model, but each model was adjusted for the factors relevant in its area.
 ### Lower Bowl Model:
 <div style="display: flex; align-items: center;">
   <img src="/assets/nba/lb_model.png" alt="Image" width="400" style="margin-right: 20px;"/>
