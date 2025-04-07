@@ -37,7 +37,7 @@ After the glm models were created, I was able to use these to indetify individua
  2. These new variables were used to create two models for each judge: The Judge model fitted on the Judge winner variable and the Non-judge model fitted on the Non-judge winner variable.
  3. A wald test was run to test if the differences of the coeficcients between the two models were significant, and a graph was created to compare the coeficcients. &nbsp;<br>
  
-&nbsp;<br>&nbsp;<br>*This Process was also repeated using both the target & position model to examine all variables*
+*This Process was also repeated using both the target & position model to examine all variables*
 
 Here is an example of the target output graphs for one of the judges (Derek Cleary):
 <img src="/assets/ufc/cleary_target_graph.png" alt="Image" width="700"/> &nbsp;<br>
