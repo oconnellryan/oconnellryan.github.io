@@ -23,6 +23,7 @@ The difference between both fighters for each statistic is calculated, and these
 - 2 Significant Head Strikes (5 - 3)
 - 0 Significant Body Strikes (1 - 1)
 - 2 Significat Leg Strikes (11 - 9) &nbsp;<br>
+
 No other stats were recorded, so the model only used the differences in head & leg strikes here.
 
 ### The Model:
