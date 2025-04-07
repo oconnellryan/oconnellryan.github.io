@@ -11,7 +11,7 @@ Heatmap visualizing predicted seat prices of Chase Center using my ticket model:
 <img src="/assets/nba/cs_model.png" alt="Image" width=“600" style="margin-right: 20px;"/> &nbsp;<br>
 
 Judge Report Cards highlighting UFC Scoring Tendencies: &nbsp;<br>
-<img src="/assets/ufc/cleary_report_card.png" alt="Image" width="240"/> &nbsp;<br>
+<img src="/assets/ufc/cleary_report_card.png" alt="Image" width="240"/>
 <img src="/assets/ufc/colon_report_card.png" alt="Image" width="240"/> 
 
 Live Win Probability Graph of a UFC Round: &nbsp;<br>
