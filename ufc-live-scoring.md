@@ -52,7 +52,7 @@ The model itself is an ordered logistic regression (ordered GLM). It takes the s
 &nbsp;<br>
 The following graph shows the coeficcient (or value) for each statistic: 
 <img src="/assets/ufc/new_coefs.png" alt="Image" width="700"/> &nbsp;<br>
-The model result is a set of four probabilities representing the likelihood of a 10-9 or 10-8 round for either fighter. The total win probability for each fighter is also calculated as the sum of 10-9 or 10-8.
+The model result is a set of four probabilities representing the likelihood of a 10-9 or 10-8 round for either fighter. The total win probability for each fighter is also calculated as the sum of both.
 
 ### Scoring Output:
 
