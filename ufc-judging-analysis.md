@@ -52,6 +52,7 @@ While the graphs above do a good job of showcasing specific judge tendencies, I 
 - significant distance strikes
 - significant clinch strikes
 - knockdowns &nbsp;<br>
+
 **Grappling predictors:**
 - significant ground strikes
 - takedowns
