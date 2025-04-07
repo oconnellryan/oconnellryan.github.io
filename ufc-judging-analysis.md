@@ -47,8 +47,8 @@ We can also examine the alternative graph for the position models:
 In this graph, the only statistically significant difference that can be seen is in significant distance strikes.
 
 #### Striker-Grappler Preference Scores:
-While the graphs above do a good job of showcasing specific judge tendencies, I also wanted to create a single metric that identifies their preference of strikers versus grapplers. In order to do this, the position model was used and the predictors were first broken into striking and grappling predictors. 
-**Striking predictors:** included 
+While the graphs above do a good job of showcasing specific judge tendencies, I also wanted to create a single metric that identifies their preference of strikers versus grapplers. In order to do this, the position model was used and the predictors were first broken into striking and grappling predictors. &nbsp;<br>
+**Striking predictors:**
 - significant distance strikes
 - significant clinch strikes
 - knockdowns &nbsp;<br>
@@ -57,7 +57,7 @@ While the graphs above do a good job of showcasing specific judge tendencies, I 
 - takedowns
 - control time
 - submission attempts
-- reversals
+- reversals &nbsp;<br>
 
 Using the same Judge & Non-judge models from earlier, I then repeated this process for each judge:
  1. 4 values were calculated: str_j (sum of the judge model striking coeficcients), gra_j (sum of the judge model grappling coeficcients), str_nj (sum of the non-judge model striking coeficcients) and gra_nj (sum of the non-judge model grappling coeficcients)
