@@ -1,7 +1,7 @@
 ---
 layout: page
 ---
-A collection of my Sports Analytics and Sports Business Analytics projects.
+A collection of my Sports Analytics and Sports Business Analytics projects. AA
 
 &nbsp;<br>
 
