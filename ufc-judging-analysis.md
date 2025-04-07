@@ -48,6 +48,7 @@ In this graph, the only statistically significant difference that can be seen is
 
 #### Striker-Grappler Preference Scores:
 While the graphs above do a good job of showcasing specific judge tendencies, I also wanted to create a single metric that identifies their preference of strikers versus grapplers. In order to do this, the position model was used and the predictors were first broken into striking and grappling predictors. &nbsp;<br>
+
 **Striking predictors:**
 - significant distance strikes
 - significant clinch strikes
