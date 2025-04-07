@@ -2,9 +2,8 @@
 layout: page
 title: Projects
 ---
-A collection of my Sports Analytics and Sports Business Analytics projects.
 
-&nbsp;<br>
+A collection of my Sports Analytics and Sports Business Analytics projects.
 
 ## Business Analytics in Sports:
 These projects explore the business side of sports including fan behavior, revenue optimization, and pricing strategy: &nbsp;<br>
