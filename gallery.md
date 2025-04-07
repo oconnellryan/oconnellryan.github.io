@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Gallery
+title: "Gallery"
 ---
 
 A collection of visualizations from my various projects & Analysis
