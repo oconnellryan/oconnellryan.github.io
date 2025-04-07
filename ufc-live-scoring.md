@@ -16,6 +16,7 @@ The data for this model is scraped from ESPN Fightcenter at the end of each roun
 - Control time
 - Takedowns
 - Submission attempts &nbsp;<br>
+
 Below is an example of what the ESPN stat feed looks like at the end of a round:
 <img src="/assets/ufc/fightcenter_ex.png" alt="Image" width="500"/> &nbsp;<br>
 The difference between both fighters for each statistic is calculated, and these differences are utilized in the model to calculate the probability of each fighters winning the round. &nbsp;<br>
