@@ -57,7 +57,7 @@ Utilizing the predicted probabilities, the python script can tweet the predicted
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Round 1 Scoring Model Prediction:<br><br>10-9 Jan Blachowicz <br>📊63% Win Probability<a href="https://twitter.com/hashtag/UFC?src=hash&amp;ref_src=twsrc%5Etfw">#UFC</a> <a href="https://twitter.com/hashtag/UFCLondon?src=hash&amp;ref_src=twsrc%5Etfw">#UFCLondon</a></p>&mdash; KO Trends (@KOTrends) <a href="https://twitter.com/KOTrends/status/1903575061862175163?ref_src=twsrc%5Etfw">March 22, 2025</a></blockquote>
 </div>
 
-**10-8 Waring (10-8 probability between 25% and 50%):**
+**10-8 Warning (10-8 probability between 25% and 50%):**
 <div style="transform: scale(1); transform-origin: top left; width: fit-content;">
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Round 2 Scoring Model Prediction:<br><br>10-9 Justin Gaethje <br>⚠️ Possible 10-8 Round (26% Probability)<a href="https://twitter.com/hashtag/UFC?src=hash&amp;ref_src=twsrc%5Etfw">#UFC</a> <a href="https://twitter.com/hashtag/UFC313?src=hash&amp;ref_src=twsrc%5Etfw">#UFC313</a></p>&mdash; KO Trends (@KOTrends) <a href="https://twitter.com/KOTrends/status/1898600263918780614?ref_src=twsrc%5Etfw">March 9, 2025</a></blockquote> 
 </div>
