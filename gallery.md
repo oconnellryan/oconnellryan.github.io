@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Visualizations
+title: ""
 ---
 
 A collection of visualizations from my various projects & Analysis
