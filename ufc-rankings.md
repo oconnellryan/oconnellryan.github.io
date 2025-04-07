@@ -3,11 +3,11 @@ layout: page
 title: ""
 ---
 
-### Why these rankings?
+### Why These Rankings?
 
 The UFC rankings are a key part of the sport’s ecosystem, but as with any system influenced by human voting, they can be shaped by perception, narrative, and promotional dynamics. To offer an alternative lens, I created an objective rankings model that evaluates fighters purely on results. By removing subjectivity and focusing solely on fight outcomes, this system aims to highlight fighter momentum and merit in a consistent, data-driven way.
 
-### Explore the Rankings
+### Explore The Rankings:
 Use the interactive tool below to browse my updated rankings. These are updated automatically after each event and reflect results, opponent strength, and recent activity — not media perception.
 
 <iframe 
@@ -18,13 +18,13 @@ Use the interactive tool below to browse my updated rankings. These are updated 
 </iframe>
 
 
-### My Rankings Formula Explained
+### My Rankings Formula Explained:
 
 This formula was originally designed based off of ELO skill ratings used in chess. After each game, a player’s rating goes up or down depending on the opponent’s rating. Beating a higher-rated player than you gives a bigger ELO boost, while losing to a player rated lower than you causes a bigger drop. 
 
 I started by applying the classic Elo rating system to UFC fights, which provided a solid foundation. From there, I modified the formula to account for factors that reflect the quality of a victory (such as early finishes and title fights) and added a decay function to account for inactivity. Once the final structure was in place, I ran a grid search to tune key parameters—like rating sensitivity and decay rate — optimizing the model's prediction accuracy. Here’s exactly how the final formula works:
 
-#### Post-Fight Adjustment Formula
+#### Post-Fight Adjustment Formula:
 The formula I have created goes through all UFC Fights since UFC 17 in chronological order, and adjusts both fighters' ratings after each fight. For a fighter's first fight in the UFC, they are given a default rating of 300. For each fight in the data, the model calculates the expected win probability using the following formula (for the winner): &nbsp;<br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;*WinProb<sub>W</sub> = 1 / (1 + 10 <sup>(Rating<sub>L</sub> - Rating<sub>W</sub>) / 370</sup>)* &nbsp;<br>
@@ -45,12 +45,12 @@ The *(1 - WinProb)* part of the formula is the ELO system explained earlier, so 
 
 The final part of the formula (1 - <sup>Rating<sub>W</sub></sup>&frasl;<sub>40000</sub>) gives bigger boosts for beating strong opponents and smaller penalties for losing to them. It doesn't look at the rating difference, but instead scales by the opponent's overall strength. So beating an elite fighter means more than beating someone average, and losing to a top fighter hurts less because of this part.
 
-#### Rating Decay
+#### Rating Decay:
 While the formula above does a good job of capturing fighter merit, it does not account for long periods of inactivity. To address this, a decay function was added to penalize inactivity and gradually remove inactive fighters from the rankings.
 
 Rating decay begins 270 days (approximately 9 months) after a fighter’s most recent bout. At that point, their rating is reduced by 3%. Once on the decay clock, a fighter's rating continues to decrease by an additional 3% every 90 days of further inactivity. The decay clock is fully reset whenever the fighter competes again, regardless of outcome.
 
-### Future Implementations
+### Future Implementations:
 
 While this model provides a strong foundation for ranking fighters, there are still several areas I plan to improve. The next addition I’m exploring is incorporating weight class adjustments.
 
