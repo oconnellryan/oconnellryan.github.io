@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Projects
+title: Academic Projects
 ---
 
 A collection of my Sports Analytics and Sports Business Analytics projects.
