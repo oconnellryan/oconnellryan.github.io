@@ -13,7 +13,7 @@ plugins:
 minima:
   nav_pages:
     - index.md
-    - entrepreneural.md
+    - entrepreneural-work.md
 
 
 
