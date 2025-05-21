@@ -11,6 +11,7 @@ title: Ryan O'Connell
   </div>
 
   <div style="flex: 1; min-width: 300px;">
+    <p style="margin: 0; font-weight: bold;">I'm a sports analytics professional focused on building real-time tools, predictive models, and fan-facing platforms across UFC, MLB, and the NBA. My work blends custom data pipelines with clean design and storytelling — from scoring engines to sponsorship valuation models./p><br/>
     <p style="margin: 0; font-weight: bold;">💼 Data Analyst – SponsorUnited</p>
     <p style="margin: 0 0 16px 0;">Built Formula 1 sponsorship valuation model</p>
     <p style="margin: 0; font-weight: bold; font-size: 30;">🎓 Syracuse University</p>
