@@ -11,10 +11,10 @@ title: Homepage
 <div style="display: flex; align-items: flex-start; gap: 30px; flex-wrap: nowrap;">
 
   <div style="flex: 0 0 auto;">
-    <img src="/assets/images/headshot_photoshopped.png" alt="Ryan O'Connell" style="width: 400px; height: auto; border-radius: 12px;" />
+    <img src="/assets/images/headshot_photoshopped.png" alt="Ryan O'Connell" style="width: 220px; height: auto; border-radius: 12px;" />
   </div>
 
-  <div style="flex: 1; min-width: 300px;">
+  <div style="flex: 1 1 0%; min-width: 0;">
     <h2 style="margin-top: 0;">Data-driven sports analyst building real-time tools for fans and decision-makers.</h2>
     <ul>
       <li>Built analytical platforms for UFC, NFL, and MLB — including scoring models, rankings, and predictive tools.</li>
