@@ -13,7 +13,7 @@ title: About Me
   <div style="flex: 1; min-width: 300px;">
     <h2 style="margin-top: 0;">Ryan O'Connell</h2>
     <p>
-      🏆 Syracuse '24 | BS Sports Analytics + Econ<br/>
+      🎓 Syracuse '24 | BS Sports Analytics + Econ<br/>
       📊 <em>Modeled over 400K data points for NBA pricing tool</em><br/>
       🎓 <em>Syracuse '24 | BS Sports Analytics + Econ</em>
     </p>
