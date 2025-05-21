@@ -3,7 +3,9 @@ title: Ryan O'Connell
 description: ""
 author: ""
 
-theme: minima
+#theme: minima
+remote_theme: jekyll/minima
+
 
 plugins:
   - jekyll-feed
