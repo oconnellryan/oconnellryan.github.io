@@ -7,11 +7,11 @@ title: Ryan O'Connell
 <div style="display: flex; align-items: flex-start; gap: 30px; flex-wrap: nowrap;">
 
   <div style="flex: 0 0 auto;">
-    <img src="/assets/images/headshot_photoshopped.png" alt="Ryan O'Connell" style="width: 480px; height: auto; border-radius: 12px;" />
+    <img src="/assets/images/headshot_photoshopped.png" alt="Ryan O'Connell" style="width: 500px; height: auto; border-radius: 12px;" />
   </div>
 
   <div style="flex: 1; min-width: 300px;">
-    <p style="margin: 0; font-weight: bold;">💼 Data Analyst Intern – SponsorUnited</p>
+    <p style="margin: 0; font-weight: bold;">💼 Data Analyst – SponsorUnited</p>
     <p style="margin: 0 0 16px 0;">Built Formula 1 sponsorship valuation model;</p>
     <p style="margin: 0; font-weight: bold; font-size: 30;">🎓 Syracuse University</p>
     <p style="margin: 0;">B.S. Sports Analytics & Economics</p>
