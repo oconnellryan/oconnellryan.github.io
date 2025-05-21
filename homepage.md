@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Me
+title: Ryan O'Connell
 ---
 
 
@@ -11,7 +11,6 @@ title: About Me
   </div>
 
   <div style="flex: 1; min-width: 300px;">
-    <h2 style="margin-top: 0;">Ryan O'Connell</h2>
     <p style="margin: 0; font-weight: bold;">🎓 Syracuse University</p>
     <p style="margin: 0;">B.S. Sports Analytics & Economics</p>
     <p style="margin: 0 0 16px 0;">Magna Cum Laude · Class of 2024</p>
