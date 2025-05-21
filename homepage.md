@@ -14,7 +14,7 @@ title: Ryan O'Connell
     <p style="margin: 0; font-weight: bold; font-size: 30;">🎓 Syracuse University</p>
     <p style="margin: 0;">B.S. Sports Analytics & Economics</p>
     <p style="margin: 0 0 16px 0;">Magna Cum Laude · Class of 2024</p>
-    <p style="margin: 0; font-weight: bold;">🏀 NBA Future Analytics Stars</p>
+    <p style="margin: 0; font-weight: bold;">🏀 NBA Future Analytics Stars Program</p>
     <p style="margin: 0 0 16px 0;">Selected from 5,000+ applicants<br/>
     Capstone Project Finalist</p>
     <ul style="margin-top: 0;">
