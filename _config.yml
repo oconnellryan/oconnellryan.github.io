@@ -15,7 +15,7 @@ plugins:
 minima:
   nav_pages:
     - index.md
-    - entrepreneural-work.md
+    - gallery.md
 
 
 
