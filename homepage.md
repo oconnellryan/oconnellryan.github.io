@@ -14,6 +14,9 @@ title: Ryan O'Connell
     <p style="margin: 0; font-weight: bold; font-size: 30;">🎓 Syracuse University</p>
     <p style="margin: 0;">B.S. Sports Analytics & Economics</p>
     <p style="margin: 0 0 16px 0;">Magna Cum Laude · Class of 2024</p>
+    <p style="margin: 0; font-weight: bold;">🏀 NBA Future Analytics Stars</p>
+    <p style="margin: 0 0 16px 0;">1 of 45 selected from 5,000+ applicants<br/>
+    Capstone finalist for NBA ticket pricing model</p>
     <ul style="margin-top: 0;">
       <li>Built predictive & real-time tools across UFC, NFL, and MLB</li>
       <li>Founder of KO Trends (UFC scoring, rankings, judging models)</li>
