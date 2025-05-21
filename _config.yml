@@ -14,8 +14,8 @@ plugins:
 
 minima:
   nav_pages:
-    - index.md
     - gallery.md
+    - index.md
 
 
 
