@@ -7,7 +7,7 @@ title: Ryan O'Connell
 <div style="display: flex; align-items: flex-start; gap: 30px; flex-wrap: nowrap;">
 
   <div style="flex: 0 0 auto;">
-    <img src="/assets/images/headshot_photoshopped.png" alt="Ryan O'Connell" style="width: 500px; height: auto; border-radius: 12px;" />
+    <img src="/assets/images/headshot_photoshopped.png" alt="Ryan O'Connell" style="width: 480px; height: auto; border-radius: 12px;" />
   </div>
 
   <div style="flex: 1; min-width: 300px;">
