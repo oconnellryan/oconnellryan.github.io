@@ -11,7 +11,7 @@ title: Homepage
 <div style="display: flex; align-items: flex-start; gap: 30px; flex-wrap: wrap;">
 
   <div style="flex: 0 0 250px;">
-    <img src="/assets/images/headshot_photoshopped.png" alt="Ryan O'Connell" style="max-width: 100%; border-radius: 12px;" />
+    <img src="/assets/images/headshot_photoshopped.png" alt="Ryan O'Connell" style="max-width: 50%; border-radius: 12px;" />
   </div>
 
   <div style="flex: 1;">
