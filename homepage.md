@@ -12,7 +12,7 @@ title: Ryan O'Connell
 
   <div style="flex: 1; min-width: 300px;">
     <p style="margin: 0; font-weight: bold;">💼 Data Analyst – SponsorUnited</p>
-    <p style="margin: 0 0 16px 0;">Built Formula 1 sponsorship valuation model;</p>
+    <p style="margin: 0 0 16px 0;">Built Formula 1 sponsorship valuation model</p>
     <p style="margin: 0; font-weight: bold; font-size: 30;">🎓 Syracuse University</p>
     <p style="margin: 0;">B.S. Sports Analytics & Economics</p>
     <p style="margin: 0 0 16px 0;">Magna Cum Laude · Class of 2024</p>
