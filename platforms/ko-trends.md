@@ -148,6 +148,6 @@ On a larger scale, one of the model’s current limitations is the lack of ratin
 
 <!-- Judging Analysis -->
 <h2 id="judging">Judging Report Cards:</h2>
-<p>SGPS, judge bias visuals, and split round breakdowns.</p>
-<img src="/assets/ufc/judging_viz.png" style="width: 300px; border-radius: 8px;">
+My judge report cards are designed to showcase the stylistic preferences of UFC judges. Utilizing the models I created in my Senior Thesis Project, I am able to identify which fight statistics most correlate with an individual judge' scorecards. Additionally, I created a metric that I call striker-grappler preference score (sgps) to better quantify a UFC judges' stylistic preferences.
+
 
