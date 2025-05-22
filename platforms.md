@@ -18,16 +18,10 @@ title: Live Platforms
   <div style="flex: 1; min-width: 200px;">
     <p>
       My live UFC Analytics platform utilizes real-time UFC statistics as well as previous fight data to deliver insights on judge scoring and fighter progression to fans. I regularly share the following outputs on Twitter:
-      <li>Live round score predictions</li>
-      <li>Bot posts directly during games on Twitter</li>
-      <li>Data model trained on thousands of steal attempts</li>
-    </p>
-    <ul>
-      <li>Live round-by-round scoring posted to Twitter</li>
-      <li>Custom fighter rankings powered by data</li>
-      <li>Judging model with bias and style preference scoring</li>
-    </ul>
-    <p>
+      <li>Live round scoring bot</li>
+      <li>Graphs of live win probability</li>
+      <li>Judge tendency profiles</li>
+      <li>Data-driven rankings updates</li>
       <a href="/platforms/ko-trends" style="background-color: #1F4E79; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold;">Explore KO Trends →</a>
     </p>
   </div>
