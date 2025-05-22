@@ -42,13 +42,7 @@ title: Live Platforms
   <!-- Text content -->
   <div style="flex: 1; min-width: 300px;">
     <p>
-      Steal Signal is an automated Twitter bot that evaluates every MLB stolen base attempt in real time using expected win probability.
-    </p>
-    <ul>
-      <li>Live steal grading based on game context and risk</li>
-      <li>Bot posts directly during games on Twitter</li>
-      <li>Data model trained on thousands of steal attempts</li>
-    </ul>
+      This live engine automatically posts real-time grades for MLB stolen base attempts. It uses historical player data to isolate the impact of the baserunner, pitcher, and catcher. Each post includes the steal probability and the baserunning rankings of all three players, delivered seconds after the play occurs.
     <p>
       <a href="/platforms/steal-signal" style="background-color: #1F4E79; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold;">Explore Steal Signal →</a>
     </p>
