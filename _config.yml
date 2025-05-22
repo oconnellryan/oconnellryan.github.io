@@ -14,5 +14,6 @@ plugins:
 minima:
   nav_pages:
     - platforms/index.md
+    - platforms/research.md
     - gallery.md
     - resume.md
