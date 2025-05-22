@@ -37,7 +37,7 @@ title: Live Platforms
 
   <!-- Image or tweet -->
   <div style="transform: scale(1); transform-origin: top left; width: fit-content;">
-<blockquote class="twitter-tweet"><p lang="ro" dir="ltr">George Springer Stole 2B ✅<br><br>🟢 Good Matchup<br>84% Succesful Steal Chance<br><br>Player Steal Grades:<br>🏃 George Springer: 61st/302<br>⚾ Randy Vásquez: 106th/401<br>🧤 Elias Díaz: 12th/61</p>&mdash; Steal Decisions Live (@StealSignal) <a href="https://twitter.com/StealSignal/status/1925342409459745182?ref_src=twsrc%5Etfw">May 22, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Gabriel Moreno Caught Stealing 2B ❌<br><br>🟡 Okay Matchup<br>82% Succesful Steal Chance<br><br>Player Steal Grades:<br>🏃 Gabriel Moreno: 187th/302<br>⚾ Justin Verlander: 166th/401<br>🧤 Sam Huff: 39th/61</p>&mdash; Steal Decisions Live (@StealSignal) <a href="https://twitter.com/StealSignal/status/1922125623960453132?ref_src=twsrc%5Etfw">May 13, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
 
   <!-- Text content -->
