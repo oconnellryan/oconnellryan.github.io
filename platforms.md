@@ -59,6 +59,7 @@ title: Live Platforms
     <p>
       This live engine automatically posts real-time grades for MLB stolen base attempts. It uses historical player data to isolate the impact of the baserunner, pitcher, and catcher. Each post includes the steal probability and the baserunning rankings of all three players, delivered seconds after the play occurs.
     </p>
+    <div style="height: 8px;"></div>
     <p>
       <a href="/platforms/steal-signal" style="background-color: #1F4E79; color: white; padding: 20px 40px; border-radius: 6px; text-decoration: none; font-weight: bold;">Explore Steal Signal →</a>
     </p>
