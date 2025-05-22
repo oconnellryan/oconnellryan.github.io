@@ -43,7 +43,7 @@ permalink: /research/
 
   <!-- Live Tool -->
   <div style="display: flex; justify-content: center;">
-  <div style="transform: scale(0.5); transform-origin: top center; width: 600px; height: 600px;">
+  <div style="transform: scale(0.7); transform-origin: top center; width: 600px; height: 600px;">
     <iframe 
       src="https://ryanoconnell.shinyapps.io/ufc_ppv_predictor/"
       style="border: none; width: 100%; height: 100%;">
