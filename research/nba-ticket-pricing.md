@@ -2,10 +2,7 @@
 layout: page
 title: ""
 ---
-## NBA Ticket Pricing Analysis
-
-As my capstone project for the NBA Future Analytics Stars Program, I developed a predictive model for Chase Center ticket prices.  Using two seasons of Golden State Warriors ticket sales data (provided by the NBA) along with additional external game data, I identified key factors influencing ticket demand and pricing. My project was selected as a finalist in the program’s capstone competition.
-
+# NBA Ticket Pricing Analysis
 
 ## Result Highlights
 The following graphics showcase the predicted ticket prices for each seat in an individual game: &nbsp;<br>
