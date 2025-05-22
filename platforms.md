@@ -10,21 +10,20 @@ title: Live Platforms
   <!-- Image or tweet embed -->
   <div style="flex: 1; min-width: 500px;">
     <img src="/assets/ufc/round1.png" alt="KO Trends Preview" style="width: 100%; border-radius: 8px;" />
-    <!-- Or embed tweet if preferred -->
-    <!-- <blockquote class="twitter-tweet"><a href="https://twitter.com/YOURHANDLE/status/EXAMPLE"></a></blockquote> -->
   </div>
 
   <!-- Text content -->
   <div style="flex: 1; min-width: 200px;">
     <p>
-      My live UFC Analytics platform utilizes real-time UFC statistics as well as previous fight data to deliver insights on judge scoring and fighter progression to fans. I regularly share the following outputs on Twitter:
+      My live UFC analytics platform utilizes real-time UFC statistics and previous fight data to deliver insights on judge scoring and fighter progression. I regularly share the following outputs on Twitter:
+    </p>
+    <ul>
       <li>Live round scoring bot</li>
       <li>Graphs of live win probability</li>
       <li>Judge tendency profiles</li>
       <li>Data-driven rankings updates</li>
-      <p>
-      <p>
-        <p>
+    </ul>
+    <p>
       <a href="/platforms/ko-trends" style="background-color: #1F4E79; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold;">Explore KO Trends →</a>
     </p>
   </div>
@@ -55,4 +54,3 @@ title: Live Platforms
     </p>
   </div>
 </div>
- 
