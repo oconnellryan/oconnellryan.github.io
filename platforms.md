@@ -17,8 +17,7 @@ title: Live Platforms
   <!-- Text content -->
   <div style="flex: 1; min-width: 200px;">
     <p>
-      KO Trends is my UFC analytics platform built around live scoring models, custom rankings, and judging behavior. 
-      It features predictive tools that bring transparency to fight outcomes and fan debate.
+      My live UFC Analytics platform utilizes real-time UFC statistics as well as previous fight data to deliver insights on judge scoring and fighter progression to fans. 
     </p>
     <ul>
       <li>Live round-by-round scoring posted to Twitter</li>
