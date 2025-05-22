@@ -147,7 +147,34 @@ On a larger scale, one of the model’s current limitations is the lack of ratin
 &nbsp;<br>
 
 <!-- Judging Analysis -->
-<h2 id="judging">Judging Report Cards:</h2>
+<h2 id="judging">Judge Report Cards:</h2>
+<img src="/assets/ufc/cleary_report_card.png" alt="Image" width="360"/>
+<img src="/assets/ufc/colon_report_card.png" alt="Image" width="360"/> 
 My judge report cards are designed to showcase the stylistic preferences of UFC judges. Utilizing the models I created in my Senior Thesis Project, I am able to identify which fight statistics most correlate with an individual judge' scorecards. Additionally, I created a metric that I call striker-grappler preference score (sgps) to better quantify a UFC judges' stylistic preferences.
 
+### Striker-Grappler Preference Scores:
+In order to create a single metric that identifies a judges' stylistic preference, the position model from my thesis was used and the predictors were first broken into the following striking and grappling predictors. &nbsp;<br>
 
+**Striking predictors:**
+- Significant distance strikes
+- Significant clinch strikes
+- Knockdowns &nbsp;<br>
+
+**Grappling predictors:**
+- Significant ground strikes
+- Takedowns
+- Control time
+- Submission attempts
+- Reversals &nbsp;<br>
+
+Judge & Non-judge models from my thesis, I then repeated this process for each judge:
+ 1. 4 values were calculated: str<sub>j</sub> (sum of the judge model striking coeficcients), gra<sub>j</sub> (sum of the judge model grappling coeficcients), str<sub>nj</sub> (sum of the non-judge model striking coeficcients) and gra<sub>nj</sub> (sum of the non-judge model grappling coeficcients)
+ 2. ratio<sub>str</sub> was calculated as str<sub>j</sub>/str<sub>nj</sub> and ratio<sub>gra</sub> was calculated as gra<sub>j</sub>/gra<sub>nj</sub>
+ 3. The final sgps score was calculated as log(ratio<sub>str</sub>/ratio<sub>gra</sub>)
+
+With this formula, positive sgps numbers represent a striker preference whereas negative numbers indicate a grappler preference. The following graph showcases the striker vs. grappler preference of the 30 UFC Judges with the most rounds judged:
+<img src="/assets/ufc/sgps_graph.png" alt="Image" width="700"/> &nbsp;<br>
+
+<img src="/assets/ufc/colon_report_card.png" alt="Image" width="360"/> 
+
+### Final Report Cards:
