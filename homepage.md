@@ -14,25 +14,25 @@ title: Ryan O'Connell
   <div style="flex: 0 0 auto; display: flex; flex-direction: column; gap: 12px; justify-content: flex-start;">
 
     <a href="/platforms" style="text-decoration: none;">
-      <div style="background-color: #1F4E79; color: white; padding: 12px 24px; border-radius: 8px; font-weight: bold; text-align: center; width: 220px;">
+      <div style="background-color: #1F4E79; color: white; padding: 20x 24px; border-radius: 8px; font-weight: bold; text-align: center; width: 220px;">
         ⚙️ Platforms
       </div>
     </a>
 
     <a href="/research" style="text-decoration: none;">
-      <div style="background-color: #1F4E79; color: white; padding: 12px 24px; border-radius: 8px; font-weight: bold; text-align: center; width: 220px;">
+      <div style="background-color: #1F4E79; color: white; padding: 20px 24px; border-radius: 8px; font-weight: bold; text-align: center; width: 220px;">
         📚 Research
       </div>
     </a>
 
     <a href="/resume" style="text-decoration: none;">
-      <div style="background-color: #1F4E79; color: white; padding: 12px 24px; border-radius: 8px; font-weight: bold; text-align: center; width: 220px;">
+      <div style="background-color: #1F4E79; color: white; padding: 20px 24px; border-radius: 8px; font-weight: bold; text-align: center; width: 220px;">
         📄 Resume
       </div>
     </a>
 
     <a href="/gallery" style="text-decoration: none;">
-      <div style="background-color: #1F4E79; color: white; padding: 12px 24px; border-radius: 8px; font-weight: bold; text-align: center; width: 220px;">
+      <div style="background-color: #1F4E79; color: white; padding: 20px 24px; border-radius: 8px; font-weight: bold; text-align: center; width: 220px;">
         🖼️ Gallery
       </div>
     </a>
