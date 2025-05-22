@@ -17,7 +17,10 @@ title: Live Platforms
   <!-- Text content -->
   <div style="flex: 1; min-width: 200px;">
     <p>
-      My live UFC Analytics platform utilizes real-time UFC statistics as well as previous fight data to deliver insights on judge scoring and fighter progression to fans. 
+      My live UFC Analytics platform utilizes real-time UFC statistics as well as previous fight data to deliver insights on judge scoring and fighter progression to fans. I regularly share the following outputs on Twitter:
+      <li>Live round score predictions</li>
+      <li>Bot posts directly during games on Twitter</li>
+      <li>Data model trained on thousands of steal attempts</li>
     </p>
     <ul>
       <li>Live round-by-round scoring posted to Twitter</li>
