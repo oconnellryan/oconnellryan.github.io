@@ -83,9 +83,12 @@ Using additional code to scrape ESPN Fightcenter during rounds, I can collect li
 <img src="/assets/ufc/round2.png" alt="Image" width="700"/>
 
 &nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
 
 <!-- Rankings Formula -->
-<h2 id="rankings">Fighter Performance Ratings:</h2>
+<h2 id="rankings">Fighter Performance Ratings Formula:</h2>
 ### Why This Formula?
 
 The UFC rankings are a key part of the sport’s ecosystem, but as with any system influenced by human voting they can be shaped by perception and promotional dynamics. To offer an alternative lens, I created an objective rankings model that evaluates fighters purely on results and quantifies fighter stock in a consistent, data-driven way.
@@ -141,6 +144,9 @@ The main challenge is that changing weight classes isn’t always a disadvantage
 
 On a larger scale, one of the model’s current limitations is the lack of ratings for a fighter’s UFC debut due to data limitations. However, I’m currently working on scraping fight records from before a fighter’s UFC career. With this expanded dataset, the model could not only provide more accurate debut ratings but also potentially scale beyond the UFC, allowing for a more comprehensive global ranking system.
 
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
 
 <!-- Judging Analysis -->
 <h2 id="judging">Judging Report Cards:</h2>
