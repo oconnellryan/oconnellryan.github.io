@@ -35,8 +35,8 @@ title: Live Platforms
 <div style="display: flex; gap: 30px; flex-wrap: wrap; align-items: flex-start;">
 
   <!-- Image or tweet -->
-  <div style="flex: 1; min-width: 300px;">
-    <img src="/assets/images/steal_signal_preview.png" alt="Steal Signal Preview" style="width: 100%; border-radius: 8px;" />
+  <div style="transform: scale(1); transform-origin: top left; width: fit-content;">
+  <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Round 2 Scoring Model Prediction:<br><br>10-9 Justin Gaethje <br>⚠️ Possible 10-8 Round (26% Probability)<a href="https://twitter.com/hashtag/UFC?src=hash&amp;ref_src=twsrc%5Etfw">#UFC</a> <a href="https://twitter.com/hashtag/UFC313?src=hash&amp;ref_src=twsrc%5Etfw">#UFC313</a></p>&mdash; KO Trends (@KOTrends) <a href="https://twitter.com/KOTrends/status/1898600263918780614?ref_src=twsrc%5Etfw">March 9, 2025</a></blockquote> 
   </div>
 
   <!-- Text content -->
