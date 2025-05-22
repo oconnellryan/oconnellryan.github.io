@@ -32,7 +32,7 @@ title: Live Platforms
 
 <h1 style="font-size: 32px; font-weight: bold;">⚾ Steal Signal – Real-Time MLB Stolen Base Analysis</h1>
 
-<div style="display: flex; gap: 30px; flex-wrap: wrap; align-items: flex-start;">
+<div style="display: flex; flex-direction: row-reverse; gap: 30px; flex-wrap: wrap; align-items: flex-start;">
 
   <!-- Tweet Embed -->
   <div style="flex: 1; min-width: 300px;">
