@@ -16,7 +16,7 @@ permalink: /research/
 
   <!-- Image -->
   <div style="flex: 1; min-width: 500px;">
-    <img src="/assets/ufc/round1.png" alt="KO Trends Preview" style="width: 100%; border-radius: 8px;" />
+    <img src="/assets/nba/arena_heatmap.png" alt="KO Trends Preview" style="width: 100%; border-radius: 8px;" />
   </div>
 
   <!-- Text -->
