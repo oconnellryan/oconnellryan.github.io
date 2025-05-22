@@ -3,7 +3,7 @@ layout: page
 title: Live Platforms
 ---
 
-<h1 style="font-size: 32px; font-weight: bold;">🧠 KO Trends – Live UFC Scoring & Analytics</h1>
+<h1 style="font-size: 32px; font-weight: bold;">🥊 Live UFC Scoring Analytics Platform</h1>
 
 <div style="display: flex; flex-direction: row-reverse; gap: 30px; flex-wrap: wrap; align-items: flex-start; margin-bottom: 60px;">
 
@@ -25,12 +25,12 @@ title: Live Platforms
     </ul>
     <div style="height: 16px;"></div>
     <p>
-      <a href="/platforms/ko-trends" style="background-color: #1F4E79; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold;">Explore KO Trends →</a>
+      <a href="/platforms/ko-trends" style="background-color: #1F4E79; color: white; padding: 20px 40px; border-radius: 6px; text-decoration: none; font-weight: bold;">Explore KO Trends →</a>
     </p>
   </div>
 </div>
 
-<h1 style="font-size: 32px; font-weight: bold;">⚾ Steal Signal – Real-Time MLB Stolen Base Analysis</h1>
+<h1 style="font-size: 32px; font-weight: bold;">⚾ Steal Probability Engine</h1>
 
 <div style="display: flex; flex-direction: row-reverse; gap: 30px; flex-wrap: wrap; align-items: flex-start;">
 
@@ -60,7 +60,7 @@ title: Live Platforms
       This live engine automatically posts real-time grades for MLB stolen base attempts. It uses historical player data to isolate the impact of the baserunner, pitcher, and catcher. Each post includes the steal probability and the baserunning rankings of all three players, delivered seconds after the play occurs.
     </p>
     <p>
-      <a href="/platforms/steal-signal" style="background-color: #1F4E79; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold;">Explore Steal Signal →</a>
+      <a href="/platforms/steal-signal" style="background-color: #1F4E79; color: white; padding: 20px 40px; border-radius: 6px; text-decoration: none; font-weight: bold;">Explore Steal Signal →</a>
     </p>
   </div>
 </div>
