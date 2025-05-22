@@ -43,7 +43,7 @@ permalink: /research/
 
   <!-- Live Tool -->
   <div style="display: flex; justify-content: center;">
-  <div style="width: 614px; height: 536px; overflow: hidden;">
+  <div style="width: 600px; height: 536px; overflow: hidden;">
     <iframe 
       src="https://ryanoconnell.shinyapps.io/ufc_ppv_predictor/"
       style="border: none; transform: scale(0.8); transform-origin: top left; width: 768px; height: 670px;">
@@ -52,7 +52,7 @@ permalink: /research/
 </div>
 
   <!-- Text content -->
-  <div style="flex: 1; min-width: 200px; max-width: 280px;">
+  <div style="flex: 1; min-width: 100px; max-width: 280px;">
     <p>
       This live engine automatically posts real-time grades for MLB stolen base attempts. It uses historical player data to isolate the impact of the baserunner, pitcher, and catcher. Each post includes the steal probability and the baserunning rankings of all three players, delivered seconds after the play occurs.
     </p>
