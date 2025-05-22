@@ -22,6 +22,7 @@ title: Live Platforms
       <li>Graphs of live win probability</li>
       <li>Judge tendency profiles</li>
       <li>Data-driven rankings updates</li>
+      <li></li>
     </ul>
     <p>
       <a href="/platforms/ko-trends" style="background-color: #1F4E79; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold;">Explore KO Trends →</a>
