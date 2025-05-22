@@ -12,7 +12,7 @@ title: Live UFC Analytics Platform (KO Trends)
 
 
 <!-- Live Scoring -->
-<h2 id="live-scoring">⏱️ Live Scoring</h2>
+<h2 id="live-scoring">Live Scoring:</h2>
 **Read below to see how live stats are transformed into real-time score predictions and win probability visuals through a straightforward modeling process.** 
 ### Live Data Collection:
 
@@ -78,11 +78,11 @@ Using additional code to scrape ESPN Fightcenter during rounds, I can collect li
 &nbsp;<br>
 
 <!-- Judging Analysis -->
-<h2 id="judging">🧠 Judging Analysis</h2>
+<h2 id="judging">Judging Report Cards:</h2>
 <p>SGPS, judge bias visuals, and split round breakdowns.</p>
 <img src="/assets/ufc/judging_viz.png" style="width: 300px; border-radius: 8px;">
 
 <!-- Rankings -->
-<h2 id="rankings">📊 Fighter Ratings</h2>
+<h2 id="rankings">Fighter Performance Ratings:</h2>
 <p>Rankings model, performance scores, and career trajectory charts.</p>
 <img src="/assets/ufc/rankings.png" style="width: 300px; border-radius: 8px;">
