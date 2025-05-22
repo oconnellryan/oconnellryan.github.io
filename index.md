@@ -29,7 +29,7 @@ title: Ryan O'Connell
 
     <a href="/resume" style="text-decoration: none;">
       <div style="background-color: #1F4E79; color: white; padding: 20px 24px; border-radius: 8px; font-weight: bold; text-align: center; width: 220px;">
-        📄 Resume
+        📃 Resume
       </div>
     </a>
 
