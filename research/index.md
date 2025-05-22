@@ -68,7 +68,7 @@ permalink: /research/
 
   <!-- Image -->
   <div style="flex: 1; min-width: 500px;">
-    <img src="/assets/ufc/main_title_buyrate.png" alt="KO Trends Preview" style="width: 100%; border-radius: 8px;" />
+    <img src="/assets/ufc/new_coefs.png" alt="KO Trends Preview" style="width: 100%; border-radius: 8px;" />
   </div>
 
 
