@@ -12,8 +12,8 @@ title: Live UFC Analytics Platform (KO Trends)
 
 
 <!-- Live Scoring -->
-<h2 id="live-scoring">Live Scoring:</h2>
-**Read below to see how live stats are transformed into real-time score predictions and win probability visuals through a straightforward modeling process.** 
+<h2 id="live-scoring">Live Scoring Model:</h2>
+See how real-time stats fuel live score predictions and win probability visuals through a streamlined modeling process.
 ### Live Data Collection:
 
 A Python script scrapes ESPN Fightcenter at the end of each round. The script collects:
