@@ -14,10 +14,10 @@ plugins:
 
 minima:
   nav_pages:
-    - gallery.md
-    - index.md
-    - homepage.md
     - platforms.md
+    - gallery.md
+    - resume.md
+
 
 
 
