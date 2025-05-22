@@ -31,7 +31,7 @@ title: Live Platforms
     </ul>
     <div style="height: 16px;"></div>
     <p>
-      <a href="/platforms/ko-trends" style="background-color: #1F4E79; color: white; padding: 20px 40px; border-radius: 6px; text-decoration: none; font-weight: bold;">Explore KO Trends →</a>
+      <a href="/ko-trends" style="background-color: #1F4E79; color: white; padding: 20px 40px; border-radius: 6px; text-decoration: none; font-weight: bold;">Explore KO Trends →</a>
     </p>
   </div>
 </div>
