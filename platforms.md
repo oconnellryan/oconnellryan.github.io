@@ -41,7 +41,7 @@ title: Live Platforms
 <div style="display: flex; flex-direction: row-reverse; gap: 30px; flex-wrap: wrap; align-items: flex-start;">
 
   <!-- Tweet Embed -->
-  <div style="flex: 1; min-width: 300px;">
+  <div style="flex: 1; min-width: 200px;">
     <div style="transform: scale(1); transform-origin: top left; width: fit-content;">
       <blockquote class="twitter-tweet">
         <p lang="en" dir="ltr">
