@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Gallery
+permalink: /gallery/
 ---
 
 A collection of visualizations from my various projects & Analysis
