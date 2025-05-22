@@ -174,5 +174,7 @@ With this formula, positive sgps numbers represent a striker preference whereas 
 <img src="/assets/ufc/sgps_graph.png" alt="Image" width="700"/> &nbsp;<br>
 
 ### Final Report Cards:
-The striker-grappler preference scores provide the main output for these judge report cards. I can then utilize the models to identify specific scoring preferences of individual judges. These are periodically posted throughout events, as well as at the start of the main event after the three judges are accounced. Some examples of these report cards are showcased below:
-
+The striker-grappler preference scores provide the main output for these judge report cards. I can then utilize the models to identify specific scoring preferences of individual judges. These are periodically posted throughout events, as well as at the start of the main event after the three judges are accounced. Some examples of these report cards are showcased below: &nbsp;<br>
+<img src="/assets/ufc/cleary_report_card.png" alt="Image" width="240"/> 
+<img src="/assets/ufc/colon_report_card.png" alt="Image" width="240"/> 
+<img src="/assets/ufc/lethaby_report_card.png" alt="Image" width="240"/> 
