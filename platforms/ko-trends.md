@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Live UFC Analytics Platform (KO Trends)
+title: Live UFC Analytics Platform
 ---
 
 <!-- Wrapper container to center everything -->
