@@ -41,15 +41,10 @@ permalink: /research/
 
 <div style="display: flex; flex-direction: row-reverse; gap: 30px; flex-wrap: wrap; align-items: flex-start;">
 
-  <!-- Live Tool -->
-  <div style="display: flex; justify-content: center;">
-  <div style="transform: scale(0.75); transform-origin: top center; width: 600px; height: 600px;">
-    <iframe 
-      src="https://ryanoconnell.shinyapps.io/ufc_ppv_predictor/"
-      style="border: none; width: 100%; height: 100%;">
-    </iframe>
+  <!-- Image -->
+  <div style="flex: 1; min-width: 500px;">
+    <img src="/assets/ufc/main_title_buyrate.png" alt="KO Trends Preview" style="width: 100%; border-radius: 8px;" />
   </div>
-</div>
 
 
   <!-- Text content -->
