@@ -1,8 +1,7 @@
 ---
 layout: page
-title: ""
+title: NBA Ticket Pricing Analysis
 ---
-# NBA Ticket Pricing Analysis
 
 ## Result Highlights
 The following graphics showcase the predicted ticket prices for each seat in an individual game: &nbsp;<br>
