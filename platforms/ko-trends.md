@@ -77,12 +77,13 @@ Using additional code to scrape ESPN Fightcenter during rounds, I can collect li
 
 &nbsp;<br>
 
+<!-- Rankings Formula -->
+<h2 id="rankings">Fighter Performance Ratings:</h2>
+<p>Rankings model, performance scores, and career trajectory charts.</p>
+<img src="/assets/ufc/rankings.png" style="width: 300px; border-radius: 8px;">
+
 <!-- Judging Analysis -->
 <h2 id="judging">Judging Report Cards:</h2>
 <p>SGPS, judge bias visuals, and split round breakdowns.</p>
 <img src="/assets/ufc/judging_viz.png" style="width: 300px; border-radius: 8px;">
 
-<!-- Rankings -->
-<h2 id="rankings">Fighter Performance Ratings:</h2>
-<p>Rankings model, performance scores, and career trajectory charts.</p>
-<img src="/assets/ufc/rankings.png" style="width: 300px; border-radius: 8px;">
