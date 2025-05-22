@@ -8,10 +8,6 @@ hide_title: true
 
 <div style="display: flex; gap: 30px; flex-wrap: wrap; align-items: flex-start; margin-bottom: 60px;">
 
-  <!-- Image or tweet embed -->
-  <div style="flex: 1; min-width: 500px;">
-    <img src="/assets/ufc/round1.png" alt="KO Trends Preview" style="width: 100%; border-radius: 8px;" />
-  </div>
 
   <!-- Text content -->
   <div style="flex: 1; min-width: 200px;">
@@ -30,6 +26,11 @@ hide_title: true
     </p>
   </div>
 </div>
+
+  <!-- Image or tweet embed -->
+  <div style="flex: 1; min-width: 500px;">
+    <img src="/assets/ufc/round1.png" alt="KO Trends Preview" style="width: 100%; border-radius: 8px;" />
+  </div>
 
 
 <h1 style="font-size: 32px; font-weight: bold;">Steal Probability Engine:</h1>
