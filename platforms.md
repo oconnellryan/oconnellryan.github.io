@@ -41,7 +41,7 @@ title: Live Platforms
 <div style="display: flex; flex-direction: row-reverse; gap: 30px; flex-wrap: wrap; align-items: flex-start;">
 
   <!-- Tweet Embed -->
-  <div style="flex: 1; min-width: 200px;">
+  <div style="flex: 1; min-width: 400px;">
     <div style="transform: scale(1); transform-origin: top left; width: fit-content;">
       <blockquote class="twitter-tweet">
         <p lang="en" dir="ltr">
@@ -61,7 +61,7 @@ title: Live Platforms
   </div>
 
   <!-- Text content -->
-  <div style="flex: 1; min-width: 300px;">
+  <div style="flex: 1; min-width: 200px;">
     <p>
       This live engine automatically posts real-time grades for MLB stolen base attempts. It uses historical player data to isolate the impact of the baserunner, pitcher, and catcher. Each post includes the steal probability and the baserunning rankings of all three players, delivered seconds after the play occurs.
     </p>
