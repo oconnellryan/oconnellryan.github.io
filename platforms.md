@@ -8,7 +8,7 @@ title: Live Platforms
 <div style="display: flex; gap: 30px; flex-wrap: wrap; align-items: flex-start; margin-bottom: 60px;">
 
   <!-- Image or tweet embed -->
-  <div style="flex: 1; min-width: 300px;">
+  <div style="flex: 1; min-width: 400px;">
     <img src="/assets/ufc/round1.png" alt="KO Trends Preview" style="width: 100%; border-radius: 8px;" />
     <!-- Or embed tweet if preferred -->
     <!-- <blockquote class="twitter-tweet"><a href="https://twitter.com/YOURHANDLE/status/EXAMPLE"></a></blockquote> -->
