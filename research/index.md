@@ -22,7 +22,7 @@ permalink: /research/
   <!-- Text -->
   <div style="flex: 1; min-width: 200px;">
     <p>
-      My live UFC analytics platform utilizes real-time UFC statistics and previous fight data to deliver insights on judge scoring and fighter progression. I regularly share the following outputs on Twitter:
+      As my capstone project for the NBA Future Analytics Stars Program, I developed a predictive model for Chase Center ticket prices. Using two seasons of Golden State Warriors ticket sales data (provided by the NBA) along with additional external game data, I identified key factors influencing ticket demand and pricing. My project was selected as a finalist in the program’s capstone competition.
     </p>
     <ul>
       <li>Live round scoring bot</li>
