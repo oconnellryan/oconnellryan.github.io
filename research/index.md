@@ -26,7 +26,7 @@ permalink: /research/
     </p>
     <div style="height: 16px;"></div>
     <p>
-      <a href="/researcg/nba-ticket-pricing" style="background-color: #1F4E79; color: white; padding: 15px 30px; border-radius: 6px; text-decoration: none; font-weight: bold;">See Full Project →</a>
+      <a href="/research/nba-ticket-pricing" style="background-color: #1F4E79; color: white; padding: 15px 30px; border-radius: 6px; text-decoration: none; font-weight: bold;">See Full Project →</a>
     </p>
   </div>
 </div>
