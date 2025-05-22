@@ -3,12 +3,19 @@ layout: page
 title: Live UFC Analytics Platform (KO Trends)
 ---
 
-**Skip to:**
-<div style="display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px;">
-  <a href="#live-scoring" style="...">Live Scoring</a>
-  <a href="#judging" style="...">Judging Analysis</a>
-  <a href="#rankings" style="...">Fighter Ratings</a>
+<!-- Wrapper container to center everything -->
+<div style="text-align: center; margin-bottom: 24px;">
+
+  <p style="margin-bottom: 12px; font-weight: bold;">Skip to:</p>
+
+  <div style="display: inline-flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
+    <a href="#live-scoring" style="...">Live Scoring</a>
+    <a href="#rankings" style="...">Fighter Ratings</a>
+    <a href="#judging" style="...">Judging Analysis</a>
+  </div>
+
 </div>
+
 
 
 <!-- Live Scoring -->
