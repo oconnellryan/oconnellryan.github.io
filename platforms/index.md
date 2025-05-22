@@ -43,7 +43,7 @@ permalink: /platforms/
 
   <!-- Tweet Embed -->
   <div style="flex: 1; min-width: 400px;">
-    <div style="transform: scale(1); transform-origin: top left; width: fit-content;">
+    <div style="transform: scale(0.8); transform-origin: top left; width: fit-content;">
       <blockquote class="twitter-tweet">
         <p lang="en" dir="ltr">
           George Springer Stole 2B ✅<br><br>
