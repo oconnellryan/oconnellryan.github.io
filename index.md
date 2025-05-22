@@ -26,18 +26,21 @@ title: Ryan O'Connell
         📚 Research Projects
       </div>
     </a>
-
-    <a href="/resume" style="text-decoration: none;">
-      <div style="background-color: #1F4E79; color: white; padding: 20px 24px; border-radius: 8px; font-weight: bold; text-align: center; width: 220px;">
-        📃 Resume
-      </div>
-    </a>
+    
 
     <a href="/gallery" style="text-decoration: none;">
       <div style="background-color: #1F4E79; color: white; padding: 20px 24px; border-radius: 8px; font-weight: bold; text-align: center; width: 220px;">
         🖼️ Gallery
       </div>
     </a>
+
+
+    <a href="/resume" style="text-decoration: none;">
+      <div style="background-color: #1F4E79; color: white; padding: 20px 24px; border-radius: 8px; font-weight: bold; text-align: center; width: 220px;">
+        📃 Resume
+      </div>
+    </a>
+    
 
   </div>
 
