@@ -14,7 +14,7 @@ title: Ryan O'Connell
   <div style="flex: 0 0 auto; display: flex; flex-direction: column; gap: 12px; justify-content: flex-start;">
 
     <a href="/platforms" style="text-decoration: none;">
-      <div style="background-color: #1F4E79; color: white; padding: 20x 24px; border-radius: 8px; font-weight: bold; text-align: center; width: 220px;">
+      <div style="background-color: #1F4E79; color: white; padding: 20x 24px; border-radius: 8px; font-weight: bold; text-align: center; width: 220px; line-height: 1.4;">
         ⚙️ Platforms
       </div>
     </a>
