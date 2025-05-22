@@ -13,12 +13,10 @@ plugins:
 
 
 minima:
-  nav_pages:
-    - platforms/index.md
-    - gallery.md
-    - resume.md
-
-
-
-
-
+  nav:
+    - title: Platforms
+      url: /platforms/
+    - title: Gallery
+      url: /gallery/
+    - title: Resume
+      url: /resume/
