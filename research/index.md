@@ -10,7 +10,7 @@ permalink: /research/
   }
 </style>
 
-<h1 style="font-size: 32px; font-weight: bold;">Live UFC Analytics Platform (KO Trends):</h1>
+<h1 style="font-size: 32px; font-weight: bold;">NBA Ticket Pricing:</h1>
 
 <div style="display: flex; flex-direction: row-reverse; gap: 30px; flex-wrap: wrap; align-items: flex-start; margin-bottom: 60px;">
 
