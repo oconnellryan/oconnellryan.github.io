@@ -74,7 +74,8 @@ permalink: /research/
   <!-- Text content -->
   <div style="flex: 1; min-width: 100px; max-width: 280px;">
     <p>
-      This live engine automatically posts real-time grades for MLB stolen base attempts. It uses historical player data to isolate the impact of the baserunner, pitcher, and catcher. Each post includes the steal probability and the baserunning rankings of all three players, delivered seconds after the play occurs.
+      This project analyzes which fighter attributes most strongly influence UFC Pay-Per-View (PPV) sales and quantifies the incremental value each fighter brings to an event. I utilized feature engineering and a mixed-effects model to separate brand-driven appeal from fighting style.
+
     </p>
     <div style="height: 8px;"></div>
     <p>
