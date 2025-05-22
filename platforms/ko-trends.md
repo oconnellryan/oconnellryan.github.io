@@ -148,8 +148,6 @@ On a larger scale, one of the model’s current limitations is the lack of ratin
 
 <!-- Judging Analysis -->
 <h2 id="judging">Judge Report Cards:</h2>
-<img src="/assets/ufc/cleary_report_card.png" alt="Image" width="360"/>
-<img src="/assets/ufc/colon_report_card.png" alt="Image" width="360"/> 
 My judge report cards are designed to showcase the stylistic preferences of UFC judges. Utilizing the models I created in my Senior Thesis Project, I am able to identify which fight statistics most correlate with an individual judge' scorecards. Additionally, I created a metric that I call striker-grappler preference score (sgps) to better quantify a UFC judges' stylistic preferences.
 
 ### Striker-Grappler Preference Scores:
@@ -175,6 +173,6 @@ Judge & Non-judge models from my thesis, I then repeated this process for each j
 With this formula, positive sgps numbers represent a striker preference whereas negative numbers indicate a grappler preference. The following graph showcases the striker vs. grappler preference of the 30 UFC Judges with the most rounds judged:
 <img src="/assets/ufc/sgps_graph.png" alt="Image" width="700"/> &nbsp;<br>
 
-<img src="/assets/ufc/colon_report_card.png" alt="Image" width="360"/> 
-
 ### Final Report Cards:
+The striker-grappler preference scores provide the main output for these judge report cards. I can then utilize the models to identify specific scoring preferences of individual judges. These are periodically posted throughout events, as well as at the start of the main event after the three judges are accounced. Some examples of these report cards are showcased below:
+
