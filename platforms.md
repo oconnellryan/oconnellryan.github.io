@@ -19,7 +19,7 @@ title: Live Platforms
     </p>
     <ul>
       <li>Live round scoring bot</li>
-      <li>Graphs of live win probability</li>
+      <li>Win probability graphs</li>
       <li>Judge tendency profiles</li>
       <li>Data-driven rankings updates</li>
     </ul>
