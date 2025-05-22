@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Live Platforms
-permalink: /platforms/
 ---
 
 <style>
