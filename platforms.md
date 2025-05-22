@@ -36,7 +36,7 @@ title: Live Platforms
 
   <!-- Image or tweet -->
   <div style="transform: scale(1); transform-origin: top left; width: fit-content;">
-  <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Round 2 Scoring Model Prediction:<br><br>10-9 Justin Gaethje <br>⚠️ Possible 10-8 Round (26% Probability)<a href="https://twitter.com/hashtag/UFC?src=hash&amp;ref_src=twsrc%5Etfw">#UFC</a> <a href="https://twitter.com/hashtag/UFC313?src=hash&amp;ref_src=twsrc%5Etfw">#UFC313</a></p>&mdash; KO Trends (@KOTrends) <a href="https://twitter.com/KOTrends/status/1898600263918780614?ref_src=twsrc%5Etfw">March 9, 2025</a></blockquote> 
+<blockquote class="twitter-tweet"><p lang="ro" dir="ltr">George Springer Stole 2B ✅<br><br>🟢 Good Matchup<br>84% Succesful Steal Chance<br><br>Player Steal Grades:<br>🏃 George Springer: 61st/302<br>⚾ Randy Vásquez: 106th/401<br>🧤 Elias Díaz: 12th/61</p>&mdash; Steal Decisions Live (@StealSignal) <a href="https://twitter.com/StealSignal/status/1925342409459745182?ref_src=twsrc%5Etfw">May 22, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
 
   <!-- Text content -->
