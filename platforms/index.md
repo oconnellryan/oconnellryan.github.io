@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Live Platforms
+title: Platforms
 permalink: /platforms/
 ---
 
