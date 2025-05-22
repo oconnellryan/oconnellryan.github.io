@@ -1,30 +1,44 @@
 ---
 layout: page
-title: Academic Projects
+title: Ryan O'Connell
 ---
 
-A collection of my Sports Analytics and Sports Business Analytics projects.
+<div style="display: flex; align-items: flex-start; gap: 30px; flex-wrap: nowrap;">
 
-## Business Analytics in Sports:
-These projects explore the business side of sports including fan behavior, revenue optimization, and pricing strategy: &nbsp;<br>
+  <!-- Headshot -->
+  <div style="flex: 0 0 auto;">
+    <img src="/assets/images/headshot_photoshopped.png" alt="Ryan O'Connell" style="width: 500px; height: auto; border-radius: 12px;" />
+  </div>
 
-[![Image](/assets/images/ufc_ppv_analysis.png)](https://oconnellryan.github.io/ufc_ppv.html)  &nbsp;<br>
-
-[![Image](/assets/images/nba_ticket_pricing.png)](https://oconnellryan.github.io/nba-ticket-pricing.html)  &nbsp;<br>
-&nbsp;<br>
+  <!-- Button Column -->
+  <div style="flex: 0 0 auto; display: flex; flex-direction: column; gap: 12px; justify-content: flex-start;">
 
 
-## UFC Fight Analytics:
-These projects explore MMA through analytics, including live win probabilities, uncovering judging tendencies, and rating fighter career performance: &nbsp;<br>
-&nbsp;<br>
-[![Image](/assets/buttons/live_scoring_model.png)](https://oconnellryan.github.io/ufc-live-scoring.html)
+    <a href="/platforms" style="text-decoration: none;">
+      <div style="background-color: #1F4E79; color: white; padding: 20px 24px; border-radius: 8px; font-weight: bold; text-align: center; width: 220px;">
+        Platforms
+      </div>
+    </a>
+    
 
-[![Image](/assets/buttons/ufc_judging_analysis.png)](https://oconnellryan.github.io/ufc-judging-analysis.html)
+    <a href="/research" style="text-decoration: none;">
+      <div style="background-color: #1F4E79; color: white; padding: 20px 24px; border-radius: 8px; font-weight: bold; text-align: center; width: 220px;">
+        📚 Research
+      </div>
+    </a>
 
-[![Image](/assets/ufc/ufc_rankings_formula.png)](https://oconnellryan.github.io/ufc-rankings.html)
+    <a href="/resume" style="text-decoration: none;">
+      <div style="background-color: #1F4E79; color: white; padding: 20px 24px; border-radius: 8px; font-weight: bold; text-align: center; width: 220px;">
+        📄 Resume
+      </div>
+    </a>
 
-&nbsp;<br>
-&nbsp;<br>
+    <a href="/gallery" style="text-decoration: none;">
+      <div style="background-color: #1F4E79; color: white; padding: 20px 24px; border-radius: 8px; font-weight: bold; text-align: center; width: 220px;">
+        🖼️ Gallery
+      </div>
+    </a>
 
-**Connect With Me:** &nbsp;<br>
-[LinkedIn](https://www.linkedin.com/in/ryan-m-oconnell/)
+  </div>
+
+</div>
