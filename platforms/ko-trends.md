@@ -89,8 +89,6 @@ Using additional code to scrape ESPN Fightcenter during rounds, I can collect li
 
 <!-- Rankings Formula -->
 <h2 id="rankings">Fighter Performance Ratings Formula:</h2>
-### Why This Formula?
-
 The UFC rankings are a key part of the sport’s ecosystem, but as with any system influenced by human voting they can be shaped by perception and promotional dynamics. To offer an alternative lens, I created an objective rankings model that evaluates fighters purely on results and quantifies fighter stock in a consistent, data-driven way.
 
 ### Explore The Rankings:
