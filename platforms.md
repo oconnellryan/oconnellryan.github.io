@@ -3,7 +3,7 @@ layout: page
 title: Live Platforms
 ---
 
-<h1 style="font-size: 32px; font-weight: bold;">🥊 Live UFC Scoring Analytics Platform:</h1>
+<h1 style="font-size: 32px; font-weight: bold;">🥊 Live UFC Scoring Analytics Platform (KO Trends):</h1>
 
 <div style="display: flex; flex-direction: row-reverse; gap: 30px; flex-wrap: wrap; align-items: flex-start; margin-bottom: 60px;">
 
@@ -30,7 +30,7 @@ title: Live Platforms
   </div>
 </div>
 
-<h1 style="font-size: 32px; font-weight: bold;">⚾ Steal Probability Engine:</h1>
+<h1 style="font-size: 32px; font-weight: bold;">⚾ MLB Steal Probability Engine (Steal Signal):</h1>
 
 <div style="display: flex; flex-direction: row-reverse; gap: 30px; flex-wrap: wrap; align-items: flex-start;">
 
