@@ -39,7 +39,7 @@ Stat differences are calculated from the red corner’s perspective and used to 
 
 No other stats were recorded, so the model only used the differences in head & leg strikes here.
 
-### The Model:
+#### The Model:
 
 To eliminate bias, fighters were first randomly assigned to either column in the dataset. For each round, the difference in fight statistics between the two fighters was calculated.
 
@@ -57,7 +57,7 @@ The following graph shows the coeficcient (or value) for each statistic:
 <img src="/assets/ufc/new_coefs.png" alt="Image" width="700"/> &nbsp;<br>
 The model result is a set of four probabilities representing the likelihood of a 10-9 or 10-8 round for either fighter. The total win probability for each fighter is also calculated as the sum of both.
 
-### Scoring Output:
+#### Scoring Output:
 
 Utilizing the predicted probabilities, the python script can tweet the predicted winner and score of each round. Depending on the 10-8 probabilities, there are the different scoring messages: &nbsp;<br>
 
@@ -75,7 +75,7 @@ Utilizing the predicted probabilities, the python script can tweet the predicted
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Round 1 Scoring Model Prediction:<br><br>10-8 Rhys McKee<br>🚨 Model predicted a 91% chance of a 10-8<a href="https://twitter.com/hashtag/UFC?src=hash&amp;ref_src=twsrc%5Etfw">#UFC</a> <a href="https://twitter.com/hashtag/UFCVegas105?src=hash&amp;ref_src=twsrc%5Etfw">#UFCVegas105</a></p>&mdash; KO Trends (@KOTrends) <a href="https://twitter.com/KOTrends/status/1908675378459091215?ref_src=twsrc%5Etfw">April 6, 2025</a></blockquote> 
 </div>
 
-### Live Win Probability Graphs:
+#### Live Win Probability Graphs:
 
 Using additional code to scrape ESPN Fightcenter during rounds, I can collect live data whenever it updates. This live data refreshes about every 10 seconds, and using the same model framework discussed above I can predict the win probability for each fighter at any point during the round.
 
@@ -91,7 +91,7 @@ Using additional code to scrape ESPN Fightcenter during rounds, I can collect li
 <h2 id="rankings">Fighter Performance Ratings Formula:</h2>
 The UFC rankings are a key part of the sport’s ecosystem, but as with any system influenced by human voting they can be shaped by perception and promotional dynamics. To offer an alternative lens, I created an objective rankings model that evaluates fighters purely on results and quantifies fighter stock in a consistent, data-driven way.
 
-### Explore The Rankings:
+#### Explore The Rankings:
 Use the interactive tool below to browse my updated rankings. These are updated automatically after each event and reflect results, opponent strength, and recent activity — not media perception.
 
 <iframe 
@@ -108,7 +108,7 @@ This formula was originally designed based off of ELO skill ratings used in ches
 
 I started by applying the classic ELO rating system to UFC fights, which provided a solid foundation. From there, I modified the formula to account for factors that reflect the quality of a victory (such as early finishes and title fights) and added a decay function to account for inactivity. Once the final structure was in place I ran a grid search to tune key parameters like rating sensitivity and decay rate, optimizing the model's prediction accuracy.
 
-### Post-Fight Adjustment Formula:
+#### Post-Fight Adjustment Formula:
 The formula I have created goes through all UFC Fights since UFC 17 in chronological order, and adjusts both fighters' ratings after each fight. For a fighter's first fight in the UFC, they are given a default rating of 300. For each fight in the data, the model calculates the expected win probability using the following formulas for the winner and loser: &nbsp;<br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;*WinProb<sub>W</sub> = 1 / (1 + 10 <sup>(Rating<sub>L</sub> - Rating<sub>W</sub>) / 370</sup>)* &nbsp;<br>
@@ -129,12 +129,12 @@ The *(1 - WinProb)* part of the formula is the ELO system explained earlier, so 
 
 The final part of the formula (1 - <sup>Rating<sub>W</sub></sup>&frasl;<sub>40000</sub>) gives bigger boosts for beating strong opponents and smaller penalties for losing to them. It doesn't look at the rating difference, but instead scales by the opponent's overall strength. So beating an elite fighter means more than beating someone average, and losing to a top fighter hurts less because of this part.
 
-### Rating Decay:
+#### Rating Decay:
 While the formula above does a good job of capturing fighter merit, it does not account for long periods of inactivity. To address this, a decay function was added to penalize inactivity and gradually remove inactive fighters from the rankings.
 
 Rating decay begins 270 days (approximately 9 months) after a fighter’s most recent bout. At that point, their rating is reduced by 3%. Once on the decay clock, a fighter's rating continues to decrease by an additional 3% every 90 days of further inactivity. The decay clock is fully reset whenever the fighter competes again, regardless of outcome.
 
-### Future Implementations:
+#### Future Implementations:
 
 While this model provides a strong foundation for ranking fighters, there are still several areas I plan to improve. The next addition I’m exploring is incorporating weight class adjustments.
 
@@ -150,7 +150,7 @@ On a larger scale, one of the model’s current limitations is the lack of ratin
 <h2 id="judging">Judge Report Cards:</h2>
 My judge report cards are designed to showcase the stylistic preferences of UFC judges. Utilizing the models I created in my Senior Thesis Project, I am able to identify which fight statistics most correlate with an individual judge' scorecards. Additionally, I created a metric that I call striker-grappler preference score (sgps) to better quantify a UFC judges' stylistic preferences.
 
-### Striker-Grappler Preference Scores:
+#### Striker-Grappler Preference Scores:
 In order to create a single metric that identifies a judges' stylistic preference, the position model from my thesis was used and the predictors were first broken into the following striking and grappling predictors. &nbsp;<br>
 
 **Striking predictors:**
@@ -173,7 +173,7 @@ Judge & Non-judge models from my thesis, I then repeated this process for each j
 With this formula, positive sgps numbers represent a striker preference whereas negative numbers indicate a grappler preference. The following graph showcases the striker vs. grappler preference of the 30 UFC Judges with the most rounds judged:
 <img src="/assets/ufc/sgps_graph.png" alt="Image" width="700"/> &nbsp;<br>
 
-### Final Report Cards:
+#### Final Report Cards:
 The striker-grappler preference scores provide the main output for these judge report cards. I can then utilize the models to identify specific scoring preferences of individual judges. These are periodically posted throughout events, as well as at the start of the main event after the three judges are accounced. Some examples of these report cards are showcased below: &nbsp;<br>
 <img src="/assets/ufc/cleary_report_card.png" alt="Image" width="240"/> 
 <img src="/assets/ufc/colon_report_card.png" alt="Image" width="240"/> 
