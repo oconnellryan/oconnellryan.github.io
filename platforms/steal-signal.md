@@ -21,20 +21,20 @@ title: MLB Steal Probability Engine
 <h2 id="model">Steal Probability Model:</h2>
 A generalized linear regression model is used to predicty stolen base success probability. This model utilizes the following variables to account for the specific players in the interraction:
 
-#### Baserunner
+##### Baserunner
 Smoothed stolen base percentages are used to account for the baserunner. These smoothed percentages are scaled closer to league average the 
 less attempts a player has, meaning a baserunner with just one past attempt that was succesful would have a much closer percentage to league average than 100%.
 This methodology takes past suvves unto account while not overreavting to small sample sizes.
 
-#### Opposing Catcher
+##### Opposing Catcher
 For the opposing catcher poptime to second base is utilized. This is the amount of time in seconds that it takes a catcher to throw the ball to second base 
 after catching it. The same smoothed past percentage methodology used for runners was also tried, but the poptime data ended up being much more statistically significant.
 
-#### Opposing Pitcher
+##### Opposing Pitcher
 The same methodology used for baserunners was also used for pitcchers. Opposing steal percentages were scaled in the same way so that pitcher with 
 fewer attempts against them will have a smoothed steal percentage closer to league average.
 
-### Model Summary
+#### Model Summary
 Runner smoothed percent and catcher poptime have lower p-values, indicating they are slightly more important in the model than the pitcher smoothed percentages. The exact same smoothing methodology was used for past runner 
 and pitcher percentages so these coeficcients can be compared directly. A coeficcient just above 1.5 for runners and around 1 for pitchers indicates that the model values past runner 
 behavior about 50% more than pitcher tendencies when predicting steal outcomes.
