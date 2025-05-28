@@ -34,7 +34,7 @@ after catching it. The same smoothed past percentage methodology used for runner
 The same methodology used for baserunners was also used for pitcchers. Opposing steal percentages were scaled in the same way so that pitcher with 
 fewer attempts against them will have a smoothed steal percentage closer to league average.
 
-#### Model Summary
+### Model Summary
 Runner smoothed percent and catcher poptime have lower p-values, indicating they are slightly more important in the model than the pitcher smoothed percentages. The exact same smoothing methodology was used for past runner 
 and pitcher percentages so these coeficcients can be compared directly. A coeficcient just above 1.5 for runners and around 1 for pitchers indicates that the model values past runner 
 behavior about 50% more than pitcher tendencies when predicting steal outcomes.
@@ -45,7 +45,7 @@ behavior about 50% more than pitcher tendencies when predicting steal outcomes.
 The live engine was built using python. The script leverages the MLB API to collect the result and names of the players involved in steal attempt as they happen live during games. Player names are then used to look up 
 smoothed percentages and poptime data which is fed to the model resulting in a prediction.
 
-#### Tweet Output:
+### Tweet Output:
   <!-- Tweet Embed -->
   <div style="flex: 1; min-width: 400px;">
     <div style="transform: scale(1); transform-origin: top left; width: fit-content;">
