@@ -9,8 +9,8 @@ title: MLB Steal PRobability Engine
   <p style="margin-bottom: 12px; font-weight: bold;">Skip to:</p>
 
   <div style="display: inline-flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
-    <a href="#live-scoring" style="...">Solen Bases Model</a>
-    <a href="#rankings" style="...">Live Deployment</a>
+    <a href="#model" style="...">Solen Bases Model</a>
+    <a href="#deployment" style="...">Live Deployment</a>
   </div>
 
 </div>
@@ -18,6 +18,7 @@ title: MLB Steal PRobability Engine
 
 
 <!-- Stolen Bases Model -->
+<h2 id="model">Live Scoring Model:</h2>
 A generalized linear regression model is used to predicty stolen base success probability. This model utilizes the following variables to account for the specific players in the interraction:
 
 ### Baserunner
@@ -40,6 +41,7 @@ behavior about 50% more than pitcher tendencies when predicting steal outcomes.
 
 
 <!-- Live Deployment -->
+<h2 id="deployment">Live Deployment:</h2>
 The live engine was built using python. The script leverages the MLB API to collect the result and names of the players involved in steal attempt as they happen live during games. The player names are used to look up 
 their data (smoothed percent or poptime) which is then fed to the model resulting in a prediction.
 
