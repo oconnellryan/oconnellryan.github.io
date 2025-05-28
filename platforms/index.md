@@ -61,6 +61,23 @@ permalink: /platforms/
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
 
+
+    <!-- Tweet Embed -->
+  <div style="flex: 1; min-width: 400px;">
+    <div style="transform: scale(0.8); transform-origin: top left; width: fit-content;">
+      <blockquote class="twitter-tweet">
+        <p lang="en" dir="ltr">
+          George Springer Stole 2B ✅<br><br>
+          🟢 Good Matchup<br>
+        
+        </p>
+        &mdash; Steal Decisions Live (@StealSignal) 
+        <a href="https://twitter.com/StealSignal/status/1925342409459745182?ref_src=twsrc%5Etfw">May 22, 2025</a>
+      </blockquote>
+    </div>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+
   <!-- Text content -->
   <div style="flex: 1; min-width: 200px; max-width: 280px;">
     <p>
