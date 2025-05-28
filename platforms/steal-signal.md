@@ -22,8 +22,8 @@ title: MLB Steal Probability Engine
 A generalized linear regression model is used to predicty stolen base success probability. This model utilizes the following variables to account for the specific players in the interraction:
 
 #### Baserunner
-Smoothed past stolen base percentages are used to account for the baserunner. These smoothed percentages are scaled closer to league average the 
-less attempts a player has, meaning a baserunner with just one past attempt that was succesful would have a much closer value to league average than 100%.
+Smoothed stolen base percentages are used to account for the baserunner. These smoothed percentages are scaled closer to league average the 
+less attempts a player has, meaning a baserunner with just one past attempt that was succesful would have a much closer percentage to league average than 100%.
 This methodology takes past suvves unto account while not overreavting to small sample sizes.
 
 #### Opposing Catcher
@@ -31,11 +31,11 @@ For the opposing catcher poptime to second base is utilized. This is the amount 
 after catching it. The same smoothed past percentage methodology used for runners was also tried, but the poptime data ended up being much more statistically significant.
 
 #### Opposing Pitcher
-The same methodology used for baserunners was also used for pitcchers. This means opposing steal percentages were scaled in a similar way to where a pitcher with 
-few attempts against them will have a past smoothed steal percentage closer to league average.
+The same methodology used for baserunners was also used for pitcchers. Opposing steal percentages were scaled in the same way so that pitcher with 
+fewer attempts against them will have a smoothed steal percentage closer to league average.
 
 ### Model Summary
-Past runner smoothed percent and catcher poptime have lower p-values, indicating they are slightly more important in the model than the pitcher variable. The same smoothing methodology was used for past runner 
+Runner smoothed percent and catcher poptime have lower p-values, indicating they are slightly more important in the model than the pitcher smoothed percentages. The exact same smoothing methodology was used for past runner 
 and pitcher percentages so these coeficcients can be compared directly. A coeficcient just above 1.5 for runners and around 1 for pitchers indicates that the model values past runner 
 behavior about 50% more than pitcher tendencies when predicting steal outcomes.
 
@@ -48,7 +48,7 @@ smoothed percentages and poptime data which is fed to the model resulting in a p
 #### Tweet Output:
   <!-- Tweet Embed -->
   <div style="flex: 1; min-width: 400px;">
-    <div style="transform: scale(0.8); transform-origin: top left; width: fit-content;">
+    <div style="transform: scale(1); transform-origin: top left; width: fit-content;">
       <blockquote class="twitter-tweet">
         <p lang="en" dir="ltr">
           George Springer Stole 2B ✅<br><br>
