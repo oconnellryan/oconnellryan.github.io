@@ -58,7 +58,7 @@ permalink: /research/
 </div>
 
 
-
+&nbsp;<br>
 
 
 <h1 style="font-size: 32px; font-weight: bold;">UFC Pay-Per-View Sales:</h1>
