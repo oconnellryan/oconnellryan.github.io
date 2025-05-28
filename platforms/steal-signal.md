@@ -1,6 +1,6 @@
 ---
 layout: page
-title: MLB Steal PRobability Engine
+title: MLB Steal Probability Engine
 ---
 
 <!-- Wrapper container to center everything -->
@@ -18,19 +18,19 @@ title: MLB Steal PRobability Engine
 
 
 <!-- Stolen Bases Model -->
-<h2 id="model">Live Scoring Model:</h2>
+<h2 id="model">Steal Probability Model:</h2>
 A generalized linear regression model is used to predicty stolen base success probability. This model utilizes the following variables to account for the specific players in the interraction:
 
-### Baserunner
+#### Baserunner
 Smoothed past stolen base percentages are used to account for the baserunner. These smoothed percentages are scaled closer to league average the 
 less attempts a player has, meaning a baserunner with just one past attempt that was succesful would have a much closer value to league average than 100%.
 This methodology takes past suvves unto account while not overreavting to small sample sizes.
 
-### Opposing Catcher
+#### Opposing Catcher
 For the opposing catcher poptime to second base is utilized. This is the amount of time in seconds that it takes a catcher to throw the ball to second base 
 after catching it. The same smoothed past percentage methodology used for runners was also tried, but the poptime data ended up being much more statistically significant.
 
-### Opposing Pitcher
+#### Opposing Pitcher
 The same methodology used for baserunners was also used for pitcchers. This means opposing steal percentages were scaled in a similar way to where a pitcher with 
 few attempts against them will have a past smoothed steal percentage closer to league average.
 
@@ -42,10 +42,10 @@ behavior about 50% more than pitcher tendencies when predicting steal outcomes.
 
 <!-- Live Deployment -->
 <h2 id="deployment">Live Deployment:</h2>
-The live engine was built using python. The script leverages the MLB API to collect the result and names of the players involved in steal attempt as they happen live during games. The player names are used to look up 
-their data (smoothed percent or poptime) which is then fed to the model resulting in a prediction.
+The live engine was built using python. The script leverages the MLB API to collect the result and names of the players involved in steal attempt as they happen live during games. Player names are then used to look up 
+smoothed percentages and poptime data which is fed to the model resulting in a prediction.
 
-### Tweet Output:
+#### Tweet Output:
   <!-- Tweet Embed -->
   <div style="flex: 1; min-width: 400px;">
     <div style="transform: scale(0.8); transform-origin: top left; width: fit-content;">
@@ -67,7 +67,7 @@ their data (smoothed percent or poptime) which is then fed to the model resultin
   </div>
   
 Live tweets produced by this engine contain the following data:
-- Result (succesfult steal or caught stealing)
+- Result (succesful steal or caught stealing)
 - Model grade and predicted steal probability
 - Player steal grades
 
