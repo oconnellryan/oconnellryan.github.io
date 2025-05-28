@@ -68,7 +68,7 @@ permalink: /platforms/
     </p>
     <div style="height: 8px;"></div>
     <p>
-      
+      <a href="/platforms/steal-signal" style="background-color: #1F4E79; color: white; padding: 15px 30px; border-radius: 6px; text-decoration: none; font-weight: bold;">Explore Platform →</a>
     </p>
   </div>
 </div>
