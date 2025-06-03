@@ -22,7 +22,7 @@ permalink: /platforms/
   <!-- Text -->
   <div style="flex: 1; min-width: 200px;">
     <p>
-      My live UFC analytics platform utilizes real-time UFC statistics and previous fight data to deliver insights on judge scoring and fighter progression. I regularly share the following outputs on Twitter:
+      My live UFC analytics platform utilizes real-time UFC statistics and previous fight data to deliver insights on judge scoring and fighter progression. I regularly share the following outputs on X (Twitter):
     </p>
     <ul>
       <li>Live round scoring bot</li>
@@ -64,7 +64,7 @@ permalink: /platforms/
   <!-- Text content -->
   <div style="flex: 1; min-width: 200px; max-width: 280px;">
     <p>
-      This live engine automatically posts real-time grades for MLB stolen base attempts. It uses historical player data to isolate the impact of the baserunner, pitcher, and catcher. Each post includes the steal probability and the baserunning rankings of all three players, delivered seconds after the play occurs.
+      This live engine automatically posts real-time grades for MLB stolen base attempts. It uses historical player data to isolate the impact of the baserunner, pitcher, and catcher. Each post includes the steal probability and the baserunning rankings of all three players, delivered seconds after a stolen base attempt occurs.
     </p>
     <div style="height: 8px;"></div>
     <p>
