@@ -20,14 +20,14 @@ title: Gallery
 
 <!-- Photoshop -->
 <h2 id="analytics">Photoshop Graphics:</h2>
-UFC Fighter Profiles
+UFC Fighter Profiles: &nbsp;<br>
 <img src="/assets/images/blanchfield.png" alt="Image" width="350"/> 
 <img src="/assets/images/Maycee.png" alt="Image" width="350"/>  &nbsp;<br>
 
-UFC Rankings:
+UFC Rankings: &nbsp;<br>
 <img src="/assets/images/lightweight10.png" alt="Image" width="700"/>  &nbsp;<br>
 
-UFC Judge Report Cards:
+UFC Judge Report Cards: &nbsp;<br>
 <img src="/assets/ufc/cleary_report_card.png" alt="Image" width="350"/> 
 <img src="/assets/ufc/lethaby_report_card.png" alt="Image" width="350"/> 
 
