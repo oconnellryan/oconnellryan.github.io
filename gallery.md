@@ -35,7 +35,7 @@ UFC Judge Report Cards: &nbsp;<br>
 <!-- Analytics -->
 <h2 id="analytics">Analytics Visuals:</h2>
 Live Win Probability Graph of a UFC Round: &nbsp;<br>
-<img src="/assets/ufc/win_prob_graph.png" alt="Image" width="700"/>
+<img src="/assets/ufc/round2.png" alt="Image" width="700"/>
 
 
 <!-- Arena -->
