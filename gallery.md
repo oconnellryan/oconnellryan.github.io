@@ -37,6 +37,13 @@ UFC Judge Report Cards: &nbsp;<br>
 Live Win Probability Graph of a UFC Round: &nbsp;<br>
 <img src="/assets/ufc/round2.png" alt="Image" width="700"/>
 
+Graphing NFL QB Success & Styles: &nbsp;<br>
+<img src="/assets/images/depth.png" alt="Image" width="700"/>
+<img src="/assets/images/scrambles.png" alt="Image" width="700"/>
+
+Graph Showcasing Senior Bowl QBs: &nbsp;<br>
+<img src="/assets/images/reeses_pre.png" alt="Image" width="700"/>
+
 
 <!-- Arena -->
 <h2 id="arena">Arena Mapping:</h2>
