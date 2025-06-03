@@ -26,7 +26,7 @@ UFC Fighter Profiles: &nbsp;<br>
 <img src="/assets/images/blanchfield.png" alt="Image" width="350"/> 
 <img src="/assets/images/Maycee.png" alt="Image" width="350"/>  &nbsp;<br>
 
-UFC Rankings (calculated using my [Fighter Rankings Formula](platforms/ko-trends.md#fighter-rankings.md)): &nbsp;<br>
+UFC Rankings (calculated using my [Fighter Rankings Formula](platforms/ko-trends.md#rankings.md)): &nbsp;<br>
 <img src="/assets/images/lightweight10.png" alt="Image" width="700"/>  &nbsp;<br>
 
 UFC Judge Report Cards: &nbsp;<br>
