@@ -9,7 +9,7 @@ title: Gallery
   <p style="margin-bottom: 12px; font-weight: bold;">Skip to:</p>
 
   <div style="display: inline-flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
-    <a href="#photoshop" style="...">Live Scoring</a>
+    <a href="#photoshop" style="...">Photoshop Graphics</a>
     <a href="#analytics" style="...">Sports Analytics</a>
     <a href="#arena" style="...">Arena Maps</a>
     <a href="#statistical" style="...">Statistical Graphs</a>
@@ -18,11 +18,9 @@ title: Gallery
 </div>
 
 
-
 <!-- Photoshop -->
-<h2 id="phoJudge Report Cards highlighting UFC Scoring Tendencies: &nbsp;<br>
-<img src="/assets/ufc/cleary_report_card.png" alt="Image" width="345"/>
-<img src="/assets/ufc/colon_report_card.png" alt="Image" width="345"/> toshop">Photoshop Graphics:</h2>
+<h2 id="analytics">Photoshop Graphics:</h2>
+
 
 
 <!-- Analytics -->
