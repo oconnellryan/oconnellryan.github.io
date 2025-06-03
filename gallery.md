@@ -86,8 +86,3 @@ UFC Judge Tendencies (red is how Cleary scores, grey is how other judges score):
 UFC Judge Style Preference (judges with bars on the right prefer strikers, left prefer grapplers)
 <img src="/assets/ufc/sgps_graph.png" alt="Image" width="700"/> &nbsp;<br>
 
-
-<div style="display: flex; gap: 20px; flex-wrap: wrap;">
-  <img src="/assets/gallery/ufc1.png" style="width: 300px; border-radius: 8px;">
-  <img src="/assets/gallery/ufc2.png" style="width: 300px; border-radius: 8px;">
-</div>
