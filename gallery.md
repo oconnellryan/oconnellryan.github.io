@@ -37,11 +37,12 @@ UFC Judge Report Cards: &nbsp;<br>
 Live Win Probability Graph of a UFC Round: &nbsp;<br>
 <img src="/assets/ufc/round2.png" alt="Image" width="700"/>
 
-Graphing NFL QB Performance and Style: &nbsp;<br>
+**Mapping QB Performance & Style:** &nbsp;<br>
+Examining NFL QB Aggresiveness: &nbsp;<br>
 <img src="/assets/images/depth.png" alt="Image" width="700"/>
+NFL QB Mobility: &nbsp;<br>
 <img src="/assets/images/scrambles.png" alt="Image" width="700"/>
-
-Graph Showcasing Senior Bowl QBs: &nbsp;<br>
+Graphing Senior Bowl QB Play Styles: &nbsp;<br>
 <img src="/assets/images/reeses_pre.png" alt="Image" width="700"/>
 
 
@@ -54,7 +55,7 @@ Section Map of Chase Center: &nbsp;<br>
 Highlighting Lower Bowl WCA Seating: &nbsp;<br>
 <img src="/assets/nba/lb_wca_graph.png" alt="Graph" width="700"/> &nbsp;<br>
 
-**Predicted Seat Price Graophs:** &nbsp;<br>
+**Predicted Seat Price Graphs:** &nbsp;<br>
 Whole Arena Heatmap (red is most expensive): &nbsp;<br>
 <img src="/assets/nba/arena_heatmap.png" alt="Image" width="700"/> &nbsp;<br>
 Lower Bowl Heatmap (red is most expensive): &nbsp;<br>
@@ -66,8 +67,24 @@ Courtside Graph (size is predicted price of seat): &nbsp;<br>
 <!-- Statistical Graphs -->
 <h2 id="statistical">Statistical Graphs:</h2>
 
+**Variable Correlation Graphs:** &nbsp;<br>
+UFC Fighter Title Wins and PPV Performance: &nbsp;<br>
+<img src="/assets/ufc/main_title_buyrate.png" alt="Image" width="700"/> &nbsp;<br>
+Fighter Performance Ratings and PPV Performance: &nbsp;<br>
+<img src="/assets/ufc/rest_fpr_buyrate.png" alt="Image" width="600"/>
 
+**Model Coeficcient Graphs:** &nbsp;<br>
+UFC Scoring Model Coeficcients
+<img src="/assets/ufc/new_coefs.png" alt="Image" width="700"/> &nbsp;<br>
+UFC PPV Sales Model (Red is higher card placement, blue is lower)
+<img src="/assets/ufc/coef_graph.png" alt="Image" width="700"/>
 
+**UFC Judge Analysis:** &nbsp;<br>
+UFC Judge Tendencies (red is specific judge, grey is how other judges score):
+<img src="/assets/ufc/cleary_target_graph.png" alt="Image" width="700"/> &nbsp;<br>
+
+UFC Judge Style Preference (right is striker friendly, left prefers grappler)
+<img src="/assets/ufc/sgps_graph.png" alt="Image" width="700"/> &nbsp;<br>
 
 
 <div style="display: flex; gap: 20px; flex-wrap: wrap;">
