@@ -83,7 +83,7 @@ UFC PPV Sales Model (Red is higher card placement, blue is lower)
 UFC Judge Tendencies (red is how Cleary scores, grey is how other judges score):
 <img src="/assets/ufc/cleary_target_graph.png" alt="Image" width="700"/> &nbsp;<br>
 
-UFC Judge Style Preference (judges with bars on the righht prefer strikers, left prefer grapplers)
+UFC Judge Style Preference (judges with bars on the right prefer strikers, left prefer grapplers)
 <img src="/assets/ufc/sgps_graph.png" alt="Image" width="700"/> &nbsp;<br>
 
 
