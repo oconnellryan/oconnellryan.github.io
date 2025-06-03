@@ -20,6 +20,8 @@ title: Gallery
 
 <!-- Photoshop -->
 <h2 id="photoshop">Photoshop Graphics:</h2>
+*Created using Adobe Photoshop* &nbsp;<br>
+
 UFC Fighter Profiles: &nbsp;<br>
 <img src="/assets/images/blanchfield.png" alt="Image" width="350"/> 
 <img src="/assets/images/Maycee.png" alt="Image" width="350"/>  &nbsp;<br>
@@ -34,7 +36,7 @@ UFC Judge Report Cards: &nbsp;<br>
 
 <!-- Analytics -->
 <h2 id="analytics">Analytics Visuals:</h2>
-*Created using the ggplot2 package in r*
+*Created using the ggplot2 package in r* &nbsp;<br>
 Live Win Probability Graph of a UFC Round: &nbsp;<br>
 <img src="/assets/ufc/round2.png" alt="Image" width="700"/>
 
@@ -49,6 +51,7 @@ Graphing Senior Bowl QB Play Styles: &nbsp;<br>
 
 <!-- Arena -->
 <h2 id="arena">Arena Mapping:</h2>
+*Created using the ggplot2 package in r* &nbsp;<br>
 
 **Section Mapping:** &nbsp;<br>
 Section Map of Chase Center: &nbsp;<br>
@@ -67,6 +70,7 @@ Courtside Graph (size is predicted price of seat): &nbsp;<br>
 
 <!-- Statistical Graphs -->
 <h2 id="statistical">Statistical Graphs:</h2>
+*Created using the ggplot2 package in r* &nbsp;<br>
 
 **Variable Correlation Graphs:** &nbsp;<br>
 UFC Fighter Title Wins and PPV Performance: &nbsp;<br>
