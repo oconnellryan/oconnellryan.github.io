@@ -38,7 +38,7 @@ UFC Judge Report Cards: &nbsp;<br>
 <h2 id="analytics">Analytics Visuals:</h2>
 *Created using the ggplot2 package in r* &nbsp;<br>
 
-Live Win Probability Graph of a UFC Round (calculated using my [Live Scoring Model](platforms/kotrends.md#live-scoring-model) : &nbsp;<br>
+Live Win Probability Graph of a UFC Round (calculated using my [Live Scoring Model](platforms/ko-trends.md#live-scoring-model) : &nbsp;<br>
 <img src="/assets/ufc/round2.png" alt="Image" width="700"/>
 
 **Mapping QB Performance & Style:** &nbsp;<br>
