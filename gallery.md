@@ -47,10 +47,19 @@ Graph Showcasing Senior Bowl QBs: &nbsp;<br>
 
 <!-- Arena -->
 <h2 id="arena">Arena Mapping:</h2>
-Heatmap visualizing predicted seat prices of Chase Center using my ticket model: &nbsp;<br>
-**Lower Bowl:** &nbsp;<br>
+
+**Section Mapping:** &nbsp;<br>
+Section Map of Chase Center: &nbsp;<br>
+<img src="/assets/nba/new_sections.png" alt="Image" width="700"/>
+Highlighting WCA sections in the Chase Center: &nbsp;<br>
+<img src="/assets/nba/lb_wca_graph.png" alt="Graph" width="700"/>
+
+**Predicted Seat Price Graophs:** &nbsp;<br>
+Whole Arena Heatmap (red is most expensive): &nbsp;<br>
+<img src="/assets/nba/arena_heatmap.png" alt="Image" width="700"/> &nbsp;<br>
+Lower Bowl Heatmap (red is most expensive): &nbsp;<br>
 <img src="/assets/nba/lb_heatmap.png" alt="Image" width="700"/> &nbsp;<br>
-**Courtside:** &nbsp;<br>
+Courtside Graph (size is predicted price of seat): &nbsp;<br>
 <img src="/assets/nba/cs_size_graph.png" alt="Image" width="700"/>  &nbsp;<br>
 
 
