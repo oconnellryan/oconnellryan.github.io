@@ -19,7 +19,7 @@ title: Gallery
 
 
 <!-- Photoshop -->
-<h2 id="analytics">Photoshop Graphics:</h2>
+<h2 id="photoshop">Photoshop Graphics:</h2>
 UFC Fighter Profiles: &nbsp;<br>
 <img src="/assets/images/blanchfield.png" alt="Image" width="350"/> 
 <img src="/assets/images/Maycee.png" alt="Image" width="350"/>  &nbsp;<br>
@@ -39,11 +39,11 @@ Live Win Probability Graph of a UFC Round: &nbsp;<br>
 
 **Mapping QB Performance & Style:** &nbsp;<br>
 Examining NFL QB Aggresiveness: &nbsp;<br>
-<img src="/assets/images/depth.png" alt="Image" width="700"/>
-NFL QB Mobility: &nbsp;<br>
-<img src="/assets/images/scrambles.png" alt="Image" width="700"/>
+<img src="/assets/images/depth.png" alt="Image" width="700"/> &nbsp;<br>
+NFL QB Mobility: &nbsp;<br> 
+<img src="/assets/images/scrambles.png" alt="Image" width="700"/> &nbsp;<br>
 Graphing Senior Bowl QB Play Styles: &nbsp;<br>
-<img src="/assets/images/reeses_pre.png" alt="Image" width="700"/>
+<img src="/assets/images/reeses_pre.png" alt="Image" width="700"/> &nbsp;<br>
 
 
 <!-- Arena -->
@@ -80,10 +80,10 @@ UFC PPV Sales Model (Red is higher card placement, blue is lower)
 <img src="/assets/ufc/coef_graph.png" alt="Image" width="700"/>
 
 **UFC Judge Analysis:** &nbsp;<br>
-UFC Judge Tendencies (red is specific judge, grey is how other judges score):
+UFC Judge Tendencies (red is how Cleary scores, grey is how other judges score):
 <img src="/assets/ufc/cleary_target_graph.png" alt="Image" width="700"/> &nbsp;<br>
 
-UFC Judge Style Preference (right is striker friendly, left prefers grappler)
+UFC Judge Style Preference (judges with bars on the righht prefer strikers, left prefer grapplers)
 <img src="/assets/ufc/sgps_graph.png" alt="Image" width="700"/> &nbsp;<br>
 
 
