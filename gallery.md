@@ -50,9 +50,9 @@ Graph Showcasing Senior Bowl QBs: &nbsp;<br>
 
 **Section Mapping:** &nbsp;<br>
 Section Map of Chase Center: &nbsp;<br>
-<img src="/assets/nba/new_sections.png" alt="Image" width="700"/>
-Highlighting WCA sections in the Chase Center: &nbsp;<br>
-<img src="/assets/nba/lb_wca_graph.png" alt="Graph" width="700"/>
+<img src="/assets/nba/new_sections.png" alt="Image" width="700"/> &nbsp;<br>
+Highlighting Lower Bowl WCA Seating: &nbsp;<br>
+<img src="/assets/nba/lb_wca_graph.png" alt="Graph" width="700"/> &nbsp;<br>
 
 **Predicted Seat Price Graophs:** &nbsp;<br>
 Whole Arena Heatmap (red is most expensive): &nbsp;<br>
