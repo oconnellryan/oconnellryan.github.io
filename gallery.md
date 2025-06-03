@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Live UFC Analytics Platform
+title: Gallery
 ---
 
 <!-- Wrapper container to center everything -->
