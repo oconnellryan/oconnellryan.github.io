@@ -10,8 +10,11 @@ title: Gallery
 
   <div style="display: inline-flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
     <a href="#photoshop" style="...">Photoshop Graphics</a>
+    <a> | </a>
     <a href="#analytics" style="...">Sports Analytics</a>
+    <a> | </a>
     <a href="#arena" style="...">Arena Maps</a>
+    <a> | </a>
     <a href="#statistical" style="...">Statistical Graphs</a>
   </div>
 
