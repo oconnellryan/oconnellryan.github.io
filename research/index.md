@@ -22,7 +22,7 @@ permalink: /research/
   <!-- Text -->
   <div style="flex: 1; min-width: 200px;">
     <p>
-      As my capstone project for the NBA Future Analytics Stars Program, I developed a predictive model for Chase Center ticket prices. Using two seasons of Golden State Warriors ticket sales data (provided by the NBA) along with additional external game data, I identified key factors influencing ticket demand and pricing. My project was selected as a finalist in the program’s capstone competition.
+      As my Capstone Project for the NBA Future Analytics Stars Program, I developed a predictive model for Chase Center ticket prices. Using two seasons of Golden State Warriors ticket sales data (provided by the NBA) along with additional external game data, I identified key factors influencing ticket demand and pricing. My project was selected as a finalist in the program’s capstone competition.
     </p>
     <div style="height: 16px;"></div>
     <p>
