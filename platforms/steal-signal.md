@@ -73,6 +73,5 @@ Model grades are simply broken into good, okay, or bad matchups based on predict
 
 &nbsp;<br>
 &nbsp;<br>
-&nbsp;<br>
 
 **Want to see the model in action live during MLB games? Follow [@StealSignal](https://twitter.com/StealSignal) on X.**
