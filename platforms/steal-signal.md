@@ -10,6 +10,7 @@ title: MLB Steal Probability Engine
 
   <div style="display: inline-flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
     <a href="#model" style="...">Solen Bases Model</a>
+    <a> | </a>
     <a href="#deployment" style="...">Live Deployment</a>
   </div>
 
