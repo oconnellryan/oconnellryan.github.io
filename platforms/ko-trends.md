@@ -23,7 +23,7 @@ title: Live UFC Analytics Platform
 See how real-time stats fuel live score predictions and win probability visuals through a streamlined modeling process.
 #### Live Data Collection:
 
-A Python script scrapes ESPN Fightcenter at the end of each round. The script collects:
+A Python script I wrote scrapes ESPN Fightcenter at the end of each round. The script collects:
 - Total strikes landed
 - Significant strikes (broken up by target)
 - Control time
@@ -51,11 +51,10 @@ The response variable was structured as a four-level factor representing possibl
 
 This setup allows the model to capture both the direction and the margin of victory in each round.
 
-The model itself is an ordered logistic regression (ordered GLM). It takes the stat differences as input and returns the predicted probability of each of the four outcomes. &nbsp;<br>
+The scoring model I built is an ordered logistic regression model (ordered GLM). It takes the stat differences as input and returns the predicted probability of each of the four outcomes. The total win probability for each fighter is also calculated as the sum of their 10-9 win and 10-8 win probabilities. &nbsp;<br>
 &nbsp;<br>
-The following graph shows the coeficcient (or value) for each statistic: 
+The following graph shows the coeficcient (or value) for each statistic in the model: 
 <img src="/assets/ufc/new_coefs.png" alt="Image" width="700"/> &nbsp;<br>
-The model result is a set of four probabilities representing the likelihood of a 10-9 or 10-8 round for either fighter. The total win probability for each fighter is also calculated as the sum of both.
 
 #### Scoring Output:
 
