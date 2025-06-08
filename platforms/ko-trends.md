@@ -150,7 +150,7 @@ On a larger scale, one of the model’s current limitations is the lack of ratin
 My judge report cards are designed to showcase the stylistic preferences of UFC judges. Utilizing the models I created in my Senior Thesis Project, I am able to identify which fight statistics most correlate with an individual judge' scorecards. Additionally, I created a metric that I call striker-grappler preference score (sgps) to better quantify a UFC judges' stylistic preferences.
 
 #### Striker-Grappler Preference Scores:
-In order to create a single metric that identifies a judges' stylistic preference, the position model from my thesis was used and the predictors were first broken into the following striking and grappling predictors. &nbsp;<br>
+In order to create a single metric that identifies a judges' stylistic preference, the position model from my [Senior Thesis](research/ufc-judging.md#live-scoring-model) was used and the predictors were first broken into the following categories: &nbsp;<br>
 
 **Striking predictors:**
 - Significant distance strikes
