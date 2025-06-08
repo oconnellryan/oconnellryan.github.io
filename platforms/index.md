@@ -64,10 +64,10 @@ permalink: /platforms/
   <!-- Text content -->
   <div style="flex: 1; min-width: 200px; max-width: 280px;">
     <p>
-      This live engine automatically posts real-time grades for MLB stolen base attempts. It uses historical player data to isolate the impact of the baserunner, pitcher, and catcher. Each post includes: the steal probability and the baserunning rankings of all three players, delivered seconds after a stolen base attempt occurs.
+      This live engine automatically posts real-time grades for MLB stolen base attempts. It uses historical player data to isolate the impact of the baserunner, pitcher, and catcher. Each post includes:
     </p>
     <ul>
-      <li>Result</li>
+      <li>Result (Stolen Base or Caught Stealing)</li>
       <li>Predicted steal probability</li>
       <li>Steal Grades for all three players</li>
     </ul>
