@@ -22,9 +22,8 @@ title: Gallery
 <h2 id="photoshop">Photoshop Graphics:</h2>
 *Created using Adobe Photoshop* &nbsp;<br>
 
-UFC Fighter Profiles: &nbsp;<br>
-<img src="/assets/images/blanchfield.png" alt="Image" width="350"/> 
-<img src="/assets/images/Maycee.png" alt="Image" width="350"/>  &nbsp;<br>
+UFC Fighter Profile: &nbsp;<br>
+<img src="/assets/images/Maycee.png" alt="Image" width="500"/>  &nbsp;<br>
 
 UFC Rankings (calculated using my [Fighter Rankings Formula](platforms/ko-trends.md#rankings)): &nbsp;<br>
 <img src="/assets/images/lightweight10.png" alt="Image" width="700"/>  &nbsp;<br>
