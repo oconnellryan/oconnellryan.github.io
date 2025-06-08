@@ -71,5 +71,8 @@ Live tweets produced by this engine contain the following data:
 
 Model grades are simply broken into good, okay, or bad matchups based on predicted probabilities. Player steal grades are where each specific player ranks within their position based on smoothed percentages or poptime.
 
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
 
-Want to see the model in action live during MLB games? Follow [@StealSignal](https://twitter.com/StealSignal) on X.
+**Want to see the model in action live during MLB games? Follow [@StealSignal](https://twitter.com/StealSignal) on X.**
