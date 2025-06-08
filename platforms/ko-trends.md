@@ -12,6 +12,7 @@ title: Live UFC Analytics Platform
     <a href="#live-scoring" style="...">Live Scoring Model</a>
     <a> | </a>
     <a href="#rankings" style="...">Fighter Ratings Formula</a>
+    <a> | </a>
     <a href="#judging" style="...">Judge Report Cards</a>
   </div>
 
