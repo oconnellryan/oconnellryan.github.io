@@ -19,7 +19,7 @@ title: MLB Steal Probability Engine
 
 
 <!-- Stolen Bases Model -->
-<h2 id="model">Steal Probability Model:</h2>
+<h2 id="model">Stolen Bases Model:</h2>
 A generalized linear regression model I built is used to predict stolen base success probability. This model utilizes the following variables to account for the specific players in the interraction:
 
 ##### Baserunner
