@@ -45,6 +45,13 @@ In order to remove the red vs. blue corner effect, I randomly assigned each figh
 #### Binomial GLM Models:
 Here are the results of the binomial GLM models ran using each of the avaiable significant strike breakdowns: &nbsp;<br>
 <img src="/assets/ufc/target_model.png" alt="Image" width="365"/> <img src="/assets/ufc/position_model.png" alt="Image" width="365"/> &nbsp;<br>
+Some model takeaways:
+- the target model has identified the head as the most important target to the judges
+- both models show knockdowns are extremely impactful to winning round
+- takedowns and reversals are valued very similarly in both models
+- The value of a takedown/reversal is around the same as 50 seconds of control time
+- Submission attempts are valued around twice as much as a takedown/reversal
+
 You can see that the target model has identified the head as the most important target to the judges. Both models also backs up the fact that knockdowns are extremely impactful to winning rounds. Takedowns and reversals are valued essentially the same, and will improve the log odds of winning a round by about as much as 50 seconds of control time. A submission attempt is valued more than twice as highly as a reversal or takedown.
 
 Because all distance strikes are defined as significant strikes, it makes sense they have the lowest significant strike coeficcient in the position model. The scorer had to manually deem significant strikes in the clinch & on the ground strikes as significant based on power, but even the lightest distance strikes are considered significant.
