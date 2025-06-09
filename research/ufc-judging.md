@@ -9,6 +9,7 @@ title: Analysis of UFC Judging Criteria
 Round by round scorecard data was scraped from mmadecisions.com. The fight data used for this project was scraped from ufcstats.com. 
 
 The fight data included significant strikes landed with two different breakdowns: &nbsp;<br>
+
 **Target Breakdown:**
 - Significant head strikes
 - Significant body strikes
