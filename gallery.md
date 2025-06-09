@@ -24,7 +24,7 @@ title: Gallery
 <!-- UFC Analytics -->
 <h2 id="photoshop">UFC Analytics:</h2>
 
-Live Round Win Probability Graph *(calculated using my [Live Scoring Model](platforms/ko-trends.md#live-scoring-model) and designed in Adobe Photoshop)*: &nbsp;<br>
+Live Round Win Probability Graph *(calculated using my [Live Scoring Model](platforms/ko-trends.md#live-scoring-model) and built using ggplot2 in R)*: &nbsp;<br>
 <img src="/assets/ufc/round2.png" alt="Image" width="700"/>
 
 UFC Judge Report Cards *(Designed in Adobe Photoshop)*: &nbsp;<br>
