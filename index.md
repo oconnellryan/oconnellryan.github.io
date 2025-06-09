@@ -40,7 +40,12 @@ title: Ryan O'Connell
         📃 Resume
       </div>
     </a>
-    
+
+    <div style="margin-top: 16px; font-size: 16px; line-height: 1.4;">
+      <p style="margin: 0; font-weight: bold;">Connect With Me:</p>
+      <p><a href="https://www.linkedin.com/in/ryan-m-oconnell/" target="_blank">LinkedIn</a> for live UFC analytics.</p>
+      <p><a href="https://twitter.com/ryanmoconnell_" target="_blank">X (Twitter)</a> for live UFC analytics.</p>
+    </div>
 
   </div>
 
