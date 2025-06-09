@@ -178,7 +178,7 @@ Then, using the judge & non-judge models from [My Thesis](../research/ufc-judgin
  5. Ratios are used to calculate scores for each judge (higher numbers prefer strikers):
     - SGPS = log(ratio<sub>str</sub>/ratio<sub>gra</sub>)
 
-With this formula, positive sgps numbers represent a striker preference whereas negative numbers indicate a grappler preference. The following graph showcases the striker vs. grappler preference of the 30 UFC Judges with the most rounds judged:
+Positive SGPS values indicate a preference for striking, while negative values reflect a preference for grappling. The chart below displays the SGPS scores for the 30 UFC judges with the most rounds judged:
 <img src="/assets/ufc/sgps_graph.png" alt="Image" width="700"/> &nbsp;<br>
 
 #### Final Report Cards:
