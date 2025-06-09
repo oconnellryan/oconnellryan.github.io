@@ -3,10 +3,10 @@ layout: page
 title: Analysis of UFC Judging Criteria
 ---
 
-**Highlights from my Senior Thesis Project at Syracuse University, completed in May 2024. My thesis explored which factors matter most in UFC judging and how individual judges value them differently.**
+**My Senior Thesis (completed in may 2024 at Syracuse University) analyzed which factors influence UFC judging and how individual judges value them differently. Since then, I’ve expanded the work into a full live UFC analytics platform, which powers real-time judging insights and analysis shared on Twitter.**
 
 #### Data & Methodology:
-I wrote R scripts to scrape round-by-round scorecard data from MMAdecisions.com and fight statistics from UFCStats.com.
+I wrote R scripts to scrape scorecard data from [MMAdecisions.com](https://mmadecisions.com/) and fight statistics from [UFCStats.com](http://ufcstats.com/statistics/events/completed).
 
 The fight statistics included significant strikes landed with two different breakdowns: &nbsp;<br>
 
