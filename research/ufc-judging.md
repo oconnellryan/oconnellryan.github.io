@@ -43,6 +43,19 @@ Aside from significant strikes landed, the fight data also included:
 In order to remove the red vs. blue corner effect, I randomly assigned each fighter's data to one of two sets of columns. After fighters were randomly assigned for each round, I calculated the difference between each of the statistics mentioned above between the two fighters. The differences of these statistics will then be used to predict the win probability of fighter 1 in both models. 
 
 #### Binomial GLM Models:
+<div style="display: flex; gap: 40px;">
+
+  <div style="text-align: center;">
+    <div style="font-weight: bold; margin-bottom: 6px;">Target Model:</div>
+    <img src="/assets/ufc/target_model.png" alt="Target Model" width="365"/>
+  </div>
+
+  <div style="text-align: center;">
+    <div style="font-weight: bold; margin-bottom: 6px;">Position Model:</div>
+    <img src="/assets/ufc/position_model.png" alt="Position Model" width="365"/>
+  </div>
+
+</div>
 <img src="/assets/ufc/target_model.png" alt="Image" width="365"/> <img src="/assets/ufc/position_model.png" alt="Image" width="365"/> &nbsp;<br>
 **Some key takeaways from the models:**
 - The target model has identified the head as the most important target to the judges
