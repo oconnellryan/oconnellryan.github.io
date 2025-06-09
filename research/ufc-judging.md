@@ -3,7 +3,7 @@ layout: page
 title: Analysis of UFC Judging Criteria
 ---
 
-The goal of this project was to identify the importance of relevant factors in UFC Judging and identify how individual judges value these factors differently. This began as my Senior Thesis project that was completed in May 2024 at Syracuse University, and I have since improved upon the methods as well as added to it.
+Highlights from my Senior Thesis Project at Syracuse University, completed in May 2024. My thesis explored which factors matter most in UFC judging and how individual judges value them differently.
 
 #### Data & Methodology:
 Round by round scorecard data was scraped from mmadecisions.com. The fight data used for this project was scraped from ufcstats.com. 
