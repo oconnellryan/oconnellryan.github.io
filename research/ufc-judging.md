@@ -37,29 +37,6 @@ We can also examine the alternative graph for the position models:
 <img src="/assets/ufc/cleary_position_graph.png" alt="Image" width="700"/> &nbsp;<br>
 In this graph, the only statistically significant difference that can be seen is in significant distance strikes.
 
-#### Striker-Grappler Preference Scores:
-While the graphs above do a good job of showcasing specific judge tendencies, I also wanted to create a single metric that identifies their preference of strikers versus grapplers. In order to do this, the position model was used and the predictors were first broken into striking and grappling predictors. &nbsp;<br>
-
-**Striking predictors:**
-- Significant distance strikes
-- Significant clinch strikes
-- Knockdowns &nbsp;<br>
-
-**Grappling predictors:**
-- Significant ground strikes
-- Takedowns
-- Control time
-- Submission attempts
-- Reversals &nbsp;<br>
-
-Using the same Judge & Non-judge models from earlier, I then repeated this process for each judge:
- 1. 4 values were calculated: str<sub>j</sub> (sum of the judge model striking coeficcients), gra<sub>j</sub> (sum of the judge model grappling coeficcients), str<sub>nj</sub> (sum of the non-judge model striking coeficcients) and gra<sub>nj</sub> (sum of the non-judge model grappling coeficcients)
- 2. ratio<sub>str</sub> was calculated as str<sub>j</sub>/str<sub>nj</sub> and ratio<sub>gra</sub> was calculated as gra<sub>j</sub>/gra<sub>nj</sub>
- 3. The final sgps score was calculated as log(ratio<sub>str</sub>/ratio<sub>gra</sub>)
-
-With this formula, positive sgps numbers represent a striker preference whereas negative numbers indicate a grappler preference. The following graph showcases the striker vs. grappler preference of the 30 UFC Judges with the most rounds judged:
-<img src="/assets/ufc/sgps_graph.png" alt="Image" width="700"/> &nbsp;<br>
-
 
 #### Decision Tree & Random Forest Models:
 In addition to the binomial GLM model created, a decision tree and random forest were created to judge rounds. Most of the variables are the same here, but instead of the significant strikes being broken down by target (head, body legs), they are broken down by where the striking occured (distance, ground or clinch). This data will allow the decision trees to identify different types of fights, such as a round where one fighter dominated on the ground but lost on the feet. The main decision tree is shown below:
