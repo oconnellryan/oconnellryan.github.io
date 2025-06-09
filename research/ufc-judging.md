@@ -77,7 +77,7 @@ After building the GLM models, I used them to identify individual judges' scorin
  3. These new variables were used to create two models for each judge:
     - The judge model was fitted using the Winner<sub>j</sub> variable
     - The non-judge model fitted using the Winner<sub>nj</sub> variable
- 5. A wald test was run to test if the differences of the coeficcients between the two models were significant, and a graph was created to compare the coeficcients. &nbsp;<br>
+ 5. A Wald test was used to assess whether the coefficient differences between the two models were significant, and a graph was created to compare them. &nbsp;<br>
  
 *This Process was also repeated using both the target & position model to examine all variables*
 
