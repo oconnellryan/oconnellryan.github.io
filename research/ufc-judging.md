@@ -32,18 +32,6 @@ The fight data included significant strikes landed with two different breakdowns
 
 </div>
 
-
-
-**Target Breakdown:**
-- Significant head strikes
-- Significant body strikes
-- Significant leg strikes &nbsp;<br>
-
-**Positional Breakdown:**
-- Significant strikes at distance
-- Significant clinch strikes
-- Significant ground strikes &nbsp;<br>
-
 Aside from significant strikes landed, the fight data also included:
 - knockdowns landed
 - non-significant strikes landed and attempted
