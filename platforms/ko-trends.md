@@ -167,9 +167,11 @@ In order to create a single metric that identifies a judges' stylistic preferenc
 - Reversals &nbsp;<br>
 
 Then, using the judge & non-judge models from [My Thesis](../research/ufc-judging.md), I repeated this process for each judge:
- 1. 4 values were calculated:
-    - str<sub>j</sub> (sum of the judge model striking coeficcients)
-    - gra<sub>j</sub> (sum of the judge model grappling coeficcients), str<sub>nj</sub> (sum of the non-judge model striking coeficcients) and gra<sub>nj</sub> (sum of the non-judge model grappling coeficcients)
+ 1. 4 values were first calculated:
+    - str<sub>j</sub> = sum of the judge model striking coeficcients
+    - gra<sub>j</sub> = sum of the judge model grappling coeficcients
+    - str<sub>nj</sub> = sum of the non-judge model striking coeficcients
+    - gra<sub>nj</sub> = sum of the non-judge model grappling coeficcients
  3. ratio<sub>str</sub> was calculated as str<sub>j</sub>/str<sub>nj</sub> and ratio<sub>gra</sub> was calculated as gra<sub>j</sub>/gra<sub>nj</sub>
  4. The final sgps score was calculated as log(ratio<sub>str</sub>/ratio<sub>gra</sub>)
 
