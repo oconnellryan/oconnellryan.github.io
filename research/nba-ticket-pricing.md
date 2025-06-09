@@ -24,22 +24,22 @@ Beyond seat location, several external factors significantly increased ticket pr
 ### External Game Factors
 **Opponent:** &nbsp;<br>
 Games against high-winning-percentage or big market teams tend to have higher average ticket prices: &nbsp;<br>
-<img src="/assets/nba/opps.png" alt="Image" width="600"/>
+<img src="/assets/nba/opps.png" alt="Image" width="700"/>
 
 &nbsp;<br>
 
 **Weekday:** &nbsp;<br>
 Ticket prices are highest on weekends (especially Saturdays) and lowest on Mondays and Wednesdays: &nbsp;<br>
-<img src="/assets/nba/weekdays.png" alt="Image" width="600"/>
+<img src="/assets/nba/weekdays.png" alt="Image" width="700"/>
 
 &nbsp;<br>
 
 **Star Player Impact:** &nbsp;<br>
-Steph Curry missed 15 games in 2022, and the average ticket prices dropped when he was out: &nbsp;<br>
+Average ticket prices dropped during the 15 games Steph Curry missed in 2022: &nbsp;<br>
 <img src="/assets/nba/curry_22_graph.png" alt="Image" width="600"/>
 <img src="/assets/nba/curry_22.png" alt="Image" width="130" style="vertical-align: center;"/> &nbsp;<br>
 
-He did not miss as many games in 2023, but again these games had lower prices: &nbsp;<br>
+Curry missed just 5 games in 2023, but those games again saw lower ticket prices: &nbsp;<br>
 <img src="/assets/nba/curry_23_graph.png" alt="Image" width="600"/> 
 <img src="/assets/nba/curry_23.png" alt="Image" width="130" style="vertical-align: center;"/> &nbsp;<br>
 
@@ -47,14 +47,14 @@ He did not miss as many games in 2023, but again these games had lower prices: &
 &nbsp;<br>
 
 **Gametime:** &nbsp;<br>
-Most games were played at 7:00 local time. 25 games were played earlier (almost all at 5:30), and the earlier games had lower average ticket prices: &nbsp;<br>
+Most games started at 7:00, but the 25 earlier games (21 at 5:30) saw lower average ticket prices: &nbsp;<br>
 <img src="/assets/nba/new_times.png" alt="Image" width="230" style="horizontal-align: center;"/> &nbsp;<br>
 
 
 &nbsp;<br>
 
 **Time of Purchase:** &nbsp;<br>
-Tickets are more expensive when purchased further out from games. There was a sharp decrease in the price of gameday tickets: &nbsp;<br>
+Tickets bought further in advance were more expensive, with prices dropping sharply on gameday: &nbsp;<br>
 <div style="display: flex; align-items: center;">
   <img src="/assets/nba/days_before_graph.png" alt="Graph" width="600"/>
   
@@ -73,12 +73,12 @@ The following sections were deduced with the data provided: &nbsp;<br>
 <img src="/assets/nba/new_group_avgs.png" alt="Image" width="130" style="vertical-align: center;"/> &nbsp;<br>
 
 **Bowl:** &nbsp;<br>
-The bowl of the arena was broken down into further sections based on location and club access: &nbsp;<br>
+I assigned the following sections within the arena based on seat location and club access: &nbsp;<br>
 <img src="/assets/nba/new_sections.png" alt="Image" width="600"/> 
 <img src="/assets/nba/new_sec_avgs.png" alt="Image" width="130" style="vertical-align: center;"/> &nbsp;<br>
 
 **Courtside & Floor:** &nbsp;<br>
-The floor was split up by side of the court: &nbsp;<br>
+I further split up the floor by side of the court: &nbsp;<br>
 <img src="/assets/nba/cs_areas_map.png" alt="Image" width="600"/> 
 <img src="/assets/nba/curry_23.png" alt="Image" width="130" style="vertical-align: center;"/> &nbsp;<br>
 
@@ -86,21 +86,21 @@ The floor was split up by side of the court: &nbsp;<br>
 
 ### Seat Features
 **Row:** &nbsp;<br>
-As expected, the average ticket price decreases as you go back in rows: &nbsp;<br>
+Average ticket prices decrease as seat rows get farther from the court: &nbsp;<br>
 <img src="/assets/nba/row_avgs_graph.png" alt="Image" width="600"/> &nbsp;<br>
-This is especially true in the lower bowl: &nbsp;<br>
+This trend is especially strong in the lower bowl: &nbsp;<br>
 <img src="/assets/nba/lb_rows_graph.png" alt="Image" width="600"/> &nbsp;<br>
-The row trend is not as strong in the upper bowl: &nbsp;<br>
+In the upper bowl, row number has less impact on ticket price: &nbsp;<br>
 <img src="/assets/nba/ub_rows.png" alt="Image" width="600"/> &nbsp;<br>
 
 **Front Row Views (FRV):** &nbsp;<br>
-Many non-row 1 seats overhang tunnels or entrances and have no seats in front of them. I labeled these seats as front row views (Example below of seats overhanging the player tunnel): &nbsp;<br>
+Many non–row 1 seats are positioned above tunnels or entrances with no seats in front. I labeled these as “front row view” seats (example below: seats overhanging the player tunnel): &nbsp;<br>
 <img src="/assets/nba/frv.jpg" alt="Image" width="600"/> &nbsp;<br>
 
 &nbsp;<br>
 
 **Wheelchair Access (WCA) Areas:** &nbsp;<br>
-There are WCA (wheelchair access) areas in the arena. These seats are located in the back of sections in the lower bowl: &nbsp;<br>
+In the lower bowl, wheelchair-accessible (WCA) seating is specifically located at the back of sections: &nbsp;<br>
 <div style="display: flex; align-items: center;">
   <img src="/assets/nba/lb_wca_graph.png" alt="Graph" width="560"/>
   
@@ -110,7 +110,7 @@ There are WCA (wheelchair access) areas in the arena. These seats are located in
   </div>
 </div> &nbsp;<br>
 
-The WCA sections in the upper bowl are located in front of or in the middle of sections: &nbsp;<br>
+In the upper bowl, wheelchair-accessible (WCA) seating is located near the front or middle of sections: &nbsp;<br>
 <div style="display: flex; align-items: center;">
   <img src="/assets/nba/ub_wca_map.png" alt="Graph" width="560"/>
   
@@ -126,13 +126,13 @@ The WCA sections in the upper bowl are located in front of or in the middle of s
 **Graphs of New Rows Created:** &nbsp;<br>
 The lower bowl front row view seats have a premium while the WCA seats are not very expensive: &nbsp;<br>
 <img src="/assets/nba/lb_rows_graph2.png" alt="Image" width="600"/>  &nbsp;<br>
-The upper bowl front row view seats have similar prices to row 1 seats. The WCA seats have the highest average prices in the upper bowl: &nbsp;<br>
+In the upper bowl, front row view seats are priced similarly to row 1 seats, while WCA sections have the highest average ticket prices.: &nbsp;<br>
 <img src="/assets/nba/ub_rows2.png" alt="Image" width="600"/> 
 
 &nbsp;<br>
 
 ## Final Models:
-Three models were created to model the ticket prices for entire stadium based on the areas broken down earlier. Many of the predictors were the same for each model, but each model was adjusted for the factors relevant in its area.
+Three models were created to model the ticket prices for entire stadium based on the areas defined earlier. Many of the predictors were the same for each model, but each model was adjusted for the factors relevant in its area.
 ### Lower Bowl Model:
 <div style="display: flex; align-items: center;">
   <img src="/assets/nba/lb_model.png" alt="Image" width="400" style="margin-right: 20px;"/>
