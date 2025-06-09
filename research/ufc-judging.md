@@ -70,7 +70,8 @@ Two models were built for each striking breakdown, using the majority scorecard 
 
 #### Individual Judge Biases:
 After building the GLM models, I used them to identify individual judges' scoring tendencies by subsetting the data for each judge. I repeated this process for each of the judge data subsets:
- 1. Rounds where the two judges not being examined had different scores were dropped and two new winner variables were created for each round:
+ 1. Rounds where the two judges not being examined had different scores were dropped
+ 2. Two new winner variables were created for each round:
     - Winner<sub>j</sub> indicates who the selected judge had winning the round, and
     - Winner<sub>nj</sub> is the winner selected by the other two judges
  3. These new variables were used to create two models for each judge:
