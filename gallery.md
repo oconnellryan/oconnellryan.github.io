@@ -40,7 +40,7 @@ UFC Fighter Profile (*Designed in Adobe Photoshop*): &nbsp;<br>
 
 <!-- Arena -->
 <h2 id="arena">Arena Mapping:</h2>
-*Created using the ggplot2 package in r* &nbsp;<br>
+*All Arena Maps were created using the ggplot2 package in r* &nbsp;<br>
 
 **Section Mapping:** &nbsp;<br>
 Section Map of Chase Center: &nbsp;<br>
@@ -59,7 +59,7 @@ Courtside Graph (size is predicted price of seat): &nbsp;<br>
 
 <!-- Statistical Graphs -->
 <h2 id="statistical">Statistical Graphs:</h2>
-*Created using the ggplot2 package in r* &nbsp;<br>
+*All Statistical Graphs were created using the ggplot2 package in r* &nbsp;<br>
 
 **Variable Correlation Graphs:** &nbsp;<br>
 UFC Fighter Title Wins and PPV Performance: &nbsp;<br>
