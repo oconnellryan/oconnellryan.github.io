@@ -87,11 +87,11 @@ I further split up the floor by side of the court: &nbsp;<br>
 ### Seat Features
 **Row:** &nbsp;<br>
 Average ticket prices decrease as seat rows get farther from the court: &nbsp;<br>
-<img src="/assets/nba/row_avgs_graph.png" alt="Image" width="600"/> &nbsp;<br>
+<img src="/assets/nba/row_avgs_graph.png" alt="Image" width="700"/> &nbsp;<br>
 This trend is especially strong in the lower bowl: &nbsp;<br>
-<img src="/assets/nba/lb_rows_graph.png" alt="Image" width="600"/> &nbsp;<br>
+<img src="/assets/nba/lb_rows_graph.png" alt="Image" width="700"/> &nbsp;<br>
 In the upper bowl, row number has less impact on ticket price: &nbsp;<br>
-<img src="/assets/nba/ub_rows.png" alt="Image" width="600"/> &nbsp;<br>
+<img src="/assets/nba/ub_rows.png" alt="Image" width="700"/> &nbsp;<br>
 
 **Front Row Views (FRV):** &nbsp;<br>
 Many non–row 1 seats are positioned above tunnels or entrances with no seats in front. I labeled these as “front row view” seats (example below: seats overhanging the player tunnel): &nbsp;<br>
@@ -123,11 +123,11 @@ In the upper bowl, wheelchair-accessible (WCA) seating is located near the front
 
 &nbsp;<br>
 
-**Graphs of New Rows Created:** &nbsp;<br>
+**Price Graphs With New Rows Created:** &nbsp;<br>
 The lower bowl front row view seats have a premium while the WCA seats are not very expensive: &nbsp;<br>
-<img src="/assets/nba/lb_rows_graph2.png" alt="Image" width="600"/>  &nbsp;<br>
+<img src="/assets/nba/lb_rows_graph2.png" alt="Image" width="700"/>  &nbsp;<br>
 In the upper bowl, front row view seats are priced similarly to row 1 seats, while WCA sections have the highest average ticket prices.: &nbsp;<br>
-<img src="/assets/nba/ub_rows2.png" alt="Image" width="600"/> 
+<img src="/assets/nba/ub_rows2.png" alt="Image" width="700"/> 
 
 &nbsp;<br>
 
