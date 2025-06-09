@@ -3,7 +3,7 @@ layout: page
 title: Analysis of UFC Judging Criteria
 ---
 
-My Senior Thesis (completed in may 2024 at Syracuse University) analyzed which factors influence UFC judging and how individual judges value them differently. Since then, I’ve expanded the work into a full [Live UFC Analytics Platform](../platforms/ko-trends.md), which powers real-time judging insights and analysis shared on Twitter.
+My Senior Thesis (completed in may 2024 at Syracuse University) analyzed which factors influence UFC judging and how individual judges value them differently. Since then, I’ve expanded the work into a full [Live UFC Analytics Platform](../platforms/ko-trends.md), which powers real-time judging insights and analysis for fans.
 
 # Senior Thesis Highlights:
 
