@@ -12,18 +12,18 @@ The fight data included significant strikes landed with two different breakdowns
 **Target Breakdown:**
 - Significant head strikes
 - Significant body strikes
-- Significant leg strikes
+- Significant leg strikes &nbsp;<br>
 **Positional Breakdown:**
 - Significant strikes at distance
 - Significant clinch strikes
-- Significant ground strikes
+- Significant ground strikes &nbsp;<br>
 Aside from significant strikes landed, the fight data also included:
 - knockdowns landed
 - non-significant strikes landed and attempted
 - takedowns landed and attempted
 - control time
 - reversals
-- submission attempts
+- submission attempts &nbsp;<br>
 
 In order to remove the red vs. blue corner effect, I randomly assigned each fighter's data to one of two sets of columns. After fighters were randomly assigned for each round, I calculated the difference between each of the statistics mentioned above between the two fighters. The differences of these statistics will then be used to predict the win probability of fighter 1 in both models. 
 
