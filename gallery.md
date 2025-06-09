@@ -9,46 +9,33 @@ title: Gallery
   <p style="margin-bottom: 12px; font-weight: bold;">Skip to:</p>
 
   <div style="display: inline-flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
-    <a href="#photoshop" style="...">Photoshop Graphics</a>
-    <a> | </a>
-    <a href="#analytics" style="...">Sports Analytics</a>
+    <a href="#ufc" style="...">UFC Analytics</a>
     <a> | </a>
     <a href="#arena" style="...">Arena Maps</a>
     <a> | </a>
     <a href="#statistical" style="...">Statistical Graphs</a>
+    <a> | </a>
+    <a href="#analytics" style="...">QB Analytics</a>
   </div>
 
 </div>
 
 
-<!-- Photoshop -->
+<!-- UFC Analytics -->
 <h2 id="photoshop">UFC Analytics:</h2>
 
-Live Win Probability Graph of a UFC Round *(calculated using my [Live Scoring Model](platforms/ko-trends.md#live-scoring-model) and created using Adobe Photoshop)*: &nbsp;<br>
+Live Round Win Probability Graph *(calculated using my [Live Scoring Model](platforms/ko-trends.md#live-scoring-model) and designed in Adobe Photoshop)*: &nbsp;<br>
 <img src="/assets/ufc/round2.png" alt="Image" width="700"/>
 
-UFC Judge Report Cards (*Created using Adobe Photoshop*): &nbsp;<br>
+UFC Judge Report Cards *(Designed in Adobe Photoshop)*: &nbsp;<br>
 <img src="/assets/ufc/cleary_report_card.png" alt="Image" width="350"/> 
 <img src="/assets/ufc/lethaby_report_card.png" alt="Image" width="350"/> 
 
-UFC Rankings *(calculated using my [Fighter Rankings Formula](platforms/ko-trends.md#rankings) and created using Adobe Photoshop)*: &nbsp;<br>
+UFC Rankings *(calculated using my [Fighter Rankings Formula](platforms/ko-trends.md#rankings) and designed in Adobe Photoshop)*: &nbsp;<br>
 <img src="/assets/images/lightweight10.png" alt="Image" width="700"/>  &nbsp;<br>
 
-UFC Fighter Profile (*Created using Adobe Photoshop*): &nbsp;<br>
+UFC Fighter Profile (*Designed in Adobe Photoshop*): &nbsp;<br>
 <img src="/assets/images/Maycee.png" alt="Image" width="500"/>  &nbsp;<br>
-
-
-<!-- Analytics -->
-<h2 id="analytics">Analytics Visuals:</h2>
-*Created using the ggplot2 package in r* &nbsp;<br>
-
-**Mapping QB Performance & Style:** &nbsp;<br>
-Examining NFL QB Aggresiveness: &nbsp;<br>
-<img src="/assets/images/depth.png" alt="Image" width="700"/> &nbsp;<br>
-NFL QB Mobility: &nbsp;<br> 
-<img src="/assets/images/scrambles.png" alt="Image" width="700"/> &nbsp;<br>
-Graphing Senior Bowl QB Play Styles: &nbsp;<br>
-<img src="/assets/images/reeses_pre.png" alt="Image" width="700"/> &nbsp;<br>
 
 
 <!-- Arena -->
@@ -93,3 +80,16 @@ UFC Judge Tendencies (red is how Cleary scores, grey is how other judges score):
 UFC Judge Style Preference (judges with bars on the right prefer strikers, left prefer grapplers)
 <img src="/assets/ufc/sgps_graph.png" alt="Image" width="700"/> &nbsp;<br>
 
+
+
+<!-- NFL Analytics -->
+<h2 id="analytics">Analytics Visuals:</h2>
+*Created using the ggplot2 package in r* &nbsp;<br>
+
+**Mapping QB Performance & Style:** &nbsp;<br>
+Examining NFL QB Aggresiveness: &nbsp;<br>
+<img src="/assets/images/depth.png" alt="Image" width="700"/> &nbsp;<br>
+NFL QB Mobility: &nbsp;<br> 
+<img src="/assets/images/scrambles.png" alt="Image" width="700"/> &nbsp;<br>
+Graphing Senior Bowl QB Play Styles: &nbsp;<br>
+<img src="/assets/images/reeses_pre.png" alt="Image" width="700"/> &nbsp;<br>
