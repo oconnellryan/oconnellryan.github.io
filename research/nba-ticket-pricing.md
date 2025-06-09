@@ -80,7 +80,7 @@ I assigned the following sections within the arena based on seat location and cl
 **Courtside & Floor:** &nbsp;<br>
 I further split up the floor by side of the court: &nbsp;<br>
 <img src="/assets/nba/cs_areas_map.png" alt="Image" width="600"/> 
-<img src="/assets/nba/floor_avgs.png" alt="Image" width="130" style="vertical-align: center;"/> &nbsp;<br>
+<img src="/assets/nba/cs_avgs.png" alt="Image" width="130" style="vertical-align: center;"/> &nbsp;<br>
 
 &nbsp;<br>
 
