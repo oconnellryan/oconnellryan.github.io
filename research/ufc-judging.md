@@ -10,6 +10,29 @@ Round by round scorecard data was scraped from mmadecisions.com. The fight data 
 
 The fight data included significant strikes landed with two different breakdowns: &nbsp;<br>
 
+<div style="display: flex; justify-content: center; gap: 60px; text-align: center;">
+
+  <div>
+    <strong>Target Breakdown:</strong>
+    <ul style="list-style: none; padding-left: 0;">
+      <li>Significant head strikes</li>
+      <li>Significant body strikes</li>
+      <li>Significant leg strikes</li>
+    </ul>
+  </div>
+
+  <div>
+    <strong>Positional Breakdown:</strong>
+    <ul style="list-style: none; padding-left: 0;">
+      <li>Significant strikes at distance</li>
+      <li>Significant clinch strikes</li>
+      <li>Significant ground strikes</li>
+    </ul>
+  </div>
+
+</div>
+
+
 **Target Breakdown:**
 - Significant head strikes
 - Significant body strikes
