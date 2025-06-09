@@ -42,7 +42,7 @@ Aside from significant strikes landed, the fight data also included:
 - reversals
 - submission attempts &nbsp;<br>
 
-In order to remove the red vs. blue corner effect, I randomly assigned each fighter's data to one of two sets of columns. After fighters were randomly assigned for each round, I calculated the difference between each of the statistics mentioned above between the two fighters. The differences of these statistics will then be used to predict the win probability of fighter 1 in both models. 
+In order to remove the red vs. blue corner effect, I randomly assigned each fighter's data to one of two sets of columns. I then calculated the difference between each of the statistics mentioned above between the two fighters.
 
 #### Binomial GLM Models:
 <div style="display: flex; gap: 40px;">
