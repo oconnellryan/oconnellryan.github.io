@@ -24,23 +24,23 @@ title: Gallery
 <!-- Photoshop -->
 <h2 id="photoshop">UFC Analytics:</h2>
 
-UFC Fighter Profile (*Created using Adobe Photoshop*): &nbsp;<br>
-<img src="/assets/images/Maycee.png" alt="Image" width="500"/>  &nbsp;<br>
+Live Win Probability Graph of a UFC Round *(calculated using my [Live Scoring Model](platforms/ko-trends.md#live-scoring-model) and created using Adobe Photoshop)*: &nbsp;<br>
+<img src="/assets/ufc/round2.png" alt="Image" width="700"/>
+
+UFC Judge Report Cards (*Created using Adobe Photoshop*): &nbsp;<br>
+<img src="/assets/ufc/cleary_report_card.png" alt="Image" width="350"/> 
+<img src="/assets/ufc/lethaby_report_card.png" alt="Image" width="350"/> 
 
 UFC Rankings *(calculated using my [Fighter Rankings Formula](platforms/ko-trends.md#rankings) and created using Adobe Photoshop)*: &nbsp;<br>
 <img src="/assets/images/lightweight10.png" alt="Image" width="700"/>  &nbsp;<br>
 
-UFC Judge Report Cards: &nbsp;<br>
-<img src="/assets/ufc/cleary_report_card.png" alt="Image" width="350"/> 
-<img src="/assets/ufc/lethaby_report_card.png" alt="Image" width="350"/> 
+UFC Fighter Profile (*Created using Adobe Photoshop*): &nbsp;<br>
+<img src="/assets/images/Maycee.png" alt="Image" width="500"/>  &nbsp;<br>
 
 
 <!-- Analytics -->
 <h2 id="analytics">Analytics Visuals:</h2>
 *Created using the ggplot2 package in r* &nbsp;<br>
-
-Live Win Probability Graph of a UFC Round (calculated using my [Live Scoring Model](platforms/ko-trends.md#live-scoring-model)): &nbsp;<br>
-<img src="/assets/ufc/round2.png" alt="Image" width="700"/>
 
 **Mapping QB Performance & Style:** &nbsp;<br>
 Examining NFL QB Aggresiveness: &nbsp;<br>
