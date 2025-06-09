@@ -23,13 +23,13 @@ Beyond seat location, several external factors significantly increased ticket pr
 ## Exploratory Analysis
 ### External Game Factors
 **Opponent:** &nbsp;<br>
-Playing big market teams and opponents that win more both lead to higher average ticket prices: &nbsp;<br>
+Games against high-winning-percentage or big market teams tend to have higher average ticket prices: &nbsp;<br>
 <img src="/assets/nba/opps.png" alt="Image" width="600"/>
 
 &nbsp;<br>
 
 **Weekday:** &nbsp;<br>
-Saturday games have the highest prices on average, but there are no other clear trends here: &nbsp;<br>
+Ticket prices are highest on weekends (especially Saturdays) and lowest on Mondays and Wednesdays: &nbsp;<br>
 <img src="/assets/nba/weekdays.png" alt="Image" width="600"/>
 
 &nbsp;<br>
