@@ -42,7 +42,7 @@ Aside from significant strikes landed, the fight data also included:
 - reversals
 - submission attempts &nbsp;<br>
 
-In order to remove the red vs. blue corner effect, I randomly assigned each fighter's data to one of two sets of columns. I then calculated the difference between each of the statistics mentioned above between the two fighters.
+To remove red vs. blue corner bias, I randomly assigned each fighter's data to one of two sets of columns. I then calculated the difference between each of the statistics mentioned above between the two fighters.
 
 #### Binomial GLM Models:
 Two models were built for each striking breakdown, using the majority scorecard winner as the response variable.
