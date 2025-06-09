@@ -151,7 +151,7 @@ On a larger scale, one of the model’s current limitations is the lack of ratin
 <h2 id="judging">Judge Report Cards:</h2>
 My judge report cards are designed to showcase the stylistic preferences of UFC judges. Utilizing the models I created in my Senior Thesis Project, I am able to identify which fight statistics most correlate with an individual judge' scorecards. Additionally, I created a metric that I call striker-grappler preference score (sgps) to better quantify a UFC judges' stylistic preferences.
 
-#### Striker-Grappler Preference Scores:
+#### Striker-Grappler Preference Scores (SGPS):
 In order to create a single metric that identifies a judges' stylistic preference, one of the models from my [Senior Thesis](../research/ufc-judging.md) was used. The predictors were first broken into the following categories: &nbsp;<br>
 
 **Striking predictors:**
@@ -175,8 +175,8 @@ Then, using the judge & non-judge models from [My Thesis](../research/ufc-judgin
  3. These were then used to calculate ratio<sub>str</sub> and ratio<sub>gra</sub>
     - ratio<sub>str</sub> = str<sub>j</sub>/str<sub>nj</sub>
     - ratio<sub>gra</sub> = gra<sub>j</sub>/gra<sub>nj</sub>
- 5. Ratios are used to calculate SGPS for each judge (higher numbers prefer strikers):
-    - log(ratio<sub>str</sub>/ratio<sub>gra</sub>)
+ 5. Ratios are used to calculate scores for each judge (higher numbers prefer strikers):
+    - SGPS = log(ratio<sub>str</sub>/ratio<sub>gra</sub>)
 
 With this formula, positive sgps numbers represent a striker preference whereas negative numbers indicate a grappler preference. The following graph showcases the striker vs. grappler preference of the 30 UFC Judges with the most rounds judged:
 <img src="/assets/ufc/sgps_graph.png" alt="Image" width="700"/> &nbsp;<br>
