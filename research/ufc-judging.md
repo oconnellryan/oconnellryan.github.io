@@ -8,9 +8,24 @@ title: Analysis of UFC Judging Criteria
 #### Data & Methodology:
 Round by round scorecard data was scraped from mmadecisions.com. The fight data used for this project was scraped from ufcstats.com. 
 
-The fight data included significant strikes landed with two different breakdowns. The first breakdown, which I will refer to as the target data, is broken down by whether the strike was landed to the head, body or legs. The second significant strike breakdown is by whether they were landed at distance, in the clinch or on the ground, so I will call this the positional breakdown. Aside from significant strikes landed, the fight data also included knockdowns, non-significant strikes landed, control time, takedowns landed, reversals and submission attempts.
+The fight data included significant strikes landed with two different breakdowns: &nbsp;<br>
+**Target Breakdown:**
+- Significant head strikes
+- Significant body strikes
+- Significant leg strikes
+**Positional Breakdown:**
+- Significant strikes at distance
+- Significant clinch strikes
+- Significant ground strikes
+Aside from significant strikes landed, the fight data also included:
+- knockdowns landed
+- non-significant strikes landed and attempted
+- takedowns landed and attempted
+- control time
+- reversals
+- submission attempts
 
-In order to remove the red vs. blue corner effect, I randomly assigned each fighter's data to one of two sets of columns. After fighters were randomly assigned for each round, I calculated the difference between each of the statistics mentioned above between the two fighters. The differences of these statistics will then be used to predict the win probability of fighter 1 in the models. 
+In order to remove the red vs. blue corner effect, I randomly assigned each fighter's data to one of two sets of columns. After fighters were randomly assigned for each round, I calculated the difference between each of the statistics mentioned above between the two fighters. The differences of these statistics will then be used to predict the win probability of fighter 1 in both models. 
 
 #### Binomial GLM Models:
 Here are the results of the binomial GLM models ran using each of the avaiable significant strike breakdowns: &nbsp;<br>
