@@ -22,7 +22,7 @@ title: Live UFC Analytics Platform
 
 <!-- Live Scoring -->
 <h2 id="live-scoring">Live Scoring Model:</h2>
-See how real-time stats fuel live score predictions and win probability visuals through a streamlined modeling process.
+See how real-time stats fuel live score predictions and win probabilities through a streamlined modeling process.
 #### Live Data Collection:
 
 A Python script I wrote scrapes ESPN Fightcenter at the end of each round. The script collects:
