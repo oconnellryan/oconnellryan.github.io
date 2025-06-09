@@ -22,13 +22,12 @@ title: Gallery
 
 
 <!-- Photoshop -->
-<h2 id="photoshop">Photoshop Graphics:</h2>
-*Created using Adobe Photoshop* &nbsp;<br>
+<h2 id="photoshop">UFC Analytics:</h2>
 
-UFC Fighter Profile: &nbsp;<br>
+UFC Fighter Profile (*Created using Adobe Photoshop*): &nbsp;<br>
 <img src="/assets/images/Maycee.png" alt="Image" width="500"/>  &nbsp;<br>
 
-UFC Rankings (calculated using my [Fighter Rankings Formula](platforms/ko-trends.md#rankings)): &nbsp;<br>
+UFC Rankings *(calculated using my [Fighter Rankings Formula](platforms/ko-trends.md#rankings) and created using Adobe Photoshop)*: &nbsp;<br>
 <img src="/assets/images/lightweight10.png" alt="Image" width="700"/>  &nbsp;<br>
 
 UFC Judge Report Cards: &nbsp;<br>
