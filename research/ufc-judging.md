@@ -13,7 +13,7 @@ The fight statistics included significant strikes landed with two different brea
 <div style="display: flex; justify-content: flex-start; gap: 60px;">
 
   <div>
-    <strong>Target Breakdown:</strong>
+    <span>Target Breakdown:</span>
     <ul>
       <li>Significant head strikes</li>
       <li>Significant body strikes</li>
@@ -22,7 +22,7 @@ The fight statistics included significant strikes landed with two different brea
   </div>
 
   <div>
-    <strong>Positional Breakdown:</strong>
+    <span>Positional Breakdown:</span>
     <ul>
       <li>Significant strikes at distance</li>
       <li>Significant clinch strikes</li>
