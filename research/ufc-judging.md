@@ -82,7 +82,10 @@ After the glm models were created, I was able to use these to indetify individua
 
 Here is an example of the target output graphs for one of the judges (Derek Cleary):
 <img src="/assets/ufc/cleary_target_graph.png" alt="Image" width="700"/> &nbsp;<br>
-Looking at the error bars, you can see that there is a statistically significant difference in how Derek Cleary (red) values significant strikes to the head & body compared to other judges (Cleary scores them both lower). While not statistically significant, we can also see that he seems to have scored submission attempts slightly higher. &nbsp;<br>
+This output shows us the following about Derek Cleary:
+- He values significant head strikes lower than other judges
+- He also values significant body strikes lower than other judges
+- He also seems to value submission attempts a bit high
 
 We can also examine the alternative graph for the position models: 
 <img src="/assets/ufc/cleary_position_graph.png" alt="Image" width="700"/> &nbsp;<br>
