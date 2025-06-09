@@ -42,7 +42,7 @@ title: Ryan O'Connell
     </a>
 
     <div style="margin-top: 16px; font-size: 16px; line-height: 1.4;">
-      <p style="margin: 0;">Connect With Me:</p>
+      <p style="margin: 0; font-weight: bold;">Connect With Me:</p>
       <p style="margin: 0;"><a href="https://www.linkedin.com/in/ryan-m-oconnell/" target="_blank">LinkedIn</a></p>
       <p><a href="https://twitter.com/ryanmoconnell_" target="_blank">X (Twitter)</a></p>
     </div>
