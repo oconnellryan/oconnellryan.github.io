@@ -106,6 +106,4 @@ The results align closely with the initial analysis. Fighter quality and having 
 
 &nbsp;<br>
 
-[View Class Research Paper (April 2023)](https://oconnellryan.github.io/assets/ufc_ppv_modeling.pdf) &nbsp;<br>
-
 
