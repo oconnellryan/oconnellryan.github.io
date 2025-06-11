@@ -3,6 +3,16 @@ layout: page
 title: NBA Ticket Pricing Analysis
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QPBKWKZN7G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QPBKWKZN7G');
+</script>
+
 ## Result Highlights
 Beyond seat location, several external factors significantly increased ticket prices:
 - Better & big market opponents (playing the Lakers raised courside ticket prices by over $1,000)
