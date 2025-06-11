@@ -3,6 +3,16 @@ layout: page
 title: UFC Pay-Per-View Sales Analysis
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QPBKWKZN7G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QPBKWKZN7G');
+</script>
+
 ### Result highlights:
 The tool below allows you to build a custom UFC card and predict the Pay-Per-Views using the model. This model uses a combination of fighter attributes found significant and the individual effects calculated for each fighter: &nbsp;<br>
 
