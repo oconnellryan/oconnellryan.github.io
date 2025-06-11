@@ -3,6 +3,16 @@ layout: page
 title: Ryan O'Connell
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QPBKWKZN7G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QPBKWKZN7G');
+</script>
+
 <div style="display: flex; align-items: flex-start; gap: 30px; flex-wrap: nowrap;">
 
   <!-- Headshot -->
