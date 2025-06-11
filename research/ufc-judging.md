@@ -3,6 +3,16 @@ layout: page
 title: Analysis of UFC Judging Criteria
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QPBKWKZN7G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QPBKWKZN7G');
+</script>
+
 My Senior Thesis (completed in May 2024 at Syracuse University) analyzed which factors influence UFC judging and how individual judges value them differently. Since then, I’ve expanded the work into a full [Live UFC Analytics Platform](../platforms/ko-trends.md), which powers real-time judging insights and analysis for fans.
 
 # Senior Thesis Highlights:
