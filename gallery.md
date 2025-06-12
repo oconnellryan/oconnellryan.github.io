@@ -93,7 +93,7 @@ UFC Judge Style Preference (judges with bars on the right prefer strikers, left 
 
 
 <!-- NFL QB Analytics -->
-<h2 id="analytics">Analytics Visuals:</h2>
+<h2 id="analytics">NFL QB Analytics:</h2>
 *Created using the ggplot2 package in r* &nbsp;<br>
 
 **Mapping QB Performance & Style:** &nbsp;<br>
