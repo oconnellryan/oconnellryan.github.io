@@ -75,21 +75,4 @@ permalink: /research/
 
 <div style="display: flex; flex-direction: row-reverse; gap: 30px; flex-wrap: wrap; align-items: flex-start;">
 
-  <!-- Image -->
-  <div style="flex: 1; min-width: 500px;">
-    <img src="/assets/ufc/main_title_buyrate.png" alt="KO Trends Preview" style="width: 100%; border-radius: 8px;" />
-  </div>
 
-
-  <!-- Text content -->
-  <div style="flex: 1; min-width: 100px; max-width: 280px;">
-    <p>
-      This project analyzes which fighter attributes most strongly influence UFC Pay-Per-View (PPV) sales and quantifies the incremental value each fighter brings to an event. I utilized feature engineering and a mixed-effects model to separate brand-driven appeal from fighting style.
-
-    </p>
-    <div style="height: 8px;"></div>
-    <p>
-      <a href="/research/ufc-ppv-sales" style="background-color: #1F4E79; color: white; padding: 15px 30px; border-radius: 6px; text-decoration: none; font-weight: bold;">See Full Project →</a>
-    </p>
-  </div>
-</div>
