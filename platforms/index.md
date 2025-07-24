@@ -20,33 +20,6 @@ permalink: /platforms/
   }
 </style>
 
-<h1 style="font-size: 32px; font-weight: bold;">Live UFC Analytics Platform:</h1>
-
-<div style="display: flex; flex-direction: row-reverse; gap: 30px; flex-wrap: wrap; align-items: flex-start; margin-bottom: 60px;">
-
-  <!-- Image -->
-  <div style="flex: 1; min-width: 500px;">
-    <img src="/assets/ufc/round1.png" alt="KO Trends Preview" style="width: 100%; border-radius: 8px;" />
-  </div>
-
-  <!-- Text -->
-  <div style="flex: 1; min-width: 200px;">
-    <p>
-      My live UFC analytics platform utilizes real-time UFC statistics and previous fight data to deliver insights on judge scoring and fighter progression. I regularly share the following outputs on X (Twitter):
-    </p>
-    <ul>
-      <li>Live round scoring bot</li>
-      <li>Win probability graphs</li>
-      <li>Judge tendency profiles</li>
-      <li>Data-driven rankings updates</li>
-    </ul>
-    <div style="height: 16px;"></div>
-    <p>
-      <a href="/platforms/ko-trends" style="background-color: #1F4E79; color: white; padding: 15px 30px; border-radius: 6px; text-decoration: none; font-weight: bold;">Explore Platform →</a>
-    </p>
-  </div>
-</div>
-
 <h1 style="font-size: 32px; font-weight: bold;">MLB Steal Probability Engine:</h1>
 
 <div style="display: flex; flex-direction: row-reverse; gap: 30px; flex-wrap: wrap; align-items: flex-start;">
