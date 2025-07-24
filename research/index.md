@@ -70,9 +70,6 @@ permalink: /research/
 
 &nbsp;<br>
 
-
-<h1 style="font-size: 32px; font-weight: bold;">UFC Pay-Per-View Sales:</h1>
-
 <div style="display: flex; flex-direction: row-reverse; gap: 30px; flex-wrap: wrap; align-items: flex-start;">
 
 
