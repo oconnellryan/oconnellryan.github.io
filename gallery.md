@@ -31,23 +31,6 @@ title: Gallery
 </div>
 
 
-<!-- UFC Analytics -->
-<h2 id="photoshop">UFC Analytics:</h2>
-
-Live Round Win Probability Graph *(Calculated using my [Live Scoring Model](platforms/ko-trends.md#live-scoring-model) and built using ggplot2 in R)*: &nbsp;<br>
-<img src="/assets/ufc/round2.png" alt="Image" width="700"/>
-
-UFC Judge Report Cards *(Designed in Adobe Photoshop)*: &nbsp;<br>
-<img src="/assets/ufc/cleary_report_card.png" alt="Image" width="350"/> 
-<img src="/assets/ufc/lethaby_report_card.png" alt="Image" width="350"/> 
-
-UFC Rankings *(calculated using my [Fighter Rankings Formula](platforms/ko-trends.md#rankings) and designed in Adobe Photoshop)*: &nbsp;<br>
-<img src="/assets/images/lightweight10.png" alt="Image" width="700"/>  &nbsp;<br>
-
-UFC Fighter Profile (*Designed in Adobe Photoshop*): &nbsp;<br>
-<img src="/assets/images/Maycee.png" alt="Image" width="500"/>  &nbsp;<br>
-
-
 <!-- Arena -->
 <h2 id="arena">Arena Mapping:</h2>
 *All Arena Maps were created using the ggplot2 package in r* &nbsp;<br>
@@ -71,19 +54,6 @@ Courtside Graph (size is predicted price of seat): &nbsp;<br>
 <h2 id="statistical">Statistical Graphs:</h2>
 *All Statistical Graphs were created using the ggplot2 package in r* &nbsp;<br>
 
-**Variable Correlation Graphs:** &nbsp;<br>
-UFC Fighter Title Wins and PPV Performance: &nbsp;<br>
-<img src="/assets/ufc/main_title_buyrate.png" alt="Image" width="700"/> &nbsp;<br>
-Fighter Performance Ratings and PPV Performance: &nbsp;<br>
-<img src="/assets/ufc/rest_fpr_buyrate.png" alt="Image" width="600"/>
-
-**Model Coeficcient Graphs:** &nbsp;<br>
-UFC Scoring Model Coeficcients
-<img src="/assets/ufc/new_coefs.png" alt="Image" width="700"/> &nbsp;<br>
-UFC PPV Sales Model (Red is higher card placement, blue is lower)
-<img src="/assets/ufc/coef_graph.png" alt="Image" width="700"/>
-
-**UFC Judge Analysis:** &nbsp;<br>
 UFC Judge Tendencies (red is how Cleary scores, grey is how other judges score):
 <img src="/assets/ufc/cleary_target_graph.png" alt="Image" width="700"/> &nbsp;<br>
 
